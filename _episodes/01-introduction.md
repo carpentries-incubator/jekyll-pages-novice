@@ -3,13 +3,16 @@ title: "Introduction"
 teaching: 0
 exercises: 0
 questions:
-- "Key question (FIXME)"
+- "What is static web content?"
+- "Why should I use GitHub or GitLab Pages to create my website?"
 objectives:
-- "First learning objective. (FIXME)"
+- "explain what a static site generator does."
+- "choose the appropriate tool for their website/project."
 keypoints:
-- "First key point. Brief Answer to questions. (FIXME)"
+- "A static site generator combines page-specific content with layout elements and styling information to construct individual webpages."
+- "GitHub/GitLab Pages is a good choice for people who are already familiar with Git and GitHub/GitLab."
+- "This approach can be used to create a relatively small website/blog on a limited budget."
 ---
-FIXME
+
 
 {% include links.md %}
-

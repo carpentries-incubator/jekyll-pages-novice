@@ -12,6 +12,7 @@
 [cran-stringr]: https://cran.r-project.org/package=stringr
 [dc-lessons]: http://www.datacarpentry.org/lessons/
 [email]: mailto:team@carpentries.org
+[filters]: https://jekyllrb.com/docs/liquid/filters/
 [github-importer]: https://import.github.com/
 [importer]: https://github.com/new/import
 [jekyll-collection]: https://jekyllrb.com/docs/collections/
@@ -42,8 +43,11 @@
 [ruby-installer]: https://rubyinstaller.org/
 [rubygems]: https://rubygems.org/pages/download/
 [styles]: https://github.com/carpentries/styles/
+[swc]: https://software-carpentry.org/
+[swc-git]: http://swcarpentry.github.io/git-novice/
 [swc-lessons]: https://software-carpentry.org/lessons/
 [swc-releases]: https://github.com/swcarpentry/swc-releases
+[swc-shell]: http://swcarpentry.github.io/shell-novice/
 [training]: https://carpentries.github.io/instructor-training/
 [workshop-repo]: {{ site.workshop_repo }}
 [yaml]: http://yaml.org/
