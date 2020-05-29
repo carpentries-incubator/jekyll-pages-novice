@@ -10,7 +10,7 @@ objectives:
 keypoints:
 - "Markdown is an relatively easy way to write formatted text"
 - "Markdown and HTML tags can be used together in a single page"
-- "I recommend writing Markdown links "reference-style"
+- "I recommend writing Markdown links 'reference-style'"
 - "The landing page for a website is conventionally named `index.md`"
 ---
 
