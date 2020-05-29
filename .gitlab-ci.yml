@@ -1,14 +1,11 @@
-image: ruby:2.5
+image: jekyll/jekyll
 
 variables:
   JEKYLL_ENV: production
   LC_ALL: C.UTF-8
 
 before_script:
-  - apt-get -y update
-  - apt-get install -y python3
-  - apt-get install -y python3-pip
-  - gem install json kramdown jekyll
+  - gem install json kramdown
   - pip3 install pyyaml
 
 pages:
