@@ -1,20 +1,18 @@
-image: jekyll/jekyll
+image: git.embl.de:4567/grp-bio-it-workshops/building-websites-with-jekyll-and-github-or-gitlab
 
 variables:
-  JEKYLL_ENV: production
-  LC_ALL: C.UTF-8
-
-before_script:
-  - gem install json kramdown
-  - pip3 install pyyaml
+  LC_ALL: "C.UTF-8"
+  MAKEFLAGS: "-j 8"
 
 pages:
   stage: deploy
   script:
-    - make --always-make site
+    - make lesson-check
+    - make lesson-check-all
+    - make site
+    - mv _site public
   artifacts:
     paths:
-    - public
+      - public
   only:
     - master
-
