@@ -23,7 +23,7 @@ keypoints:
 - change the value of the global parameter and study the effect
 - write a longer block of material, including variable substitutions, as a parameter
 - try to use it in a page
-- save it to a file in `_includes` and use `{% include file_name %}`
+- save it to a file in `_includes` and use `\{% include file_name %\}`
 - note about `includes` for link references
 
 {% include links.md %}
