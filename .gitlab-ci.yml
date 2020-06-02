@@ -1,18 +1,29 @@
-image: git.embl.de:4567/grp-bio-it-workshops/building-websites-with-jekyll-and-github-or-gitlab
+image: ruby:2.6
 
 variables:
-  LC_ALL: "C.UTF-8"
-  MAKEFLAGS: "-j 8"
+  JEKYLL_ENV: production
+  LC_ALL: C.UTF-8
+
+before_script:
+  - bundle install
+
+test:
+  stage: test
+  script:
+    - bundle exec jekyll build -d test
+  artifacts:
+    paths:
+      - test
+  except:
+    - gh-pages
 
 pages:
   stage: deploy
   script:
-    - make lesson-check
-    - make lesson-check-all
-    - make site
-    - mv _site public
+    - bundle exec jekyll build -d public
   artifacts:
     paths:
       - public
   only:
-    - master
+    - gh-pages
+
