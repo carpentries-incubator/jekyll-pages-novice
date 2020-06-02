@@ -24,7 +24,7 @@ life_cycle: "pre-alpha"
 kind: "lesson"
 
 
-repository: grp-bio-it-workshops/building-websites-with-jekyll-and-github-or-gitlab/
+repository: "grp-bio-it-workshops/building-websites-with-jekyll-and-github-or-gitlab/"
 
 # Email address, no mailto:
 email: "toby.hodges@embl.de"
