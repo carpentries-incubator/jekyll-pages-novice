@@ -1,23 +1,29 @@
-image: ruby:2.5
+image: ruby:2.6
 
 variables:
   JEKYLL_ENV: production
   LC_ALL: C.UTF-8
 
 before_script:
-  - apt-get -y update
-  - apt-get install -y python3
-  - apt-get install -y python3-pip
-  - gem install json kramdown jekyll
-  - pip3 install pyyaml
+  - bundle install
+
+test:
+  stage: test
+  script:
+    - bundle exec jekyll build -d test
+  artifacts:
+    paths:
+      - test
+  except:
+    - gh-pages
 
 pages:
   stage: deploy
   script:
-    - make --always-make site
+    - bundle exec jekyll build -d public
   artifacts:
     paths:
-    - public
+      - public
   only:
-    - master
+    - gh-pages
 
