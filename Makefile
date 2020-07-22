@@ -46,7 +46,7 @@ endif
 
 ## * serve            : render website and run a local server
 serve : lesson-md
-	${JEKYLL} serve
+	bundle exec ${JEKYLL} serve
 
 ## * site             : build website but do not run a server
 site : lesson-md
