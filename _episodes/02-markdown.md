@@ -24,7 +24,9 @@ keypoints:
   - inline style
   - reference style
   - reference style makes it easier to re-use and refactor links
-- link out to a more comprehensive guide, e.g. https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+- link out to a more comprehensive guide, e.g. 
+  - https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+  - https://docs.gitlab.com/ee/user/markdown.html
 - save to a file called index.md
 - put directory under version control with git
   - link to SWC git-novice
