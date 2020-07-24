@@ -31,4 +31,58 @@ keypoints:
 - put directory under version control with git
   - link to SWC git-novice
 
+
+> ## Reproduce Markdown source code: Heading, Emphasis, Lists, Enumerations
+>
+> Try to reproduce the source code of this challenge from rendered view:
+> # This largest heading is followed
+> ### by a two times smaller one.
+>
+> Vanilla text may contain *italic* and **bold words** and
+> 
+> - a list of items
+> - can be
+>   - deeply
+>     - nested
+> - returning to the top-level like this.
+> 
+> New text blocks require **blank lines** and 
+> 
+> 23. enumerations
+> 23. starting at any number
+> 23. continue to increase
+> 26. in steps of one.
+>     1. Sub enumerations (in some editors have to start at **one**)
+>     2. and can include
+>        - sub lists
+>     4. **without** disturbing the enumeration count.
+> 
+>
+> > ## Solution
+> > ~~~
+> > # This largest heading is followed
+> > ### by a two times smaller one.
+> >
+> > Vanilla text may contain *italic* and **bold words**.and
+> > 
+> > - a list of items
+> > - can be
+> >   - deeply
+> >     - nested
+> > - returning to the top-level like this.
+> > 
+> > New text blocks require **blank lines** and 
+> > 
+> > 23. enumerations
+> > 23. starting at any number
+> > 23. continue to increase
+> > 26. in steps of one.
+> >     1. Sub enumerations (in some editors have to start at **one**)
+> >     2. and can include
+> >        - sub lists
+> >     4. **without** disturbing the enumeration count.
+> > ~~~
+> > {: .markdown }
+> {: .solution }
+{: .challenge }
 {% include links.md %}
