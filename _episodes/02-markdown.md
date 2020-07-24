@@ -85,4 +85,21 @@ keypoints:
 > > {: .markdown }
 > {: .solution }
 {: .challenge }
+
+
+> ## Flavors
+>
+> Basic Markdown features are the same on all platforms such as Github and Gitlab.
+> However, there are differences in the details and scope of the features offered.
+> To address this situation, the Markdown 
+> used at Github is called **Github-flavored Markdown**
+> and the one used at Gitlab is called **GitLab Flavored Markdown**.
+> - So be aware of
+>   - [Github-flavored Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+>   - [GitLab Flavored Markdown](https://docs.gitlab.com/ee/user/markdown.html)
+{: .callout}
+
+
+
+
 {% include links.md %}
