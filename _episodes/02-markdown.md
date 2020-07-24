@@ -38,9 +38,9 @@ keypoints:
 > # This largest heading is followed
 > ### by a two times smaller one.
 >
-> Vanilla text may contain *italic* and **bold words** and
+> Vanilla text may contain *italic* and **bold words**.
 > 
-> - a list of items
+> - A list of items
 > - can be
 >   - deeply
 >     - nested
@@ -63,9 +63,9 @@ keypoints:
 > > # This largest heading is followed
 > > ### by a two times smaller one.
 > >
-> > Vanilla text may contain *italic* and **bold words**.and
+> > Vanilla text may contain *italic* and **bold words**.
 > > 
-> > - a list of items
+> > - A list of items
 > > - can be
 > >   - deeply
 > >     - nested
