@@ -150,7 +150,8 @@ keypoints:
 
 > ## Syntax Highlighting
 > Syntax highlighting increases readability a lot.  
-> Guess in which programming language the following code snippets are written
+> Below are code snippets written in HTML, Python, and R.
+> Guess in which programming language each snippet is written
 > and fill the gaps to activate syntax highlighting creating this rendered view
 > 
 > -------------
