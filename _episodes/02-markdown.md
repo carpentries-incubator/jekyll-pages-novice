@@ -127,8 +127,7 @@ keypoints:
 > Larger code snippets look like this:
 >
 > ___
-> msg = 'Hello World'
-> print(msg)
+> print('Hello World')
 > ___
 > ~~~
 > {: .source }
