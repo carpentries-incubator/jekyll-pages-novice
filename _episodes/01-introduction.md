@@ -24,6 +24,7 @@ to render and display the webpage on our screen.
 (A web developer would probably be horrified to read such a gross oversimplification,
 which is just one reason why
 web developers are not the target audience of this tutorial.)
+
 The information displayed by the web browser is a combination of
 **HTML** - a hierarchical format describing the structural elements of the page and their raw content -
 **CSS** - an ordered set of styling instructions telling the browser how to organise and format that content -
@@ -38,7 +39,7 @@ and scripts that the browser may run to do something
 in response to various triggers.
 
 > ## Writing Basic HTML
-> 
+>
 > TODO: brief overview of tags,
 > including strong, heading, and link.
 > Fill-in-the-blanks exercise to write HTML to recreate some example text.
