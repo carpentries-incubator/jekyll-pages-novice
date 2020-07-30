@@ -231,7 +231,7 @@ keypoints:
 > Basic Markdown features are the same on all platforms such as GitHub and GitLab.
 > However, there are differences in the details and scope of the features offered.
 > To address this situation, the Markdown 
-> used at Github is called **Github-flavored Markdown**
+> used at GitHub is called **GitHub-flavored Markdown**
 > and the one used at Gitlab is called **GitLab Flavored Markdown**.
 > - So be aware of
 >   - [Github-flavored Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
