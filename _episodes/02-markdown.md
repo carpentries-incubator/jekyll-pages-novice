@@ -198,7 +198,7 @@ keypoints:
 >
 > > ## Solution
 > > ~~~
-> > ```R
+> > ```r
 > > print(paste("How","are","you?"), quote = FALSE)
 > > ```
 > > 
