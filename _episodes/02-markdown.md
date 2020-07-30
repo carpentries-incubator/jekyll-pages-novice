@@ -147,6 +147,84 @@ keypoints:
 > {: .solution }
 {: .challenge }
 
+
+> ## Syntax Highlighting
+> Syntax highlighting increases readability a lot.  
+> Guess in which programming language the following code snippets are written
+> and fill the gaps to activate syntax highlighting creating this rendered view
+> 
+> -------------
+> ```R
+> print(paste("How","are","you?"), quote = FALSE)
+> ```
+> -------------
+> 
+> ```python
+> s = "How are you?"
+> print s
+> ```
+> -------------
+> 
+> ```html
+> <!DOCTYPE html>
+> <html>
+> <body>
+> > <a href=https://carpentries.org/>This is a link</a>
+> > </body>
+> </html>
+> ```
+> -------------
+>
+> ~~~
+> ```_
+> print(paste("How","are","you?"), quote = FALSE)
+> ```
+> 
+> ```______
+> s = "How are you?"
+> print s
+> ```
+> 
+> ```____
+> <!DOCTYPE html>
+> <html>
+> <body>
+> > <a href=https://carpentries.org/>This is a link</a>
+> > </body>
+> </html>
+> ```
+> ~~~
+> {: .source }
+>
+> > ## Solution
+> > ~~~
+> > ```R
+> > print(paste("How","are","you?"), quote = FALSE)
+> > ```
+> > 
+> > ```python
+> > s = "How are you?"
+> > print s
+> > ```
+> > 
+> > ```html
+> > <!DOCTYPE html>
+> > <html>
+> > <body>
+> > > <a href=https://carpentries.org/>This is a link</a>
+> > > </body>
+> > </html>
+> ```
+> > ~~~
+> > {: .markdown }
+> {: .solution }
+{: .challenge }
+
+
+
+
+
+
 > ## Flavors
 >
 > Basic Markdown features are the same on all platforms such as Github and Gitlab.
