@@ -32,14 +32,40 @@ keypoints:
   - link to SWC git-novice
 
 
-> ## Reproduce Markdown source code: Heading, Emphasis, Lists, Enumerations
+> ## Reproduce Markdown Source Code: Heading, Text, Emphasis
 >
-> Try to reproduce the source code of this challenge from rendered view:
+> Try to reproduce the source code of this challenge from the following rendered view:
+> 
 > # This largest heading is followed
 > ### by a two times smaller one.
 >
 > Vanilla text may contain *italic* and **bold words**.
+>
+> This **paragraph** is separated from the vanilla text paragraph by a blank line and  
+> line breaks  
+> are caused by two trailing spaces at the end of the lines.
 > 
+>
+> > ## Solution
+> > ~~~
+> > # This largest heading is followed
+> > ### by a two times smaller one.
+> >
+> > Vanilla text may contain *italic* and **bold words**.
+> >
+> > This **paragraph** is separated from the vanilla text paragraph by a blank line and  
+> > these line breaks  
+> > are caused by two trailing spaces at the end of the lines.
+> > ~~~
+> > {: .markdown }
+> {: .solution }
+{: .challenge }
+
+
+> ## Lists, Enumerations
+>
+> Try to reproduce the source code of this challenge from rendered view:
+>
 > - A list of items
 > - can be
 >   - deeply
@@ -55,16 +81,10 @@ keypoints:
 >     1. Sub enumerations (in some editors have to start at **one**)
 >     2. and can include
 >        - sub lists
->     4. **without** disturbing the enumeration count.
-> 
+>     4. keeping the enumeration count.
 >
 > > ## Solution
 > > ~~~
-> > # This largest heading is followed
-> > ### by a two times smaller one.
-> >
-> > Vanilla text may contain *italic* and **bold words**.
-> > 
 > > - A list of items
 > > - can be
 > >   - deeply
