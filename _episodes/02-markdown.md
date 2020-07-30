@@ -57,7 +57,7 @@ keypoints:
 > > these line breaks  
 > > are caused by two trailing spaces at the end of the lines.
 > > ~~~
-> > {: .markdown }
+> > {: .source }
 > {: .solution }
 {: .challenge }
 
@@ -102,7 +102,7 @@ keypoints:
 > >        - sub lists
 > >     4. **without** disturbing the enumeration count.
 > > ~~~
-> > {: .markdown }
+> > {: .source }
 > {: .solution }
 {: .challenge }
 
@@ -143,7 +143,7 @@ keypoints:
 > > print('Hello World')
 > > ```
 > > ~~~
-> > {: .markdown }
+> > {: .source }
 > {: .solution }
 {: .challenge }
 
@@ -217,7 +217,7 @@ keypoints:
 > > </html>
 > ```
 > > ~~~
-> > {: .markdown }
+> > {: .source }
 > {: .solution }
 {: .challenge }
 
