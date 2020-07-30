@@ -4,9 +4,10 @@ root: .  # Is the only page that doesn't follow the pattern /:path/index.html
 permalink: index.html  # Is the only page that doesn't follow the pattern /:path/index.html
 ---
 
+> ## Prerequisites
 > Before following this lesson, learners should be able to:
 >
-> - create a repository/project on [GitHub][github] and/or [GitLab]([gitlab]).
+> - create a repository/project on [GitHub][github] and/or [GitLab][gitlab].
 > - clone a local copy of a project with Git, add and commit modified files, and push/pull changes between local and remote repositories.
 > - execute commands in the shell
 >
