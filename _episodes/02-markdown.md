@@ -155,7 +155,7 @@ keypoints:
 > and fill the gaps to activate syntax highlighting creating this rendered view
 > 
 > -------------
-> ```R
+> ```r
 > print(paste("How","are","you?"), quote = FALSE)
 > ```
 > -------------
