@@ -107,6 +107,46 @@ keypoints:
 {: .challenge }
 
 
+
+
+> ## Add Code
+> Fill in the blanks below to create this rendered view
+> 
+> Discussing code details can be very helpful.  
+> Therefore, referring to variables, e.g. `path` in a formatted way is great.
+>
+> Larger code snippets look like this:
+> ```
+> print('Hello World')
+> ```
+>
+> ~~~
+> Discussing code details can be very helpful.  
+> Therefore, referring to variables, e.g. _path_ in a formatted way is great.
+>
+> Larger code snippets look like this:
+>
+> ___
+> msg = 'Hello World'
+> print(msg)
+> ___
+> ~~~
+> {: .source }
+> 
+> > ## Solution
+> > ~~~
+> > Discussing code details can be very helpful.  
+> > Therefore, referring to variables, e.g. `path` in a formatted way is great.
+> >
+> > Larger code snippets look like this:
+> > ```
+> > print('Hello World')
+> > ```
+> > ~~~
+> > {: .markdown }
+> {: .solution }
+{: .challenge }
+
 > ## Flavors
 >
 > Basic Markdown features are the same on all platforms such as Github and Gitlab.
