@@ -232,7 +232,7 @@ keypoints:
 > However, there are differences in the details and scope of the features offered.
 > To address this situation, the Markdown 
 > used at GitHub is called **GitHub-flavored Markdown**
-> and the one used at Gitlab is called **GitLab Flavored Markdown**.
+> and the one used at GitLab is called **GitLab Flavored Markdown**.
 > - So be aware of
 >   - [GitHub-flavored Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
 >   - [GitLab Flavored Markdown](https://docs.gitlab.com/ee/user/markdown.html)
