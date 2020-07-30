@@ -122,7 +122,7 @@ keypoints:
 >
 > ~~~
 > Discussing code details can be very helpful.  
-> Therefore, referring to variables, e.g. _path_ in a formatted way is great.
+> When doing so, it's great to be able to refer to variables, functions, etc, e.g. `path` in a formatted way.
 >
 > Larger code snippets look like this:
 >
