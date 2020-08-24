@@ -5,9 +5,14 @@ Lesson material.
 
 ## Maintainer(s)
 
-Current maintainer of this lesson is
+Current maintainers of this lesson are
 
+* Renato Alves
+* Julian Bauer
+* Anne Fouilloux
 * Toby Hodges
+* Aleksandra Nenadic
+* Sarah Stevens
 
 ## Authors
 
