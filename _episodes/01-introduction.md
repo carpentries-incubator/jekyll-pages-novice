@@ -63,4 +63,4 @@ However, we still need a way to tell the generator how we want our content
 to look when it's displayed in the browser.
 For that, we will use a tool called Markdown.
 
-{% include links.md %}
+[qwantz-easter-egg-ext]: https://chrome.google.com/webstore/detail/dinosaur-comics-easter-eg/bojkkeeefjmeogpgnlomodfkkfkfhabj
