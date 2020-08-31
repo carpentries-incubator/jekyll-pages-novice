@@ -55,4 +55,8 @@ learners will be able to:
 - build a coherent site with multiple pages using the Jekyll framework
 - customise the layout and style of the pages on their site
 
-{% include links.md %}
+[github]: https://github.com/
+[gitlab]: https://gitlab.com/
+[swc]: https://software-carpentry.org/
+[swc-git]: http://swcarpentry.github.io/git-novice/
+[swc-shell]: http://swcarpentry.github.io/shell-novice/

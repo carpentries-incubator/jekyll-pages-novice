@@ -7,7 +7,7 @@
 # dc: Data Carpentry
 # lc: Library Carpentry
 # cp: Carpentries (to use for instructor traning for instance)
-carpentry: none
+carpentry: "incubator"
 
 # Overall title for pages.
 title: "Building Websites with Jekyll and GitHub/GitLab"
@@ -94,3 +94,6 @@ exclude:
 
 # Turn on built-in syntax highlighting.
 highlighter: rouge
+
+# Remote theme
+remote_theme: carpentries/carpentries-theme
