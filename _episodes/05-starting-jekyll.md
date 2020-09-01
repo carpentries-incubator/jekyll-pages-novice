@@ -13,7 +13,6 @@ objectives:
 keypoints:
 - "Variables can be defined globally in `_config.yml` or locally in the YAML header"
 - "Variable values can be substituted into page content with `{{ double_curly_brackets }}`"
-- "The content of files in the `_includes/` directory can be inserted into a page with `{ % include file_name % }`"
 ---
 
 - create and set a parameter in YAML header ("front matter")
