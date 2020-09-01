@@ -26,7 +26,7 @@ will be rendered live in the website.
 So far we have seen how to configure your repository to host a website and where to find the rendered website. Let's
 now look into the website configuration.
 
-## Simple Parameter Configuration
+## Configuring Parameters via `_config.yml`
 We have already mentioned that GitHub has an engine under the hood to build functional websites out of your content. 
 This engine is called Jekyll and its main configuration options are specified in `_config.yml` file placed in your 
 site’s root directory. We will talk more about Jekyll in the following episodes. `_config.yml` file is written 
@@ -54,13 +54,14 @@ Let's create some configuration parameters for our website.
 
 3. Commit your changes.
 
-Let's see how we can use these parameters from our pages. Site-wide information and configuration settings from 
+Site-wide information and configuration settings from 
 `_config.yml` are made available as `site.parameter_name` variable in every page/file within the website/repository. 
 There is a number of 
 [predefined site-wide variables](https://jekyllrb.com/docs/variables#site-variables) available to you 
 (such as `site.title` and `site.email`). Others (such as `site.description`) you can define yourself. 
 
-We will now make use of these parameters in our pages.
+To access the values of configuration parameters within Markdown files, you have to enclose them in double curly 
+braces {{ "{{ and  " }}}}. 
 
 1. Modify index.md file to look like:
    ~~~
@@ -75,21 +76,35 @@ We will now make use of these parameters in our pages.
  
 2. Note that site parameters will not render nicely in GitHub but will in the website.
 
-In addition to site-wide configuration available via the `site` global variable, page-specific information is 
-available to you via the `page` global variable. Some of these are pre-defined (like `page.title`); 
-others you can define yourself. Check this [list of predefined page parameters](https://jekyllrb.com/docs/variables#page-variables).
+> ## Site-wide and page parameters 
+>
+> In addition to site-wide configuration available via the `site` global variable, page-specific information is 
+> available to you via the `page` global variable. Some of these are pre-defined (like `page.title`); 
+> others you can define yourself. Check this [list of predefined page parameters](https://jekyllrb.com/docs/variables#page-variables).
+>
+{: .callout}
 
-## More Complex Parameter Configuration
+## More Complex Parameters
 
-We can make use of `_config.yml` to define more complex parameters using list or dictionaries (hashes). 
+We can define more complex parameters such as list and dictionaries (hashes) too. 
 For example, we may want 
-to save the names or our team members, their roles and start dates inside the `_config.yml` to make use of this 
-information throughout the website.
+to define the names of the project team members, their roles and start dates inside the `_config.yml` file 
+and make use of this information throughout the website. To do so, in YAML notation, would look something like:
 
-To do so:
+~~~
+team_members: [
+    {name: "Jane Smith", role: "maintainer", start_date: "2018-03-15"},
+    {name: "Albert Hamilton", role: "editor", start_date: "2017-12-01"},
+    {name: "Alice Dauncey", role: "developer", start_date: "2020-01-04"}
+]
+~~~   
+{: .language-yaml}
+This defines team_members as a list of 3 elements; each element is a hash with key-value pairs for name, role and date. 
+Note that indentation level in YAML is important.
 
-1. Modify `_config.yml` file to add a list of team members (each team member is defined as a hash and 
-indentation level in YAML is important): 
+We can now add this information to our website.
+
+1. Modify `_config.yml` file and add the `team_members` parameter as defined above: 
 
     ~~~
     team_members: [
@@ -100,7 +115,8 @@ indentation level in YAML is important):
     ~~~   
     {: .language-yaml}
 
-2. To access parameter `team_members` values in `team.md` file in a loop to print all their names and roles, do the following:
+2. In file `team.md`, iterate over the values defined in parameter `site.team_members` in a loop to display all 
+team members' names and roles:
 
     ~~~                            
     ## Project team members  
@@ -110,7 +126,9 @@ indentation level in YAML is important):
     {{ "{% end_for " }}%}
     ~~~   
     {: .language-md}
-        
+    TODO: definitely an overkill putting Liquid code here - this should go into the next episode. Which makes me
+    think that it should be called: "Jekyll and Liquid" 
+       
 3. This way, if you need to add, remove or modify a team member, you can simply do it in `_config.yml` without modifying
 `team.md`. 
 
