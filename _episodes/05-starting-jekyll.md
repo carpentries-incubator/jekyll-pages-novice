@@ -41,7 +41,7 @@ keypoints:
 > >
 > > Here is an example of using it in the `index.md` file
 > > ~~~
-> > This project is lead by {{ pi }}.
+> > This project is lead by {{ page.pi }}.
 > > ~~~
 > > {: .output}
 > {: .solution}
