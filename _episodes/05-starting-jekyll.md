@@ -13,7 +13,6 @@ objectives:
 keypoints:
 - "Variables can be defined globally in `_config.yml` or locally in the YAML header"
 - "Variable values can be substituted into page content with `{{ double_curly_brackets }}`"
-- "The content of files in the `_includes/` directory can be inserted into a page with `{ % include file_name % }`"
 ---
 
 - create and set a parameter in YAML header ("front matter")
@@ -21,10 +20,5 @@ keypoints:
 - use a global parameter from `_config.yml`
 - use it again in another page
 - change the value of the global parameter and study the effect
-- write a longer block of material, including variable substitutions, as a parameter
-- try to use it in a page
-- save it to a file in `_includes` and use `{% raw %}{% include file_name %}{% endraw %}`
-- note about `includes` for link references
-- logic and loops
 
 {% include links.md %}
