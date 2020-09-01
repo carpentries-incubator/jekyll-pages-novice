@@ -233,8 +233,8 @@ keypoints:
 > used at GitHub is called **GitHub-flavored Markdown**
 > and the one used at GitLab is called **GitLab Flavored Markdown**.
 > - So be aware of
->   - [GitHub-flavored Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
->   - [GitLab Flavored Markdown](https://docs.gitlab.com/ee/user/markdown.html)
+>   - [GitHub-flavored Markdown][github-flavored-markdown]
+>   - [GitLab Flavored Markdown][gitlab-flavored-markdown]
 {: .callout}
 
 
