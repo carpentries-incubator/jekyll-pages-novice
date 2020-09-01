@@ -13,14 +13,6 @@ keypoints:
 on a special URL "
 ---
 
-- push to a GitHub repo
-- activate Pages in the repo settings
-- change something in `index.md`
-- go to landing page
-- make a change in `index.md` and see how landing page updates
-- add a second `.md`
-- add minimal YAML header
-
 # What is GitHub Pages?
 [GitHub Pages](https://docs.github.com/en/github/working-with-github-pages/about-github-pages) is a free website 
 hosting service by GitHub that takes files from your GitHub repository that is configured as a website, 
@@ -34,7 +26,7 @@ will be rendered live in the website.
 So far we have seen how to configure your repository to host a website and where to find the rendered website. Let's
 now look into how to do some website configuration.
 
-## Basic Configuration
+## Simple Parameter Configuration
 We have already mentioned that GitHub has an engine under the hood to build functional websites out of your content. 
 This engine is called Jekyll and its main configuration options are specified in `_config.yml` file placed in your 
 site’s root directory. We will talk more about Jekyll in the following episodes. `_config.yml` file is written 
@@ -51,7 +43,7 @@ parameters, lists, and dictionaries (hashes).
 Let's create some configuration parameters for our website.
 
 1. From GitHub interface, create `_config.yml` file in your site’s root directory.
-2. Add parameters `title` and `email` to it as:
+2. Add parameters `title`, `description` and `email` to it as:
 
     ~~~
     title: "Research Project Website"
@@ -59,7 +51,6 @@ Let's create some configuration parameters for our website.
     email: team@my.research.org
     ~~~  
     {: .language-yaml}
-    TODO: check YAML support
 
 3. Commit your changes.
 
@@ -73,12 +64,15 @@ We will now make use of these parameters in our pages.
 
 1. Modify index.md file to look like:
    ~~~
-    # {{site.title}}
-    {{ site.description }}
+    # site.title
+     site.description    
+   
     [Team members](team.md) 
-    Contact us at [mailto: {{site.email}}].
-   ~~~
-   TODO: fix md file not to render values
+   
+    Contact us at [mailto: site.email](site.email).
+   ~~~     
+   {: .language-md}
+    TODO: fix md code to show curly braces around site parameters and not to render values but show verbatim
  
 2. Note that site parameters will not render nicely in GitHub but will in the website.
 
@@ -86,7 +80,7 @@ In addition to site-wide configuration available via the `site` global variable,
 available to you via the `page` global variable. Some of these are pre-defined (like `page.title`); 
 others you can define yourself. Check this [list of predefined page parameters](https://jekyllrb.com/docs/variables#page-variables).
 
-## More Complex Configuration
+## More Complex Parameter Configuration
 
 We can make use of `_config.yml` to define more complex parameters using list or dictionaries/hashes. For example, we may want 
 to save the names or our team members, their roles and start dates inside the `_config.yml` to make use of this 
@@ -96,16 +90,25 @@ information throughout the website.
 indentation level in YAML is important): 
 
     ~~~
-    team_members:
-        - {name: "Jane Smith", role: "maintainer", start_date: "2018-03-15"}
-        - {name: "Albert Hamilton", role: "editor", start_date: "2017-12-01"}
-        - {name: "Alice Dauncey", role: "developer", start_date: "2020-01-04"}
+    team_members: [
+        {name: "Jane Smith", role: "maintainer", start_date: "2018-03-15"},
+        {name: "Albert Hamilton", role: "editor", start_date: "2017-12-01"},
+        {name: "Alice Dauncey", role: "developer", start_date: "2020-01-04"}
+        ]
     ~~~   
-   
+    {: .language-yaml}
+
 2. Access `team_member` values in `team.md` file in a loop to print all their names and roles.
 
-    TODO: add code
-         
+    ~~~                            
+    ## Project team members
+    {% for team_member in site.team_members %}
+      Name: {{ team_member.name }}, role: {{ team_member.role }}  
+    {% endfor %}
+    ~~~   
+    {: .language-md}
+    TODO: fix md code to show curly braces around site parameters and not to render values but show verbatim
+        
 3. This way, if you need to add, remove or modify a team member, you can simply do it in `_config.yml` without modifying
 `team.md`. 
 
