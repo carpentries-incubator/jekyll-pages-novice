@@ -21,10 +21,5 @@ keypoints:
 - use a global parameter from `_config.yml`
 - use it again in another page
 - change the value of the global parameter and study the effect
-- write a longer block of material, including variable substitutions, as a parameter
-- try to use it in a page
-- save it to a file in `_includes` and use `{% raw %}{% include file_name %}{% endraw %}`
-- note about `includes` for link references
-- logic and loops
 
 {% include links.md %}
