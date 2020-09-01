@@ -10,7 +10,7 @@ objectives:
 keypoints:
 - "GitHub serves pages generated from Markdown (and other) files on a branch of a GitHub repository specified by the user"
 - "By convention, if you create a branch called `gh-pages` it will automatically be published as a website by GitHub
-on a special URL "
+on a special GitHub IO URL composed from your GitHub name and repository name"
 ---
 
 # What is GitHub Pages?
