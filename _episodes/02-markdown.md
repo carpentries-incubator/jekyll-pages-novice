@@ -221,17 +221,18 @@ keypoints:
 {: .challenge }
 
 
+Linking other websites is an essential feature of a website.
+Bare URLs like https://carpentries.org/ can be made clickable by wrapping them into 
+angle brackets like this <https://carpentries.org/>.
+However, usually the bare URL is not very nice and displaying a clickable
+alternative text is beneficial.  
+You can define either
+1. Inline style links - specifying the URL in line - or
+2. Reference style links - referencing a reusable link reference -
+
+
 > ## Links
 > Fill in the blanks below to create this rendered view
-> 
-> Linking to other websites is an essential feature of a website.
-> Bare URLs like https://carpentries.org/ can be made clickable by wrapping them into 
-> angle brackets like this <https://carpentries.org/>.
-> However, usually the bare URL is not very nice and displaying a clickable
-> alternative text is beneficial.     
-> You can define either
-> 1. Inline style links - specifying the URL in line - or
-> 2. Reference style links - referencing a reusable link reference -.  
 > 
 > Examples:
 > 1. [Inline link](https://carpentries.org/)
@@ -240,17 +241,8 @@ keypoints:
 > [case-insensitive-reference-tag]: https://carpentries.org/
 >
 > ~~~
-> Linking to other websites is an essential feature of a website.
-> Bare URLs like https://carpentries.org/ can be made clickable by wrapping them into 
-> angle brackets like this ___https://carpentries.org/___.
-> However, usually the bare URL is not very nice and displaying a clickable
-> alternative text is beneficial.   
-> You can define either
-> 1. Inline style links - specifying the URL in line - or
-> 2. Reference style links - referencing a reusable link reference -.  
-> 
 > Examples:
-> 1. [___](https://meta.stackexchange.com/a/169185/375141)
+> 1. [___](https://carpentries.org/)
 > 2. [___]___case-InSeNsiTiVe-reference-tag___
 >
 > [case-insensitive-reference-tag]: https://carpentries.org/
@@ -259,19 +251,8 @@ keypoints:
 >
 > > ## Solution
 > > ~~~
-> > Fill in the blanks below to create this rendered view
-> > 
-> > Linking to other websites is an essential feature of a website.
-> > Bare URLs like https://carpentries.org/ can be made clickable by wrapping them into 
-> > angle brackets like this <https://carpentries.org/>.
-> > However, usually the bare URL is not very nice and displaying a clickable
-> > alternative text is beneficial.   
-> > You can define either
-> > 1. Inline style links - specifying the URL in line - or
-> > 2. Reference style links - referencing a reusable link reference -.  
-> > 
 > > Examples:
-> > 1. [Inline link](https://meta.stackexchange.com/a/169185/375141)
+> > 1. [Inline link](https://carpentries.org/)
 > > 2. [Reference link][case-InSeNsiTiVe-reference-tag]
 > >
 > > [case-insensitive-reference-tag]: https://carpentries.org/
