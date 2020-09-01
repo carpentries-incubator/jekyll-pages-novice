@@ -64,15 +64,14 @@ We will now make use of these parameters in our pages.
 
 1. Modify index.md file to look like:
    ~~~
-    # site.title
-     site.description    
+    # {{ "{{ site.title " }}}} 
+     {{ "{{ site.description " }}}}     
    
     [Team members](team.md) 
    
-    Contact us at [mailto: site.email](site.email).
+    Contact us at [mailto: {{ "{{ site.email " }}}}]({{ "{{ site.email " }}}}).
    ~~~     
    {: .language-md}
-    TODO: fix md code to show curly braces around site parameters and not to render values but show verbatim
  
 2. Note that site parameters will not render nicely in GitHub but will in the website.
 
@@ -98,16 +97,15 @@ indentation level in YAML is important):
     ~~~   
     {: .language-yaml}
 
-2. Access `team_member` values in `team.md` file in a loop to print all their names and roles.
+2. To access parameter `team_members` values in `team.md` file in a loop to print all their names and roles, do the following:
 
     ~~~                            
     ## Project team members
-    {% for team_member in site.team_members %}
-      Name: {{ team_member.name }}, role: {{ team_member.role }}  
-    {% endfor %}
+    {{ "{% for team_member in site.team_members " }}%} 
+      Name: {{ "{{ team_member.name " }}}} , role: {{ "{{ team_member.role " }}}}   
+    {{ "{% end_for " }}%}
     ~~~   
     {: .language-md}
-    TODO: fix md code to show curly braces around site parameters and not to render values but show verbatim
         
 3. This way, if you need to add, remove or modify a team member, you can simply do it in `_config.yml` without modifying
 `team.md`. 
