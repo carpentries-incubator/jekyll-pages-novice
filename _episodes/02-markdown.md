@@ -222,10 +222,12 @@ keypoints:
 
 
 Linking other websites is an essential feature of a website.
-Bare URLs like https://carpentries.org/ can be made clickable by wrapping them into 
-angle brackets like this <https://carpentries.org/>.
+Bare URLs like https://carpentries.org/ can be made clickable like this
+<https://carpentries.org/> by wrapping them into 
+angle brackets "\< \>".
 However, usually the bare URL is not very nice and displaying a clickable
 alternative text is beneficial.  
+
 You can define either
 1. Inline style links - specifying the URL in line - or
 2. Reference style links - referencing a reusable link reference -
