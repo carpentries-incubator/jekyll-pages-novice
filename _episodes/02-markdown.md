@@ -234,7 +234,7 @@ keypoints:
 > 2. Reference style links - referencing a reusable link reference -.  
 > 
 > Examples:
-> 1. [Inline link](https://meta.stackexchange.com/a/169185/375141)
+> 1. [Inline link](https://carpentries.org/)
 > 2. [Reference link][case-InSeNsiTiVe-reference-tag]
 >
 > [case-insensitive-reference-tag]: https://carpentries.org/
