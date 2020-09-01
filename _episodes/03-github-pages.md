@@ -61,7 +61,7 @@ There is a number of
 (such as `site.title` and `site.email`). Others (such as `site.description`) you can define yourself. 
 
 To access the values of configuration parameters within Markdown files, you have to enclose them in double curly 
-braces {{ "{{ and  " }}}}. 
+braces: {{ "{{ and  " }}}}. 
 
 1. Modify index.md file to look like:
    ~~~
@@ -75,6 +75,8 @@ braces {{ "{{ and  " }}}}.
    {: .language-md}
  
 2. Note that site parameters will not render nicely in GitHub but will in the website.
+
+
 
 > ## Site-wide and page parameters 
 >
