@@ -103,9 +103,10 @@ indentation level in YAML is important):
 2. To access parameter `team_members` values in `team.md` file in a loop to print all their names and roles, do the following:
 
     ~~~                            
-    ## Project team members
+    ## Project team members  
+    The following people are members of our research team:
     {{ "{% for team_member in site.team_members " }}%} 
-      Name: {{ "{{ team_member.name " }}}} , role: {{ "{{ team_member.role " }}}}   
+        - Name: {{ "{{ team_member.name " }}}} , role: {{ "{{ team_member.role " }}}}   
     {{ "{% end_for " }}%}
     ~~~   
     {: .language-md}
