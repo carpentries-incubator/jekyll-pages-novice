@@ -24,7 +24,7 @@ will be rendered live in the website.
 
 # Website Configuration
 So far we have seen how to configure your repository to host a website and where to find the rendered website. Let's
-now look into how to do some website configuration.
+now look into the website configuration.
 
 ## Simple Parameter Configuration
 We have already mentioned that GitHub has an engine under the hood to build functional websites out of your content. 
@@ -81,11 +81,14 @@ others you can define yourself. Check this [list of predefined page parameters](
 
 ## More Complex Parameter Configuration
 
-We can make use of `_config.yml` to define more complex parameters using list or dictionaries/hashes. For example, we may want 
+We can make use of `_config.yml` to define more complex parameters using list or dictionaries (hashes). 
+For example, we may want 
 to save the names or our team members, their roles and start dates inside the `_config.yml` to make use of this 
 information throughout the website.
 
-1. Modify `_config.yml` file to add a list of team_members (each team member is defined as a hash and 
+To do so:
+
+1. Modify `_config.yml` file to add a list of team members (each team member is defined as a hash and 
 indentation level in YAML is important): 
 
     ~~~
@@ -114,8 +117,8 @@ indentation level in YAML is important):
 
 GitHub Pages is a static site hosting service that takes files in various formats 
 (Markdown, HTML, CSS, JavaScript, etc.) 
-straight from a repository on GitHub, runs them through its website build engine Jekyll and builds then into a website, 
+straight from a repository on GitHub, runs them through its website build engine Jekyll and builds them into a website, 
 and publishes it on the Web. A website can be configured via special YAML file `_config.yml` (located in the root of 
 the website repository),
-containing site-wide parameters or via individual page-specific parameter. 
+containing site-wide parameters or via individual page-specific parameters. 
 {% include links.md %}
