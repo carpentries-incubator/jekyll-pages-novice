@@ -134,7 +134,7 @@ team members' names and roles:
     TODO: definitely an overkill putting Liquid code here - this should go into the next episode. Which makes me
     think that it should be called: "Jekyll and Liquid". If we move this bit into the next episode, we can expand on the 
     example and show other Liquid features, like getting the list length and saying "The project currently has 
-    SOME_CODE members to show of the function for getting list length which is commonly used."
+    SOME_CODE members." to show of the function for getting list length which is commonly used.
        
 3. This way, if you need to add, remove or modify a team member, you can simply do it in `_config.yml` without modifying
 `team.md`. 
