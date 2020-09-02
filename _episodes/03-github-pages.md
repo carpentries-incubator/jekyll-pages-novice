@@ -70,7 +70,7 @@ braces: {% raw %}{{ and  }}{% endraw %}. Let's see this in action.
     # {{ "{{ site.title " }}}} 
      {{ "{{ site.description " }}}}     
    
-    [Team members](team.md) 
+    [See our full team](team.md) 
    
     Contact us at [mailto:{% raw %}{{ site.email  }}{% endraw %}]({% raw %}{{ site.email  }}{% endraw %}).
    ~~~     
@@ -98,6 +98,7 @@ and make use of this information throughout the website. To do so, in YAML notat
 
 ~~~
 team_members: [
+    {name: "Sarah Becker", role: "project lead", start_date: "2016-02-01"},
     {name: "Jane Smith", role: "maintainer", start_date: "2018-03-15"},
     {name: "Albert Hamilton", role: "editor", start_date: "2017-12-01"},
     {name: "Alice Dauncey", role: "developer", start_date: "2020-01-04"}
@@ -112,7 +113,8 @@ This defines team_members as a list of 3 elements; each element is a hash with k
 >
 {: .callout}
 
-We can now add this information to our website.
+Let's access the information about the team and display the name of the project lead on the home page. We can do so
+by using the value `team_members[0]["name"]` and add this to our website.
 
 1. Modify `_config.yml` file and add the `team_members` parameter as defined above. The file should now look like: 
 
@@ -122,6 +124,7 @@ We can now add this information to our website.
     websites in GitHub with GitHub pages."
     email: team@my.research.org 
     team_members: [
+        {name: "Sarah Becker", role: "project lead", start_date: "2016-02-01"},
         {name: "Jane Smith", role: "maintainer", start_date: "2018-03-15"},
         {name: "Albert Hamilton", role: "editor", start_date: "2017-12-01"},
         {name: "Alice Dauncey", role: "developer", start_date: "2020-01-04"}
@@ -129,7 +132,21 @@ We can now add this information to our website.
     ~~~   
     {: .language-yaml}
 
-2. In file `team.md`, iterate over the values defined in parameter `site.team_members` in a loop to display all 
+2. In file `index.md` add so that it looks like: 
+
+    ~~~     
+    # {{ "{{ site.title " }}}} 
+    {{ "{{ site.description " }}}}     
+     
+    Project lead is: {% raw %}{{ site.team_members[0]["name"] }}{% endraw %}. 
+    [See our full team](team.md) 
+      
+    Contact us at [mailto:{% raw %}{{ site.email  }}{% endraw %}]({% raw %}{{ site.email  }}{% endraw %}).                      
+    ~~~   
+    {: .source}
+
+3. **Remove this example and move to the next episode!**
+In file `team.md`, iterate over the values defined in parameter `site.team_members` in a loop to display all 
 team members' names and roles:
 
     ~~~                            
@@ -146,7 +163,7 @@ team members' names and roles:
     SOME_CODE members." to show of the function for getting list length which is commonly used.
        
 3. This way, if you need to add, remove or modify a team member, you can simply do it in `_config.yml` without modifying
-`team.md`. 
+Markdown files. It is also good practice to keep all configuration details in one location. 
 
 # Summary
 
