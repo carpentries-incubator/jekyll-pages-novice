@@ -3,7 +3,7 @@ title: "Hosting Pages and Websites on GitHub"
 teaching: 0
 exercises: 0
 questions:
-- "How do I publish my pages or a website via GitHub?"
+- "How do I publish my page or a website via GitHub?"
 objectives:
 - "Publish Markdown files as HTML on the web with GitHub Pages"
 - "Configure website parameters and use them from within pages" 
@@ -24,14 +24,16 @@ will be rendered live in the website.
 
 # Website Configuration
 So far we have seen how to configure your repository to host a website and where to find the rendered website. Let's
-now look into the website configuration.
+now look into the configuration of the website itself.
 
 ## Configuring Parameters via `_config.yml`
-We have already mentioned that GitHub has an engine under the hood to build functional websites out of your content. 
-This engine is called Jekyll and its main configuration options are specified in `_config.yml` file placed in your 
-site’s root directory. We will talk more about Jekyll in the following episodes. `_config.yml` file is written 
-in the language called YAML - a human-readable data-serialization language that allows us to define scalar 
-parameters, lists, and dictionaries (hashes). 
+We have already mentioned that GitHub has an engine under the hood to process your files and 
+build functional websites out of your content. 
+This engine is called Jekyll and we will talk more about Jekyll in the following episodes. 
+Jekyll's main configuration options are specified in `_config.yml` file placed in your site’s root directory. 
+`_config.yml` file is written 
+in the language called [YAML](https://yaml.org/) - a human-readable data-serialization language that allows us to define scalar 
+parameters (that contain single values) as well as parameters that contain lists and dictionaries (hashes). 
 
 > ## YAML 
 >
@@ -42,7 +44,7 @@ parameters, lists, and dictionaries (hashes).
 
 Let's create some configuration parameters for our website.
 
-1. From GitHub interface, create `_config.yml` file in your site’s root directory.
+1. From the GitHub interface, create `_config.yml` file in your site’s root directory.
 2. Add parameters `title`, `description` and `email` to it as:
 
     ~~~
@@ -55,13 +57,13 @@ Let's create some configuration parameters for our website.
 3. Commit your changes.
 
 Site-wide information and configuration settings from 
-`_config.yml` are made available as `site.parameter_name` variable in every page/file within the website/repository. 
+`_config.yml` are made available as `site.PARAMETER_NAME` variable in every page/file within the website/repository. 
 There is a number of 
 [predefined site-wide variables](https://jekyllrb.com/docs/variables#site-variables) available to you 
 (such as `site.title` and `site.email`). Others (such as `site.description`) you can define yourself. 
 
 To access the values of configuration parameters within Markdown files, you have to enclose them in double curly 
-braces: {{ "{{ and  " }}}}. 
+braces: {{ "{{ and  " }}}}. Let's see this in action.
 
 1. Modify index.md file to look like:
    ~~~
@@ -74,7 +76,8 @@ braces: {{ "{{ and  " }}}}.
    ~~~     
    {: .language-md}
  
-2. Note that site parameters will not render nicely in GitHub but will in the website.
+2. Note that site parameters will not render nicely in GitHub (they will be displayed as text 
+{{ "{{ site.PARAMETER_NAME " }}}} rather than the parameter's rendered value) but will in the website.
 
 
 
@@ -140,8 +143,10 @@ team members' names and roles:
 
 GitHub Pages is a static site hosting service that takes files in various formats 
 (Markdown, HTML, CSS, JavaScript, etc.) 
-straight from a repository on GitHub, runs them through its website build engine Jekyll and builds them into a website, 
-and publishes it on the Web. A website can be configured via special YAML file `_config.yml` (located in the root of 
+straight from a repository on GitHub, runs them through its website engine Jekyll and builds them into a website, 
+and publishes them on the Web. A website can be configured via special YAML file `_config.yml` (located in the root of 
 the website repository),
-containing site-wide parameters or via individual page-specific parameters. 
+containing site-wide parameters or via individual page-specific parameters. Next, we move on to look into more detail in 
+Jekyll and its corresponding scripting language Liquid. 
+
 {% include links.md %}
