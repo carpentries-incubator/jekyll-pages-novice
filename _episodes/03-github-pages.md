@@ -28,7 +28,11 @@ In this episode, you will learn how to turn your project repository into a websi
 
 GitHub Pages uses a special branch in your GitHub repository to look for website content, and by default this branch is named `gh-pages`. This branch does not exist yet and the first step is to create it from the Github interface.
 
+**TODO: add figure once we agree on the name of the repo **
+
 ![gh-pages branch creation](../fig/gh-pages_branch_creation.jpg)
+
+It is a convention used by Github and we will learn later on to change this default behavior.
 
 > ## GitHub interface versus command line
 > Branches can also be created from the command line but for simplicity, we will only show you how to publish a website using the GitHub interface.
@@ -36,7 +40,6 @@ GitHub Pages uses a special branch in your GitHub repository to look for website
 {: .callout}
 
 
-It is a convention used by Github and we will learn later on to change this default behavior.
 
 > ## What is a branch?
 > You may have never heard about git branches and wonder what they mean. It is not so important at this stage and for now we will assume that a branch in git is similar to the branch of a tree. From now, we will make sure to update `gh-pages` branch and the default `master` branch will remain untouched.
@@ -44,31 +47,77 @@ It is a convention used by Github and we will learn later on to change this defa
 {: .callout}
 
 
-
-- Explain what gh-pages branches are for
-- Create a gh-pages branch in the repo
-
 ## Configure repository as a website
 
-- Configure gh-pages branch to be used for serving website (in Settings)
-- Already configured now by defaul, show the settings and where to find the URL
-- Show how to add this URL in the website field of the repo
-- Show the rendered page in GitHub IO, explain this is the HTML version that was converted from the md file with repo name at the top then our md content
-- Explain how URLs are created
-- Convention over configuration: gh-pages branch is used for websites by default, but master or any other branch can be used (callout)
+### View your website
 
-## Rendering a repository as a website (heading)
+As mentionned above, by default, GitHub serves automatically GitHub pages from `gh-pages` branch but where can we view our website?
 
-- explain publicly viewable URLs and how they are generated
-- make another change to index.md and see how the website is updated (point out the green tick when GH finishes building the page as feedback to user - as it can take some time)
-- Exercise - create another page called team.md with team members of the project and link to it from the index.md
+- Click on the repository "**Settings**" as shown on the figure below:
 
-- push to a GitHub repo
-- activate Pages in the repo settings
-- change something in `index.md`
-- go to landing page
-- make a change in `index.md` and see how landing page updates
-- add a second `.md`
-- add minimal YAML header
+**TODO: add picture**
+
+![Repository settings](../fig/repo_settings.png)
+
+
+- Then search for "GitHub pages" to find the web address of your website and click on the shown link. Your default browser will open and show your project website:
+
+![Default project website](../fig/default_website.png)
+
+You should see the contents of the `index.md` file that we created earlier. 
+
+It can take from a few seconds to a few minutes before your website is available. It is mostly due to GitHub availability and complexity of your project website. You know it is ready when the link appears in green with a "tick" in front of the web address (as shown on the figure above).
+
+What happened behind the hood, is that GitHub converted markdown to HTML. At the top of your website, the name of your repository appears as a link to the project homepage.
+
+> ## What if my browser does not open?
+>
+> If your default web browser did not open and does not show the project website, we recommend to manually open your favourite web browser and paste the project web address.
+>
+{: .callout}
+
+
+
+> ## Add new content to your website
+>
+> Update `index.md` from the GitHub interface and commit your changes.
+> then view your changes on the website.
+> 
+> > ## Solution
+> > **TODO**
+> {: .solution }
+{: .challenge }
+
+
+As shown in the first episode, you can have several markdown files in your repository and link them, for instance from `index.md`. In the following exercise, this is what we will practice.
+
+> ## Create a new markdown file team.md and link it from `index.md`
+>
+> - Create a new markdown file with your Github username and email address
+> - Update `index.md` from the GitHub interface and commit your changes.
+> - then view your changes on the website.
+> 
+> > ## Solution
+> > **TODO**
+> {: .solution }
+{: .challenge }
+
+> ## Render website from another branch
+> By default GitHub renders `gh-pages` automatically (no configuration needed). However, you can change this behavior and choose any branches in your GitHub repository.
+>
+{: .callout}
+
+### Understanding GitHub web addresses
+
+The resulting website does not have a random web address. It is formed by:
+
+- your github username or organization name
+- followed by `github.io`
+- And finally the repository name: / {{ site.project-pages }}
+
+> ## Customize domain
+> **TODO**
+{: .callout}
+
 
 {% include links.md %}
