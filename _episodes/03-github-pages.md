@@ -68,19 +68,17 @@ braces: {% raw %}{{ and  }}{% endraw %}. Let's see this in action.
 
 1. Modify index.md file to look like:
    ~~~
-    # {{ "{{ site.title " }}}} 
-     {{ "{{ site.description " }}}}     
+    # {% raw %}{{ site.title }}{% endraw %} 
+     {% raw %}{{ site.description }}{% endraw %}    
    
     [See our full team](team.md) 
    
-    Contact us at [mailto:{% raw %}{{ site.email  }}{% endraw %}]({% raw %}{{ site.email  }}{% endraw %}).
+    Contact us at [mailto:{% raw %}{{ site.email }}{% endraw %}]({% raw %}{{ site.email }}{% endraw %}).
    ~~~     
    {: .source}
  
 2. Note that site parameters will not render nicely in GitHub (they will be displayed as text 
 `{% raw %}{{ site.PARAMETER_NAME  }}{% endraw %}` rather than the parameter's rendered value) but will in the website.
-
-
 
 > ## Site-wide and page parameters 
 >
@@ -136,13 +134,13 @@ by using the value `team_members[0]["name"]` and add this to our website.
 2. In file `index.md` add so that it looks like: 
 
     ~~~     
-    # {{ "{{ site.title " }}}} 
-    {{ "{{ site.description " }}}}     
+    # {% raw %}{{ site.title }}{% endraw %} 
+    {% raw %}{{ site.description }}{% endraw %}     
      
     Project lead is: {% raw %}{{ site.team_members[0]["name"] }}{% endraw %}. 
     [See our full team](team.md) 
       
-    Contact us at [mailto:{% raw %}{{ site.email  }}{% endraw %}]({% raw %}{{ site.email  }}{% endraw %}).                      
+    Contact us at [mailto:{% raw %}{{ site.email }}{% endraw %}]({% raw %}{{ site.email }}{% endraw %}).                      
     ~~~   
     {: .source}
 
@@ -153,9 +151,9 @@ team members' names and roles:
     ~~~                            
     ## Project team members  
     The following people are members of our research team:
-    {{ "{% for team_member in site.team_members " }}%} 
-        - Name: {{ "{{ team_member.name " }}}} , role: {{ "{{ team_member.role " }}}}   
-    {{ "{% end_for " }}%}
+    {% raw %}{{ for team_member in site.team_members }} 
+        - Name: {% raw %}{{ team_member.name }}{% endraw %} , role: {% raw %}{{ team_member.role }}{% endraw %}   
+    {% raw %}{{ end_for }}{% endraw %}
     ~~~   
     {: .source}
     TODO: definitely an overkill putting Liquid code here - this should go into the next episode. Which makes me
