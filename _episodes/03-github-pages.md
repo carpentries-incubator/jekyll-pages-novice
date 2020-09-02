@@ -105,13 +105,21 @@ team_members: [
 ~~~   
 {: .language-yaml}
 This defines team_members as a list of 3 elements; each element is a hash with key-value pairs for name, role and date. 
-Note that indentation level in YAML is important.
+
+> ## Indentation in YAML
+> Note that indentation level in YAML is important - it can be a cause of some not-so-obvious mistakes. Use online YAML
+>code validators, such as [YAML Lint](http://www.yamllint.com/), to make sure your YAML is correctly formatted.
+>
+{: .callout}
 
 We can now add this information to our website.
 
-1. Modify `_config.yml` file and add the `team_members` parameter as defined above: 
+1. Modify `_config.yml` file and add the `team_members` parameter as defined above. The file should now look like: 
 
     ~~~
+    title: "Research Project Website"
+    description: "Research Project Description"
+    email: team@my.research.org 
     team_members: [
         {name: "Jane Smith", role: "maintainer", start_date: "2018-03-15"},
         {name: "Albert Hamilton", role: "editor", start_date: "2017-12-01"},
