@@ -4,6 +4,7 @@ teaching: 0
 exercises: 0
 questions:
 - "How do I publish my page or a website via GitHub?"
+- "How do I configure my website?"
 objectives:
 - "Publish Markdown files as HTML on the web with GitHub Pages"
 - "Configure website parameters and use them from within pages" 
