@@ -45,6 +45,32 @@ in response to various triggers.
 > Fill-in-the-blanks exercise to write HTML to recreate some example text.
 {: .challenge }
 
+## Hello world in HTML
+
+When learning a new programming language,
+you may often find a references to the popular `Hello world`.
+These examples typically capture the simplest code that
+can produce and display the `Hello world` on screen.
+
+As HTML requires certain tags to be present and almost always in matching pairs (open `<tag>` and closing `</tag>`).
+HTML documents tend to be get verbose rather quickly.
+
+The simplest, valid HTML `Hello world` is:
+
+```html
+<html>
+  <head>
+  </head>
+  <body>
+    <p>Hello World<p>
+  </body>
+</html>
+```
+
+So as you can imagine, writing long HTML documents by hand is rather painful.
+Notice that we didn't specify anything about how and where the text should be displayed.
+To achieve this we would additionally need to include CSS instructions.
+
 Sites consisting of pages whose content doesn't change
 after that initial information is received by the server
 are referred to as _static_.
