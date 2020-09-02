@@ -63,4 +63,30 @@ However, we still need a way to tell the generator how we want our content
 to look when it's displayed in the browser.
 For that, we will use a tool called Markdown.
 
+> ## The perfect tool for the job
+>
+> Given the following types of websites,
+> reason if a static site generator is an appropriate solution to implement them.
+>
+> 1. A personal website with *About* and *Projects* sections
+> 2. A forum or discussion platform
+> 3. A community blog or news website
+> 4. A search engine (such as google.com)
+> 5. A wiki (such as wikipedia.com)
+> 6. An online book
+>
+> > ## Solution
+> >
+> > 1. In most cases, **Yes**. This kind of content is typically written/edited by one person and meant to have a read-only access to visitors.
+> > 2. Most likely **No**. Such website requires interactivity and ways to identify who wrote what content.
+> >
+> > For questions 3 to 5 the answer is both **Yes** and **No** depending on the requirements and necessary functionality.
+> >
+> > 3. A simple blog or news website, maintained by a small set of users, is perfectly achievable by using a static generator. For very large groups of content creators or if access to articles needs to be controlled individually, using a static generator will lead to difficult technical challenges.
+> > 4. Implementing something as sophisticated as Google's search would be close to impossible with a static generator. That said, it's possible to have a simple engine that searches across all pages produced by a static generator using clever indexing solutions.
+> > 5. A simple wiki is perfectly doable with a static generator, however it becomes limiting as soon as its content needs to be edited or discussed by many users, as is the case of Wikipedia.
+> > 6. Definitely **Yes**. Static generators are perfect for this type of website. They typically provide ways to avoid repeating content (variables and templates), automatic creation of a *Table Of Contents*, among other goodies.
+> {: .solution }
+{: .challenge }
+
 [qwantz-easter-egg-ext]: https://chrome.google.com/webstore/detail/dinosaur-comics-easter-eg/bojkkeeefjmeogpgnlomodfkkfkfhabj
