@@ -68,21 +68,19 @@ braces: {% raw %}{{ and  }}{% endraw %}. Let's see this in action.
 
 1. Modify index.md file to look like:
    ~~~
-    # {% raw %}{{ site.title }}{% endraw %}
-     {% raw %}{{ site.description }}{% endraw %}
-
-    [See our full team](team.md)
-
-    Contact us at [mailto:{% raw %}{{ site.email  }}{% endraw %}]({% raw %}{{ site.email  }}{% endraw %}).
-   ~~~
+    # {% raw %}{{ site.title }}{% endraw %} 
+     {% raw %}{{ site.description }}{% endraw %}    
+   
+    [See our full team](team.md) 
+   
+    Contact us at [mailto:{% raw %}{{ site.email }}{% endraw %}]({% raw %}{{ site.email }}{% endraw %}).
+   ~~~     
    {: .source}
 
 2. Note that site parameters will not render nicely in GitHub (they will be displayed as text
-`{% raw %}{{ site.PARAMETER_NAME  }}{% endraw %}` rather than the parameter's rendered value) but will in the website.
+`{% raw %}{{ site.PARAMETER_NAME }}{% endraw %}` rather than the parameter's rendered value) but will in the website.
 
-
-
-> ## Site-wide and page parameters
+> ## Site-wide and page parameters 
 >
 > In addition to site-wide configuration available via the `site` global variable, page-specific information is
 > available to you via the `page` global variable. Some of these are pre-defined (like `page.title`);
@@ -115,7 +113,8 @@ This defines team_members as a list of 3 elements; each element is a hash with k
 {: .callout}
 
 Let's access the information about the team and display the name of the project lead on the home page. We can do so
-by using the value `team_members[0]["name"]` and add this to our website.
+by using the value `team_members[0]["name"]` because the team lead is the first team member in the `team_members` 
+list.
 
 1. Modify `_config.yml` file and add the `team_members` parameter as defined above. The file should now look like:
 
@@ -133,17 +132,17 @@ by using the value `team_members[0]["name"]` and add this to our website.
     ~~~
     {: .language-yaml}
 
-2. In file `index.md` add so that it looks like:
+2. In file `index.md` add the team lead's name so that it looks like: 
 
-    ~~~
-    # {% raw %}{{ site.title }}{% endraw %}
-    {% raw %}{{ site.description }}{% endraw %}
-
-    Project lead is: {% raw %}{{ site.team_members[0]["name"] }}{% endraw %}.
-    [See our full team](team.md)
-
-    Contact us at [mailto:{% raw %}{{ site.email  }}{% endraw %}]({% raw %}{{ site.email  }}{% endraw %}).
-    ~~~
+    ~~~     
+    # {% raw %}{{ site.title }}{% endraw %} 
+    {% raw %}{{ site.description }}{% endraw %}     
+     
+    Project lead is: {% raw %}{{ site.team_members[0]["name"] }}{% endraw %}. 
+    [See our full team](team.md) 
+      
+    Contact us at [mailto:{% raw %}{{ site.email }}{% endraw %}]({% raw %}{{ site.email }}{% endraw %}).                      
+    ~~~   
     {: .source}
 
 3. **Remove this example and move to the next episode!**
@@ -153,10 +152,10 @@ team members' names and roles:
     ~~~
     ## Project team members
     The following people are members of our research team:
-    {% raw %}{% for team_member in site.team_members %}{% endraw %}
-        - Name: {% raw %}{{ team_member.name }}{% endraw %} , role: {% raw %}{{ team_member.role }}{% endraw %}
-    {% raw %}{% end_for %}{% endraw %}
-    ~~~
+    {% raw %}{{ for team_member in site.team_members }} 
+        - Name: {% raw %}{{ team_member.name }}{% endraw %} , role: {% raw %}{{ team_member.role }}{% endraw %}   
+    {% raw %}{{ end_for }}{% endraw %}
+    ~~~   
     {: .source}
     TODO: definitely an overkill putting Liquid code here - this should go into the next episode. Which makes me
     think that it should be called: "Jekyll and Liquid". If we move this bit into the next episode, we can expand on the
