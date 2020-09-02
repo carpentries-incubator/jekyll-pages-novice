@@ -11,7 +11,8 @@ objectives:
 keypoints:
 - "GitHub serves pages generated from Markdown (and other) files on a branch of a GitHub repository specified by the user"
 - "By convention, if you create a branch called `gh-pages` it will automatically be published as a website by GitHub
-on a special GitHub IO URL composed from your GitHub name and repository name"
+on a special GitHub IO URL composed from your GitHub name and repository name as 
+https://GITHUB_USERNAME.github.io/REPOSITORY_NAME"
 ---
 
 # What is GitHub Pages?
@@ -170,9 +171,11 @@ Markdown files. It is also good practice to keep all configuration details in on
 GitHub Pages is a static site hosting service that takes files in various formats
 (Markdown, HTML, CSS, JavaScript, etc.)
 straight from a repository on GitHub, runs them through its website engine Jekyll and builds them into a website,
-and publishes them on the Web. A website can be configured via special YAML file `_config.yml` (located in the root of
-the website repository),
-containing site-wide parameters or via individual page-specific parameters. Next, we move on to look into more detail in
+and publishes them on the Web. 
+
+A website can be configured via special YAML file `_config.yml` 
+containing site-wide parameters (located in the root of the website repository), 
+or via individual page-specific parameters. Next, we move on to look into more detail in
 Jekyll and its corresponding scripting language Liquid.
 
 {% include links.md %}
