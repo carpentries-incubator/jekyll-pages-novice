@@ -63,7 +63,7 @@ There is a number of
 (such as `site.title` and `site.email`). Others (such as `site.description`) you can define yourself. 
 
 To access the values of configuration parameters within Markdown files, you have to enclose them in double curly 
-braces: {{ "{{ and  " }}}}. Let's see this in action.
+braces: {% raw %}{{ and  }}{% endraw %}. Let's see this in action.
 
 1. Modify index.md file to look like:
    ~~~
