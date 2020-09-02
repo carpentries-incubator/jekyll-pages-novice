@@ -48,8 +48,9 @@ Let's create some configuration parameters for our website.
 2. Add parameters `title`, `description` and `email` to it as:
 
     ~~~
-    title: "Research Project Website"
-    description: "Research Project Description"
+    title: "Learn to Build Websites in GitHub Project"
+    description: "This research project develops training materials for reseachers wanting to learn to build project 
+    websites in GitHub with GitHub Pages."
     email: team@my.research.org
     ~~~  
     {: .language-yaml}
@@ -58,9 +59,8 @@ Let's create some configuration parameters for our website.
 
 Site-wide information and configuration settings from 
 `_config.yml` are made available as `site.PARAMETER_NAME` variable in every page/file within the website/repository. 
-There is a number of 
-[predefined site-wide variables](https://jekyllrb.com/docs/variables#site-variables) available to you 
-(such as `site.title` and `site.email`). Others (such as `site.description`) you can define yourself. 
+There is also a number of 
+[predefined site-wide variables](https://jekyllrb.com/docs/variables#site-variables) available to you. 
 
 To access the values of configuration parameters within Markdown files, you have to enclose them in double curly 
 braces: {% raw %}{{ and  }}{% endraw %}. Let's see this in action.
@@ -72,12 +72,12 @@ braces: {% raw %}{{ and  }}{% endraw %}. Let's see this in action.
    
     [Team members](team.md) 
    
-    Contact us at [mailto: {{ "{{ site.email " }}}}]({{ "{{ site.email " }}}}).
+    Contact us at [mailto:{% raw %}{{ site.email  }}{% endraw %}]({% raw %}{{ site.email  }}{% endraw %}).
    ~~~     
-   {: .language-md}
+   {: .source}
  
 2. Note that site parameters will not render nicely in GitHub (they will be displayed as text 
-{{ "{{ site.PARAMETER_NAME " }}}} rather than the parameter's rendered value) but will in the website.
+`{% raw %}{{ site.PARAMETER_NAME  }}{% endraw %}` rather than the parameter's rendered value) but will in the website.
 
 
 
@@ -117,8 +117,9 @@ We can now add this information to our website.
 1. Modify `_config.yml` file and add the `team_members` parameter as defined above. The file should now look like: 
 
     ~~~
-    title: "Research Project Website"
-    description: "Research Project Description"
+    title: "Learn to Build Websites in GitHub Project"
+    description: "This research project develops training materials for reseachers wanting to learn to build project 
+    websites in GitHub with GitHub pages."
     email: team@my.research.org 
     team_members: [
         {name: "Jane Smith", role: "maintainer", start_date: "2018-03-15"},
@@ -138,7 +139,7 @@ team members' names and roles:
         - Name: {{ "{{ team_member.name " }}}} , role: {{ "{{ team_member.role " }}}}   
     {{ "{% end_for " }}%}
     ~~~   
-    {: .language-md}
+    {: .source}
     TODO: definitely an overkill putting Liquid code here - this should go into the next episode. Which makes me
     think that it should be called: "Jekyll and Liquid". If we move this bit into the next episode, we can expand on the 
     example and show other Liquid features, like getting the list length and saying "The project currently has 
