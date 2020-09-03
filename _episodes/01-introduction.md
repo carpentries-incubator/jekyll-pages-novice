@@ -106,11 +106,11 @@ For that, we will use a tool called Markdown.
 > > 1. In most cases, **Yes**. This kind of content is typically written/edited by one person and meant to have a read-only access to visitors.
 > > 2. Most likely **No**. Such website requires interactivity and ways to identify who wrote what content.
 > >
-> > For questions 3 to 5 the answer is both **Yes** and **No** depending on the requirements and necessary functionality.
+> > For questions 3 and 5 the answer is both **Yes** and **No** depending on the requirements and necessary functionality.
 > >
 > > 3. A simple blog or news website, maintained by a small set of users, is perfectly achievable by using a static generator. For very large groups of content creators or if access to articles needs to be controlled individually, using a static generator will lead to difficult technical challenges.
-> > 4. Implementing something as sophisticated as Google's search would be close to impossible with a static generator. That said, it's possible to have a simple engine that searches across all pages produced by a static generator using clever indexing solutions.
-> > 5. A simple wiki is perfectly doable with a static generator, however it becomes limiting as soon as its content needs to be edited or discussed by many users, as is the case of Wikipedia.
+> > 4. Most often **No**. Implementing something as sophisticated as Google's search would be close to impossible with a static generator. There are ways to have a simple engine that searches across all pages produced by a static generator using indexing and making clever use of browser features but this approach has many limitations.
+> > 5. A simple wiki is perfectly doable with a static generator (e.g. [GitHub Wiki Pages](https://guides.github.com/features/wikis/)), however it becomes limiting as soon as its content needs to be edited or discussed by many users, as is the case of Wikipedia.
 > > 6. Definitely **Yes**. Static generators are perfect for this type of website. They typically provide ways to avoid repeating content (variables and templates), automatic creation of a *Table Of Contents*, among other goodies.
 > {: .solution }
 {: .challenge }
