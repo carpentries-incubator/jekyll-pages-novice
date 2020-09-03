@@ -1,5 +1,8 @@
 # Building Websites with Jekyll and GitHub/GitLab
 
+[![DOI](https://zenodo.org/badge/268807168.svg)](https://zenodo.org/badge/latestdoi/268807168)
+
+
 Lesson material.
 
 
