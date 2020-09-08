@@ -45,6 +45,32 @@ in response to various triggers.
 > Fill-in-the-blanks exercise to write HTML to recreate some example text.
 {: .challenge }
 
+## Hello world in HTML
+
+When learning a new programming language,
+you may often find a references to the popular `Hello world`.
+These examples typically capture the simplest code that
+can produce and display the `Hello world` on screen.
+
+As HTML requires certain tags to be present and almost always in matching pairs (open `<tag>` and closing `</tag>`).
+HTML documents tend to be get verbose rather quickly.
+
+The simplest, valid HTML `Hello world` is:
+
+```html
+<html>
+  <head>
+  </head>
+  <body>
+    <p>Hello World<p>
+  </body>
+</html>
+```
+
+So as you can imagine, writing long HTML documents by hand is rather painful.
+Notice that we didn't specify anything about how and where the text should be displayed.
+To achieve this we would additionally need to include CSS instructions.
+
 Sites consisting of pages whose content doesn't change
 after that initial information is received by the server
 are referred to as _static_.
@@ -62,5 +88,31 @@ allowing us to focus on the human-readable content we want our pages to contain.
 However, we still need a way to tell the generator how we want our content
 to look when it's displayed in the browser.
 For that, we will use a tool called Markdown.
+
+> ## The perfect tool for the job
+>
+> Given the following types of websites,
+> reason if a static site generator is an appropriate solution to implement them.
+>
+> 1. A personal website with *About* and *Projects* sections
+> 2. A forum or discussion platform
+> 3. A community blog or news website
+> 4. A search engine (such as google.com)
+> 5. A wiki (such as wikipedia.com)
+> 6. An online book
+>
+> > ## Solution
+> >
+> > 1. In most cases, **Yes**. This kind of content is typically written/edited by one person and meant to have a read-only access to visitors.
+> > 2. Most likely **No**. Such website requires interactivity and ways to identify who wrote what content.
+> >
+> > For questions 3 and 5 the answer is both **Yes** and **No** depending on the requirements and necessary functionality.
+> >
+> > 3. A simple blog or news website, maintained by a small set of users, is perfectly achievable by using a static generator. For very large groups of content creators or if access to articles needs to be controlled individually, using a static generator will lead to difficult technical challenges.
+> > 4. Most often **No**. Implementing something as sophisticated as Google's search would be close to impossible with a static generator. There are ways to have a simple engine that searches across all pages produced by a static generator using indexing and making clever use of browser features but this approach has many limitations.
+> > 5. A simple wiki is perfectly doable with a static generator (e.g. [GitHub Wiki Pages](https://guides.github.com/features/wikis/)), however it becomes limiting as soon as its content needs to be edited or discussed by many users, as is the case of Wikipedia.
+> > 6. Definitely **Yes**. Static generators are perfect for this type of website. They typically provide ways to avoid repeating content (variables and templates), automatic creation of a *Table Of Contents*, among other goodies.
+> {: .solution }
+{: .challenge }
 
 [qwantz-easter-egg-ext]: https://chrome.google.com/webstore/detail/dinosaur-comics-easter-eg/bojkkeeefjmeogpgnlomodfkkfkfhabj
