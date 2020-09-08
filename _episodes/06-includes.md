@@ -16,7 +16,7 @@ keypoints:
 > re-use in multiple places throughout your site.
 >
 > ~~~
-> Have any questions about what we do? [We'd love to hear from you!](mailto:{{site.email}})
+> Have any questions about what we do? [We'd love to hear from you!](mailto:{% raw %}{{site.email}}{% endraw %})
 > ~~~
 > {: .source }
 >
@@ -30,14 +30,14 @@ keypoints:
 > > (or similar) inside the `_includes` folder:
 > >
 > > ~~~
-> > Have any questions about what we do? [We'd love to hear from you!](mailto:{{site.email}})
+> > Have any questions about what we do? [We'd love to hear from you!](mailto:{% raw %}{{site.email}}{% endraw %})
 > > ~~~
 > > {: .source }
 > >
 > > and add the line
 > >
 > > ~~~
-> > {% include contact.md %}
+> > {% raw %}{% include contact.md %}{% endraw %}
 > > ~~~
 > > {: .source }
 > >
