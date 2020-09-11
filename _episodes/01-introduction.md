@@ -25,9 +25,9 @@ to render and display the webpage on our screen.
 which is just one reason why
 web developers are not the target audience of this tutorial.)
 
-The information displayed by the web browser is a combination of
-**HTML** - a hierarchical format describing the structural elements of the page and their raw content -
-**CSS** - an ordered set of styling instructions telling the browser how to organise and format that content -
+The page displayed by the web browser is the result of combining
+**HTML** - a hierarchical format describing the structural elements of the page and their raw content - with
+**CSS** - an ordered set of styling instructions telling the browser how to the content should be organised and formatted -
 and any **images** that should be embedded in the page.
 Other information received from the server,
 but not displayed by the browser,
