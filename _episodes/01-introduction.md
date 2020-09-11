@@ -98,8 +98,8 @@ personalised or topical content.
 But creating them is a degree more complicated
 and also places considerable additional burden on the server,
 not least in terms of computational requirements and security considerations.
-Among other things, this means that,
-unlike with static pages (see the rest of this lesson)
+Among other things this means that,
+unlike with static pages (see the rest of this lesson),
 you're unlikely to find cost-free platforms to help you deliver dynamic content.
 
 One of the advantages of using static site generators is that
