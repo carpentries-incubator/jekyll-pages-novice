@@ -3,7 +3,7 @@ title: "Working with Filters"
 teaching: 0
 exercises: 0
 questions:
-- "How can I specify the format of interpolated variables?"
+- "How can I control the format of variable values such as dates I insert them into a page?"
 - "How can I access a filtered subset from an array of values?"
 - "Where can I find out more about Jekyll and Liquid?"
 objectives:
