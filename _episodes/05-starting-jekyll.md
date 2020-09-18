@@ -70,7 +70,7 @@ keypoints:
 > > They need to move the variable to the `_config.yml`
 > > Then they would change the index code to the following.
 > > ~~~
-> > Davis currently works at {{ site.current_institution }}.
+> > Davis currently works at {% raw %}{{ site.current_institution }}{% endraw %}.
 > > ~~~
 > > {: .output}
 > {: .solution}
