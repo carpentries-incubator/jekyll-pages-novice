@@ -17,6 +17,42 @@ keypoints:
 - "You can avoid duplicated effort by basing new layouts on previous ones"
 ---
 
+> ## Expanding the layout
+>
+> We will probably want to include the contact line we added in the previous section
+> in every standard page on our site.
+> Instead, we can place it in the layout template
+> so we don't have to remember to `include` it every time we make a new page.
+> Create a new layout, `page-contact.html`,
+> which is based on the existing `page` layout and
+> displays the contact information from `_includes/contact.md`
+> after the page content.
+> Check that this works by applying that layout to the `team.md` page.
+>
+> > ## Solution
+> > Your new layout file, `_layouts/page-contact.html`,
+> > should look like this:
+> >
+> > ~~~
+> > ---
+> > layout: page
+> > ---
+> > 
+> > {% raw %}{{ content }}
+> > {% include contact.md %}{% endraw %}
+> > ~~~
+> > {: .source }
+> >
+> > and the `layout` field in the YAML front matter of `team.md` should
+> > be updated to this new layout.
+> >
+> > ~~~
+> > layout: page-contact
+> > ~~~
+> > {: .source }
+> {: .solution }
+{: .challenge }
+
 - create a layout in `_layouts`
   - include page title and author info at the bottom
 - set `layout` parameter in page metadata
