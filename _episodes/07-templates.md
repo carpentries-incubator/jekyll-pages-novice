@@ -21,7 +21,7 @@ keypoints:
 >
 > We will probably want to include the contact line we added in the previous section
 > in every standard page on our site.
-> It would be better placed into the layout template,
+> Instead, we can place it in the layout template
 > so we don't have to remember to `include` it every time we make a new page.
 > Create a new layout, `page-contact.html`,
 > which is based on the existing `page` layout and
