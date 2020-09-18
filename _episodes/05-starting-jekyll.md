@@ -61,7 +61,7 @@ keypoints:
 > How might they need to change the following text on their `index.md` page after those changes?
 >
 > ~~~
-> Davis currently works at {{ current_institution }}.
+> Davis currently works at {% raw %}{{ page.current_institution }}{% endraw %}.
 > ~~~
 > {: .source}
 >
