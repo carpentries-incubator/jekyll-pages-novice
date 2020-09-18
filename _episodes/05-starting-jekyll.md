@@ -45,7 +45,7 @@ keypoints:
 > > pi: "Ada Lovelace"
 > > ---
 > >
-> > This project is lead by {{ page.pi }}.
+> > This project is lead by {% raw %}{{ page.pi }}{% endraw %}.
 > > ~~~
 > > {: .output}
 > {: .solution}
