@@ -41,6 +41,10 @@ keypoints:
 > >
 > > Here is an example of using it in the `index.md` file
 > > ~~~
+> > ---
+> > pi: "Ada Lovelace"
+> > ---
+> >
 > > This project is lead by {{ page.pi }}.
 > > ~~~
 > > {: .output}
