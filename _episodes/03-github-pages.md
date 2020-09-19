@@ -85,8 +85,8 @@ On the right hand side of your repository on GitHub, you can edit the details of
 
 > ## Add new content to your website
 >
-> Update `index.md` from the GitHub interface and commit your changes.
-> then view your changes on the website.
+> Add a new section **About** in `index.md`. You can edit `index.md` from the GitHub interface and directly commit your changes.
+> Then view your changes on the website.
 > 
 > > ## Solution
 > > **TODO**
@@ -96,21 +96,16 @@ On the right hand side of your repository on GitHub, you can edit the details of
 
 As shown in the first episode, you can have several markdown files in your repository and link them, for instance from `index.md`. In the following exercise, this is what we will practice.
 
-> ## Create a new markdown file team.md and link it from `index.md`
+> ## Create a new markdown file about.md
 >
-> - Create a new markdown file with your Github username and email address
-> - Update `index.md` from the GitHub interface and commit your changes.
+> - Create a new markdown file called *about.md* and move the content of the **About** section in `index.md` to it.
+> - Add a link to **about.md** in `index.md` from the GitHub interface and commit your changes.
 > - then view your changes on the website.
 > 
 > > ## Solution
 > > **TODO**
 > {: .solution }
 {: .challenge }
-
-> ## Render website from another branch
-> By default GitHub renders `gh-pages` automatically (no configuration needed). However, you can change this behavior and choose any branches in your GitHub repository.
->
-{: .callout}
 
 ### Understanding GitHub web addresses
 
