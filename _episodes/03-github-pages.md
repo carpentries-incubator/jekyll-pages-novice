@@ -35,30 +35,17 @@ Let's start from the github repository we have created in the previous episode {
 
 In this episode, you will learn how to turn your project repository into a website.
 
-## Create gh-pages branch
+## Turn on GitHub Pages for your main branch
 
-GitHub Pages uses a special branch in your GitHub repository to look for website content, and by default this branch is named `gh-pages`. This branch does not exist yet and the first step is to create it from the Github interface.
+GitHub Pages uses a special branch in your GitHub repository to look for website content, and by default this branch is named `gh-pages`. 
 
-**TODO: add figure once we agree on the name of the repo **
-
-![gh-pages branch creation](../fig/gh-pages_branch_creation.jpg)
-
-It is a convention used by Github and we will learn later on to change this default behavior.
-
-> ## GitHub interface versus command line
-> Branches can also be created from the command line but for simplicity, we will only show you how to publish a website using the GitHub interface.
->
-{: .callout}
-
-
+It is a convention used by Github and we need to change this default behavior because the content of our repository is under a branch called *main*.
 
 > ## What is a branch?
-> You may have never heard about git branches and wonder what they mean. It is not so important at this stage and for now we will assume that a branch in git is similar to the branch of a tree. From now, we will make sure to update `gh-pages` branch and the default `master` branch will remain untouched.
+> You may have never heard about git branches and wonder what they mean. It is not so important at this stage and for now we will assume that a branch in git is similar to the branch of a tree. The default branch (automatically created with a new github repository is called *main*.
 >
 {: .callout}
 
-
-## Configure repository as a website
 
 ### View your website
 
@@ -71,7 +58,9 @@ As mentionned above, by default, GitHub serves automatically GitHub pages from `
 ![Repository settings](../fig/repo_settings.png)
 
 
-- Then search for "GitHub pages" to find the web address of your website and click on the shown link. Your default browser will open and show your project website:
+- Then search for "GitHub pages" to find the web address of your website and select *main* branch so that GitHub pages are built from *main* and not *gh-pages*.
+
+- Once GitHub pages are built, open the link (hilighted green box): your default browser will open and show your project website.
 
 ![Default project website](../fig/default_website.png)
 
