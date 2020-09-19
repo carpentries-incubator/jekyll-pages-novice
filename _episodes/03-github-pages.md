@@ -76,6 +76,17 @@ What happened behind the hood, is that GitHub converted markdown to HTML. At the
 >
 {: .callout}
 
+### Understanding GitHub web addresses
+
+The resulting website does not have a random web address. It is formed by:
+
+- your github username or organization name
+- followed by `github.io`
+- And finally the repository name: / {{ site.project-pages }}
+
+> ## Customize domain
+> **TODO**
+{: .callout}
 
 ### Update repository details
 
@@ -107,17 +118,6 @@ As shown in the first episode, you can have several markdown files in your repos
 > {: .solution }
 {: .challenge }
 
-### Understanding GitHub web addresses
-
-The resulting website does not have a random web address. It is formed by:
-
-- your github username or organization name
-- followed by `github.io`
-- And finally the repository name: / {{ site.project-pages }}
-
-> ## Customize domain
-> **TODO**
-{: .callout}
 
 # Website Configuration
 So far we have seen how to configure your repository to host a website and where to find the rendered website. Let's
