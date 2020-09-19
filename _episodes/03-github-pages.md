@@ -77,6 +77,11 @@ What happened behind the hood, is that GitHub converted markdown to HTML. At the
 {: .callout}
 
 
+### Update repository details
+
+On the right hand side of your repository on GitHub, you can edit the details of your repository (click on the wheel as shown on the figure below) and add the link to your website. This would help anyone to access it when visiting your github repository.
+
+![Repository details](../fig/repository_details.png)
 
 > ## Add new content to your website
 >
