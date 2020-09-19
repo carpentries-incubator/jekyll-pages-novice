@@ -22,7 +22,103 @@ optionally runs the files through a build process, and publishes them as a websi
 Any changes you do to the files in your website's GitHub repository
 will be rendered live in the website.
 
-[Anne's bit]
+# Publishing a repository as a website
+
+GitHub Pages is a service from GitHub to publish a website directly from a Git repository.
+
+> ## Why Github?
+>
+> There are other services available to create and publish website but one of the main advantage of GitHub Pages is that you can version control your website and therefore keep track of all your changes. This is particularly helpful for collaborating on a project website. [GitLab](https://about.gitlab.com/) offers very similar services but GitHub pages is the simplest approach.
+>
+{: .callout}
+
+Let's start from the github repository we have created in the previous episode {{ site.project-pages }}. One important file you should have is `index.md`: it will become the homepage of your project website.
+
+In this episode, you will learn how to turn your project repository into a website.
+
+## Turn on GitHub Pages for your main branch
+
+GitHub Pages uses a special branch in your GitHub repository to look for website content, and by default this branch is named `gh-pages`. 
+
+It is a convention used by Github and we need to change this default behavior because the content of our repository is under a branch called *main*.
+
+> ## What is a branch?
+> You may have never heard about git branches and wonder what they mean. It is not so important at this stage and for now we will assume that a branch in git is similar to the branch of a tree. The default branch automatically created with a new github repository is called *main*.
+>
+{: .callout}
+
+
+### View your website
+
+As mentioned above, by default, GitHub serves automatically GitHub pages from `gh-pages` branch but where can we view our website?
+
+- Click on the repository "**Settings**" as shown on the figure below:
+
+**TODO: add picture**
+
+![Repository settings](../fig/repo_settings.png)
+
+
+- Then search for "GitHub pages" to find the web address of your website and select *main* branch so that GitHub pages are built from *main* and not *gh-pages*.
+
+- Once GitHub pages are built, open the link (hilighted green box): your default browser will open and show your project website.
+
+![Default project website](../fig/default_website.png)
+
+You should see the contents of the `index.md` file that we created earlier. 
+
+It can take from a few seconds to a few minutes before your website is available. It is mostly due to GitHub availability and complexity of your project website. You know it is ready when the link appears in green with a "tick" in front of the web address (as shown on the figure above).
+
+What happened behind the hood, is that GitHub converted markdown to HTML. At the top of your website, the name of your repository appears as a link to the project homepage.
+
+> ## What if my browser does not open?
+>
+> If your default web browser did not open and does not show the project website, we recommend to manually open your favourite web browser and paste the project web address.
+>
+{: .callout}
+
+### Understanding GitHub web addresses
+
+The resulting website does not have a random web address. It is formed by:
+
+- your github username or organization name
+- followed by `github.io`
+- And finally the repository name: / {{ site.project-pages }}
+
+> ## Customize domain
+> **TODO**
+{: .callout}
+
+### Update repository details
+
+On the right hand side of your repository on GitHub, you can edit the details of your repository (click on the wheel as shown on the figure below) and add the link to your website. This would help anyone to access it when visiting your github repository.
+
+![Repository details](../fig/repository_details.png)
+
+> ## Add new content to your website
+>
+> Add a new section **About** in `index.md`. You can edit `index.md` from the GitHub interface and directly commit your changes.
+> Then view your changes on the website.
+> 
+> > ## Solution
+> > **TODO**
+> {: .solution }
+{: .challenge }
+
+
+As shown in the first episode, you can have several markdown files in your repository and link them, for instance from `index.md`. In the following exercise, this is what we will practice.
+
+> ## Create a new markdown file about.md
+>
+> - Create a new markdown file called *about.md* and move the content of the **About** section in `index.md` to it.
+> - Add a link to **about.md** in `index.md` from the GitHub interface and commit your changes.
+> - then view your changes on the website.
+> 
+> > ## Solution
+> > **TODO**
+> {: .solution }
+{: .challenge }
+
 
 # Website Configuration
 So far we have seen how to configure your repository to host a website and where to find the rendered website. Let's
