@@ -42,7 +42,7 @@ GitHub Pages uses a special branch in your GitHub repository to look for website
 It is a convention used by Github and we need to change this default behavior because the content of our repository is under a branch called *main*.
 
 > ## What is a branch?
-> You may have never heard about git branches and wonder what they mean. It is not so important at this stage and for now we will assume that a branch in git is similar to the branch of a tree. The default branch (automatically created with a new github repository is called *main*.
+> You may have never heard about git branches and wonder what they mean. It is not so important at this stage and for now we will assume that a branch in git is similar to the branch of a tree. The default branch automatically created with a new github repository is called *main*.
 >
 {: .callout}
 
