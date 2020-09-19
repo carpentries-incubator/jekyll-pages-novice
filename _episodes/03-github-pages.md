@@ -49,7 +49,7 @@ It is a convention used by Github and we need to change this default behavior be
 
 ### View your website
 
-As mentionned above, by default, GitHub serves automatically GitHub pages from `gh-pages` branch but where can we view our website?
+As mentioned above, by default, GitHub serves automatically GitHub pages from `gh-pages` branch but where can we view our website?
 
 - Click on the repository "**Settings**" as shown on the figure below:
 
