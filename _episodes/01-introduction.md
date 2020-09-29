@@ -85,14 +85,14 @@ _Figure 1.1: Page Generation Alternatives. This figure was originally published 
 
 Static-generated sites are a great choice when the information you want to
 display on a website is the same regardless of who visits your site
-and when they visit,
-and when it's unlikely to need to change very often.
+and when,
+and if the content of your pages is unlikely to need to change very often.
 This makes Static Site Generators a good choice for sites that provide
 documentation or lesson content like this page:
-the aim of the page is to deliver the same information,
-and the visitor arrives,
-(hopefully) finds and reads what they need,
-and leaves feeling happy and fulfilled.
+the aim of the page is to deliver the same information to every visitor.
+The visitor can arrive,
+(hopefully) find and read what they need,
+and leave feeling happy and fulfilled.
 Dynamic sites provide a lot more possibilities for providing interactivity and
 personalised or topical content.
 But creating them is a degree more complicated
