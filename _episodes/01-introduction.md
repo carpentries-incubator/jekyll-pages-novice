@@ -27,7 +27,7 @@ web developers are not the target audience of this tutorial.)
 
 The page displayed by the web browser is the result of combining
 **HTML** - a hierarchical format describing the structural elements of the page and their raw content - with
-**CSS** - an ordered set of styling instructions telling the browser how to the content should be organised and formatted -
+**CSS** - an ordered set of styling instructions telling the browser how the content should be organised and formatted -
 and any **images** that should be embedded in the page.
 Other information received from the server,
 but not displayed by the browser,
