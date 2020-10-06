@@ -14,6 +14,8 @@ keypoints:
 - "This approach can be used to create a relatively small website/blog on a limited budget."
 ---
 
+## What is a Static Site Generator?
+
 When we use a web browser to visit a page on the World-Wide Web,
 the browser asks for information from a server -
 a computer storing the data relevant to the site and configured to receive and respond to requests for that data.
@@ -134,6 +136,80 @@ For that, we will use a tool called Markdown.
 > > 6. Definitely **Yes**. Static generators are perfect for this type of website. They typically provide ways to avoid repeating content (variables and templates), automatic creation of a *Table Of Contents*, among other goodies.
 > {: .solution }
 {: .challenge }
+
+
+## Setting up a repository
+
+Before we get into working with Markdown we must first create a
+repository to work in.
+This repository is similar to a folder on your computer, the main differences
+being that the folder lives on the web in GitHub/GitLab (though you can
+also keep a copy on your computer if needed) and that folder is using
+a version control software called `git` to track changes to the files.
+For our purposes we will mostly be ignoring the version control software,
+though it can be handy if you need to revert to old versions.
+In this lesson we will be working with this folder on the web to control
+the website we will be creating.
+
+> ## Setup a GitHub account
+> Before you can create a repo, you will need to
+> [create a GitHub account](https://github.com/join)
+{: .callout}
+
+Click the green "New" repo button on the left hand side of github
+
+![Green New Repo Button](../fig/new_repo_button.png)
+
+**or** click the "+" menu in the upper righthand corner and
+choose "New Repository".
+
+![Dropdown plus menu with new repository option highlighted](../fig/plus_new_repo.png)
+
+Next you will need to fill in some info about your repository.
+
+![Blank new repository page](../fig/blank_new_repo.png)
+
+In this lesson, we will be working on a general group website.
+You can imagine this website may be for your lab group, a specific project group,
+or another group you work with.
+Under the "Repository name" field type `group-website`.
+
+![Repository name set to group-website](../fig/set_repo_name.png)
+
+So we know what this repo is when we find it later we can also add a description.
+
+![Repository name set to group-website](../fig/set_repo_description.png)
+
+Under the "Initialize this repository with:" section we will check `Add a README file`
+and `Choose a license`.  It is good practice to have a README file that gives more information
+about your repo and to set a license for your work.
+
+![Repository name set to group-website](../fig/initialize_readme_license.png)
+
+for this example repository we’ll use the `Creative Commons Zero v1.0 Universal` (CC0) license,
+which allows anyone to re-use and adapt the content of the repository without restriction,
+but you may want to consider choosing something more restrictive when you’re building
+your own website.
+
+> ## Checkout other licenses
+> You may want to checkout [this lesson](https://swcarpentry.github.io/git-novice/11-licensing/index.html) or
+> [GitHub's license documentation](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/licensing-a-repository)
+> for more information about possible licenses.
+{: .callout}
+
+![Repository name set to group-website](../fig/set_CC0_license.png)
+
+
+Once you've finished these steps you can click the "Create Repository" button to
+finish creating the repo.
+
+![Filled in form with a create repository button](../fig/create_repository.png)
+
+GitHub will then setup the repo and it should look like the following screenshot.
+
+![Github repository for the group website](../fig/group_website_repo.png)
+
+
 
 [qwantz-easter-egg-ext]: https://chrome.google.com/webstore/detail/dinosaur-comics-easter-eg/bojkkeeefjmeogpgnlomodfkkfkfhabj
 
