@@ -138,7 +138,7 @@ For that, we will use a tool called Markdown.
 {: .challenge }
 
 
-## Setting up a repository
+## Setting Up a Repository
 
 Before we get into working with Markdown we must first create a
 repository to work in.
