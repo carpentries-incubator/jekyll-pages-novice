@@ -176,7 +176,7 @@ Under the "Repository name" field type `group-website`.
 
 ![Repository name set to group-website](../fig/set_repo_name.png)
 
-So we know what this repo is when we find it later we can also add a description.
+We can also add a description so we know what this repo is when we find it again after the workshop.
 
 ![Repository name set to group-website](../fig/set_repo_description.png)
 
