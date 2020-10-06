@@ -31,10 +31,55 @@ keypoints:
 - put directory under version control with git
   - link to SWC git-novice
 
+# Markdown
+Markdown is a lightweight markup language, i.e. a convention for adding
+style information to textual content.
+As the name Markdown indicates, the syntax elements of this language
+are shut *down* to a minimum.
+Having a rather minimalistic syntax, text formatted in Markdown is comparably
+well readable.
+This might be one reason for Markdown having become the language of choice
+for formated user input on websites like for example
+- [Stack Exchange](https://stackexchange.com/)
+- [GitHub](https://github.com/)
+- [GitLab](https://about.gitlab.com/).
 
-> ## Reproduce Markdown Source Code: Heading, Text, Emphasis
+
+# Where to start writing Markdown?
+A lot of tools for rendering Markdown source code exist.
+Rendering is the process of generating a nice view of the content
+using the style information included in the source text.
+Chances are high, your editor can do this.
+As we are working towards authoring websites using Jeckyll and GitHub pages,
+we will use GitHub straight away for learning the basics of Markdown.
+The GitHub project you created in the last episode contains a file `README.md`.
+
+The picture below shows the projects default view.
+This view includes a rendered view of the content inside the file `README.md`.
+Your project should look quite similar except for the red circle around the pencil symbol.
+
+![Warning: You should see a picture here displaying: Github repository for the group website](../fig/group_website_repo_edit.png)
+
+You can click on that pencil symbol to open an edit view of your projects README file.
+This looks like
+
+![Warning: You should see a picture here displaying: Editing the group websites README file](../fig/group_website_readme_edit.png)
+
+displaying the content of your projects README file.
+You can change this content and have a look at the rendered view by clicking the `Preview Changes` tab.
+This looks like
+
+![Warning: You should see a picture here displaying: Rendering the group websites README file](../fig/group_website_readme_render.png)
+
+If you like to permanently save the content to the file `README.md`, scroll down a bit and commit your changes.
+After having changed something, the commit menu looks like this
+
+![Warning: You should see a picture here displaying: Commit changes to the README file](../fig/group_website_readme_commit.png)
+
+
+...> ## Reproduce Markdown Source Code: Heading, Text, Emphasis
 >
-> Try to reproduce the source code of the following rendered view below this line:
+> Try to reproduce the source code of the view which is rendered below this line:
 >
 > ---
 >
