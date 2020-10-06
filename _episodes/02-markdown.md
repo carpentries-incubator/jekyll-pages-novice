@@ -77,7 +77,6 @@ After having changed something, the commit menu looks like this
 ![Warning: You should see a picture here displaying: Commit changes to the README file](../fig/group_website_readme_commit.png)
 
 
-...> ## Reproduce Markdown Source Code: Heading, Text, Emphasis
 >
 > Try to reproduce the source code of the view which is rendered below this line:
 >
