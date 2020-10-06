@@ -1,5 +1,6 @@
 # Building Websites with Jekyll and GitHub/GitLab
 
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/carpentries-incubator/building-websites-with-jekyll-and-github-or-gitlab)
 [![DOI](https://zenodo.org/badge/268807168.svg)](https://zenodo.org/badge/latestdoi/268807168)
 
 
