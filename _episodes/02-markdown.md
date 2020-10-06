@@ -65,8 +65,8 @@ This looks like
 
 ![Warning: You should see a picture here displaying: Editing the group websites README file](../fig/group_website_readme_edit.png)
 
-displaying the content of your projects README file.
-You can change this content and have a look at the rendered view by clicking the `Preview Changes` tab.
+displaying the source of your projects README file.
+You can change this content and have a look at the rendered view by clicking the `Preview changes` tab.
 This looks like
 
 ![Warning: You should see a picture here displaying: Rendering the group websites README file](../fig/group_website_readme_render.png)
