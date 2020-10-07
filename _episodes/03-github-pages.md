@@ -1,5 +1,5 @@
 ---
-title: "Hosting Pages and Websites on GitHub"
+title: "Hosting Websites on GitHub"
 teaching: 0
 exercises: 0
 questions:
