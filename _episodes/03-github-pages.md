@@ -30,21 +30,17 @@ will be rendered live in the website.
 
 There are other services available to create and publish website but one of the main advantages of GitHub Pages is that you can version control your website and therefore keep track of all your changes. This is particularly helpful for collaborating on a project website. [GitLab](https://about.gitlab.com/) offers very similar services but GitHub pages is the simplest approach.
 
-Let's continue from the GitHub repository we have created in the previous episode. One important file you should have is `index.md`: it will become the homepage of your project website.
+Let's continue from the GitHub repository we have created in the previous episode. One important file you should have already is `index.md`: it will become the homepage of your project website.
 
 ## Turning on GitHub Pages for Your Repository
+In order to tell GitHub that your repository contains a website that needs rendering you need to configure GitHub Pages settings. You can do so from your repository's `Settings`, as explained below. 
 
-There are two approaches to tell GitHub your repository is hosting a website and configure GitHub pages to render it. 
-
-The first one is to create a new branch called `gh-pages`. By convention, GitHub Pages uses this branch to look for the website content and by creating it you implicitly tell GitHub that you want your content published. Once you can create `gh-pages` from your current branch (`main`, created by default when you created the repository), you can then choose to delete the branch `main` to avoid any confusion. 
+You may have noticed that when we created our repository in previous episode, by default GitHub created a branch called `main` and stored our files there. We now need to tell GitHub Pages that this branch contains our website files.
 
 > ## What is a Branch?
-> You may have never heard about Git branches and wonder what they mean. A branch is one version of your project (the files in your repository) that can contain its own set of commits. The default branch automatically created with a new github repository is called `main`.
+> You may have never heard about Git branches and wonder what they mean. A branch is one version of your project (the files in your repository) that can contain its own set of commits - you can have many branches (versions) of your repository. The default branch automatically created with a new github repository is called `main`.
 >
 {: .callout}
-
-The second approach is to tell GitHub Pages to use a branch `main` for the website content (and not use `gh-pages` branch at all). You can do so from your repository's `Settings`.
-
 1. Click on the repository's `Settings` tab (the one with the little cog) as shown on the figure below:
 
     ![Repository settings](../fig/repo_settings.png)
@@ -54,7 +50,7 @@ enable GitHub Pages for this repository and to tell GitHub which branch to use a
 
     ![Default website branch](../fig/default_website.png)
 
-3. The link to your repository's website will appear in the highlighted box. If you click the link  - your default browser will open and show your project website. If this does not happen, you should manually open your favourite web browser and paste the URL.
+3. The link to your repository's website will appear in the highlighted box above. If you click the link  - your default browser will open and show your project website. If this does not happen, you should manually open your favourite web browser and paste the URL.
 
     ![Project website URL](../fig/website_url.png)
     
@@ -67,8 +63,12 @@ your website) and it may not become visible immediately. You will know it is rea
 
     ![First website](../fig/first_website.png)
 
-Either of the above two approaches to turning a repository to a website will give you the same result - the first approach is perhaps more common as it favours
-convention over configuration.
+> ## Using branch `gh-pages` for websites
+> By convention, GitHub Pages uses branch called `gh-pages` to look for the website content. By creating a branch with that name, you implicitly tell GitHub that you want your content published and you do not need to configure 
+> GitHub Pages in `Settings`. Once you can create `gh-pages` from your current branch (typically `main`, created by default when you created the repository), you can then choose to delete the branch `main` to avoid any confusion about where your content is stored. 
+{: .callout}
+
+Either of the above two approaches to turning a repository to a website will give you the same result - the `gh-pages` approach is perhaps more common as it favours convention over configuration.
 
 ## Understanding GitHub Pages URLs
 
