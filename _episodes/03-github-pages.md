@@ -3,275 +3,182 @@ title: "Hosting Pages and Websites on GitHub"
 teaching: 0
 exercises: 0
 questions:
-- "How do I publish my page or a website via GitHub?"
-- "How do I configure my website?"
+- "How do I publish my page or a website on the Web via GitHub?"
 objectives:
-- "Publish Markdown files as HTML on the web with GitHub Pages"
-- "Configure website parameters and use them from within pages"
+- "Publish Markdown files as HTML on the Web with GitHub Pages"
 keypoints:
-- "GitHub serves pages generated from Markdown (and other) files on a branch of a GitHub repository specified by the user"
-- "By convention, if you create a branch called `gh-pages` it will automatically be published as a website by GitHub
-on a special GitHub IO URL composed from your GitHub name and repository name as
-https://GITHUB_USERNAME.github.io/REPOSITORY_NAME"
+- "GitHub Pages is a static site hosting service that takes files in various formats
+  (Markdown, HTML, CSS, JavaScript, etc.)
+  straight from a repository on GitHub, runs them through its website engine Jekyll, builds them into a website,
+  and publishes them on the Web"
+- "By convention, if you create a branch called `gh-pages` in your repository, it will automatically be published as a website by GitHub"
+- "You can configure any branch of a repository to be used for website (it does not have to be `gh-pages`)"
+- "GitHub publishes websites on special URLs formatted as 'https://GITHUB_USERNAME.github.io/REPOSITORY_NAME'"
+
 ---
 
-# What is GitHub Pages?
+Now that you know how to create Markdown files, let's see how to turn them into web pages. GitHub has a 
+service just for that called GitHub Pages.  
+
+# Publishing a Website with GitHub Pages
 [GitHub Pages](https://docs.github.com/en/github/working-with-github-pages/about-github-pages) is a free website
-hosting service by GitHub that takes files from your GitHub repository that is configured as a website,
-optionally runs the files through a build process, and publishes them as a website or a web page.
+hosting service by GitHub that takes files (Markdown, HTML, CSS, JavaScript, etc.) 
+from your GitHub repository which is configured as a website,
+optionally runs the files through a build process, combines them and publishes them as a website or a Web page.
 Any changes you do to the files in your website's GitHub repository
 will be rendered live in the website.
 
-# Publishing a repository as a website
+There are other services available to create and publish website but one of the main advantages of GitHub Pages is that you can version control your website and therefore keep track of all your changes. This is particularly helpful for collaborating on a project website. [GitLab](https://about.gitlab.com/) offers very similar services but GitHub pages is the simplest approach.
 
-GitHub Pages is a service from GitHub to publish a website directly from a Git repository.
+Let's continue from the GitHub repository we have created in the previous episode. One important file you should already have is `README.md`, which will become the homepage of your project website (until we add the index file later on).
 
-> ## Why Github?
->
-> There are other services available to create and publish website but one of the main advantage of GitHub Pages is that you can version control your website and therefore keep track of all your changes. This is particularly helpful for collaborating on a project website. [GitLab](https://about.gitlab.com/) offers very similar services but GitHub pages is the simplest approach.
->
-{: .callout}
+## Enabling GitHub Pages
+In order to tell GitHub that your repository contains a website that needs rendering you need to configure GitHub Pages settings. You can do so from your repository's `Settings`, as explained below. 
 
-Let's start from the github repository we have created in the previous episode {{ site.project-pages }}. One important file you should have is `index.md`: it will become the homepage of your project website.
+You may have noticed that when we created our repository in previous episode, by default GitHub created a branch called `main` and stored our files there. We now need to tell GitHub Pages that this branch contains our website files.
 
-In this episode, you will learn how to turn your project repository into a website.
-
-## Turn on GitHub Pages for your main branch
-
-GitHub Pages uses a special branch in your GitHub repository to look for website content, and by default this branch is named `gh-pages`. 
-
-It is a convention used by Github and we need to change this default behavior because the content of our repository is under a branch called *main*.
-
-> ## What is a branch?
-> You may have never heard about git branches and wonder what they mean. It is not so important at this stage and for now we will assume that a branch in git is similar to the branch of a tree. The default branch automatically created with a new github repository is called *main*.
+> ## What is a Branch?
+> You may have never heard about Git branches and wonder what they mean. A branch is one version of your project (the files in your repository) that can contain its own set of commits - you can have many branches (versions) of your repository. The default branch automatically created with a new github repository is called `main`.
 >
 {: .callout}
+1. Click on the repository's `Settings` tab (the one with the little cog) as shown on the figure below:
 
+    ![Repository settings](../fig/repo_settings.png)
 
-### View your website
+2. Scroll down to "GitHub Pages" settings. You will see that these are currently disabled. Select branch `main` to
+enable GitHub Pages for this repository and to tell GitHub which branch to use as a source.
 
-As mentioned above, by default, GitHub serves automatically GitHub pages from `gh-pages` branch but where can we view our website?
+    ![Default website branch](../fig/default_website.png)
 
-- Click on the repository "**Settings**" as shown on the figure below:
+3. The link to your repository's website will appear in the highlighted box above. If you click the link  - your default browser will open and show your project website. If this does not happen, you should manually open your favourite web browser and paste the URL.
 
-**TODO: add picture**
+    ![Project website URL](../fig/website_url.png)
+    
+4. It may take a while for GitHub (from a few seconds to a few minutes) to compile your website (depending on GitHub's availability and the complexity of 
+your website) and it may not become visible immediately. You will know it is ready when the link appears in green box with a "tick" in front of the web address (as shown in the figure below). 
 
-![Repository settings](../fig/repo_settings.png)
+    ![Project website URL - successfull build](../fig/website_url_green_tick.png)
 
+5. Once ready, you should see the contents of the `README.md` file that we created earlier, rendered as a website. 
 
-- Then search for "GitHub pages" to find the web address of your website and select *main* branch so that GitHub pages are built from *main* and not *gh-pages*.
+    ![First website](../fig/first_website.png)
 
-- Once GitHub pages are built, open the link (hilighted green box): your default browser will open and show your project website.
-
-![Default project website](../fig/default_website.png)
-
-You should see the contents of the `index.md` file that we created earlier. 
-
-It can take from a few seconds to a few minutes before your website is available. It is mostly due to GitHub availability and complexity of your project website. You know it is ready when the link appears in green with a "tick" in front of the web address (as shown on the figure above).
-
-What happened behind the hood, is that GitHub converted markdown to HTML. At the top of your website, the name of your repository appears as a link to the project homepage.
-
-> ## What if my browser does not open?
->
-> If your default web browser did not open and does not show the project website, we recommend to manually open your favourite web browser and paste the project web address.
->
+> ## Using branch `gh-pages` for websites
+> By convention, GitHub Pages uses branch called `gh-pages` to look for the website content. By creating a branch with that name, you implicitly tell GitHub that you want your content published and you do not need to configure 
+> GitHub Pages in `Settings`. Once you create `gh-pages` from your current branch (typically `main`, created by default when you created the repository), you can then choose to delete the other branch to avoid any confusion about where your content is stored. 
 {: .callout}
 
-### Understanding GitHub web addresses
+Either of the above two approaches to turning a repository to a website will give you the same result - the `gh-pages` approach is perhaps more common as it favours convention over configuration.
 
-The resulting website does not have a random web address. It is formed by:
+## Understanding GitHub Pages URLs
 
-- your github username or organization name
-- followed by `github.io`
-- And finally the repository name: / {{ site.project-pages }}
+You may have noticed a slightly strange URL for your website appearing in that green box with a "tick" in front of it.
+This URL was generated by GitHub Pages and is not random. It is formatted as 
+'https://GITHUB_USERNAME.github.io/REPOSITORY_NAME' and is formed by appending:
 
-> ## Customize domain
+- your GitHub username or organisation name under which the repository is created (GITHUB_USERNAME)
+- '.github.io/' (GitHub's web hosting domain)
+- the repository name (REPOSITORY_NAME)
+
+Because the repository name is unique within one's personal or organisational GitHub account - this naming 
+convention gives us a way
+of neatly creating Web address for just about any GitHub repository without any conflicts.
+
+> ## Customising domain
 > **TODO**
 {: .callout}
 
-### Update repository details
+## Making Your Pages More Findable
 
-On the right hand side of your repository on GitHub, you can edit the details of your repository (click on the wheel as shown on the figure below) and add the link to your website. This would help anyone to access it when visiting your github repository.
+On the right hand side of your repository on GitHub, you can see the details of your repository under 'About'. It is good
+practice to update your repository details with a brief description. This is also a place where you can put 
+your repository's Web URL (as not everyone will have access to your repository's `Settings` to find it).
+
+You can edit the details of your repository by clicking on the little cog button as shown on the figure below.
 
 ![Repository details](../fig/repository_details.png)
 
-> ## Add new content to your website
->
-> Add a new section **About** in `index.md`. You can edit `index.md` from the GitHub interface and directly commit your changes.
-> Then view your changes on the website.
+By doing this, you add a link to the repository's website on your repository's landing page and anyone (including yourself) can access it quickly when visiting your GitHub repository.
+
+Up to now, the content of your webpage is identical to what visitors to your repository on GitHub will see in the project's `README.md` file. It is often better to have different content in the homepage of your site - aimed at visitors to the website - than in the README, which is supposed to provide information about the GitHub repository e.g. license information, local installation instructions, the structure and configuration of the repository, etc. By default, the homepage for a GitHub Pages website is built from a file called `index.md`: in the absence of a file with that name the "fallback" option is to use `README.md`, which is why your homepage is currently being built from that file.
+
+To separate the contents of the repository's README from the website's homepage, create a new file called 
+`index.md` and copy the contents of the README into that file for now. 
+
+To create a new file from GitHub interface, 
+click the `Add file` button and select `Create new file` from the dropdown.
+
+![Create file](../fig/github_create_file.png)
+
+Next, copy the content of README or simply type some text into `index.md`, as shown below.
+
+![Create file](../fig/github_add_index.png)
+
+We are now ready to start adding more content to our website. Let's do some exercises.
+
+> ## Exercise: Add New Content to the Website
+> Add a new section 'Description' to file `index.md` and add some description.
+> 1. From the GitHub interface, edit file `index.md` and add a new section called `Description` to it, with some text about the project. 
+> 2. View the changes on the website.
 > 
 > > ## Solution
-> > **TODO**
+> > 1. Edit `index.md` file to look something like:
+> >
+> >        # My Research Project
+> >        
+> >        ## Description
+> >        This research project is all about teaching you how to create websites with GitHub pages. 
+> >
+> > 2. Go to your website. It should now look like: 
+    ![Add About section to index](../fig/episode03_exercise01_add_description.png)
 > {: .solution }
 {: .challenge }
 
-
-As shown in the first episode, you can have several markdown files in your repository and link them, for instance from `index.md`. In the following exercise, this is what we will practice.
-
-> ## Create a new markdown file about.md
->
-> - Create a new markdown file called *about.md* and move the content of the **About** section in `index.md` to it.
-> - Add a link to **about.md** in `index.md` from the GitHub interface and commit your changes.
-> - then view your changes on the website.
+> ## Exercise: Create Links Between Pages
+> Create a new file `about.md` and link to it from `index.md`.
+> 1. From the GitHub interface, create a new Markdown file called `about.md` and add some content to it. 
+> 2. Add a link to `about.md` from `index.md`.
+> 3. View the changes on the website.
 > 
-> > ## Solution
-> > **TODO**
+> > ## Solution 
+> > 1. Create new file called `about.md` from the GitHub interface:
+    ![Create file](../fig/github_create_file.png)
+> > Edit `about.md` file to look something like: 
+> >
+> >         # About
+> >             
+> >        ## Project
+> >        This reseach project is all about teaching you how to create websites with GitHub pages.
+> >        
+> >        ## Funders
+> >        We gratefully acknowledge funding from the XYZ Founding Council, under grant number 'abc'.
+> >        
+> >        ## Cite us
+> >        You can cite the project as:
+> >        
+> >        >    *My research project. Zenodo. https://zenodo.org/record/doi*
+> >        
+> >        ## Contact us
+> >        
+> >        Email: [team@my.research.org](team@my.research.org)   
+> >
+> >        Twitter: [@my_research_project](https://twitter.com/my_research_project)   
+> >
+> >     Note how we used various Markdown syntax: quotes ('>'), italic font ('*') and external links 
+> >     (square '[]' and round brackets '()' for mailto and regular Web URLs).
+> > 2. Edit `index.md` to add a link to `about.md`.
+> >
+> >        # My Research Project
+> >        
+> >        ## Description
+> >        This research project is all about teaching you how to create websites with GitHub pages. 
+> >         
+> >        More details about the project are available from the [About page](/about).
+> >
+> >  3. Go to your website and click the link to 'About' page. It should look like:
+    ![About page](../fig/episode03_exercise01_about_page.png)
+> >     Note that the URL has '/about' appended to it - you can use this URL to access the 'About' page directly.
 > {: .solution }
 {: .challenge }
-
-
-# Website Configuration
-So far we have seen how to configure your repository to host a website and where to find the rendered website. Let's
-now look into the configuration of the website itself.
-
-## Configuring Parameters via `_config.yml`
-We have already mentioned that GitHub has an engine under the hood to process your files and
-build functional websites out of your content.
-This engine is called Jekyll and we will talk more about Jekyll in the following episodes.
-Jekyll's main configuration options are specified in `_config.yml` file placed in your site’s root directory.
-`_config.yml` file is written
-in the language called [YAML](https://yaml.org/) - a human-readable data-serialization language that allows us to define scalar
-parameters (that contain single values) as well as parameters that contain lists and dictionaries (hashes).
-
-> ## YAML
->
-> [YAML](https://yaml.org/) is a human-readable data-serialization language. It is commonly used for configuration files and in
-> applications where text data is being stored or transmitted and it is programming language agnostic.
->
-{: .callout}
-
-Let's create some configuration parameters for our website.
-
-1. From the GitHub interface, create `_config.yml` file in your site’s root directory.
-2. Add parameters `title`, `description` and `email` to it as:
-
-    ~~~
-    title: "Learn to Build Websites in GitHub Project"
-    description: "This research project develops training materials for reseachers wanting to learn to build project
-    websites in GitHub with GitHub Pages."
-    email: team@my.research.org
-    ~~~
-    {: .language-yaml}
-
-3. Commit your changes.
-
-Site-wide information and configuration settings from
-`_config.yml` are made available as `site.PARAMETER_NAME` variable in every page/file within the website/repository.
-There is also a number of
-[predefined site-wide variables](https://jekyllrb.com/docs/variables#site-variables) available to you.
-
-To access the values of configuration parameters within Markdown files, you have to enclose them in double curly
-braces: {% raw %}{{ and  }}{% endraw %}. Let's see this in action.
-
-1. Modify index.md file to look like:
-   ~~~
-    # {% raw %}{{ site.title }}{% endraw %}
-     {% raw %}{{ site.description }}{% endraw %}
-
-    [See our full team](team.md)
-
-    Have any questions about what we do? [We'd love to hear from you!](mailto:{{site.email}})
-   ~~~
-   {: .source}
-
-2. Note that site parameters will not render nicely in GitHub (they will be displayed as text
-`{% raw %}{{ site.PARAMETER_NAME }}{% endraw %}` rather than the parameter's rendered value) but will in the website.
-
-> ## Site-wide and page parameters
->
-> In addition to site-wide configuration available via the `site` global variable, page-specific information is
-> available to you via the `page` global variable. Some of these are pre-defined (like `page.title`);
-> others you can define yourself. Check this [list of predefined page parameters](https://jekyllrb.com/docs/variables#page-variables).
->
-{: .callout}
-
-## More Complex Parameters
-
-We can define more complex parameters such as list and dictionaries (hashes) too.
-For example, we may want
-to define the names of the project team members, their roles and start dates inside the `_config.yml` file
-and make use of this information throughout the website. To do so, in YAML notation, would look something like:
-
-~~~
-team_members: [
-    {name: "Sarah Becker", role: "project lead", start_date: "2016-02-01"},
-    {name: "Jane Smith", role: "maintainer", start_date: "2018-03-15"},
-    {name: "Albert Hamilton", role: "editor", start_date: "2017-12-01"},
-    {name: "Alice Dauncey", role: "developer", start_date: "2020-01-04"}
-]
-~~~
-{: .language-yaml}
-This defines team_members as a list of 3 elements; each element is a hash with key-value pairs for name, role and date.
-
-> ## Indentation in YAML
-> Note that indentation level in YAML is important - it can be a cause of some not-so-obvious mistakes. Use online YAML
->code validators, such as [YAML Lint](http://www.yamllint.com/), to make sure your YAML is correctly formatted.
->
-{: .callout}
-
-Let's access the information about the team and display the name of the project lead on the home page. We can do so
-by using the value `team_members[0]["name"]` because the team lead is the first team member in the `team_members`
-list.
-
-1. Modify `_config.yml` file and add the `team_members` parameter as defined above. The file should now look like:
-
-    ~~~
-    title: "Learn to Build Websites in GitHub Project"
-    description: "This research project develops training materials for reseachers wanting to learn to build project
-    websites in GitHub with GitHub pages."
-    email: team@my.research.org
-    team_members: [
-        {name: "Sarah Becker", role: "project lead", start_date: "2016-02-01"},
-        {name: "Jane Smith", role: "maintainer", start_date: "2018-03-15"},
-        {name: "Albert Hamilton", role: "editor", start_date: "2017-12-01"},
-        {name: "Alice Dauncey", role: "developer", start_date: "2020-01-04"}
-        ]
-    ~~~
-    {: .language-yaml}
-
-2. In file `index.md` add the team lead's name so that it looks like:
-
-    ~~~
-    # {% raw %}{{ site.title }}{% endraw %}
-    {% raw %}{{ site.description }}{% endraw %}
-
-    Project lead is: {% raw %}{{ site.team_members[0]["name"] }}{% endraw %}.
-    [See our full team](team.md)
-
-    Have any questions about what we do? [We'd love to hear from you!](mailto:{{site.email}})
-    ~~~
-    {: .source}
-
-3. **Remove this example and move to the next episode!**
-In file `team.md`, iterate over the values defined in parameter `site.team_members` in a loop to display all
-team members' names and roles:
-
-    ~~~
-    ## Project team members
-    The following people are members of our research team:
-    {% raw %}{{ for team_member in site.team_members }}
-        - Name: {% raw %}{{ team_member.name }}{% endraw %} , role: {% raw %}{{ team_member.role }}{% endraw %}
-    {% raw %}{{ end_for }}{% endraw %}
-    ~~~
-    {: .source}
-    TODO: definitely an overkill putting Liquid code here - this should go into the next episode. Which makes me
-    think that it should be called: "Jekyll and Liquid". If we move this bit into the next episode, we can expand on the
-    example and show other Liquid features, like getting the list length and saying "The project currently has
-    SOME_CODE members." to show of the function for getting list length which is commonly used.
-
-3. This way, if you need to add, remove or modify a team member, you can simply do it in `_config.yml` without modifying
-Markdown files. It is also good practice to keep all configuration details in one location.
-
-# Summary
-
-GitHub Pages is a static site hosting service that takes files in various formats
-(Markdown, HTML, CSS, JavaScript, etc.)
-straight from a repository on GitHub, runs them through its website engine Jekyll and builds them into a website,
-and publishes them on the Web.
-
-A website can be configured via special YAML file `_config.yml`
-containing site-wide parameters (located in the root of the website repository),
-or via individual page-specific parameters. Next, we move on to look into more detail in
-Jekyll and its corresponding scripting language Liquid.
 
 {% include links.md %}
