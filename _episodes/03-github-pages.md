@@ -65,7 +65,7 @@ your website) and it may not become visible immediately. You will know it is rea
 
 > ## Using branch `gh-pages` for websites
 > By convention, GitHub Pages uses branch called `gh-pages` to look for the website content. By creating a branch with that name, you implicitly tell GitHub that you want your content published and you do not need to configure 
-> GitHub Pages in `Settings`. Once you can create `gh-pages` from your current branch (typically `main`, created by default when you created the repository), you can then choose to delete the branch `main` to avoid any confusion about where your content is stored. 
+> GitHub Pages in `Settings`. Once you create `gh-pages` from your current branch (typically `main`, created by default when you created the repository), you can then choose to delete the other branch to avoid any confusion about where your content is stored. 
 {: .callout}
 
 Either of the above two approaches to turning a repository to a website will give you the same result - the `gh-pages` approach is perhaps more common as it favours convention over configuration.
