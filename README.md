@@ -27,8 +27,8 @@ Current maintainers of this lesson are
 * Renato Alves
 * Julian Bauer
 * Anne Fouilloux
-* Toby Hodges
-* Aleksandra Nenadic
+* [Toby Hodges](https://github.com/tobyhodges)
+* [Aleksandra Nenadic](https://github.com/anenadic)
 * Sarah Stevens
 
 ## Authors
