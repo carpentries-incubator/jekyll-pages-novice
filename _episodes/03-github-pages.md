@@ -104,7 +104,7 @@ We are now ready to start adding more content to our website. Let's do some exer
 
 > ## Exercise: Add New Content to the Website
 > Add a new section 'About' to file `index.md` and add some description.
-> 1. From the GitHub interface, edit file `index.md` and add a new section called **About** to it.
+> 1. From the GitHub interface, edit file `index.md` and add a new section called `About` to it, with some text about the project.
 > 2. Commit your changes.
 > 3. View your changes on the website.
 > 
@@ -115,7 +115,7 @@ We are now ready to start adding more content to our website. Let's do some exer
 
 > ## Exercise: Create Links Between Pages
 > Create a new file `about.md` and link to it from `index.md`.
-> 1. From the GitHub interface, create a new Markdown file called `about.md` and move the content of the **About** section from `index.md` to it.
+> 1. From the GitHub interface, create a new Markdown file called `about.md` and move the content of the `About` section from `index.md` to it.
 > 2. Add a link to `about.md` in `index.md`.
 > 3. Commit your changes.
 > 4. View your changes on the website.
