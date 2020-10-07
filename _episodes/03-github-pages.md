@@ -103,25 +103,67 @@ By doing this, you add a link to the repository's website on your repository's l
 We are now ready to start adding more content to our website. Let's do some exercises.
 
 > ## Exercise: Add New Content to the Website
-> Add a new section 'About' to file `index.md` and add some description.
-> 1. From the GitHub interface, edit file `index.md` and add a new section called `About` to it, with some text about the project.
-> 2. Commit your changes.
-> 3. View your changes on the website.
+> Add a new section 'Description' to file `index.md` and add some description.
+> 1. From the GitHub interface, edit file `index.md` and add a new section called `Description` to it, with some text about the project. 
+> 2. View the changes on the website.
 > 
 > > ## Solution
-> > **TODO**
+> > 1. Edit `index.md` file to look something like:
+> >
+> >        # My Research Project
+> >        
+> >        ## Description
+> >        This research project is all about teaching you how to create websites with GitHub pages. 
+> >
+> > 2. Go to your website. It should now look like: 
+    ![Add About section to index](../fig/episode03_exercise01_add_description.png)
 > {: .solution }
 {: .challenge }
 
 > ## Exercise: Create Links Between Pages
 > Create a new file `about.md` and link to it from `index.md`.
-> 1. From the GitHub interface, create a new Markdown file called `about.md` and move the content of the `About` section from `index.md` to it.
-> 2. Add a link to `about.md` in `index.md`.
-> 3. Commit your changes.
-> 4. View your changes on the website.
+> 1. From the GitHub interface, create a new Markdown file called `about.md` and add some content to it. 
+> 2. Add a link to `about.md` from `index.md`.
+> 3. View the changes on the website.
 > 
-> > ## Solution
-> > **TODO**
+> > ## Solution 
+> > 1. Create new file called `about.md` from the GitHub interface:
+    ![Create file](../fig/github_create_file.png)
+> > Edit `about.md` file to look something like: 
+> >
+> >         # About
+> >             
+> >        ## Project
+> >        This reseach project is all about teaching you how to create websites with GitHub pages.
+> >        
+> >        ## Funders
+> >        We gratefully acknowledge funding from the XYZ Founding Council, under grant number 'abc'.
+> >        
+> >        ## Cite us
+> >        You can cite the project as:
+> >        
+> >        >    *My research project. Zenodo. https://zenodo.org/record/doi*
+> >        
+> >        ## Contact us
+> >        
+> >        Email: [team@my.research.org](team@my.research.org)   
+> >
+> >        Twitter: [@my_research_project](https://twitter.com/my_research_project)   
+> >
+> >     Note how we used various Markdown syntax: quotes ('>'), italic font ('*') and external links 
+> >     (square '[]' and round brackets '()' for mailto and regular Web URLs).
+> > 2. Edit `index.md` to add a link to `about.md`.
+> >
+> >        # My Research Project
+> >        
+> >        ## Description
+> >        This research project is all about teaching you how to create websites with GitHub pages. 
+> >         
+> >        More details about the project are available from the [About page](/about).
+> >
+> >  3. Go to your website and click the link to 'About' page. It should look like:
+    ![About page](../fig/episode03_exercise01_about_page.png)
+> >     Note that the URL has '/about' appended to it - you can use this URL to access the 'About' page directly.
 > {: .solution }
 {: .challenge }
 
