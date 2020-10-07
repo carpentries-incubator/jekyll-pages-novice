@@ -88,7 +88,7 @@ of neatly creating Web address for just about any GitHub repository without any 
 > **TODO**
 {: .callout}
 
-## Updating Repository Details With Website URL
+## Making Your Pages More Findable
 
 On the right hand side of your repository on GitHub, you can see the details of your repository under 'About'. It is good
 practice to update your repository details with a brief description. This is also a place where you can put 
