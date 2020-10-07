@@ -30,7 +30,7 @@ will be rendered live in the website.
 
 There are other services available to create and publish website but one of the main advantages of GitHub Pages is that you can version control your website and therefore keep track of all your changes. This is particularly helpful for collaborating on a project website. [GitLab](https://about.gitlab.com/) offers very similar services but GitHub pages is the simplest approach.
 
-Let's continue from the GitHub repository we have created in the previous episode. One important file you should have already is `index.md`: it will become the homepage of your project website.
+Let's continue from the GitHub repository we have created in the previous episode. One important file you should already have is `README.md`, which will become the homepage of your project website (until we add the index file later on).
 
 ## Turning on GitHub Pages for Your Repository
 In order to tell GitHub that your repository contains a website that needs rendering you need to configure GitHub Pages settings. You can do so from your repository's `Settings`, as explained below. 
@@ -59,7 +59,7 @@ your website) and it may not become visible immediately. You will know it is rea
 
     ![Project website URL - successfull build](../fig/website_url_green_tick.png)
 
-5. Once ready, you should see the contents of the `index.md` file that we created earlier, rendered as a website. 
+5. Once ready, you should see the contents of the `README.md` file that we created earlier, rendered as a website. 
 
     ![First website](../fig/first_website.png)
 
@@ -102,7 +102,18 @@ By doing this, you add a link to the repository's website on your repository's l
 
 Up to now, the content of your webpage is identical to what visitors to your repository on GitHub will see in the project's `README.md` file. It is often better to have different content in the homepage of your site - aimed at visitors to the website - than in the README, which is supposed to provide information about the GitHub repository e.g. license information, local installation instructions, the structure and configuration of the repository, etc. By default, the homepage for a GitHub Pages website is built from a file called `index.md`: in the absence of a file with that name the "fallback" option is to use `README.md`, which is why your homepage is currently being built from that file.
 
-To separate the contents of the repository's README from the website's homepage, create a new file called `index.md` and copy the contents of the README into that file. We'll add more content to that file in the next exercise.
+To separate the contents of the repository's README from the website's homepage, create a new file called 
+`index.md` and copy the contents of the README into that file for now. 
+
+To create a new file from GitHub interface, 
+click the `Add file` button and select `Create new file` from the dropdown.
+
+![Create file](../fig/github_create_file.png)
+
+Next, copy the content of README or simply type some text into `index.md`, as shown below.
+
+![Create file](../fig/github_add_index.png)
+
 We are now ready to start adding more content to our website. Let's do some exercises.
 
 > ## Exercise: Add New Content to the Website
