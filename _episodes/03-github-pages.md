@@ -32,7 +32,7 @@ There are other services available to create and publish website but one of the 
 
 Let's continue from the GitHub repository we have created in the previous episode. One important file you should already have is `README.md`, which will become the homepage of your project website (until we add the index file later on).
 
-## Turning on GitHub Pages for Your Repository
+## Enabling GitHub Pages
 In order to tell GitHub that your repository contains a website that needs rendering you need to configure GitHub Pages settings. You can do so from your repository's `Settings`, as explained below. 
 
 You may have noticed that when we created our repository in previous episode, by default GitHub created a branch called `main` and stored our files there. We now need to tell GitHub Pages that this branch contains our website files.
