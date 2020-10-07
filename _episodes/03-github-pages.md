@@ -98,7 +98,7 @@ You can edit the details of your repository by clicking on the little cog button
 
 ![Repository details](../fig/repository_details.png)
 
-By doing this, you create a link to the repository's website and anyone (including you) can access it quickly when visiting your GitHub repository.
+By doing this, you add a link to the repository's website on your repository's landing page and anyone (including yourself) can access it quickly when visiting your GitHub repository.
 
 We are now ready to start adding more content to our website. Let's do some exercises.
 
