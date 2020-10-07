@@ -20,7 +20,7 @@ keypoints:
 Now that you know how to create Markdown files, let's see how to turn them into web pages. GitHub has a 
 service just for that called GitHub Pages.  
 
-# Publishing a Repository as a Website With GitHub Pages
+# Publishing a Website with GitHub Pages
 [GitHub Pages](https://docs.github.com/en/github/working-with-github-pages/about-github-pages) is a free website
 hosting service by GitHub that takes files (Markdown, HTML, CSS, JavaScript, etc.) 
 from your GitHub repository which is configured as a website,
