@@ -58,25 +58,32 @@ The picture below shows the projects default view.
 This view includes a rendered view of the content inside the file `README.md`.
 Your project should look quite similar except for the red circle around the pencil symbol.
 
-![Warning: You should see a picture here displaying: Github repository for the group website](../fig/group_website_repo_edit.png)
+![On the homepage of a GitHub repository, the edit button is positioned to the top right of the README preview](../fig/group_website_repo_edit.png)
 
-You can click on that pencil symbol to open an edit view of your projects README file.
-This looks like
+You can click on that pencil symbol to open an editing interface of your projects `README.md` file.
+Once you've clicked the pencil symbol, GitHub will open that file in the editing interface.
 
-![Warning: You should see a picture here displaying: Editing the group websites README file](../fig/group_website_readme_edit.png)
+![Editing interface of the group websites README file](../fig/group_website_readme_edit.png)
 
-displaying the source of your projects README file.
-You can change this content and have a look at the rendered view by clicking the `Preview changes` tab.
-This looks like
+You can change the content and have a look at the rendered view by clicking the `Preview changes` tab.
 
-![Warning: You should see a picture here displaying: Rendering the group websites README file](../fig/group_website_readme_render.png)
+![Preview of the rendered content of the group websites README file](../fig/group_website_readme_render.png)
 
+Let's add `**bold**` and see what happens when we preview it using the preview tab.
 If you like to permanently save the content to the file `README.md`, scroll down a bit and commit your changes.
 After having changed something, the commit menu looks like this
 
-![Warning: You should see a picture here displaying: Commit changes to the README file](../fig/group_website_readme_commit.png)
+![Commit menu for changes done in the GitHub web interface is located at the bottom of the website](../fig/group_website_readme_commit.png)
+
+> ## Writing a Commit Message
+>
+> A commit message is a short, descriptive, and specific comment that will help us remember later on what we did and why.
+> You find more about writing commit message in [this section][swc-git-novice-episode-track-changes] of the Git-novice lesson.
+>
+{: .callout}
 
 
+> ## Reproduce Markdown Source Code: Heading, Text, Emphasis
 >
 > Try to reproduce the source code of the view which is rendered below this line:
 >

@@ -46,6 +46,7 @@
 [ruby-installer]: https://rubyinstaller.org/
 [rubygems]: https://rubygems.org/pages/download/
 [styles]: https://github.com/carpentries/styles/
+[swc-git-novice-episode-track-changes]: https://swcarpentry.github.io/git-novice/04-changes/index.html
 [swc-lessons]: https://software-carpentry.org/lessons/
 [swc-releases]: https://github.com/swcarpentry/swc-releases
 [training]: https://carpentries.github.io/instructor-training/
