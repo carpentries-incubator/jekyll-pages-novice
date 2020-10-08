@@ -29,7 +29,7 @@ Current maintainers of this lesson are
 * Anne Fouilloux
 * [Toby Hodges](https://github.com/tobyhodges)
 * [Aleksandra Nenadic](https://github.com/anenadic)
-* Sarah Stevens
+* [Sarah Stevens](https://github.com/sstevens2)
 
 ## Authors
 
