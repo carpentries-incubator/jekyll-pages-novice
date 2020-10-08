@@ -37,7 +37,7 @@ style information to textual content.
 As the name Markdown indicates, the syntax elements of this language
 are shut *down* to a minimum.
 Having a rather minimalistic syntax, text formatted in Markdown is comparably
-well readable.
+readable.
 This might be one reason for Markdown having become the language of choice
 for formated user input on websites like for example
 - [Stack Exchange](https://stackexchange.com/)
