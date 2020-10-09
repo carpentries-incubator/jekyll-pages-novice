@@ -31,10 +31,61 @@ keypoints:
 - put directory under version control with git
   - link to SWC git-novice
 
+# Markdown
+Markdown is a lightweight markup language, i.e. a convention for adding
+style information to textual content.
+As the name Markdown indicates, the syntax elements of this language
+are shut *down* to a minimum.
+Having a rather minimalistic syntax, text formatted in Markdown is comparably
+readable.
+This might be one reason for Markdown having become the language of choice
+for formated user input on websites like for example
+- [Stack Exchange](https://stackexchange.com/)
+- [GitHub](https://github.com/)
+- [GitLab](https://about.gitlab.com/).
+
+
+# Where to start writing Markdown?
+A lot of tools for rendering Markdown source code exist.
+Rendering is the process of generating a nice view of the content
+using the style information included in the source text.
+Chances are high, your editor can do this.
+As we are working towards authoring websites using Jekyll and GitHub pages,
+we will use GitHub straight away for learning the basics of Markdown.
+The GitHub project you created in the last episode contains a file `README.md`.
+
+The picture below shows the projects default view.
+This view includes a rendered view of the content inside the file `README.md`.
+Your project should look quite similar except for the red circle around the pencil symbol.
+
+![On the homepage of a GitHub repository, the edit button is positioned to the top right of the README preview](../fig/group_website_repo_edit.png)
+
+You can click on that pencil symbol to open an editing interface of your projects `README.md` file.
+Once you've clicked the pencil symbol, GitHub will open that file in the editing interface.
+
+![Editing interface of the group websites README file](../fig/group_website_readme_edit.png)
+
+You can change the content and have a look at the rendered view by clicking the `Preview changes` tab.
+
+![Preview of the rendered content of the group websites README file](../fig/group_website_readme_render.png)
+
+Let's add `**bold**` and see what happens when we preview it using the preview tab.
+If you like to permanently save the content to the file `README.md`, scroll down a bit and commit your changes.
+After having changed something, the commit menu looks like this
+
+![Commit menu for changes done in the GitHub web interface is located at the bottom of the website](../fig/group_website_readme_commit.png)
+
+> ## Writing a Commit Message
+>
+> A commit message is a short, descriptive, and specific comment that will help us remember later on what we did and why.
+> You find more about writing commit message in [this section][swc-git-novice-episode-track-changes] of the Git-novice lesson.
+>
+{: .callout}
+
 
 > ## Reproduce Markdown Source Code: Heading, Text, Emphasis
 >
-> Try to reproduce the source code of the following rendered view below this line:
+> Try to reproduce the source code of the view which is rendered below this line:
 >
 > ---
 >
