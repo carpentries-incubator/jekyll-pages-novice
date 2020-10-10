@@ -5,7 +5,7 @@ exercises: 0
 questions:
 - "How can I reuse the same chunks of material in multiple pages?"
 objectives:
-- "create reusable blocks of content and insert them into pages"
+- "Create reusable blocks of content and insert them into pages"
 keypoints:
 - "The content of files in the `_includes/` directory can be inserted into a page with `{ % include file_name % }`"
 ---
