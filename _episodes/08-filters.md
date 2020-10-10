@@ -7,8 +7,8 @@ questions:
 - "How can I access a filtered subset from an array of values?"
 - "Where can I find out more about Jekyll and Liquid?"
 objectives:
-- "use simple filters to control the format and content of substituted values."
-- "select values from an array."
+- "Use simple filters to control the format and content of substituted values."
+- "Select values from an array."
 keypoints:
 - "You can use Liquid filters to adapt the values of variables when adding them into your pages."
 - "Datetime filters such as `date_to_string` can provide more readable timestamps on your pages and posts."
