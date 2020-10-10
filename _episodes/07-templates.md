@@ -7,9 +7,9 @@ questions:
 - "Where can I find pre-built themes for my site?"
 - "How can I create new layouts based on those I already have?"
 objectives:
-- "apply a template to a page"
-- "find and implement pre-existing themes to determine the style of a site"
-- "create new page templates that inherit from existing layouts"
+- "Apply a template to a page"
+- "Find and implement pre-existing themes to determine the style of a site"
+- "Create new page templates that inherit from existing layouts"
 keypoints:
 - "Files in the `_layouts/` directory can be used as page templates"
 - "The structure of a page is determined by the `layout` page metadata"
