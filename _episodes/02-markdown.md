@@ -6,7 +6,7 @@ questions:
 - "How can I write content for my webpages?"
 - "How do I link to other pages?"
 objectives:
-- "create simple pages of formatted text"
+- "Create simple pages with formatted text"
 keypoints:
 - "Markdown is an relatively easy way to write formatted text"
 - "Markdown and HTML tags can be used together in a single page"
