@@ -199,21 +199,7 @@ Let's access the information about the team and display the name of the project 
     ~~~
     {: .language-yaml}
 
-2. In file `index.md` add the team lead's name so that it looks like:
-
-    ~~~
-    # {% raw %}{{ site.title }}{% endraw %}
-   
-    ## Description
-    {% raw %}{{ site.description }}{% endraw %}
-
-    The project is led by {% raw %}{{ site.team_members[0]["name"] }}{% endraw %}.
-    [See our full team](/about#team)
-
-    Have any questions about what we do? [We'd love to hear from you!]({% raw %}mailto:{{ site.email }}{% endraw %})
-    ~~~
-
-3. In file `about.md`, we add a new section for the team and iterate over the values defined in parameter `site.team_members` in a loop to display all team members' names and roles. The file now should look like:
+2. In file `about.md`, we add a new section for the team and iterate over the values defined in parameter `site.team_members` in a loop to display all team members' names and roles. The file now should look like:
 
     ~~~ 
     # About
@@ -241,6 +227,20 @@ Let's access the information about the team and display the name of the project 
     Email: [team@my.research.org](mailto:{% raw %}{{ site.email }}{% endraw %})   
     
     Twitter: [@my_research_project]({% raw %}{{ site.twitter }}{% endraw %})   
+    ~~~
+
+3. In file `index.md` add the team lead's name so that it looks like:
+
+    ~~~
+    # {% raw %}{{ site.title }}{% endraw %}
+   
+    ## Description
+    {% raw %}{{ site.description }}{% endraw %}
+
+    The project is led by {% raw %}{{ site.team_members[0]["name"] }}{% endraw %}.
+    [See our full team](/about#team)
+
+    Have any questions about what we do? [We'd love to hear from you!]({% raw %}mailto:{{ site.email }}{% endraw %})
     ~~~
     
 If you need to add, remove or modify a team member, you can simply do it in `_config.yml` without modifying your pages. 
