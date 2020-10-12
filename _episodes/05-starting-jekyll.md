@@ -30,7 +30,7 @@ Jekyll's main configuration options are specified in `_config.yml` file placed i
 `_config.yml` file is written
 in the language called [YAML](https://yaml.org/) - a human-readable data-serialization language that allows us to define scalar
 parameters (that contain single values) as well as parameters that contain lists and dictionaries (hashes). Parameters
-configured in `_config.yml` are global or site-wide - that means they are accessible in every page of your website.
+configured in `_config.yml` are _global_ or site-wide - that means they are accessible in every page of your website.
 
 > ## YAML
 >
