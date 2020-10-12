@@ -14,7 +14,7 @@ keypoints:
 - "Variables can be defined globally in `_config.yml` or locally within YAML header (*front matter*) of a page"
 - "Variable values can be substituted into page content with Liquid notation: `{{ variable }}`"
 - "Global variables are accessible from any page of your website; local variables can only be accessed within 
-the page they were defined in (and any pages that include this page)"
+the page in which they were defined (and any pages that include this page)"
 ---
 
 [Jekyll](https://jekyllrb.com/) is a powerful static site generator behind GitHub Pages. It creates static HTML
