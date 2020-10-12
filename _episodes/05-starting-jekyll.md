@@ -8,7 +8,7 @@ questions:
 - "How can I reuse the same chunks of material in multiple pages?"
 objectives:
 - "Substitute variable values into page content"
-- "Adjust the configuration of site and individual pages"
+- "Adjust the configuration of the site and individual pages"
 - "Create reusable blocks of content and insert them into pages"
 keypoints:
 - "Variables can be defined globally in `_config.yml` or locally within YAML header (*front matter*) of a page"
