@@ -281,7 +281,7 @@ In addition to global (site-wide) parameters available via the `site` global var
 Some of these are pre-defined - like `page.title`, which gives you the title of the page that is currently active/being visited. Others you can define yourself. Check this [list of predefined page parameters](https://jekyllrb.com/docs/variables#page-variables).
 
 You can define local parameters using YAML notation within a Markdown page by including it in a page header and delimiting the header with triple-dashed lines `---`. These headers are called *front matter* and are 
-used to set variables and metadata on pages in your Jekyll site.
+used to set variables and metadata on individual pages in your Jekyll site.
 
 > ## Front matter        
 > From [Jekyll's website](https://jekyllrb.com/docs/front-matter/):
