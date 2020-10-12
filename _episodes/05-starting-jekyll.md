@@ -248,7 +248,7 @@ Let's now change the values of a global parameter and study the effect.
 
 > ## Exercise
 > Your project team has changed. The team lead has left and in her place is a new person: 'Tom Cat', who started on 
->'2020-10-01'. In addition, the team was expanded and a new developer called 'Alice Dauncey' joined on '2020-09-15'. 
+>'2020-10-01'. In addition, the team was expanded and a new developer called 'Alice Dauncey' who joined on '2020-09-15'. 
 > Update your website to reflect these team changes.
 > > ## Solution
 > > Luckily, we keep all our global settings in `_config.yml` so all we have to do is update the values there. This saved us some work as for the team lead we would otherwise have to modify both `index.md` and `about.md`. 
