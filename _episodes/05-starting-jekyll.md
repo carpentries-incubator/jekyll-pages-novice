@@ -21,7 +21,7 @@ the page in which they were defined (and any pages that include this page)"
 website content out of various files in your repository (Markdown files, CSS style sheets, page templates/layouts, etc.).
 This 'compiled' content is then served as you website via `github.io` Web domain (remember your website's URL
 from the previous episode?). Jekyll automatically re-generates all the HTML pages for your website each time you 
-commit a change to your repository.
+make a change to your repository.
 
 Jekyll makes managing your website easier because it depends on templates. Templates (or layouts in Jekyll notation) are blueprints that can be reused by multiple pages. For example, instead of repeating the same navigation markup on every page you create (such a header, a footer or a top navigation bar), you can create a Jekyll layout that gets used on all the pages. Otherwise, each time you update a navigation item - you'd have to make edits on every page. We will cover Jekyll layouts in a bit; for now let's start learning Jekyll and its scripting language called [Liquid](https://shopify.github.io/liquid/basics/introduction/). 
 
