@@ -162,7 +162,7 @@ We are now ready to start adding more content to our website. Let's do some exer
 > >        
 > >        ## Contact us
 > >        
-> >        Email: [team@my.research.org](team@my.research.org)   
+> >        Email: [team@my.research.org](mailto:team@my.research.org)   
 > >
 > >        Twitter: [@my_research_project](https://twitter.com/my_research_project)   
 > >
@@ -173,7 +173,7 @@ We are now ready to start adding more content to our website. Let's do some exer
 > >        # My Research Project
 > >        
 > >        ## Description
-> >        This research project is all about teaching you how to create websites with GitHub pages. 
+> >        This research project is all about teaching you how to create websites with GitHub Pages. 
 > >         
 > >        More details about the project are available from the [About page](/about).
 > >
