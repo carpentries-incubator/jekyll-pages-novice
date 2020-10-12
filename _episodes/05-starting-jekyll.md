@@ -277,7 +277,7 @@ Let's now change the values of a global parameter and study the effect.
 
 ## Local Parameters
 
-In addition to global (site-wide) parameters available via the `site` global variable, Jekyll makes local (page-specific) information available to you via the `page` variable. 
+In addition to global (site-wide) parameters available via the `site` global variable, Jekyll makes _local_ (page-specific) information available to you via the `page` variable. 
 Some of these are pre-defined - like `page.title`, which gives you the title of the page that is currently active/being visited. Others you can define yourself. Check this [list of predefined page parameters](https://jekyllrb.com/docs/variables#page-variables).
 
 You can define local parameters using YAML notation within a Markdown page by including it in a page header and delimiting the header with triple-dashed lines `---`. These headers are called *front matter* and are 
