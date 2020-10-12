@@ -248,12 +248,12 @@ Let's now change the values of a global parameter and study the effect.
 
 > ## Exercise
 > Your project team has changed. The team lead has left and in her place is a new person: 'Tom Cat', who started on 
->'2020-10-01'. In addition, the team was expanded and a new developer called 'Alice Dauncey' joined on '2020-09-15'. 
+>'2020-10-01'. In addition, the team was expanded and a new developer called 'Alice Dauncey' who joined on '2020-09-15'. 
 > Update your website to reflect these team changes.
 > > ## Solution
 > > Luckily, we keep all our global settings in `_config.yml` so all we have to do is update the values there. This saved us some work as for the team lead we would otherwise have to modify both `index.md` and `about.md`. 
 > >
-> >For the new developer joining the team, we also only need to her detail to `team_members` in `_config.yml` and our `for loop` from `about.md` will simply pick up the changes automatically. Magic! Our `_config.yml` file should now look like:
+> >For the new developer joining the team, we also only need to her information to `team_members` in `_config.yml` and our `for loop` from `about.md` will simply pick up the changes automatically. Magic! Our `_config.yml` file should now look like:
 > >
 > > ~~~ 
 > > title: "Building Websites in GitHub"
