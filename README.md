@@ -25,7 +25,7 @@ If you'd like to ask the maintainers anything, we'd love to hear from you! You c
 Current maintainers of this lesson are
 
 * Renato Alves
-* Julian Bauer
+* [Julian Bauer](https://github.com/juliankarlbauer)
 * Anne Fouilloux
 * [Toby Hodges](https://github.com/tobyhodges)
 * [Aleksandra Nenadic](https://github.com/anenadic)

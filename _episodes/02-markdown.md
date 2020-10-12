@@ -69,7 +69,7 @@ You can change the content and have a look at the rendered view by clicking the 
 
 ![Preview of the rendered content of the group websites README file](../fig/group_website_readme_render.png)
 
-Let's add `**bold**` and see what happens when we preview it using the preview tab.
+Let's add `Some **bold** font` and see what happens when we preview it using the preview tab.
 If you like to permanently save the content to the file `README.md`, scroll down a bit and commit your changes.
 After having changed something, the commit menu looks like this
 
