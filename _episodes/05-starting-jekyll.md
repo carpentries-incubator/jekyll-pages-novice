@@ -7,7 +7,7 @@ questions:
 - "How can I configure global values/settings for my site?"
 - "How can I reuse the same chunks of material in multiple pages?"
 objectives:
-- "Substitute variable values into a page content"
+- "Substitute variable values into page content"
 - "Adjust the configuration of site and individual pages"
 - "Create reusable blocks of content and insert them into pages"
 keypoints:
