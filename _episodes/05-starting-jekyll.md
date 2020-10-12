@@ -94,7 +94,7 @@ Let's make use of global parameters in our pages.
     
     ## Contact us
    
-    Email: [team@my.research.org](mailto:{% raw %}{{ site.email }}{% endraw %})   
+    Email: [{% raw %}{{ site.email }}{% endraw %}](mailto:{% raw %}{{ site.email }}{% endraw %})   
     
     Twitter: [@my_research_project](https://twitter.com/my_research_project)   
     ~~~
