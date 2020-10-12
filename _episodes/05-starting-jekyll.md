@@ -26,7 +26,7 @@ commit a change to your repository.
 Jekyll makes managing your website easier because it depends on templates. Templates (or layouts in Jekyll notation) are blueprints that can be reused by multiple pages. For example, instead of repeating the same navigation markup on every page you create (such a header, a footer or a top navigation bar), you can create a Jekyll layout that gets used on all the pages. Otherwise, each time you update a navigation item - you'd have to make edits on every page. We will cover Jekyll layouts in a bit; for now let's start learning Jekyll and its scripting language called [Liquid](https://shopify.github.io/liquid/basics/introduction/). 
 
 ## Global Parameters
-Jekyll's main configuration options are specified in `_config.yml` file placed in your site’s root directory.
+Jekyll's main configuration options are specified in the `_config.yml` file placed in your site’s root directory.
 `_config.yml` file is written
 in the language called [YAML](https://yaml.org/) - a human-readable data-serialization language that allows us to define scalar
 parameters (that contain single values) as well as parameters that contain lists and dictionaries (hashes). Parameters
