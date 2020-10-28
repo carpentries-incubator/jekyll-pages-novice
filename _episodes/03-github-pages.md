@@ -85,7 +85,9 @@ convention gives us a way
 of neatly creating Web address for just about any GitHub repository without any conflicts.
 
 > ## Customising domain
-> **TODO**
+>  GitHub Pages supports using custom domains, or changing your site's URL from the default 
+>'https://GITHUB_USERNAME.github.io/REPOSITORY_NAME' to any domain you own. 
+> [Check out the documentation on configuring a custom domain for your GitHub Pages site](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site).
 {: .callout}
 
 ## Making Your Pages More Findable
