@@ -28,7 +28,7 @@ optionally runs the files through a build process, combines them and publishes t
 Any changes you do to the files in your website's GitHub repository
 will be rendered live in the website.
 
-There are other services available to create and publish website but one of the main advantages of GitHub Pages is that you can version control your website and therefore keep track of all your changes. This is particularly helpful for collaborating on a project website. [GitLab](https://about.gitlab.com/) offers very similar services but GitHub pages is the simplest approach.
+There are other services available to create and publish websites but one of the main advantages of GitHub Pages is that you can version control your website and therefore keep track of all your changes. This is particularly helpful for collaborating on a project website. [GitLab](https://about.gitlab.com/) offers very similar services but GitHub pages is the simplest approach.
 
 Let's continue from the GitHub repository we have created in the previous episode. One important file you should already have is `README.md`, which will become the homepage of your project website (until we add the index file later on).
 
@@ -54,7 +54,7 @@ enable GitHub Pages for this repository and to tell GitHub which branch to use a
 
     ![Project website URL](../fig/website_url.png)
     
-4. It may take a while for GitHub (from a few seconds to a few minutes) to compile your website (depending on GitHub's availability and the complexity of 
+4. It may take a while (from a few seconds to a few minutes) for GitHub to compile your website (depending on GitHub's availability and the complexity of 
 your website) and it may not become visible immediately. You will know it is ready when the link appears in green box with a "tick" in front of the web address (as shown in the figure below). 
 
     ![Project website URL - successfull build](../fig/website_url_green_tick.png)
