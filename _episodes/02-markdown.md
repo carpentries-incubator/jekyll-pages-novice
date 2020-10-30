@@ -83,34 +83,39 @@ After having changed something, the commit menu looks like this:
 {: .callout}
 
 
-> ## Reproduce Markdown Source Code: Heading, Text, Emphasis
+# Writing Markdown
+
+Now that we know about the editing interface and preview tab of our projects `README.md`
+we can use it as a text editor and investigate selected Markdown features.
+
+Our README.md already contains vanilla text and
+two formatting features:
+- Heading `# group-website`
+- Text markup or emphasis `**bold**`.
+
+Let's do some exercises to learn more about structuring and emphasis.
+
+
+> ## Add a Sub Heading and Emphasised Text with Line Breaks
 >
-> Try to reproduce the source code of the view which is rendered below this line:
+> Try to reproduce the source code of the following view
 >
-> ---
->
-> # This largest heading is followed
-> ### by a two times smaller one.
->
-> Vanilla text may contain *italic* and **bold words**.
->
-> This **paragraph** is separated from the vanilla text paragraph by a blank line and
-> line breaks
-> are caused by two trailing spaces at the end of the lines.
+> ![Preview tab of README.md with additional lines inlcuding sub heading and emphasised text with line breaks](../fig/group_website_excercise_add_a_sub_heading.png)
 >
 >
 > > ## Solution
-> > ~~~
-> > # This largest heading is followed
-> > ### by a two times smaller one.
 > >
-> > Vanilla text may contain *italic* and **bold words**.
+> >     # group-website
+> >     Repo for learning how to make websites with Jekyll pages
 > >
-> > This **paragraph** is separated from the vanilla text paragraph by a blank line and
-> > these line breaks
-> > are caused by two trailing spaces at the end of the lines.
-> > ~~~
-> > {: .source }
+> >     ## Learning Markdown
+> >
+> >     Vanilla text may contain *italic* and **bold words**.
+> >
+> >     This paragraph is separated from the previous one by a blank line.
+> >     Line breaks
+> >     are caused by two trailing spaces at the end a line.
+> >
 > {: .solution }
 {: .challenge }
 
