@@ -24,7 +24,7 @@ service just for that called GitHub Pages.
 [GitHub Pages](https://docs.github.com/en/github/working-with-github-pages/about-github-pages) is a free website
 hosting service by GitHub that takes files (Markdown, HTML, CSS, JavaScript, etc.) 
 from your GitHub repository which is configured as a website,
-optionally runs the files through a build process, combines them and publishes them as a website or a Web page.
+optionally runs the files through a build process, combines them and publishes them as a website.
 Any changes you do to the files in your website's GitHub repository
 will be rendered live in the website.
 
