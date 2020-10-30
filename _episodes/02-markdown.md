@@ -39,13 +39,13 @@ are shut *down* to a minimum.
 Having a rather minimalistic syntax, text formatted in Markdown is comparably
 readable.
 This might be one reason for Markdown having become the language of choice
-for formated user input on websites like for example
+for formatted user input on websites like, for example:
 - [Stack Exchange](https://stackexchange.com/)
 - [GitHub](https://github.com/)
 - [GitLab](https://about.gitlab.com/).
 
 
-# Where to start writing Markdown?
+# Where to Start Writing Markdown?
 A lot of tools for rendering Markdown source code exist.
 Rendering is the process of generating a nice view of the content
 using the style information included in the source text.
@@ -71,7 +71,7 @@ You can change the content and have a look at the rendered view by clicking the 
 
 Let's add `Some **bold** font` and see what happens when we preview it using the preview tab.
 If you like to permanently save the content to the file `README.md`, scroll down a bit and commit your changes.
-After having changed something, the commit menu looks like this
+After having changed something, the commit menu looks like this:
 
 ![Commit menu for changes done in the GitHub web interface is located at the bottom of the website](../fig/group_website_readme_commit.png)
 
@@ -287,7 +287,7 @@ alternative text is beneficial.
 
 You can define either
 1. Inline style links - specifying the URL in line - or
-2. Reference style links - referencing a reusable link reference -
+2. Reference style links - referencing a reusable link reference
 
 
 > ## Links
@@ -333,7 +333,7 @@ You can define either
 > and the one used at GitLab is called **GitLab Flavored Markdown**.
 > - So be aware of
 >   - [GitHub-flavored Markdown][github-flavored-markdown]
->   - [GitLab Flavored Markdown][gitlab-flavored-markdown]
+>   - [GitLab-flavored Markdown][gitlab-flavored-markdown]
 {: .callout}
 
 
