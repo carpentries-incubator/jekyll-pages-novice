@@ -71,16 +71,19 @@ The simplest, valid HTML `Hello world` is:
 
 So as you can imagine, writing long HTML documents by hand is rather painful.
 Notice that we didn't specify anything about how and where the text should be displayed.
-To achieve this we would additionally need to include CSS instructions.
+To achieve this we would additionally need to include Cascading Style Sheets (CSS) instructions. If you do not provide 
+CSS instructions (either inside your HTML document or as a separate file), a web browser will make a best 
+guess regarding the layout of HTML elements on the page based on its defaults. 
 
 ## Static vs Dynamic Sites
 
 Sites consisting of pages whose content doesn't change
 after that initial information is received by the server
-are referred to as _static_.
+are referred to as _static_ (for example, a website containing one's CV).
 Conversely, sites whose pages can be updated after loading,
 with information continuing to be passed between browser and server,
-are called _dynamic_.
+are called _dynamic_ (for example, pages showing current date and time or shopping baskets, 
+which get updated each time the page is refreshed).
 This lesson focuses on static sites and tools that can be used to create them,
 known as **Static Site Generators**.
 
