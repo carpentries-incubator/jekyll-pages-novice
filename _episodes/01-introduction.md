@@ -82,8 +82,8 @@ after that initial information is received by the server
 are referred to as _static_ (for example, a website containing one's CV).
 Conversely, sites whose pages can be updated after loading,
 with information continuing to be passed between browser and server,
-are called _dynamic_ (for example, pages showing current date and time or shopping baskets, 
-which get updated each time the page is refreshed).
+are called _dynamic_ (for example, pages showing current date and time or shopping baskets, Twitter or Facebook pages,  
+which might be updated between each two page refreshes).
 This lesson focuses on static sites and tools that can be used to create them,
 known as **Static Site Generators**.
 
