@@ -119,123 +119,75 @@ Let's do some exercises to learn more about structuring and emphasis.
 > {: .solution }
 {: .challenge }
 
+Displaying items in lists, sometimes increases readability.
+You can create lists by preceding lines with `-` or a bunch of other `-`-like characters.
 
-> ## Lists, Enumerations
+> ## List today's learning goals
 >
-> Try to reproduce the source code of this challenge from the rendered view below this line:
->
-> ---
->
-> - A list of items
-> - can be
->   - deeply
->     - nested
-> - returning to the top-level like this.
->
-> New text blocks require **blank lines** and
->
-> 23. enumerations
-> 23. starting at any number
-> 23. continue to increase
-> 26. in steps of one.
->     1. Sub enumerations (in some editors have to start at **one**)
->     2. and can include
->        - sub lists
->     4. keeping the enumeration count.
+> Give it a try and write a short list of topics you want to learn today.
 >
 > > ## Solution
-> > ~~~
-> > - A list of items
-> > - can be
-> >   - deeply
-> >     - nested
-> > - returning to the top-level like this.
 > >
-> > New text blocks require **blank lines** and
+> >     - Write Markdown
+> >     - Host my first website on GitHub
+> >     - Learn about Jekyll
+> >     - Think about how my work group could benefit from what I have learned.
 > >
-> > 23. enumerations
-> > 23. starting at any number
-> > 23. continue to increase
-> > 26. in steps of one.
-> >     1. Sub enumerations (in some editors have to start at **one**)
-> >     2. and can include
-> >        - sub lists
-> >     4. **without** disturbing the enumeration count.
-> > ~~~
-> > {: .source }
 > {: .solution }
 {: .challenge }
 
+If you would like to nest lists, i.e. specify a sub list as an item of another list, use indentation.
+Numbered enumerations are helpful for displaying sequences and the numbers may help to address individual points.
 
+> ## Nested Lists and Enumerations
+>
+> Try to reproduce the source code of the following view
+>
+> ![Preview tab nested lists and enumerations](../fig/exercise_nested_lists_enumerations.png)
+>
+> > ## Solution
+> >
+> >     - A list of items
+> >     - can be
+> >       - deeply
+> >         - nested
+> >     - returning to the top-level like this.
+> >
+> >     2. Enumerations can start at any number and
+> >     3. continue to increase
+> >     26. in steps of one even of the numering does not. This updates the numbering if individual items are deleted.
+> {: .solution }
+{: .challenge }
 
+You can use single backticks to call out code, e.g. `print('Hello world')` and
+use triple backticks to format larger code snippets, creating code blocks.
 
 > ## Add Code
-> Fill in the blanks below to create the rendered view below this line:
+> Fill in the blanks ( __ ) below to create the following view
 >
-> ---
+> ![Preview tab with blanks before code and code blocks](../fig/exercise_add_code.png)
 >
-> Discussing code details can be very helpful.
-> Therefore, referring to variables, e.g. `path` in a formatted way is great.
->
-> Larger code snippets look like this:
-> ```
-> print('Hello World')
-> ```
->
-> ~~~
-> Discussing code details can be very helpful.
-> When doing so, it's great to be able to refer to variables, functions, etc, e.g. `path` in a formatted way.
->
-> Larger code snippets look like this:
->
-> ___
-> print('Hello World')
-> ___
-> ~~~
-> {: .source }
 >
 > > ## Solution
-> > ~~~
-> > Discussing code details can be very helpful.
-> > When doing so, it's great to be able to refer to variables, functions, etc, e.g. `path` in a formatted way.
 > >
-> > Larger code snippets look like this:
-> > ```
-> > print('Hello World')
-> > ```
-> > ~~~
-> > {: .source }
+> >     You can reference code `message='Hello World'`
+> >     or commands `git status` inside text.
+> >     Larger code snippets look like this:
+> >     ```
+> >     print('Hello World')
+> >     ```
+> >
 > {: .solution }
 {: .challenge }
 
+Syntax highlighting of code blocks can increase readability a lot.
+You get nice coloured code by adding an language identifier right after the
+introductory triple backticks.
 
 > ## Syntax Highlighting
-> Syntax highlighting increases readability a lot.
+>
 > Below are code snippets written in HTML, Python, and R.
-> Guess in which programming language each snippet is written
-> and fill the gaps to activate syntax highlighting, creating this rendered view:
->
-> -------------
-> ```r
-> print(paste("How","are","you?"), quote = FALSE)
-> ```
-> -------------
->
-> ```python
-> s = "How are you?"
-> print s
-> ```
-> -------------
->
-> ```html
-> <!DOCTYPE html>
-> <html>
-> <body>
-> > <a href=https://carpentries.org/>This is a link</a>
-> > </body>
-> </html>
-> ```
-> -------------
+> Copy this code
 >
 > ~~~
 > ```_
@@ -251,34 +203,38 @@ Let's do some exercises to learn more about structuring and emphasis.
 > <!DOCTYPE html>
 > <html>
 > <body>
-> > <a href=https://carpentries.org/>This is a link</a>
-> > </body>
+> <a href=https://carpentries.org/>This is a link</a>
+> </body>
 > </html>
 > ```
 > ~~~
 > {: .source }
 >
+> guess in which programming language each snippet is written
+> and fill the gaps to activate syntax highlighting, creating this rendered view:
+>
+> ![Preview tab of code blocks with syntax highlighting](../fig/exercise_syntax_highlighting.png)
+>
+>
 > > ## Solution
-> > ~~~
-> > ```r
-> > print(paste("How","are","you?"), quote = FALSE)
-> > ```
 > >
-> > ```python
-> > s = "How are you?"
-> > print s
-> > ```
+> >     ```r
+> >     print(paste("How","are","you?"), quote = FALSE)
+> >     ```
 > >
-> > ```html
-> > <!DOCTYPE html>
-> > <html>
-> > <body>
-> > > <a href=https://carpentries.org/>This is a link</a>
-> > > </body>
-> > </html>
-> ```
-> > ~~~
-> > {: .source }
+> >     ```python
+> >     s = "How are you?"
+> >     print s
+> >     ```
+> >
+> >     ```html
+> >     <!DOCTYPE html>
+> >     <html>
+> >     <body>
+> >     <a href=https://carpentries.org/>This is a link</a>
+> >     </body>
+> >     </html>
+> >     ```
 > {: .solution }
 {: .challenge }
 
@@ -296,18 +252,10 @@ You can define either
 
 
 > ## Links
-> Fill in the blanks below to create the following rendered view:
->
-> ---
->
-> Examples:
-> 1. [Inline link](https://carpentries.org/)
-> 2. [Reference link][case-InSeNsiTiVe-reference-tag]
->
-> [case-insensitive-reference-tag]: https://carpentries.org/
+> Fill in the blanks in this code
 >
 > ~~~
-> Examples:
+> Example links:
 > 1. [___](https://carpentries.org/)
 > 2. [___]___case-InSeNsiTiVe-reference-tag___
 >
@@ -315,15 +263,20 @@ You can define either
 > ~~~
 > {: .source }
 >
+> to create the following rendered view:
+>
+> ![Preview tab of code blocks with syntax highlighting](../fig/exercise_links.png)
+>
+>
 > > ## Solution
-> > ~~~
-> > Examples:
-> > 1. [Inline link](https://carpentries.org/)
-> > 2. [Reference link][case-InSeNsiTiVe-reference-tag]
 > >
-> > [case-insensitive-reference-tag]: https://carpentries.org/
-> > ~~~
-> > {: .source }
+> >     Example links:
+> >     1. [Inline link](https://carpentries.org/)
+> >     2. [Reference link][case-InSeNsiTiVe-reference-tag]
+> >
+> >     [case-insensitive-reference-tag]: https://carpentries.org/
+> >
+> >
 > {: .solution }
 {: .challenge }
 
