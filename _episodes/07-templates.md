@@ -17,6 +17,16 @@ keypoints:
 - "You can avoid duplicated effort by basing new layouts on previous ones"
 ---
 
+Elements that will appear on every page across our website,
+like the banner image we `include`d in our pages in the previous section,
+form part of the structure of the page:
+unlike the content specific to each page,
+these structural elements do not change from page to page.
+As such, although the `include` tags reduce the pain we endure when
+adjusting that repeated content,
+it is not good practice to `include` the same content over and over again.
+This structure can instead be defined within the _layout_ of the pages of the site.
+
 > ## Expanding the layout
 >
 > We will probably want to include the contact line we added in the previous section
@@ -37,7 +47,7 @@ keypoints:
 > > ---
 > > layout: page
 > > ---
-> > 
+> >
 > > {% raw %}{{ content }}
 > > {% include contact.md %}{% endraw %}
 > > ~~~
