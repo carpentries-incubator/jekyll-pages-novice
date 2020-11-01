@@ -159,6 +159,13 @@ Numbered enumerations are helpful for displaying sequences and the numbers may h
 > {: .solution }
 {: .challenge }
 
+> ## Markdown Cheatsheet
+>
+> Markdown offers a varyity of formatting features.
+> Have a look at this [cheatsheet][github-flavored-markdown] to get an overview or look things up.
+>
+{: .callout}
+
 You can use single backticks to call out code, e.g. `print('Hello world')` and
 use triple backticks to format larger code snippets, creating code blocks.
 
