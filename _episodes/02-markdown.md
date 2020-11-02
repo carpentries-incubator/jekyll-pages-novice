@@ -270,7 +270,7 @@ You can define either
 > ~~~
 > {: .source }
 >
-> to create the following rendered view:
+> to create the following rendered view, where both links point to <https://carpentries.org/>:
 >
 > ![Preview tab of code blocks with syntax highlighting](../fig/exercise_links.png)
 >
