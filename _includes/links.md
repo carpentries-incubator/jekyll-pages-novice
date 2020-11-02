@@ -10,10 +10,12 @@
 [cran-checkpoint]: https://cran.r-project.org/package=checkpoint
 [cran-knitr]: https://cran.r-project.org/package=knitr
 [cran-stringr]: https://cran.r-project.org/package=stringr
+[date-iso]: https://en.wikipedia.org/wiki/ISO_8601
 [dc-lessons]: http://www.datacarpentry.org/lessons/
 [diversekids]: https://diversekids.co.uk/
 [email]: mailto:team@carpentries.org
 [filters]: https://jekyllrb.com/docs/liquid/filters/
+[ghp-dependencies]: https://pages.github.com/versions/
 [github-flavored-markdown]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 [gitlab-flavored-markdown]: https://docs.gitlab.com/ee/user/markdown.html
 [github-importer]: https://import.github.com/
@@ -35,6 +37,7 @@
 [lesson-mainpage]: {{ relative_root_path }}{% link index.md %}
 [lesson-reference]: {{ relative_root_path }}{% link reference.md %}
 [lesson-setup]: {{ relative_root_path }}{% link setup.md %}
+[liquid]: https://shopify.dev/docs/themes/liquid/
 [mit-license]: https://opensource.org/licenses/mit-license.html
 [morea]: https://morea-framework.github.io/
 [numfocus]: https://numfocus.org/
