@@ -11,6 +11,7 @@
 [cran-knitr]: https://cran.r-project.org/package=knitr
 [cran-stringr]: https://cran.r-project.org/package=stringr
 [dc-lessons]: http://www.datacarpentry.org/lessons/
+[diversekids]: https://diversekids.co.uk/
 [email]: mailto:team@carpentries.org
 [filters]: https://jekyllrb.com/docs/liquid/filters/
 [github-flavored-markdown]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
@@ -48,6 +49,7 @@
 [ruby-installer]: https://rubyinstaller.org/
 [rubygems]: https://rubygems.org/pages/download/
 [seo-wikipedia]: https://en.wikipedia.org/wiki/Search_engine_optimization
+[ssi-homepage]: https://software.ac.uk/
 [styles]: https://github.com/carpentries/styles/
 [swc-git-novice-episode-track-changes]: https://swcarpentry.github.io/git-novice/04-changes/index.html
 [swc-lessons]: https://software-carpentry.org/lessons/
