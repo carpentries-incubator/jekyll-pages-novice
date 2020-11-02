@@ -217,7 +217,7 @@ introductory triple backticks.
 > ~~~
 > {: .source }
 >
-> guess in which programming language each snippet is written
+> then guess in which programming language each snippet is written,
 > and fill the gaps to activate syntax highlighting, creating this rendered view:
 >
 > ![Preview tab of code blocks with syntax highlighting](../fig/exercise_syntax_highlighting.png)
