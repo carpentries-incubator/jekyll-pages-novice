@@ -170,7 +170,19 @@ You can use single backticks to call out code, e.g. `print('Hello world')` and
 use triple backticks to format larger code snippets, creating code blocks.
 
 > ## Add Code
-> Fill in the blanks ( __ ) below to create the following view
+> Fill in the blanks ( __ ) in this code
+>
+> ~~~
+> You can reference code __message='Hello World'__
+> or commands __git status__ inside text.
+> Larger code snippets look like this:
+> __
+> print('Hello World')
+> __
+> ~~~
+> {: .source }
+>
+> to create the following view
 >
 > ![Preview tab with blanks before code and code blocks](../fig/exercise_add_code.png)
 >
@@ -178,7 +190,7 @@ use triple backticks to format larger code snippets, creating code blocks.
 > > ## Solution
 > >
 > >     You can reference code `message='Hello World'`
-> >     or commands `git status` inside text.
+> >     or commands `git status` inside text.  
 > >     Larger code snippets look like this:
 > >     ```
 > >     print('Hello World')
