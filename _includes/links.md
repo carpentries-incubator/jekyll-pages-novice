@@ -19,8 +19,10 @@
 [importer]: https://github.com/new/import
 [jekyll-collection]: https://jekyllrb.com/docs/collections/
 [jekyll-install]: https://jekyllrb.com/docs/installation/
+[jekyll-rendering]: https://jekyllrb.com/docs/rendering-process/
 [jekyll-windows]: http://jekyll-windows.juthilo.com/
 [jekyll]: https://jekyllrb.com/
+[jekyllthemes]: https://jekyllthemes.io/
 [js4ds]: http://js4ds.org
 [jupyter]: https://jupyter.org/
 [kramdown]: https://kramdown.gettalong.org/
@@ -45,10 +47,12 @@
 [ruby-install-guide]: https://www.ruby-lang.org/en/downloads/
 [ruby-installer]: https://rubyinstaller.org/
 [rubygems]: https://rubygems.org/pages/download/
+[seo-wikipedia]: https://en.wikipedia.org/wiki/Search_engine_optimization
 [styles]: https://github.com/carpentries/styles/
 [swc-git-novice-episode-track-changes]: https://swcarpentry.github.io/git-novice/04-changes/index.html
 [swc-lessons]: https://software-carpentry.org/lessons/
 [swc-releases]: https://github.com/swcarpentry/swc-releases
 [training]: https://carpentries.github.io/instructor-training/
 [workshop-repo]: {{ site.workshop_repo }}
+[w3-viewport]: https://www.w3schools.com/css/css_rwd_viewport.asp
 [yaml]: http://yaml.org/
