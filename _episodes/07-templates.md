@@ -146,7 +146,7 @@ This file defines the bare minimum layout your pages should have.
 >     <title>{{ page.title }}</title>
 >   </head>
 >   <body>
->     <img src="carpentries-incubator.github.io/building-websites-with-jekyll-and-github-or-gitlab/files/site_banner.png">
+>     {% include banner.html %}
 >     <h1>{{ page.title }}</h1>
 >     <section>
 >       {{ content }}
@@ -159,11 +159,37 @@ This file defines the bare minimum layout your pages should have.
 > ~~~
 > {: .source }
 >
-> Apply this layout to one of your pages and reload the page to check that
-> it works as expected.
-> You should see a footer at the bottom of the page.
+> 1. Apply this layout to one of your pages and reload the page to check that
+>    it works as expected.
+>    You should see a footer at the bottom of the page.
+> 2. Note that we are using `include` to add the banner image
+>    to this default layout.
+>    How can you do the same with the footer,
+>    instead of defining it directly within the layout file?
 >
+> > ## Solution
+> >
+> > To separate the footer from the layout,
+> > copy the {% raw %}<footer></footer>{% endraw %} tags and the text between
+> > them into a file `_includes/footer.html`:
+> >
+> > ~~~
+> > {% raw %}<footer>
+> >   An example website made with Jekyll.
+> > </footer>{% endraw %}
+> > ~~~
+> > {: .source }
+> >
+> > And to `include` it back into the layout,
+> > replace that `footer` element with
+> >
+> > ~~~
+> > {% raw %}{% include footer.html %}{% endraw %}
+> > ~~~
+> > {: .source }
+> {: .solution}
 {: .challenge }
+
 
 
 ## Layout Inheritance
