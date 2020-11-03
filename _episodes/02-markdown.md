@@ -99,7 +99,7 @@ Let's do some exercises to learn more about structuring and emphasis.
 
 > ## Add a Sub Heading and Emphasised Text with Line Breaks
 >
-> Try to reproduce the source code of the following view
+> Try to reproduce the source code of the following view.
 >
 > ![Preview tab of README.md with additional lines inlcuding sub heading and emphasised text with line breaks](../fig/group_website_excercise_add_a_sub_heading.png)
 >
@@ -142,7 +142,7 @@ Numbered enumerations are helpful for displaying sequences and the numbers may h
 
 > ## Nested Lists and Enumerations
 >
-> Try to reproduce the source code of the following view
+> Try to reproduce the source code of the following view.
 >
 > ![Preview tab nested lists and enumerations](../fig/exercise_nested_lists_enumerations.png)
 >
@@ -183,7 +183,7 @@ use triple backticks to format larger code snippets, creating code blocks.
 > ~~~
 > {: .source }
 >
-> to create the following view
+> to create the following view.
 >
 > ![Preview tab with blanks before code and code blocks](../fig/exercise_add_code.png)
 >
@@ -283,7 +283,7 @@ You can define either
 > ~~~
 > {: .source }
 >
-> to create the following rendered view, where both links point to <https://carpentries.org/>:
+> to create the following rendered view, where both links point to <https://carpentries.org/>.
 >
 > ![Preview tab of inline and reference style links](../fig/exercise_links.png)
 >
