@@ -175,6 +175,16 @@ use triple backticks to format larger code snippets, creating code blocks.
 >
 > ![Preview tab with blanks before code and code blocks](../fig/exercise_add_code.png)
 >
+> Start from the following code and fill the blanks:
+>
+>```
+> You can reference code __message='Hello World'__
+> or commands __git status__ inside text.
+> Larger code snippets look like this:
+> __
+> print('Hello World')
+> __
+> ```
 >
 > > ## Solution
 > >
