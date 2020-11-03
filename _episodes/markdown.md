@@ -202,34 +202,23 @@ Syntax highlighting of code blocks can increase readability a lot.
 You get nice coloured code by adding an language identifier right after the
 introductory triple backticks.
 
+Let's take an example with Python:
+
+~~~
+```python
+print("Hello everyone!")
+```
+~~~
+
+The code above will produce the following view:
+
+```python
+print("Hello everyone!")
+```
+
 > ## Syntax Highlighting
 >
-> Below are code snippets written in HTML, Python, and R.
-> Copy this code
->
-> ~~~
-> ```_
-> print(paste("How","are","you?"), quote = FALSE)
-> ```
->
-> ```______
-> s = "How are you?"
-> print s
-> ```
->
-> ```____
-> <!DOCTYPE html>
-> <html>
-> <body>
-> <a href=https://carpentries.org/>This is a link</a>
-> </body>
-> </html>
-> ```
-> ~~~
-> {: .source }
->
-> then guess in which programming language each snippet is written,
-> and fill the gaps to activate syntax highlighting, creating this rendered view:
+> Try to reproduce the markdown source code to create the following view:
 >
 > ![Preview tab of code blocks with syntax highlighting](../fig/exercise_syntax_highlighting.png)
 >
@@ -242,7 +231,7 @@ introductory triple backticks.
 > >
 > >     ```python
 > >     s = "How are you?"
-> >     print s
+> >     print(s)
 > >     ```
 > >
 > >     ```html
@@ -270,7 +259,11 @@ You can define either
 
 
 > ## Links
-> Fill in the blanks in this code
+> Reproduce the markdown source code to create the following view:
+>
+> ![Preview tab of inline and reference style links](../fig/exercise_links.png)
+>
+> Start from the following code and fill the blanks:
 >
 > ~~~
 > Example links:
@@ -280,10 +273,6 @@ You can define either
 > [case-insensitive-reference-tag]: https://carpentries.org/
 > ~~~
 > {: .source }
->
-> to create the following rendered view, where both links point to <https://carpentries.org/>:
->
-> ![Preview tab of inline and reference style links](../fig/exercise_links.png)
 >
 >
 > > ## Solution
