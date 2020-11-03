@@ -34,6 +34,18 @@ This tutorial aims to address this,
 by providing a step-by-step guide to creating a collection of pages
 and combining them into a coherent site using a framework called _Jekyll_.
 
+> ## Outdated screenshots
+>
+> Throughout this lesson we will make use and show content and screenshots from GitHub.com.
+> As an ever evolving platform, GitHub is always adding new features
+> and new visual elements to its website.
+> **Screenshots** in the lesson may then become out-of-sync, refer or show content that no longer exists.
+>
+> If during the lesson you find **screenshots** that no longer match what you see in your browser,
+> please [open an issue][github-jekyll-issues] describing what you see and how it differs from the lesson content.
+> Feel free to add as many screenshots as necessary to clarify the discrepancy.
+{: .callout }
+
 ## Target Audience
 
 **Anita** is a newly-certified Carpentries instructor.
