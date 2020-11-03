@@ -74,14 +74,39 @@ the sites linked in the previous exercise aren't built with Jekyll.
 But the principles behind reusing content apply regardless of
 the particular framework being used to build the site.
 
+## Carrying the Banner
+
 Let's look at an example of how we can create a block of common content
 and reuse it in multiple pages on our site.
 At the moment our pages are quite plain:
 why don't we try adding a banner to the top of each page?
-Begin by adding this HTML to the top of `index.md`:
+
+We're going to add a pre-made banner image to our repository,
+and it is good practice to store all image files in a common folder.
+1. click "Create new file" under the "Add file"
+dropdown on your repository homepage,
+2. in the "Name your file..." box, type `images/`.
+   The folder name should be automatically inserted in the path displayed
+   next to this box for naming the file.
+3. You can then leave the file blank and name it `.gitkeep`.
+   When you commit the changes, the `images` folder will have been
+   added to your repository.
+We will be uploading our banner image to this folder in a moment
+and unfortunately GitHub does not provide a way to create a new folder
+while uploading existing files, only while creating new ones.
+When making these blank files,
+which exist only to allow the existence of their parent repository,
+it is traditional to call them `.gitkeep`.
+Now [download this banner image that we will add to our pages][banner-image] and
+upload the file to your newly-created `images` folder on GitHub:
+youc an do this by navigating into the folder and choosing
+"Upload files" from the "Add file" dropdown you used before.
+
+Now that the banner image is available in our site repository,
+add this HTML immediately after the YAML front matter in `index.md`:
 
 ```
-<img src="carpentries-incubator.github.io/building-websites-with-jekyll-and-github-or-gitlab/files/site_banner.png">
+<img src="/images/site_banner.png" alt="Group Website with Jekyll">
 ```
 
 ![Group Website with Jekyll](/files/site_banner.png)
@@ -100,7 +125,7 @@ at the top of your page.
 > > ## Solution
 > >
 > > ```
-> > <a href="https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/"><img src="carpentries-incubator.github.io/building-websites-with-jekyll-and-github-or-gitlab/files/site_banner.png"></a>
+> > <a href="https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/"><img src="/images/site_banner.png" alt="Group Website with Jekyll"></a>
 > > ```
 > >
 > {: .solution }
@@ -221,8 +246,8 @@ We will see another example of this shortly.
 
 ### List Parameters and For Loops
 
-YAML lets us define lists and dictionaries too, in addition to simple parameters we have seen so far. 
-And Jekyll supports the use of these more complex parameters as well. 
+YAML lets us define lists and dictionaries too, in addition to simple parameters we have seen so far.
+And Jekyll supports the use of these more complex parameters as well.
 
 For example, we may want
 to list the names of all the project team members, together with their roles and start dates inside the `_config.yml` file
@@ -244,11 +269,11 @@ This defines 'team_members' as a list of 3 elements; each element is a dictionar
 >
 {: .callout}
 
-In order to access all elements in a list you need a 'for loop', which is performed in Liquid 
-by surrounding it in a curly brace percentage sign as: 
+In order to access all elements in a list you need a 'for loop', which is performed in Liquid
+by surrounding it in a curly brace percentage sign as:
 `{% raw %}{% for variable in list %}{% endraw %}`. You follow this with the 'body' of your loop, and finish off
  with the 'for loop' end-tag: `{% raw %}{% endfor %}{% endraw %}`.
- 
+
 Let's access the information about the team and display the name of the project lead on the home page `index.md` and the information about the whole team in `about.md`. Note that we access the team lead's name as `team_members[0]["name"]` because the team lead is the first team member in the `team_members` list.
 
 1. Modify `_config.yml` file and add the `team_members` parameter as defined above. The file should now look like:
@@ -269,39 +294,39 @@ Let's access the information about the team and display the name of the project 
 
 2. In file `about.md`, we add a new section for the team and iterate over the values defined in parameter `site.team_members` in a loop to display all team members' names and roles. The file now should look like:
 
-    ~~~ 
+    ~~~
     # About
-   
+
     ## Project
     {% raw %}{{ site.description }}{% endraw %}
-           
+
     ## Funders
     We gratefully acknowledge funding from the XYZ Founding Council, under grant number 'abc'.
-             
-    ## Team                   
-   
+
+    ## Team
+
     The following people are members of our research team:
     {% raw %}{% for team_member in site.team_members %}
         - Name: {% raw %}{{ team_member.name }}{% endraw %}, role: {% raw %}{{ team_member.role }}{% endraw %}
     {% raw %}{% endfor %}{% endraw %}
-   
+
     ## Cite us
-    You can cite the project as:  
-    
+    You can cite the project as:
+
     >    *My research project. Zenodo. https://zenodo.org/record/doi*
-    
+
     ## Contact us
-   
-    Email: [team@my.research.org](mailto:{% raw %}{{ site.email }}{% endraw %})   
-    
-    Twitter: [@my_research_project]({% raw %}{{ site.twitter }}{% endraw %})   
+
+    Email: [team@my.research.org](mailto:{% raw %}{{ site.email }}{% endraw %})
+
+    Twitter: [@my_research_project]({% raw %}{{ site.twitter }}{% endraw %})
     ~~~
 
 3. In file `index.md` add the team lead's name so that it looks like:
 
     ~~~
     # {% raw %}{{ site.title }}{% endraw %}
-   
+
     ## Description
     {% raw %}{{ site.description }}{% endraw %}
 
@@ -310,20 +335,20 @@ Let's access the information about the team and display the name of the project 
 
     Have any questions about what we do? [We'd love to hear from you!]({% raw %}mailto:{{ site.email }}{% endraw %})
     ~~~
-    
-If you need to add, remove or modify a team member, you can simply do it in `_config.yml` without modifying your pages. 
+
+If you need to add, remove or modify a team member, you can simply do it in `_config.yml` without modifying your pages.
 Let's now change the values of a global parameter and study the effect.
 
 > ## Exercise
-> Your project team has changed. The team lead has left and in her place is a new person: 'Tom Cat', who started on 
->'2020-10-01'. In addition, the team was expanded and a new developer called 'Alice Dauncey' who joined on '2020-09-15'. 
+> Your project team has changed. The team lead has left and in her place is a new person: 'Tom Cat', who started on
+>'2020-10-01'. In addition, the team was expanded and a new developer called 'Alice Dauncey' who joined on '2020-09-15'.
 > Update your website to reflect these team changes.
 > > ## Solution
-> > Luckily, we keep all our global settings in `_config.yml` so all we have to do is update the values there. This saved us some work as for the team lead we would otherwise have to modify both `index.md` and `about.md`. 
+> > Luckily, we keep all our global settings in `_config.yml` so all we have to do is update the values there. This saved us some work as for the team lead we would otherwise have to modify both `index.md` and `about.md`.
 > >
 > >For the new developer joining the team, we also only need to her information to `team_members` in `_config.yml` and our `for loop` from `about.md` will simply pick up the changes automatically. Magic! Our `_config.yml` file should now look like:
 > >
-> > ~~~ 
+> > ~~~
 > > title: "Building Websites in GitHub"
 > > description: "This research project develops training materials for reseachers wanting to learn to build project
 > > websites in GitHub with GitHub Pages."
@@ -336,7 +361,7 @@ Let's now change the values of a global parameter and study the effect.
 > >    {name: "Alice Dauncey", role: "developer", start_date: "2020-09-15"}
 > > ]
 > > ~~~
-> > {: .language-yaml}  
+> > {: .language-yaml}
 > > Check the changes in your website.
 > {: .solution}
 {: .challenge}

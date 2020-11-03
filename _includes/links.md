@@ -1,4 +1,5 @@
 {% include base_path.html %}
+[banner-image]: https://github.com/carpentries-incubator/building-websites-with-jekyll-and-github-or-gitlab/raw/gh-pages/files/site_banner.png
 [cc-by-human]: https://creativecommons.org/licenses/by/4.0/
 [cc-by-legal]: https://creativecommons.org/licenses/by/4.0/legalcode
 [ci]: http://communityin.org/

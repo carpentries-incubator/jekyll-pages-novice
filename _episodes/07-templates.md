@@ -59,7 +59,7 @@ The page content is missing because we haven't yet told Jekyll where to put it.
 To do that we need to add the special `content` variable into the layout file:
 
 ~~~
-{% raw %}<img src="carpentries-incubator.github.io/building-websites-with-jekyll-and-github-or-gitlab/files/site_banner.png">{% endraw %}
+{% raw %}<img src="/images/site_banner.png" alt="Group Website with Jekyll">{% endraw %}
 
 {% raw %}{{ content }}{% endraw %}
 ~~~
@@ -96,7 +96,7 @@ tag is still present in `index.md`.
 > > should look like this:
 > >
 > > ~~~
-> > {% raw %}<img src="carpentries-incubator.github.io/building-websites-with-jekyll-and-github-or-gitlab/files/site_banner.png">
+> > {% raw %}<img src="/images/site_banner.png" alt="Group Website with Jekyll">
 > >
 > > {{ content }}
 > >
