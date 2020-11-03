@@ -259,13 +259,6 @@ You can define either
 > ~~~
 > {: .source }
 >
-<<<<<<< HEAD
-=======
-> to create the following rendered view, where both links point to <https://carpentries.org/>.
->
-> ![Preview tab of inline and reference style links](../fig/exercise_links.png)
->
->>>>>>> gh-pages
 >
 > > ## Solution
 > >
