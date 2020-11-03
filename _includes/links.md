@@ -52,6 +52,7 @@
 [ruby-install-guide]: https://www.ruby-lang.org/en/downloads/
 [ruby-installer]: https://rubyinstaller.org/
 [rubygems]: https://rubygems.org/pages/download/
+[screen-reader]: https://webaccess.berkeley.edu/ask-pecan/what-is-a-screen-reader
 [seo-wikipedia]: https://en.wikipedia.org/wiki/Search_engine_optimization
 [ssi-homepage]: https://software.ac.uk/
 [styles]: https://github.com/carpentries/styles/

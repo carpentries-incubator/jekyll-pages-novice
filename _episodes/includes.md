@@ -114,6 +114,30 @@ add this HTML immediately after the YAML front matter in `index.md`:
 Adding this `img` element should result in this title banner appearing
 at the top of your page.
 
+> ## Image Elements
+>
+> In the `img` tag above,
+> the `src` parameter tells the web browser the location of
+> the image file to display on the page,
+> and the `alt` parameter defines _alternative text_
+> (often abbreviated to _alt text_).
+> This alternative text is important for two reasons:
+>
+> 1. It defines the description given to anyone using
+>    [a screen reader][screen-reader] to access your site,
+>    who cannot view the image itself.
+>    If you do not define alt text for an image/figure,
+>    the content of your site becomes less accessible for these users.
+> 2. If the browser cannot display the image for some reason
+>    (e.g. the image is moved/renamed/cannot be served)
+>    the alt text is displayed instead.
+>
+> It is good practice to _always_ define alt text for your images,
+> and you should aim to limit this alt text to a brief description
+> of the information provided by the image,
+> ideally providing no more or less detail
+> than is displayed in the image itself.
+{: .callout }
 
 > ## Optional Exercise
 >
