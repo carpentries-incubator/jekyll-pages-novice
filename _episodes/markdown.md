@@ -145,7 +145,7 @@ Numbered enumerations are helpful for displaying sequences and the numbers may h
 
 > ## Markdown Cheatsheet
 >
-> Markdown offers a varyity of formatting features.
+> Markdown offers a variety of formatting features.
 > Have a look at this [cheatsheet][github-flavored-markdown] to get an overview or look things up.
 >
 {: .callout}
@@ -154,7 +154,12 @@ You can use single backticks to call out code, e.g. `print('Hello world')` and
 use triple backticks to format larger code snippets, creating code blocks.
 
 > ## Add Code
-> Fill in the blanks ( __ ) in this code
+> Reproduce the markdown source code to create the following view:
+>
+>
+> ![Preview tab with blanks before code and code blocks](../fig/exercise_add_code.png)
+>
+> Start from the following code and fill the blanks:
 >
 > ~~~
 > You can reference code __message='Hello World'__
@@ -165,11 +170,6 @@ use triple backticks to format larger code snippets, creating code blocks.
 > __
 > ~~~
 > {: .source }
->
-> to create the following view.
->
-> ![Preview tab with blanks before code and code blocks](../fig/exercise_add_code.png)
->
 >
 > > ## Solution
 > >
@@ -187,34 +187,23 @@ Syntax highlighting of code blocks can increase readability a lot.
 You get nice coloured code by adding an language identifier right after the
 introductory triple backticks.
 
+Let's take an example with Python:
+
+~~~
+```python
+print("Hello everyone!")
+```
+~~~
+
+The code above will produce the following view:
+
+```python
+print("Hello everyone!")
+```
+
 > ## Syntax Highlighting
 >
-> Below are code snippets written in HTML, Python, and R.
-> Copy this code
->
-> ~~~
-> ```_
-> print(paste("How","are","you?"), quote = FALSE)
-> ```
->
-> ```______
-> s = "How are you?"
-> print s
-> ```
->
-> ```____
-> <!DOCTYPE html>
-> <html>
-> <body>
-> <a href=https://carpentries.org/>This is a link</a>
-> </body>
-> </html>
-> ```
-> ~~~
-> {: .source }
->
-> then guess in which programming language each snippet is written,
-> and fill the gaps to activate syntax highlighting, creating this rendered view:
+> Try to reproduce the markdown source code to create the following view:
 >
 > ![Preview tab of code blocks with syntax highlighting](../fig/exercise_syntax_highlighting.png)
 >
@@ -227,7 +216,7 @@ introductory triple backticks.
 > >
 > >     ```python
 > >     s = "How are you?"
-> >     print s
+> >     print(s)
 > >     ```
 > >
 > >     ```html
@@ -255,7 +244,11 @@ You can define either
 
 
 > ## Links
-> Fill in the blanks in this code
+> Reproduce the markdown source code to create the following view:
+>
+> ![Preview tab of inline and reference style links](../fig/exercise_links.png)
+>
+> Start from the following code and fill the blanks:
 >
 > ~~~
 > Example links:
@@ -265,10 +258,6 @@ You can define either
 > [case-insensitive-reference-tag]: https://carpentries.org/
 > ~~~
 > {: .source }
->
-> to create the following rendered view, where both links point to <https://carpentries.org/>.
->
-> ![Preview tab of inline and reference style links](../fig/exercise_links.png)
 >
 >
 > > ## Solution
