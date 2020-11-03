@@ -137,9 +137,9 @@ Numbered enumerations are helpful for displaying sequences and the numbers may h
 > >         - nested
 > >     - returning to the top-level like this.
 > >
-> >     2. Enumerations can start at any number and
-> >     3. continue to increase
-> >     26. in steps of one even of the numering does not. This updates the numbering if individual items are deleted.
+> >     2. Enumerations can start at any number but
+> >     3. continue to increase in steps of one
+> >     5. even if the numbering does not. This updates the rendered numbering to avoid gaps when individual items are deleted.
 > {: .solution }
 {: .challenge }
 
