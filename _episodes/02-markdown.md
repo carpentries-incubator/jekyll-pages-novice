@@ -161,7 +161,7 @@ Numbered enumerations are helpful for displaying sequences and the numbers may h
 
 > ## Markdown Cheatsheet
 >
-> Markdown offers a varyity of formatting features.
+> Markdown offers a variety of formatting features.
 > Have a look at this [cheatsheet][github-flavored-markdown] to get an overview or look things up.
 >
 {: .callout}
@@ -170,19 +170,8 @@ You can use single backticks to call out code, e.g. `print('Hello world')` and
 use triple backticks to format larger code snippets, creating code blocks.
 
 > ## Add Code
-> Fill in the blanks ( __ ) in this code
+> Reproduce the markdown source code to create the following view:
 >
-> ~~~
-> You can reference code __message='Hello World'__
-> or commands __git status__ inside text.
-> Larger code snippets look like this:
-> __
-> print('Hello World')
-> __
-> ~~~
-> {: .source }
->
-> to create the following view
 >
 > ![Preview tab with blanks before code and code blocks](../fig/exercise_add_code.png)
 >
