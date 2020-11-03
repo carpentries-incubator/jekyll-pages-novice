@@ -14,23 +14,6 @@ keypoints:
 - "The landing page for a website is conventionally named `index.md`"
 ---
 
-- vanilla text
-- adding a title
-- bold & italic
-- code
-  - inline
-  - code blocks & formatting
-- links
-  - inline style
-  - reference style
-  - reference style makes it easier to re-use and refactor links
-- link out to a more comprehensive guide, e.g.
-  - https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
-  - https://docs.gitlab.com/ee/user/markdown.html
-- save to a file called index.md
-- put directory under version control with git
-  - link to SWC git-novice
-
 # Markdown
 Markdown is a lightweight markup language, i.e. a convention for adding
 style information to textual content.
