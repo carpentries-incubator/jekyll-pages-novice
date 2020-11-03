@@ -66,6 +66,18 @@ collections:
     output: true
     permalink: /:path/index.html
 
+# manual episode order
+
+episode_order:
+  - introduction
+  - markdown
+  - github-pages
+  - starting-jekyll
+  - includes
+  - layouts
+  - filters
+  - arrays
+
 # Set the default layout for things in the episodes collection.
 defaults:
   - values:
