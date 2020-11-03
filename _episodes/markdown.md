@@ -14,23 +14,6 @@ keypoints:
 - "The landing page for a website is conventionally named `index.md`"
 ---
 
-- vanilla text
-- adding a title
-- bold & italic
-- code
-  - inline
-  - code blocks & formatting
-- links
-  - inline style
-  - reference style
-  - reference style makes it easier to re-use and refactor links
-- link out to a more comprehensive guide, e.g.
-  - https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
-  - https://docs.gitlab.com/ee/user/markdown.html
-- save to a file called index.md
-- put directory under version control with git
-  - link to SWC git-novice
-
 # Markdown
 Markdown is a lightweight markup language, i.e. a convention for adding
 style information to textual content.
@@ -70,7 +53,8 @@ You can change the content and have a look at the rendered view by clicking the 
 ![Preview of the rendered content of the group websites README file](../fig/group_website_readme_render.png)
 
 Let's add `Some **bold** font` and see what happens when we preview it using the preview tab.
-If you like to permanently save the content to the file `README.md`, scroll down a bit and commit your changes.
+If you like to permanently save the content to the file `README.md`, scroll down a bit and you'll see a `Commit changes` menu
+where you can commit your changes.
 After having changed something, the commit menu looks like this:
 
 ![Commit menu for changes done in the GitHub web interface is located at the bottom of the website](../fig/group_website_readme_commit.png)
@@ -98,7 +82,7 @@ Let's do some exercises to learn more about structuring and emphasis.
 
 > ## Add a Sub Heading and Emphasised Text with Line Breaks
 >
-> Try to reproduce the source code of the following view
+> Try to reproduce the source code of the following view.
 >
 > ![Preview tab of README.md with additional lines inlcuding sub heading and emphasised text with line breaks](../fig/group_website_excercise_add_a_sub_heading.png)
 >
@@ -141,7 +125,7 @@ Numbered enumerations are helpful for displaying sequences and the numbers may h
 
 > ## Nested Lists and Enumerations
 >
-> Try to reproduce the source code of the following view
+> Try to reproduce the source code of the following view.
 >
 > ![Preview tab nested lists and enumerations](../fig/exercise_nested_lists_enumerations.png)
 >
@@ -177,19 +161,20 @@ use triple backticks to format larger code snippets, creating code blocks.
 >
 > Start from the following code and fill the blanks:
 >
->```
+> ~~~
 > You can reference code __message='Hello World'__
 > or commands __git status__ inside text.
 > Larger code snippets look like this:
 > __
 > print('Hello World')
 > __
-> ```
+> ~~~
+> {: .source }
 >
 > > ## Solution
 > >
 > >     You can reference code `message='Hello World'`
-> >     or commands `git status` inside text.  
+> >     or commands `git status` inside text.
 > >     Larger code snippets look like this:
 > >     ```
 > >     print('Hello World')
@@ -274,6 +259,13 @@ You can define either
 > ~~~
 > {: .source }
 >
+<<<<<<< HEAD
+=======
+> to create the following rendered view, where both links point to <https://carpentries.org/>.
+>
+> ![Preview tab of inline and reference style links](../fig/exercise_links.png)
+>
+>>>>>>> gh-pages
 >
 > > ## Solution
 > >
