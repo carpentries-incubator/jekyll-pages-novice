@@ -99,7 +99,7 @@ which exist only to allow the existence of their parent repository,
 it is traditional to call them `.gitkeep`.
 Now [download this banner image that we will add to our pages][banner-image] and
 upload the file to your newly-created `images` folder on GitHub:
-youc an do this by navigating into the folder and choosing
+you can do this by navigating into the folder and choosing
 "Upload files" from the "Add file" dropdown you used before.
 
 Now that the banner image is available in our site repository,
