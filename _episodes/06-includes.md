@@ -140,13 +140,15 @@ Instead, we can go some way to avoid this hassle by using
 some magic that Jekyll provides: `include` tags.
 To demonstrate this, save the HTML snippet used to display the image into
 a new file in your repository, called `_includes/banner.html`.
-To create a folder for your new file in GitHub:
+Unlike when we wanted to upload a pre-existing file
+to a new folder earlier,
+we can create the new folder and the new file simultaneously:
 
 1. click "Create new file" under the "Add file"
 dropdown on your repository homepage,
 2. in the "Name your file..." box, type `_includes/`.
-   The folder name should be automatically inserted in the path displayed
-   next to this box for naming the file.
+   As before, the folder name should be automatically inserted
+   next to the box.
 3. You can then name the file `banner.html` and, when you commit the changes,
    the `_includes` folder will have been added to your repository.
 
