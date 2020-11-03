@@ -110,7 +110,7 @@ tag is still present in `index.md`.
 ## Valid HTML, Page Metadata and a Default Layout
 
 You might recall from
-[the introduction](/01-introduction/index.html#hello-world-in-html)
+[the introduction](/introduction/index.html#hello-world-in-html)
 to this tutorial, that a _valid_ HTML page consists of more than
 only the content we want to display.
 We haven't written these extra elements (`<html>`, `<head>`, `<meta>`, etc)
@@ -237,7 +237,7 @@ to all the relevant pages.
 > ## You Can't Include Link References in the Layout
 >
 > In the previous section,
-> [we recommended that you `include` a file of references](/06-includes/indx.html#including-link-references)
+> [we recommended that you `include` a file of references](/includes/indx.html#including-link-references)
 > for the links on your site.
 > Unfortunately, you cannot add this `{% raw %}{% include links.md %}{% endraw %}`
 > tag to the default layout of your site to prevent you from needing to
