@@ -19,6 +19,7 @@
 [github-flavored-markdown]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 [gitlab-flavored-markdown]: https://docs.gitlab.com/ee/user/markdown.html
 [github-importer]: https://import.github.com/
+[github-jekyll-issues]: https://github.com/carpentries-incubator/building-websites-with-jekyll-and-github-or-gitlab/issues
 [importer]: https://github.com/new/import
 [jekyll-collection]: https://jekyllrb.com/docs/collections/
 [jekyll-install]: https://jekyllrb.com/docs/installation/
