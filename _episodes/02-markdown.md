@@ -70,7 +70,8 @@ You can change the content and have a look at the rendered view by clicking the 
 ![Preview of the rendered content of the group websites README file](../fig/group_website_readme_render.png)
 
 Let's add `Some **bold** font` and see what happens when we preview it using the preview tab.
-If you like to permanently save the content to the file `README.md`, scroll down a bit and commit your changes.
+If you like to permanently save the content to the file `README.md`, scroll down a bit and you'll see a `Commit changes` menu
+where you can commit your changes.
 After having changed something, the commit menu looks like this:
 
 ![Commit menu for changes done in the GitHub web interface is located at the bottom of the website](../fig/group_website_readme_commit.png)
@@ -190,7 +191,7 @@ use triple backticks to format larger code snippets, creating code blocks.
 > > ## Solution
 > >
 > >     You can reference code `message='Hello World'`
-> >     or commands `git status` inside text.  
+> >     or commands `git status` inside text.
 > >     Larger code snippets look like this:
 > >     ```
 > >     print('Hello World')
