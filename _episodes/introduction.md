@@ -201,7 +201,8 @@ the website we will be creating.
 > [create a GitHub account](https://github.com/join)
 {: .callout}
 
-Click the green "New" repo button on the left hand side of github
+Make sure to login with your GitHub account and visit https://github.com.
+Click the green "New" repo button on the left hand side of GitHub:
 
 <img src="../fig/new_repo_button.png" alt="Green New Repo Button" width="100">
 
