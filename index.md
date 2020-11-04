@@ -56,7 +56,7 @@ The Carpentries instructor who taught her R encouraged her to take Carpentries I
 She has never used Git before but wants to help edit the Carpentries teaching material and create new lessons
 on topics she thinks would be useful for the students and staff she works with.
 After working through this lesson Anita will be comfortable using Github to modify the Carpentries lessons,
-playing with her own Jekyll pages repo, and eventually making her own lessons using the Carpentries lesson template.
+playing with her own Jekyll pages repository, and eventually making her own lessons using the Carpentries lesson template.
 
 **Arjun** is a third-year PhD student studying atmospheric chemistry.
 He uses Python in his research every day and keeps all his scripts and files under version control with Git.
