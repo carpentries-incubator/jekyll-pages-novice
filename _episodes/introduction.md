@@ -75,7 +75,7 @@ a web browser will make a best guess regarding the layout of HTML elements on th
 > In the `Hello world` example above 5 different tags are used (`html`, `head`, `title`, `body` and `p`) in their open `<>` and closed `</>` form.
 > We see also the special `doctype` tag that indicates the format and version of the document, in this case, [HTML(5)][html5-wikipedia].
 >
-> Other examples include often used structural tags such as `div`, `span`, `nav`, `section`;
+> Other examples include frequently used tags for structural elements such as `div`, `span`, `nav`, `section`;
 > stylized tags `i`/`em`, `b`/`strong` and `u` for *italics/emphasis*, **bold** and <u>underlined text</u>;
 > headings numbered from `h1` to `h6` for titles and progressively smaller sub-titles;
 > `img`, `video`, `audio` to embed rich media;
