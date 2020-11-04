@@ -1,4 +1,5 @@
 {% include base_path.html %}
+[banner-image]: https://github.com/carpentries-incubator/building-websites-with-jekyll-and-github-or-gitlab/raw/gh-pages/files/site_banner.png
 [cc-by-human]: https://creativecommons.org/licenses/by/4.0/
 [cc-by-legal]: https://creativecommons.org/licenses/by/4.0/legalcode
 [ci]: http://communityin.org/
@@ -19,6 +20,9 @@
 [github-flavored-markdown]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 [gitlab-flavored-markdown]: https://docs.gitlab.com/ee/user/markdown.html
 [github-importer]: https://import.github.com/
+[github-jekyll-issues]: https://github.com/carpentries-incubator/building-websites-with-jekyll-and-github-or-gitlab/issues
+[html5-wikipedia]: https://en.wikipedia.org/wiki/HTML5
+[html5-tags]: https://www.tutorialrepublic.com/html-reference/html5-tags.php
 [importer]: https://github.com/new/import
 [jekyll-collection]: https://jekyllrb.com/docs/collections/
 [jekyll-install]: https://jekyllrb.com/docs/installation/
@@ -51,6 +55,7 @@
 [ruby-install-guide]: https://www.ruby-lang.org/en/downloads/
 [ruby-installer]: https://rubyinstaller.org/
 [rubygems]: https://rubygems.org/pages/download/
+[screen-reader]: https://webaccess.berkeley.edu/ask-pecan/what-is-a-screen-reader
 [seo-wikipedia]: https://en.wikipedia.org/wiki/Search_engine_optimization
 [ssi-homepage]: https://software.ac.uk/
 [styles]: https://github.com/carpentries/styles/
@@ -60,4 +65,5 @@
 [training]: https://carpentries.github.io/instructor-training/
 [workshop-repo]: {{ site.workshop_repo }}
 [w3-viewport]: https://www.w3schools.com/css/css_rwd_viewport.asp
+[www-wikipedia]: https://en.wikipedia.org/wiki/World_Wide_Web
 [yaml]: http://yaml.org/

@@ -74,21 +74,70 @@ the sites linked in the previous exercise aren't built with Jekyll.
 But the principles behind reusing content apply regardless of
 the particular framework being used to build the site.
 
+## Carrying the Banner
+
 Let's look at an example of how we can create a block of common content
 and reuse it in multiple pages on our site.
 At the moment our pages are quite plain:
 why don't we try adding a banner to the top of each page?
-Begin by adding this HTML to the top of `index.md`:
+
+We're going to add a pre-made banner image to our repository,
+and it is good practice to store all image files in a common folder.
+1. click "Create new file" under the "Add file"
+dropdown on your repository homepage,
+2. in the "Name your file..." box, type `images/`.
+   The folder name should be automatically inserted in the path displayed
+   next to this box for naming the file.
+3. You can then leave the file blank and name it `.gitkeep`.
+   When you commit the changes, the `images` folder will have been
+   added to your repository.
+We will be uploading our banner image to this folder in a moment
+and unfortunately GitHub does not provide a way to create a new folder
+while uploading existing files, only while creating new ones.
+When making these blank files,
+which exist only to allow the existence of their parent repository,
+it is traditional to call them `.gitkeep`.
+Now [download this banner image that we will add to our pages][banner-image] and
+upload the file to your newly-created `images` folder on GitHub:
+you can do this by navigating into the folder and choosing
+"Upload files" from the "Add file" dropdown you used before.
+
+Now that the banner image is available in our site repository,
+add this HTML immediately after the YAML front matter in `index.md`:
 
 ```
-<img src="carpentries-incubator.github.io/building-websites-with-jekyll-and-github-or-gitlab/files/site_banner.png">
+<img src="/images/site_banner.png" alt="Group Website with Jekyll">
 ```
 
-![Group Website with Jekyll](/files/site_banner.png)
+![Group Website with Jekyll](../files/site_banner.png)
 
 Adding this `img` element should result in this title banner appearing
 at the top of your page.
 
+> ## Image Elements
+>
+> In the `img` tag above,
+> the `src` parameter tells the web browser the location of
+> the image file to display on the page,
+> and the `alt` parameter defines _alternative text_
+> (often abbreviated to _alt text_).
+> This alternative text is important for two reasons:
+>
+> 1. It defines the description given to anyone using
+>    [a screen reader][screen-reader] to access your site,
+>    who cannot view the image itself.
+>    If you do not define alt text for an image/figure,
+>    the content of your site becomes less accessible for these users.
+> 2. If the browser cannot display the image for some reason
+>    (e.g. the image is moved/renamed/cannot be served)
+>    the alt text is displayed instead.
+>
+> It is good practice to _always_ define alt text for your images,
+> and you should aim to limit this alt text to a brief description
+> of the information provided by the image,
+> ideally providing no more or less detail
+> than is displayed in the image itself.
+{: .callout }
 
 > ## Optional Exercise
 >
@@ -100,7 +149,7 @@ at the top of your page.
 > > ## Solution
 > >
 > > ```
-> > <a href="https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/"><img src="carpentries-incubator.github.io/building-websites-with-jekyll-and-github-or-gitlab/files/site_banner.png"></a>
+> > <a href="https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/"><img src="/images/site_banner.png" alt="Group Website with Jekyll"></a>
 > > ```
 > >
 > {: .solution }
@@ -115,13 +164,15 @@ Instead, we can go some way to avoid this hassle by using
 some magic that Jekyll provides: `include` tags.
 To demonstrate this, save the HTML snippet used to display the image into
 a new file in your repository, called `_includes/banner.html`.
-To create a folder for your new file in GitHub:
+Unlike when we wanted to upload a pre-existing file
+to a new folder earlier,
+we can create the new folder and the new file simultaneously:
 
 1. click "Create new file" under the "Add file"
 dropdown on your repository homepage,
 2. in the "Name your file..." box, type `_includes/`.
-   The folder name should be automatically inserted in the path displayed
-   next to this box for naming the file.
+   As before, the folder name should be automatically inserted
+   next to the box.
 3. You can then name the file `banner.html` and, when you commit the changes,
    the `_includes` folder will have been added to your repository.
 

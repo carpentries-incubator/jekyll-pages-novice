@@ -40,13 +40,6 @@ but probably isn't interesting to a human
 and scripts that the browser may run to do something
 in response to various triggers.
 
-> ## Writing Basic HTML
->
-> TODO: brief overview of tags,
-> including strong, heading, and link.
-> Fill-in-the-blanks exercise to write HTML to recreate some example text.
-{: .challenge }
-
 ## Hello world in HTML
 
 When learning a new programming language,
@@ -60,20 +53,55 @@ HTML documents tend to be get verbose rather quickly.
 The simplest, valid HTML `Hello world` is:
 
 ```html
+<!DOCTYPE html>
 <html>
   <head>
+    <title>Hello World</title>
   </head>
   <body>
-    <p>Hello World<p>
+    <p>Hello World</p>
   </body>
 </html>
 ```
 
 So as you can imagine, writing long HTML documents by hand is rather painful.
 Notice that we didn't specify anything about how and where the text should be displayed.
-To achieve this we would additionally need to include Cascading Style Sheets (CSS) instructions. If you do not provide
-CSS instructions (either inside your HTML document or as a separate file), a web browser will make a best
-guess regarding the layout of HTML elements on the page based on its defaults.
+
+To achieve this we would additionally need to include stylized tags or Cascading Style Sheets (CSS) instructions.
+If you do not provide CSS instructions (either inside your HTML document or as a separate file),
+a web browser will make a best guess regarding the layout of HTML elements on the page based on its defaults.
+
+> ## The many tags in HTML
+>
+> In the `Hello world` example above 5 different tags are used (`html`, `head`, `title`, `body` and `p`) in their open `<>` and closed `</>` form.
+> We see also the special `doctype` tag that indicates the format and version of the document, in this case, [HTML(5)][html5-wikipedia].
+>
+> Other examples include frequently used tags for structural elements such as `div`, `span`, `nav`, `section`;
+> stylized tags `i`/`em`, `b`/`strong` and `u` for *italics/emphasis*, **bold** and <u>underlined text</u>;
+> headings numbered from `h1` to `h6` for titles and progressively smaller sub-titles;
+> `img`, `video`, `audio` to embed rich media;
+> and the important `a` tag (anchor) used to [link](#) to sections in the same or other documents.
+>
+> The [list of valid HTML tags][html5-tags] is rather extensive,
+> covering a rich range of features powering today's [world wide web][www-wikipedia].
+{: .callout }
+
+> ## Writing Basic HTML
+>
+> Given the stylized text:
+>
+> <h1><em>Hello</em> <strong>World</strong></h1>
+>
+> write the HTML will produce the same result.  
+> **Hint** the big font is achieved by use of a heading.
+>
+> > ## Solution
+> >
+> > ```html
+> > <h1><em>Hello</em> <strong>World</strong></h1>
+> > ```
+> {: .solution }
+{: .challenge }
 
 ## Static vs Dynamic Sites
 
