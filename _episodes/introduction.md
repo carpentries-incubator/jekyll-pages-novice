@@ -66,6 +66,7 @@ The simplest, valid HTML `Hello world` is:
 
 So as you can imagine, writing long HTML documents by hand is rather painful.
 Notice that we didn't specify anything about how and where the text should be displayed.
+
 To achieve this we would additionally need to include stylized tags or Cascading Style Sheets (CSS) instructions.
 If you do not provide CSS instructions (either inside your HTML document or as a separate file),
 a web browser will make a best guess regarding the layout of HTML elements on the page based on its defaults.
@@ -202,33 +203,34 @@ the website we will be creating.
 
 Click the green "New" repo button on the left hand side of github
 
-![Green New Repo Button](../fig/new_repo_button.png)
+<img src="../fig/new_repo_button.png" alt="Green New Repo Button" width="100">
 
 **or** click the "+" menu in the upper righthand corner and
 choose "New Repository".
 
-![Dropdown plus menu with new repository option highlighted](../fig/plus_new_repo.png)
+<img src="../fig/plus_new_repo.png" alt="Dropdown plus menu with new repository option highlighted" width="200">
 
 Next you will need to fill in some info about your repository.
 
-![Blank new repository page](../fig/blank_new_repo.png)
+<img src="../fig/blank_new_repo.png" alt="Blank new repository page" width=600>
 
 In this lesson, we will be working on a general group website.
 You can imagine this website may be for your lab group, a specific project group,
 or another group you work with.
 Under the "Repository name" field type `group-website`.
 
-![Repository name set to group-website](../fig/set_repo_name.png)
+<img src="../fig/set_repo_name.png" alt="Repository name set to group-website" width=600>
+
 
 We can also add a description so we know what this repo is when we find it again after the workshop.
 
-![Repository name set to group-website](../fig/set_repo_description.png)
+<img src="../fig/set_repo_description.png" alt="Repository name set to group-website" width=600>
 
 Under the "Initialize this repository with:" section we will check `Add a README file`
 and `Choose a license`.  It is good practice to have a README file that gives more information
 about your repo and to set a license for your work.
 
-![Repository name set to group-website](../fig/initialize_readme_license.png)
+<img src="../fig/initialize_readme_license.png" alt="Repository name set to group-website" width=600>
 
 for this example repository we’ll use the `Creative Commons Zero v1.0 Universal` (CC0) license,
 which allows anyone to re-use and adapt the content of the repository without restriction,
@@ -241,17 +243,17 @@ your own website.
 > for more information about possible licenses.
 {: .callout}
 
-![Repository name set to group-website](../fig/set_CC0_license.png)
+<img src="../fig/set_CC0_license.png" alt="Repository name set to group-website" width=400>
 
 
 Once you've finished these steps you can click the "Create Repository" button to
 finish creating the repo.
 
-![Filled in form with a create repository button](../fig/create_repository.png)
+<img src="../fig/create_repository.png" alt="Filled in form with a create repository button" width=600>
 
 GitHub will then setup the repo and it should look like the following screenshot.
 
-![Github repository for the group website](../fig/group_website_repo.png)
+<img src="../fig/group_website_repo.png" alt="Github repository for the group website" width=800>
 
 [qwantz-easter-egg-ext]: https://chrome.google.com/webstore/detail/dinosaur-comics-easter-eg/bojkkeeefjmeogpgnlomodfkkfkfhabj
 
