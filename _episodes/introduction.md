@@ -187,7 +187,7 @@ before configuring GitHub to display this content as a website.
 
 Before we get into working with Markdown we must first create a
 repository to work in.
-This repository is similar to a folder on your computer, the main differences
+This repo (short for repository) is similar to a folder on your computer, the main differences
 being that the folder lives on the web in GitHub/GitLab (though you can
 also keep a copy on your computer if needed) and that folder is using
 a version control software called [`git`][git] to track changes to the files.
