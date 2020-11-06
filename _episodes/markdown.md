@@ -41,23 +41,24 @@ The picture below shows the projects default view.
 This view includes a rendered view of the content inside the file `README.md`.
 Your project should look quite similar except for the red circle around the pencil symbol.
 
-![On the homepage of a GitHub repository, the edit button is positioned to the top right of the README preview](../fig/group_website_repo_edit.png)
+<img src="../fig/group_website_repo_edit.png" alt="On the homepage of a GitHub repository, the edit button is positioned to the top right of the README preview" width=600>
+
 
 You can click on that pencil symbol to open an editing interface of your projects `README.md` file.
 Once you've clicked the pencil symbol, GitHub will open that file in the editing interface.
 
-![Editing interface of the group websites README file](../fig/group_website_readme_edit.png)
+<img src="../fig/group_website_readme_edit.png" alt="Editing interface of the group websites README file" width=600>
 
 You can change the content and have a look at the rendered view by clicking the `Preview changes` tab.
 
-![Preview of the rendered content of the group websites README file](../fig/group_website_readme_render.png)
+<img src="../fig/group_website_readme_render.png" alt="Preview of the rendered content of the group websites README file" width=600>
 
 Let's add `Some **bold** font` and see what happens when we preview it using the preview tab.
 If you like to permanently save the content to the file `README.md`, scroll down a bit and you'll see a `Commit changes` menu
 where you can commit your changes.
 After having changed something, the commit menu looks like this:
 
-![Commit menu for changes done in the GitHub web interface is located at the bottom of the website](../fig/group_website_readme_commit.png)
+<img src="../fig/group_website_readme_commit.png" alt="Commit menu for changes done in the GitHub web interface is located at the bottom of the website" width=600>
 
 > ## Writing a Commit Message
 >
@@ -84,7 +85,7 @@ Let's do some exercises to learn more about structuring and emphasis.
 >
 > Try to reproduce the source code of the following view.
 >
-> ![Preview tab of README.md with additional lines inlcuding sub heading and emphasised text with line breaks](../fig/group_website_excercise_add_a_sub_heading.png)
+> <img src="../fig/group_website_excercise_add_a_sub_heading.png" alt="Preview tab of README.md with additional lines inlcuding sub heading and emphasised text with line breaks" width=400>
 >
 >
 > > ## Solution
@@ -127,7 +128,7 @@ Numbered enumerations are helpful for displaying sequences and the numbers may h
 >
 > Try to reproduce the source code of the following view.
 >
-> ![Preview tab nested lists and enumerations](../fig/exercise_nested_lists_enumerations.png)
+> <img src="../fig/exercise_nested_lists_enumerations.png" alt="Preview tab nested lists and enumerations" width=600>
 >
 > > ## Solution
 > >
@@ -157,7 +158,7 @@ use triple backticks to format larger code snippets, creating code blocks.
 > Reproduce the markdown source code to create the following view:
 >
 >
-> ![Preview tab with blanks before code and code blocks](../fig/exercise_add_code.png)
+> <img src="../fig/exercise_add_code.png" alt="Preview tab with blanks before code and code blocks" width=600>
 >
 > Start from the following code and fill the blanks:
 >
@@ -205,7 +206,7 @@ print("Hello everyone!")
 >
 > Try to reproduce the markdown source code to create the following view:
 >
-> ![Preview tab of code blocks with syntax highlighting](../fig/exercise_syntax_highlighting.png)
+> <img src="../fig/exercise_syntax_highlighting.png" alt="Preview tab of code blocks with syntax highlighting" width=400>
 >
 >
 > > ## Solution
@@ -246,7 +247,7 @@ You can define either
 > ## Links
 > Reproduce the markdown source code to create the following view:
 >
-> ![Preview tab of inline and reference style links](../fig/exercise_links.png)
+> <img src="../fig/exercise_links.png" alt="Preview tab of inline and reference style links" width=200>
 >
 > Start from the following code and fill the blanks:
 >
