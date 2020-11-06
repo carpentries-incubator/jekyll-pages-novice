@@ -85,13 +85,15 @@ Let's do some exercises to learn more about structuring and emphasis.
 >
 > Try to reproduce the source code of the following view.
 >
-> <img src="../fig/group_website_excercise_add_a_sub_heading.png" alt="Preview tab of README.md with additional lines inlcuding sub heading and emphasised text with line breaks" width=400>
+> <img src="../fig/group_website_exercise_add_a_sub_heading.png" alt="Preview tab of README.md with additional lines inlcuding sub heading and emphasised text with line breaks" width=400>
 >
 >
 > > ## Solution
 > >
 > >     # group-website
 > >     Repo for learning how to make websites with Jekyll pages
+> >
+> >     Some **bold** font
 > >
 > >     ## Learning Markdown
 > >
