@@ -76,14 +76,16 @@ She wants to increase her online profile as she enters the job market, and she k
 An still needs to finish writing her thesis and doesn't have a lot of time to spare for creating a website from scratch, nor a lot of money to pay for hosting, domain names, and so on.
 This lesson will teach An how to find and use an existing template to create her personal webpage and online CV, how to write formatted text and insert images to highlight the skills she's picked up, and how to host those pages online for free.
 
-## Learning Objectives
-
-After following this lesson,
-learners will be able to:
-
-- create formatted page content with Markdown
-- configure their project to build and serve pages on GitHub
-- build a coherent site with multiple pages using the Jekyll framework
-- customise the layout and style of the pages on their site
+> ## Learning Objectives
+>
+> After following this lesson,
+> learners will be able to:
+>
+> - **create** formatted page content with Markdown
+> - **configure** their project to build and serve pages on GitHub
+> - **build** a coherent site with multiple pages using the Jekyll framework
+> - **customise** the layout and style of the pages on their site
+>
+{: .objectives }
 
 {% include links.md %}
