@@ -245,7 +245,7 @@ You can define either
 
 
 > ## Links
-> Reproduce the markdown source code to create the following view:
+> Reproduce the markdown source code to create the following view, where both links point to <https://carpentries.org/>::
 >
 > <img src="../fig/exercise_links.png" alt="Preview tab of inline and reference style links" width=200>
 >
