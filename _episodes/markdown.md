@@ -93,6 +93,8 @@ Let's do some exercises to learn more about structuring and emphasis.
 > >     # group-website
 > >     Repo for learning how to make websites with Jekyll pages
 > >
+> >     Some **bold** font
+> >
 > >     ## Learning Markdown
 > >
 > >     Vanilla text may contain *italic* and **bold words**.
