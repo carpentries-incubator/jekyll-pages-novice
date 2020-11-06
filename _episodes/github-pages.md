@@ -107,14 +107,14 @@ By doing this, you add a link to the repository's website on your repository's l
 Up to now, the content of your webpage is identical to what visitors to your repository on GitHub will see in the project's `README.md` file. It is often better to have different content in the homepage of your site - aimed at visitors to the website - than in the README, which is supposed to provide information about the GitHub repository e.g. license information, local installation instructions, the structure and configuration of the repository, etc. By default, the homepage for a GitHub Pages website is built from a file called `index.md`: in the absence of a file with that name the "fallback" option is to use `README.md`, which is why your homepage is currently being built from that file.
 
 To separate the contents of the repository's README from the website's homepage, create a new file called 
-`index.md` and copy the contents of the README into that file for now. 
+`index.md`. 
 
 To create a new file from GitHub interface, 
 click the `Add file` button and select `Create new file` from the dropdown.
 
 ![Create file](../fig/github_create_file.png)
 
-Next, copy the content of README or simply type some text into `index.md`, as shown below.
+Next, type some text into `index.md`, as shown below.
 
 ![Create file](../fig/github_add_index.png)
 
