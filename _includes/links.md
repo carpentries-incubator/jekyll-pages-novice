@@ -21,6 +21,8 @@
 [gitlab-flavored-markdown]: https://docs.gitlab.com/ee/user/markdown.html
 [github-importer]: https://import.github.com/
 [github-jekyll-issues]: https://github.com/carpentries-incubator/building-websites-with-jekyll-and-github-or-gitlab/issues
+[html5-wikipedia]: https://en.wikipedia.org/wiki/HTML5
+[html5-tags]: https://www.tutorialrepublic.com/html-reference/html5-tags.php
 [importer]: https://github.com/new/import
 [jekyll-collection]: https://jekyllrb.com/docs/collections/
 [jekyll-install]: https://jekyllrb.com/docs/installation/
@@ -63,4 +65,5 @@
 [training]: https://carpentries.github.io/instructor-training/
 [workshop-repo]: {{ site.workshop_repo }}
 [w3-viewport]: https://www.w3schools.com/css/css_rwd_viewport.asp
+[www-wikipedia]: https://en.wikipedia.org/wiki/World_Wide_Web
 [yaml]: http://yaml.org/
