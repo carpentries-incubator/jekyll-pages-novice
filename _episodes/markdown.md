@@ -273,7 +273,16 @@ You can define either
 > {: .solution }
 {: .challenge }
 
-
+> ## Optional Exercise: Add Your Repository Details to CodiMD
+>
+> If your instructors are using _CodiMD_ to take notes during this workshop,
+> use Markdown to add a link in that document to the repository you are using
+> to follow along with this lesson.
+> The link text should be your GitHub username, and the target your repository.
+> Your instructors will direct you towards the appropriate location in the
+> document to add your link.
+>
+{: .challenge }
 
 > ## Flavors
 >
