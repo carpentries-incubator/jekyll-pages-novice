@@ -17,10 +17,12 @@
 [email]: mailto:team@carpentries.org
 [filters]: https://jekyllrb.com/docs/liquid/filters/
 [ghp-dependencies]: https://pages.github.com/versions/
+[github]: https://github.com/
 [github-flavored-markdown]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 [gitlab-flavored-markdown]: https://docs.gitlab.com/ee/user/markdown.html
 [github-importer]: https://import.github.com/
 [github-jekyll-issues]: https://github.com/carpentries-incubator/building-websites-with-jekyll-and-github-or-gitlab/issues
+[gitlab]: https://gitlab.com/
 [html5-wikipedia]: https://en.wikipedia.org/wiki/HTML5
 [html5-tags]: https://www.tutorialrepublic.com/html-reference/html5-tags.php
 [importer]: https://github.com/new/import
@@ -59,9 +61,12 @@
 [seo-wikipedia]: https://en.wikipedia.org/wiki/Search_engine_optimization
 [ssi-homepage]: https://software.ac.uk/
 [styles]: https://github.com/carpentries/styles/
+[swc]: https://software-carpentry.org/
+[swc-git]: http://swcarpentry.github.io/git-novice/
 [swc-git-novice-episode-track-changes]: https://swcarpentry.github.io/git-novice/04-changes/index.html
 [swc-lessons]: https://software-carpentry.org/lessons/
 [swc-releases]: https://github.com/swcarpentry/swc-releases
+[swc-shell]: http://swcarpentry.github.io/shell-novice/
 [training]: https://carpentries.github.io/instructor-training/
 [workshop-repo]: {{ site.workshop_repo }}
 [w3-viewport]: https://www.w3schools.com/css/css_rwd_viewport.asp
