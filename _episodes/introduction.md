@@ -192,7 +192,8 @@ being that the folder lives on the web in GitHub/GitLab (though you can
 also keep a copy on your computer if needed) and that folder is using
 a version control software called [`git`][git] to track changes to the files.
 For our purposes we will mostly be ignoring the version control software,
-though it can be handy if you need to revert to old versions.
+though it can be handy if you need to revert to old versions
+(see [Software Carpentry - Version Control with Git][swc-git] for an introduction).
 In this lesson we will be working with this folder on the web to control
 the website we will be creating.
 
