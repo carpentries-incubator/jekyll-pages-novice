@@ -240,7 +240,7 @@ print("Hello everyone!")
 Linking other websites is an essential feature of a website.
 Bare URLs like https://carpentries.org/ can be made clickable like this
 <https://carpentries.org/> by wrapping them into
-angle brackets "\< \>".
+angle brackets `< >`.
 However, usually the bare URL is not very nice and displaying a clickable
 alternative text is beneficial.
 To specify alternative text you can surround the text with square brackets `[ ]`.

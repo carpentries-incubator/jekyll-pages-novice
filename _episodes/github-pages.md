@@ -94,7 +94,8 @@ of neatly creating Web address for just about any GitHub repository without any 
 
 On the right hand side of your repository on GitHub, you can see the details of your repository under 'About'. It is good
 practice to update your repository details with a brief description. This is also a place where you can put
-your repository's Web URL (as not everyone will have access to your repository's `Settings` to find it).
+your repository's Web URL (as not everyone will have access to your repository's `Settings` to find it)
+and add descriptive topics or tags about the content or technologies used in your repository or project.
 
 You can edit the details of your repository by clicking on the little cog button as shown on the figure below.
 
