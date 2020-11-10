@@ -124,7 +124,7 @@ and subsequently makes it more findable for your target audience.
 [Search Engine Optimisation][seo-wikipedia].)
 
 For example, to make the browser automatically adjust the way your pages are
-shown on different diplays/devices,
+shown on different displays/devices,
 you could include the element
 `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
 inside the `<head>` of your pages.
