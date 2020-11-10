@@ -149,7 +149,7 @@ at the top of your page.
 > > ## Solution
 > >
 > > ```
-> > <a href="https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/"><img src="/images/site_banner.png" alt="Group Website with Jekyll"></a>
+> > <a href="https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/"><img src="images/site_banner.png" alt="Group Website with Jekyll"></a>
 > > ```
 > >
 > {: .solution }
