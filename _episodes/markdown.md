@@ -76,7 +76,7 @@ After having changed something, the commit menu looks like this:
 Now that we know about the editing interface and preview tab of our projects `README.md`
 we can use it as a text editor and investigate selected Markdown features.
 
-Our README.md already contains vanilla text and
+Our `README.md` already contains vanilla text and
 two formatting features:
 - Heading `# group-website`
 - Text markup or emphasis `**bold**`.
