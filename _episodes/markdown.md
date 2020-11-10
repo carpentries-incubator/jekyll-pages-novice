@@ -243,11 +243,11 @@ Bare URLs like https://carpentries.org/ can be made clickable like this
 angle brackets "\< \>".
 However, usually the bare URL is not very nice and displaying a clickable
 alternative text is beneficial.
+To specify alternative text you can surround the text with square brackets `[ ]`.
 
-You can define either
-1. Inline style links - specifying the URL in line - or
-2. Reference style links - referencing a reusable link reference
-
+You can then provide the URL in one of two ways:
+1. Inline style links - specifying the URL in line surrounded by parenthesis `( )`- or
+2. Reference style links - referencing a reusable link reference with a second set of square brackets `[ ]`.
 
 > ## Links
 > Reproduce the markdown source code to create the following view, where both links point to <https://carpentries.org/>::
