@@ -222,7 +222,7 @@ We will see another example of this shortly.
 > Copy the snippet and save it into an appropriately-named file,
 > then use an `include` statement to re-insert it
 > at the bottom of your site's `index.md`,
-> and add it at the bottom of the `team.md` pages.
+> and add it at the bottom of the `about.md` pages.
 >
 > > ## Solution
 > > create a file called `contact.md`
@@ -241,7 +241,7 @@ We will see another example of this shortly.
 > > {: .source }
 > >
 > > at the end of `index.md` (replacing the equivalent line if it's still present)
-> > and `team.md`.
+> > and `about.md`.
 > {: .solution }
 {: .challenge }
 
