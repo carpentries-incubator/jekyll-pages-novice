@@ -130,14 +130,27 @@ so we will come back to this issue of styling at the end of the section.
 >
 > We will probably want to include the contact line we added in the previous section
 > in every standard page on our site.
-> Move the `include` tag to the layout template
-> so we don't have to remember to `include` it every time we make a new page.
+> In a file `_include/contact.html`,
+> convert the contents of `contact.md` to HTML.
+> Then `include` it in the `page.html` layout file.
 > Place it _below the page content_ so that it appears at the end of each page
 > that uses this layout.
-> Check that this works by reloading of the pages that uses the `page` layout.
+> Check that this works by reloading any of the pages that uses the `page` layout.
 >
 > > ## Solution
-> > Your layout file, `_layouts/page.html`,
+> > `contact.html` should contain something like the following:
+> >
+> > ~~~
+> > <h2>Contact us</h2>
+> >
+> > <ul>
+> > <li>Email: <a href="mailto:team@my.research.org">team@my.research.org</a></li>
+> > <li>Twitter: <a href="https://twitter.com/my_research_project">@my_research_project</a></li>
+> > </ul>
+> > ~~~
+> > {: .source }
+> >
+> > and your layout file, `_layouts/page.html`,
 > > should look like this:
 > >
 > > ~~~
@@ -145,7 +158,7 @@ so we will come back to this issue of styling at the end of the section.
 > >
 > > {{ content }}
 > >
-> > {% include contact.md %}{% endraw %}
+> > {% include contact.html %}{% endraw %}
 > > ~~~
 > > {: .source }
 > {: .solution }
