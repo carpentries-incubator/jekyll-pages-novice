@@ -48,13 +48,13 @@ Let's create some configuration parameters for our website.
 1. From the GitHub interface, create `_config.yml` file in your site’s root directory.
 2. Add parameters `title`, `description` and `email` to it as:
 
-    ~~~
-    title: "Building Websites in GitHub"
-    description: "This research project develops training materials for reseachers wanting to learn to build project
-    websites in GitHub with GitHub Pages."
-    email: "team@my.research.org"
-    ~~~
-    {: .language-yaml}
+~~~
+title: "Building Websites in GitHub"
+description: "This research project develops training materials for reseachers wanting to learn to build project
+websites in GitHub with GitHub Pages."
+email: "team@my.research.org"
+~~~
+{: .language-yaml}
 
 3. Commit your changes.
 
@@ -72,38 +72,38 @@ Let's make use of global parameters in our pages.
 
 1. Modify `index.md` file to make use of our global parameters like this:
 
-   ~~~
-    # {% raw %}{{ site.title }}{% endraw %}
-   
-    ## Description
-    {% raw %}{{ site.description }}{% endraw %}
+~~~
+# {% raw %}{{ site.title }}{% endraw %}
 
-    Have any questions about what we do? [We'd love to hear from you!]({% raw %}mailto:{{ site.email }}{% endraw %})
-   ~~~  
+## Description
+{% raw %}{{ site.description }}{% endraw %}
+
+Have any questions about what we do? [We'd love to hear from you!]({% raw %}mailto:{{ site.email }}{% endraw %})
+~~~  
    
 2. We can use the same parameter in different pages. Let's reuse `{% raw %}{{ site.description }}{% endraw %}` and 
 `{% raw %}{{ site.email }}{% endraw %}` in `about.md` like this:
 
-    ~~~ 
-    # About
-   
-    ## Project
-    {% raw %}{{ site.description }}{% endraw %}
-           
-    ## Funders
-    We gratefully acknowledge funding from the XYZ Founding Council, under grant number 'abc'.
-   
-    ## Cite us
-    You can cite the project as:  
-    
-    >    *My research project. Zenodo. https://zenodo.org/record/doi*
-    
-    ## Contact us
-   
-    Email: [{% raw %}{{ site.email }}{% endraw %}](mailto:{% raw %}{{ site.email }}{% endraw %})   
-    
-    Twitter: [@my_research_project](https://twitter.com/my_research_project)   
-    ~~~
+~~~ 
+# About
+
+## Project
+{% raw %}{{ site.description }}{% endraw %}
+        
+## Funders
+We gratefully acknowledge funding from the XYZ Founding Council, under grant number 'abc'.
+
+## Cite us
+You can cite the project as:  
+
+>    *My research project. Zenodo. https://zenodo.org/record/doi*
+
+## Contact us
+
+Email: [{% raw %}{{ site.email }}{% endraw %}](mailto:{% raw %}{{ site.email }}{% endraw %})   
+
+Twitter: [@my_research_project](https://twitter.com/my_research_project)   
+~~~
     
 3. Go to your website to see the changes.
 4. Note that site parameters will not render nicely when viewing files in GitHub (they will be displayed as text
@@ -116,36 +116,36 @@ Let's make use of global parameters in our pages.
 > > ## Solution
 > > 1. Add parameter twitter to `_config.yml`: 
 > >
-> >    ~~~
-> >    title: "Building Websites in GitHub"
-> >    description: "This research project develops training materials for reseachers wanting to learn to build project
-> >    websites in GitHub with GitHub Pages."
-> >    email: "team@my.research.org"
-> >    twitter: "https://twitter.com/my_research_project"
-> >    ~~~
-> >    {: .language-yaml}
+> > ~~~
+> > title: "Building Websites in GitHub"
+> > description: "This research project develops training materials for reseachers wanting to learn to build project
+> > websites in GitHub with GitHub Pages."
+> > email: "team@my.research.org"
+> > twitter: "https://twitter.com/my_research_project"
+> > ~~~
+> > {: .language-yaml}
 > > 2. Make use of the twitter parameter in `about.md`: 
 > >
-> >    ~~~  
-> >    # About
+> > ~~~  
+> > # About
 > >   
-> >    ## Project
-> >    {% raw %}{{ site.description }}{% endraw %}
+> > ## Project
+> > {% raw %}{{ site.description }}{% endraw %}
 > >           
-> >    ## Funders
-> >    We gratefully acknowledge funding from the XYZ Founding Council, under grant number 'abc'.
+> > ## Funders
+> > We gratefully acknowledge funding from the XYZ Founding Council, under grant number 'abc'.
 > >   
-> >    ## Cite us
-> >    You can cite the project as:  
+> > ## Cite us
+> > You can cite the project as:  
+> > 
+> > > *My research project. Zenodo. https://zenodo.org/record/doi*
 > >    
-> >    >    *My research project. Zenodo. https://zenodo.org/record/doi*
-> >    
-> >    ## Contact us
+> > ## Contact us
 > >   
-> >    Email: [{% raw %}{{ site.email }}{% endraw %}](mailto:{% raw %}{{ site.email }}{% endraw %})   
+> > Email: [{% raw %}{{ site.email }}{% endraw %}](mailto:{% raw %}{{ site.email }}{% endraw %})   
 > >    
-> >    Twitter: [{% raw %}{{ site.twitter }}{% endraw %}]({% raw %}{{ site.twitter }}{% endraw %})   
-> >    ~~~
+> > Twitter: [{% raw %}{{ site.twitter }}{% endraw %}]({% raw %}{{ site.twitter }}{% endraw %})   
+> > ~~~
 > >    
 > > 3. Note that you should not see any changes to your website really. However, you can now access your Twitter URL from
 > > any website page, should you need to.    
@@ -172,13 +172,16 @@ used to set variables and metadata on individual pages in your Jekyll site.
 {: .callout}
 
 Here is an example:
-    
-    ---
-    layout: post
-    title: "My first blog post"
-    author: "Danger Mouse"
-    ---
-    
+
+~~~
+---
+layout: post
+title: "My first blog post"
+author: "Danger Mouse"
+---
+~~~
+{: .language-yaml }
+
 Between these triple-dashed lines, you can overwrite predefined variables (like `page.layout` or `page.title`) or create custom ones you need locally on the page (like `page.author`). These variables will then be available for you to access using Liquid's tags {% raw %}{{{% endraw %} and {% raw %}}}{% endraw %} further down in the file and also in any files that include this one.                                                                                                                     
 
 > ## Exercise
@@ -197,20 +200,20 @@ Between these triple-dashed lines, you can overwrite predefined variables (like 
 > > triple-dash delimiters. You can then reference the value within your `index.md` page as 
 `{% raw %}{{{% endraw %} page.example-lesson {% raw %}}}{% endraw %}`. Your file should now look like:
 > > 
-> >    ~~~
-> >    ---  
-> >    lesson-example: "https://carpentries.github.io/lesson-example/"
-> >    ---    
+> > ~~~
+> > ---  
+> > lesson-example: "https://carpentries.github.io/lesson-example/"
+> > ---    
 > >    
-> >    # {% raw %}{{ site.title }}{% endraw %}
+> > # {% raw %}{{ site.title }}{% endraw %}
 > >   
-> >    ## Description
-> >    {% raw %}{{ site.description }}{% endraw %}
+> > ## Description
+> > {% raw %}{{ site.description }}{% endraw %}
 > >                                    
-> >    See some [examples of our work]({% raw %}{{{% endraw %} page.example-lesson {% raw %}}}{% endraw %}).
+> > See some [examples of our work]({% raw %}{{{% endraw %} page.example-lesson {% raw %}}}{% endraw %}).
 > >
-> >    Have any questions about what we do? [We'd love to hear from you!]({% raw %}mailto:{{ site.email }}{% endraw %})
-> >    ~~~
+> > Have any questions about what we do? [We'd love to hear from you!]({% raw %}mailto:{{ site.email }}{% endraw %})
+> > ~~~
 > > Note that this variable is not accessible from `about.md` page and is local to `index.md`.
 > {: .solution}
 {: .challenge}
