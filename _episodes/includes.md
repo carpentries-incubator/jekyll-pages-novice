@@ -106,7 +106,7 @@ Now that the banner image is available in our site repository,
 add this HTML immediately after the YAML front matter in `index.md`:
 
 ```
-<img src="/images/site_banner.png" alt="Group Website with Jekyll">
+<img src="images/site_banner.png" alt="Group Website with Jekyll">
 ```
 
 ![Group Website with Jekyll](../files/site_banner.png)
