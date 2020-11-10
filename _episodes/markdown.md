@@ -153,7 +153,7 @@ Numbered enumerations are helpful for displaying sequences and the numbers may h
 >
 {: .callout}
 
-You can use single backticks to call out code, e.g. `print('Hello world')` and
+You can surround text with single backticks (\`) to call out code, e.g. `print('Hello world')` and
 use triple backticks to format larger code snippets, creating code blocks.
 
 > ## Add Code
