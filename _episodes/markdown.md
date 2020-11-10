@@ -53,7 +53,10 @@ You can change the content and have a look at the rendered view by clicking the 
 
 <img src="../fig/group_website_readme_render.png" alt="Preview of the rendered content of the group websites README file" width=600>
 
-Let's add `Some **bold** font` and see what happens when we preview it using the preview tab.
+Let's add `Some **bold** font` and see what happens when we preview it using the preview tab
+where you should see the the result of your change.
+If new sections were added you will also find green vertical bars visually highlighting the new content.
+
 If you like to permanently save the content to the file `README.md`, scroll down a bit and you'll see a `Commit changes` menu
 where you can commit your changes.
 After having changed something, the commit menu looks like this:
