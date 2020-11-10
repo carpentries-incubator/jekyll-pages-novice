@@ -123,7 +123,7 @@ You can create lists by preceding lines with `-` or a bunch of other `-`-like ch
 > {: .solution }
 {: .challenge }
 
-If you would like to nest lists, i.e. specify a sub list as an item of another list, use indentation.
+If you would like to nest lists, i.e. specify a sub list as an item of another list, use [indentation][indentation].
 Numbered enumerations are helpful for displaying sequences and the numbers may help to address individual points.
 
 > ## Nested Lists and Enumerations
