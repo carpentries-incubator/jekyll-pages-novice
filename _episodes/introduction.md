@@ -150,24 +150,24 @@ you're unlikely to find cost-free platforms to help you deliver dynamic content.
 > Given the following types of websites,
 > reason if a static site generator is an appropriate solution to implement them.
 >
-> 1. A personal website with *About* and *Projects* sections
-> 2. A forum or discussion platform
-> 3. A community blog or news website
-> 4. A search engine (such as google.com)
-> 5. A wiki (such as wikipedia.com)
-> 6. An online book
+> - (1) A personal website with *About* and *Projects* sections
+> - (2) A forum or discussion platform
+> - (3) A community blog or news website
+> - (4) A search engine (such as google.com)
+> - (5) A wiki (such as wikipedia.com)
+> - (6) An online book
 >
 > > ## Solution
 > >
-> > 1. In most cases, **Yes**. This kind of content is typically written/edited by one person and meant to have a read-only access to visitors.
-> > 2. Most likely **No**. Such website requires interactivity and ways to identify who wrote what content.
+> > - (1) **personal website**: In most cases, **Yes**. This kind of content is typically written/edited by one person and meant to have a read-only access to visitors.
+> > - (2) **forum or discussion**: Most likely **No**. Such website requires interactivity and ways to identify who wrote what content.
 > >
 > > For questions 3 and 5 the answer is both **Yes** and **No** depending on the requirements and necessary functionality.
 > >
-> > 3. A simple blog or news website, maintained by a small set of users, is perfectly achievable by using a static generator. For very large groups of content creators or if access to articles needs to be controlled individually, using a static generator will lead to difficult technical challenges.
-> > 4. Most often **No**. Implementing something as sophisticated as Google's search would be close to impossible with a static generator. There are ways to have a simple engine that searches across all pages produced by a static generator using indexing and making clever use of browser features but this approach has many limitations.
-> > 5. A simple wiki is perfectly doable with a static generator (e.g. [GitHub Wiki Pages](https://guides.github.com/features/wikis/)), however it becomes limiting as soon as its content needs to be edited or discussed by many users, as is the case of Wikipedia.
-> > 6. Definitely **Yes**. Static generators are perfect for this type of website. They typically provide ways to avoid repeating content (variables and templates), automatic creation of a *Table Of Contents*, among other goodies.
+> > - (3) **blog/news**: A simple blog or news website, maintained by a small set of users, is perfectly achievable by using a static generator. For very large groups of content creators or if access to articles needs to be controlled individually, using a static generator will lead to difficult technical challenges.
+> > - (4) **search engine**: Most often **No**. Implementing something as sophisticated as Google's search would be close to impossible with a static generator. There are ways to have a simple engine that searches across all pages produced by a static generator using indexing and making clever use of browser features but this approach has many limitations.
+> > - (5) **wiki**: A simple wiki is perfectly doable with a static generator (e.g. [GitHub Wiki Pages](https://guides.github.com/features/wikis/)), however it becomes limiting as soon as its content needs to be edited or discussed by many users, as is the case of Wikipedia.
+> > - (6) **online book**: Definitely **Yes**. Static generators are perfect for this type of website. They typically provide ways to avoid repeating content (variables and templates), automatic creation of a *Table Of Contents*, among other goodies.
 > {: .solution }
 {: .challenge }
 
@@ -222,7 +222,7 @@ Under the "Repository name" field type `group-website`.
 <img src="../fig/set_repo_name.png" alt="Repository name set to group-website" width=600>
 
 
-We can also add a description so we know what this repo is when we find it again after the workshop.
+We can also add a description (for instance **Repo for learning how to make websites with jekyll pages**) so we know what this repo is when we find it again after the workshop. 
 
 <img src="../fig/set_repo_description.png" alt="Repository name set to group-website" width=600>
 
