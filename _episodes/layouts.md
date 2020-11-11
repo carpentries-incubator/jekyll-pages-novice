@@ -81,7 +81,7 @@ that there is good news and bad news:
 The good news: the banner image is there again;
 the bad: all the other page content has disappeared!
 
-![A page displaying only the site title banner.](../fig/layouts_banner_only.png)
+![A page displaying only the site title banner.](../fig/layouts_banner_only.png){: width="800px"}
 
 The page content is missing because we haven't yet told Jekyll where to put it.
 To do that we need to add the special `content` variable into the layout file:
@@ -100,7 +100,7 @@ we now see the page content has returned but we have two more problems:
 the styling of our pages has changed (for the worse) and
 the banner image appears twice!
 
-![A page displaying the site title banner twice.](../fig/layouts_double_banner.png)
+![A page displaying the site title banner twice.](../fig/layouts_double_banner.png){: width="800px"}
 
 The duplication is happening because the
 `{% raw %}{% include banner.md %}{% endraw %}`
