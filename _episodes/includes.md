@@ -10,6 +10,8 @@ keypoints:
 - "The content of files in the `_includes/` directory can be inserted into a page with `{ % include file_name % }`"
 ---
 
+{% include base_path.html %}
+
 In the previous episode,
 we discussed the benefits of using global and local variables
 to re-use values throughout our pages.
@@ -103,23 +105,23 @@ you can do this by navigating into the folder and choosing
 "Upload files" from the "Add file" dropdown you used before.
 
 Now that the banner image is available in our site repository,
-add this HTML immediately after the YAML front matter in `index.md`:
+add this Markdown immediately after the YAML front matter in `index.md`:
 
 ```
-<img src="/images/site_banner.png" alt="Group Website with Jekyll">
+![Group Website with Jekyll](../images/site_banner.png)
 ```
 
 ![Group Website with Jekyll](../files/site_banner.png)
 
-Adding this `img` element should result in this title banner appearing
+Adding this should result in this title banner appearing
 at the top of your page.
 
 > ## Image Elements
 >
-> In the `img` tag above,
-> the `src` parameter tells the web browser the location of
+> When adding the image above with Markdown,
+> the filepath in `()` tells the web browser the location of
 > the image file to display on the page,
-> and the `alt` parameter defines _alternative text_
+> and the text in `[]` defines _alternative text_
 > (often abbreviated to _alt text_).
 > This alternative text is important for two reasons:
 >
@@ -137,19 +139,24 @@ at the top of your page.
 > of the information provided by the image,
 > ideally providing no more or less detail
 > than is displayed in the image itself.
+>
+> When defining an image (`img`) element in HTML
+> (as we will do in the next section),
+> the filepath, or _source_, of the image is provided as the `src` parameter,
+> and the alt text as the `alt` parameter.
 {: .callout }
 
 > ## Optional Exercise
 >
 > It is common for banner logos like the one above to link back to the homepage
 > of the website they are displayed on.
-> Wrap the `img` element in a set of hyperlink tags (`<a></a>`) to link
+> With Markdown, turn the image into a link
 > the image to the landing page (`index.md`) of your site.
 >
 > > ## Solution
 > >
 > > ```
-> > <a href="https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/"><img src="/images/site_banner.png" alt="Group Website with Jekyll"></a>
+> > [![Group Website with Jekyll](../images/site_banner.png)]((https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/))
 > > ```
 > >
 > {: .solution }
@@ -163,7 +170,7 @@ we would need to make the same adjustment on every page.
 Instead, we can go some way to avoid this hassle by using
 some magic that Jekyll provides: `include` tags.
 To demonstrate this, save the HTML snippet used to display the image into
-a new file in your repository, called `_includes/banner.html`.
+a new file in your repository, called `_includes/banner.md`.
 Unlike when we wanted to upload a pre-existing file
 to a new folder earlier,
 we can create the new folder and the new file simultaneously:
@@ -173,14 +180,14 @@ dropdown on your repository homepage,
 2. in the "Name your file..." box, type `_includes/`.
    As before, the folder name should be automatically inserted
    next to the box.
-3. You can then name the file `banner.html` and, when you commit the changes,
+3. You can then name the file `banner.md` and, when you commit the changes,
    the `_includes` folder will have been added to your repository.
 
 Now delete the HTML block you added to `index.md`,
 and replace it with the following `_includes` tag:
 
 ```
-{% raw %}{% include banner.html %}{% endraw %}
+{% raw %}{% include banner.md %}{% endraw %}
 ```
 
 Refresh the page and, barring any typos e.g. in the name of the file,
@@ -215,7 +222,11 @@ We will see another example of this shortly.
 > re-use in multiple places throughout your site.
 >
 > ~~~
-> Have any questions about what we do? [We'd love to hear from you!](mailto:{% raw %}{{site.email}}{% endraw %})
+> ## Contact us
+>
+> Email: [team@my.research.org](mailto:team@my.research.org)
+>
+> Twitter: [@my_research_project](https://twitter.com/my_research_project)
 > ~~~
 > {: .source }
 >
@@ -229,7 +240,11 @@ We will see another example of this shortly.
 > > (or similar) inside the `_includes` folder:
 > >
 > > ~~~
-> > Have any questions about what we do? [We'd love to hear from you!](mailto:{% raw %}{{site.email}}{% endraw %})
+> > ## Contact us
+> >
+> > Email: [team@my.research.org](mailto:team@my.research.org)
+> >
+> > Twitter: [@my_research_project](https://twitter.com/my_research_project)
 > > ~~~
 > > {: .source }
 > >
@@ -240,8 +255,8 @@ We will see another example of this shortly.
 > > ~~~
 > > {: .source }
 > >
-> > at the end of `index.md` (replacing the equivalent line if it's still present)
-> > and `team.md`.
+> > at the end of `index.md` and `about.md`
+> > (replacing the equivalent section if it is still present).
 > {: .solution }
 {: .challenge }
 
@@ -249,7 +264,7 @@ We will see another example of this shortly.
 >
 > You can use `include` tags to help minimise the effort required to
 > keep links up-to-date across your site.
-> In the [Authoring with Markdown](/markdown/) section,
+> In the [Authoring with Markdown]({{relative_root_path}}/markdown) section,
 > we learned about writing reference-style links in Markdown,
 > e.g. `[link text][link-target]` in the body of the file with a corresponding
 > `[link-target]: https://carpentries.org` link reference
