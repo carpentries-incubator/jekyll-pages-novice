@@ -43,12 +43,12 @@ in response to various triggers.
 ## Hello world in HTML
 
 When learning a new programming language,
-you may often find a references to the popular `Hello world`.
+you may often find a reference to the popular `Hello world`.
 These examples typically capture the simplest code that
 can produce and display the `Hello world` on screen.
 
-As HTML requires certain tags to be present and almost always in matching pairs (open `<tag>` and closing `</tag>`).
-HTML documents tend to be get verbose rather quickly.
+As HTML requires certain tags to be present and almost always in matching pairs (open `<tag>` and closing `</tag>`),
+HTML documents tend to get verbose rather quickly.
 
 The simplest, valid HTML `Hello world` is:
 
