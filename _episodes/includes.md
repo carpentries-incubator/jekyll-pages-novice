@@ -151,7 +151,7 @@ at the top of your page.
 > It is common for banner logos like the one above to link back to the homepage
 > of the website they are displayed on.
 > With Markdown, turn the image into a link
-> the image to the landing page (`index.md`) of your site.
+> to the landing page (`index.md`) of your site.
 >
 > > ## Solution
 > >
