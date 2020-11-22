@@ -100,7 +100,7 @@ Let's do some exercises to learn more about structuring and emphasis.
 > >     Vanilla text may contain *italic* and **bold words**.
 > >
 > >     This paragraph is separated from the previous one by a blank line.
-> >     Line breaks
+> >     Line breaks  
 > >     are caused by two trailing spaces at the end a line.
 > >
 > {: .solution }
