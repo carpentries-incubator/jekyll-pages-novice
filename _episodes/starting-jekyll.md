@@ -100,9 +100,8 @@ You can cite the project as:
 
 ## Contact us
 
-Email: [{% raw %}{{ site.email }}{% endraw %}](mailto:{% raw %}{{ site.email }}{% endraw %})   
-
-Twitter: [@my_research_project](https://twitter.com/my_research_project)   
+- Email: [{% raw %}{{ site.email }}{% endraw %}](mailto:{% raw %}{{ site.email }}{% endraw %})
+- Twitter: [@my_research_project](https://twitter.com/my_research_project)
 ~~~
     
 3. Go to your website to see the changes.
@@ -142,9 +141,8 @@ Twitter: [@my_research_project](https://twitter.com/my_research_project)
 > >    
 > > ## Contact us
 > >   
-> > Email: [{% raw %}{{ site.email }}{% endraw %}](mailto:{% raw %}{{ site.email }}{% endraw %})   
-> >    
-> > Twitter: [{% raw %}{{ site.twitter }}{% endraw %}]({% raw %}{{ site.twitter }}{% endraw %})   
+> > - Email: [{% raw %}{{ site.email }}{% endraw %}](mailto:{% raw %}{{ site.email }}{% endraw %})
+> > - Twitter: [{% raw %}{{ site.twitter }}{% endraw %}]({% raw %}{{ site.twitter }}{% endraw %})
 > > ~~~
 > >    
 > > 3. Note that you should not see any changes to your website really. However, you can now access your Twitter URL from

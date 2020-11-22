@@ -36,13 +36,41 @@ material often found at the very top or very bottom of a webpage.
 
 ## Defining a Layout
 
-To demonstrate how layouts work in Jekyll we will copy the contents of
-`_includes/banner.html`, the HTML file defining the `img` element for our banner,
-to `_layouts/page.html`, a new file in a new folder.
-GitHub doesn't provide a way to make a copy of a file,
-so you will need to do this manually.
-Note that the name of the `_layouts` folder begins with an underscore,
-which as we learned earlier means it has special meaning to Jekyll.
+Jekyll layouts are defined as HTML files in a special `_layouts` folder.
+We will want our banner image to appear on every page of our site so,
+instead of using an `include` tag on each page individually,
+we should add it to the layout used for each page.
+Just like our site's pages, layouts can `include` blocks defined in other files,
+but the catch is that these must also be HTML.
+That means we need to convert the banner Markdown to HTML.
+
+Create a new file, `_includes/banner.html`, and redefine the banner image
+as an `<img>` element in HTML:
+
+#### Before
+
+~~~
+![Group Website with Jekyll](../files/site_banner.png)
+~~~
+{: .source }
+
+#### After
+
+~~~
+<img src="../files/site_banner.png" alt="Group Website with Jekyll">
+~~~
+{: .language-html }
+
+Now it's time to define the new page layout,
+which we will save in a file `_layouts/page.html`.
+Having defined the banner in a separate file,
+we will start with a layout file that only `include`s this file:
+
+~~~
+{% raw %}{% include banner.html %}{% endraw %}
+~~~
+{: .source}
+
 You have just defined the first layout for pages on your site.
 Congratulations!
 
@@ -53,54 +81,84 @@ that there is good news and bad news:
 The good news: the banner image is there again;
 the bad: all the other page content has disappeared!
 
-FIXME: add screenshot here
+![A page displaying only the site title banner.](../fig/layouts_banner_only.png){: width="800px"}
 
 The page content is missing because we haven't yet told Jekyll where to put it.
 To do that we need to add the special `content` variable into the layout file:
 
 ~~~
-{% raw %}<img src="/images/site_banner.png" alt="Group Website with Jekyll">{% endraw %}
+{% raw %}{% include banner.html %}{% endraw %}
 
 {% raw %}{{ content }}{% endraw %}
 ~~~
 {: .source}
 
+We can use the `content` variable to tell variable where it should place
+**all the content defined in the Markdown of the page** within this layout.
 If we make the change above to `_layouts/page.html` and reload our site's homepage,
-we now see the page content has returned but the banner image appears twice!
+we now see the page content has returned but we have two more problems:
+the styling of our pages has changed (for the worse) and
+the banner image appears twice!
 
-FIXME: add screenshot here
+![A page displaying the site title banner twice.](../fig/layouts_double_banner.png){: width="800px"}
 
 The duplication is happening because the
-`{% raw %}{% include banner.html %}{% endraw %}`
+`{% raw %}{% include banner.md %}{% endraw %}`
 tag is still present in `index.md`.
 
 > ## Cleaning up
 >
-> Remove the include tag from all the pages of your site,
+> Remove the include tag for the banner from all the pages of your site,
 > and set every page to use the `page` layout.
 >
 {: .challenge }
+
+## Site Styling
+
+That deals with the duplicated banner,
+but the change in styling is more difficult.
+Before we defined a layout for our pages,
+Jekyll used a _default theme_ to style the site.
+That default has been overwritten now that we applied a layout file
+to our site and that means,
+if we want to use our own customised layouts,
+we will need to start telling the browser how we would like our pages to be styled.
+There is still more to learn about page layouts,
+so we will come back to this issue of styling at the end of the section.
 
 > ## Expanding the layout
 >
 > We will probably want to include the contact line we added in the previous section
 > in every standard page on our site.
-> Move the `include` tag to the layout template
-> so we don't have to remember to `include` it every time we make a new page.
+> In a file `_include/contact.html`,
+> convert the contents of `contact.md` to HTML.
+> Then `include` it in the `page.html` layout file.
 > Place it _below the page content_ so that it appears at the end of each page
 > that uses this layout.
-> Check that this works by reloading of the pages that uses the `page` layout.
+> Check that this works by reloading any of the pages that uses the `page` layout.
 >
 > > ## Solution
-> > Your layout file, `_layouts/page.html`,
+> > `contact.html` should contain something like the following:
+> >
+> > ~~~
+> > <h2>Contact us</h2>
+> >
+> > <ul>
+> > <li>Email: <a href="mailto:team@my.research.org">team@my.research.org</a></li>
+> > <li>Twitter: <a href="https://twitter.com/my_research_project">@my_research_project</a></li>
+> > </ul>
+> > ~~~
+> > {: .source }
+> >
+> > and your layout file, `_layouts/page.html`,
 > > should look like this:
 > >
 > > ~~~
-> > {% raw %}<img src="/images/site_banner.png" alt="Group Website with Jekyll">
+> > {% raw %}{% include banner.html %}
 > >
 > > {{ content }}
 > >
-> > {% include contact.md %}{% endraw %}
+> > {% include contact.html %}{% endraw %}
 > > ~~~
 > > {: .source }
 > {: .solution }

@@ -250,7 +250,7 @@ You can then provide the URL in one of two ways:
 2. Reference style links - referencing a reusable link reference with a second set of square brackets `[ ]`.
 
 > ## Links
-> Reproduce the markdown source code to create the following view, where both links point to <https://carpentries.org/>::
+> Reproduce the markdown source code to create the following view, where both links point to <https://carpentries.org/>:
 >
 > <img src="../fig/exercise_links.png" alt="Preview tab of inline and reference style links" width=200>
 >
