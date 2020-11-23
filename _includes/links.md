@@ -45,6 +45,7 @@
 [lesson-mainpage]: {{ relative_root_path }}{% link index.md %}
 [lesson-reference]: {{ relative_root_path }}{% link reference.md %}
 [lesson-setup]: {{ relative_root_path }}{% link setup.md %}
+[lesson-webpage]: {{ relative_root_path }}
 [liquid]: https://shopify.dev/docs/themes/liquid/
 [mit-license]: https://opensource.org/licenses/mit-license.html
 [morea]: https://morea-framework.github.io/
