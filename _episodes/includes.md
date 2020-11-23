@@ -85,9 +85,9 @@ why don't we try adding a banner to the top of each page?
 
 We're going to add a pre-made banner image to our repository,
 and it is good practice to store all image files in a common folder.
-1. click "Create new file" under the "Add file"
+1. Click "Create new file" under the "Add file"
 dropdown on your repository homepage,
-2. in the "Name your file..." box, type `images/`.
+2. In the "Name your file..." box, type `images/`.
    The folder name should be automatically inserted in the path displayed
    next to this box for naming the file.
 3. You can then leave the file blank and name it `.gitkeep`.
@@ -151,12 +151,12 @@ at the top of your page.
 > It is common for banner logos like the one above to link back to the homepage
 > of the website they are displayed on.
 > With Markdown, turn the image into a link
-> the image to the landing page (`index.md`) of your site.
+> to the landing page (`index.md`) of your site.
 >
 > > ## Solution
 > >
 > > ```
-> > [![Group Website with Jekyll](../images/site_banner.png)]((https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/))
+> > [![Group Website with Jekyll](./images/site_banner.png)](https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/)
 > > ```
 > >
 > {: .solution }
@@ -224,9 +224,8 @@ We will see another example of this shortly.
 > ~~~
 > ## Contact us
 >
-> Email: [team@my.research.org](mailto:team@my.research.org)
->
-> Twitter: [@my_research_project](https://twitter.com/my_research_project)
+> - Email: [{% raw %}{{ site.email }}{% endraw %}](mailto:{% raw %}{{ site.email }}{% endraw %})
+> - Twitter: [{% raw %}{{ site.twitter }}{% endraw %}]({% raw %}{{ site.twitter }}{% endraw %})
 > ~~~
 > {: .source }
 >
@@ -236,15 +235,14 @@ We will see another example of this shortly.
 > and add it at the bottom of the `about.md` pages.
 >
 > > ## Solution
-> > create a file called `contact.md`
+> > Create a file called `contact.md`
 > > (or similar) inside the `_includes` folder:
 > >
 > > ~~~
 > > ## Contact us
 > >
-> > Email: [team@my.research.org](mailto:team@my.research.org)
-> >
-> > Twitter: [@my_research_project](https://twitter.com/my_research_project)
+> > - Email: [{% raw %}{{ site.email }}{% endraw %}](mailto:{% raw %}{{ site.email }}{% endraw %})
+> > - Twitter: [{% raw %}{{ site.twitter }}{% endraw %}]({% raw %}{{ site.twitter }}{% endraw %})
 > > ~~~
 > > {: .source }
 > >
