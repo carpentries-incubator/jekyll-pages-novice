@@ -46,13 +46,13 @@ Once you've clicked the pencil symbol, GitHub will open that file in the editing
 
 <img src="../fig/group_website_readme_edit.png" alt="Editing interface of the group websites README file" width=600>
 
-You can change the content and have a look at the rendered view by clicking the `Preview changes` tab.
+You can change the content and have a look at the rendered view by clicking the _Preview changes_ tab.
 
 <img src="../fig/group_website_readme_render.png" alt="Preview of the rendered content of the group websites README file" width=600>
 
 Let’s add `Some **bold** font` and see what happens when we preview it using the preview tab.
 If new sections were added you will also find green vertical bars visually highlighting the new content.
-To save the content to the file `README.md`, scroll down a bit and you'll see a `Commit changes` menu
+To save the content to the file `README.md`, scroll down a bit and you'll see a _Commit changes_ menu
 where you can commit your changes.
 After having changed something, the commit menu looks like this:
 
@@ -77,7 +77,8 @@ two formatting features:
 
 Let's learn some more markdown by adding some formatting and see what happens when we preview it using the preview tab.
 Add the following to your `README.md` file.
-```
+
+~~~
 # group-website
 Repo for learning how to make websites with Jekyll pages
 
@@ -86,7 +87,7 @@ Repo for learning how to make websites with Jekyll pages
 Vanilla text may contain *italic* and **bold words**.
 
 This paragraph is separated from the previous one by a blank line.
-Line breaks  
+Line breaks
 are caused by two trailing spaces at the end of a line.
 
 [Carpentries Webpage](carpentries.org)
@@ -96,7 +97,8 @@ are caused by two trailing spaces at the end of a line.
 - Software Carpentry
 - Data Carpentry
 - Library Carpentry
-```
+~~~
+{: .language-markdown }
 
 You can then click the preview tab again to see how the formatting renders.
 
@@ -109,32 +111,32 @@ Scroll down to the bottom of the page, add a commit message if you wish, and the
 
 Let's do an exercise to try out writing more markdown.
 
-> ## Try out Markdown 
+> ## Try out Markdown
 > Use [this cheatsheet][github-flavored-markdown] to add to your readme:
-> 
+>
 > - Another second level heading
 > - Some text under that second level heading that includes an link and ~~strikethrough~~ text.
 > - A third level heading
 > - A numbered list
 > - Bonus: Add this image <https://github.com/carpentries/carpentries.org/blob/main/images/TheCarpentries-opengraph.png>
-> 
+>
 > > ## Example Solution
 > > For example your markdown might look like the following:
 > > ```
 > > ## More info on the lesson
 > > You can find this lesson [here](https://carpentries-incubator.github.io/building-websites-with-jekyll-and-github-or-gitlab/).
-> > 
+> >
 > > ### Three reasons you should learn markdown:
-> > 
+> >
 > > 1. Less formatting than HTML
 > > 1. Easy to read even with formatting
 > > 2. Commonly used for websites and software development
-> > 1. We ~~don't~~ use it in the Carpentries 
-> > 
+> > 1. We ~~don't~~ use it in the Carpentries
+> >
 > > ![Carpentries Logo](https://github.com/carpentries/carpentries.org/blob/main/images/TheCarpentries-opengraph.png)
 > > ```
 > > <img src="../fig/markdown_exercise.png" alt="Rendered solution to the markdown exercise" width=800>
-> > 
+> >
 > {: .solution }
 {: .challenge }
 
