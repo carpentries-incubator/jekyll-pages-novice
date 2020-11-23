@@ -170,7 +170,7 @@ We are now ready to start adding more content to our website. Let's do some exer
 > >        Twitter: [@my_research_project](https://twitter.com/my_research_project)
 > >
 > >     Note how we used various Markdown syntax: quoted text (`>`), italic font (`*`) and external links
-> >     (square `[]` and round brackets `()` for mailto and regular Web URLs).
+> >     (a combination of square `[]` and round brackets `()` containing the link text and mailto or regular Web URLs respectively).
 > > 2. Edit `index.md` to add a link to `about.md`.
 > >
 > >        # My Research Project
