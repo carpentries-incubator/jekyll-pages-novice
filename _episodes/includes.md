@@ -224,9 +224,8 @@ We will see another example of this shortly.
 > ~~~
 > ## Contact us
 >
-> Email: [team@my.research.org](mailto:team@my.research.org)
->
-> Twitter: [@my_research_project](https://twitter.com/my_research_project)
+> - Email: [{% raw %}{{ site.email }}{% endraw %}](mailto:{% raw %}{{ site.email }}{% endraw %})
+> - Twitter: [{% raw %}{{ site.twitter }}{% endraw %}]({% raw %}{{ site.twitter }}{% endraw %})
 > ~~~
 > {: .source }
 >
@@ -236,14 +235,13 @@ We will see another example of this shortly.
 > and add it at the bottom of the `team.md` pages.
 >
 > > ## Solution
-> > create a file called `contact.md`
+> > Create a file called `contact.md`
 > > (or similar) inside the `_includes` folder:
 > >
 > > ~~~
 > > ## Contact us
 > >
 > > - Email: [{% raw %}{{ site.email }}{% endraw %}](mailto:{% raw %}{{ site.email }}{% endraw %})
-> >
 > > - Twitter: [{% raw %}{{ site.twitter }}{% endraw %}]({% raw %}{{ site.twitter }}{% endraw %})
 > > ~~~
 > > {: .source }
