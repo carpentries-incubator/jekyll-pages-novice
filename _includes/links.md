@@ -18,6 +18,7 @@
 [filters]: https://jekyllrb.com/docs/liquid/filters/
 [ghp-dependencies]: https://pages.github.com/versions/
 [github]: https://github.com/
+[git]: https://git-scm.com/
 [github-flavored-markdown]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 [gitlab-flavored-markdown]: https://docs.gitlab.com/ee/user/markdown.html
 [github-importer]: https://import.github.com/
@@ -26,6 +27,7 @@
 [html5-wikipedia]: https://en.wikipedia.org/wiki/HTML5
 [html5-tags]: https://www.tutorialrepublic.com/html-reference/html5-tags.php
 [importer]: https://github.com/new/import
+[indentation]: https://en.wikipedia.org/wiki/Indentation_(typesetting)
 [jekyll-collection]: https://jekyllrb.com/docs/collections/
 [jekyll-install]: https://jekyllrb.com/docs/installation/
 [jekyll-rendering]: https://jekyllrb.com/docs/rendering-process/
