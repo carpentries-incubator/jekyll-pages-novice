@@ -9,9 +9,6 @@ objectives:
 - "Create simple pages with formatted text"
 keypoints:
 - "Markdown is an relatively easy way to write formatted text"
-- "Markdown and HTML tags can be used together in a single page"
-- "I recommend writing Markdown links 'reference-style'"
-- "The landing page for a website is conventionally named `index.md`"
 ---
 
 # Markdown
@@ -49,12 +46,13 @@ Once you've clicked the pencil symbol, GitHub will open that file in the editing
 
 <img src="../fig/group_website_readme_edit.png" alt="Editing interface of the group websites README file" width=600>
 
-You can change the content and have a look at the rendered view by clicking the `Preview changes` tab.
+You can change the content and have a look at the rendered view by clicking the _Preview changes_ tab.
 
 <img src="../fig/group_website_readme_render.png" alt="Preview of the rendered content of the group websites README file" width=600>
 
-Let's add `Some **bold** font` and see what happens when we preview it using the preview tab.
-If you like to permanently save the content to the file `README.md`, scroll down a bit and you'll see a `Commit changes` menu
+Let’s add `Some **bold** font` and see what happens when we preview it using the preview tab.
+If new sections were added you will also find green vertical bars visually highlighting the new content.
+To save the content to the file `README.md`, scroll down a bit and you'll see a _Commit changes_ menu
 where you can commit your changes.
 After having changed something, the commit menu looks like this:
 
@@ -67,84 +65,82 @@ After having changed something, the commit menu looks like this:
 >
 {: .callout}
 
-
 # Writing Markdown
 
 Now that we know about the editing interface and preview tab of our projects `README.md`
 we can use it as a text editor and investigate selected Markdown features.
 
-Our README.md already contains vanilla text and
+Our `README.md` already contains vanilla text and
 two formatting features:
 - Heading `# group-website`
-- Text markup or emphasis `**bold**`.
+- Emphasis using `**bold**`.
 
-Let's do some exercises to learn more about structuring and emphasis.
+Let's learn some more markdown by adding some formatting and see what happens when we preview it using the preview tab.
+Add the following to your `README.md` file.
+
+~~~
+# group-website
+Repo for learning how to make websites with Jekyll pages
+
+## Learning Markdown
+
+Vanilla text may contain *italic* and **bold words**.
+
+This paragraph is separated from the previous one by a blank line.
+Line breaks
+are caused by two trailing spaces at the end of a line.
+
+[Carpentries Webpage](carpentries.org)
 
 
-> ## Add a Sub Heading and Emphasised Text with Line Breaks
+### Carpentries Lesson Programs:
+- Software Carpentry
+- Data Carpentry
+- Library Carpentry
+~~~
+{: .language-markdown }
+
+You can then click the preview tab again to see how the formatting renders.
+
+<img src="../fig/markdown_preview_formatting.png" alt="Preview of the formatting added to the Readme" width=600>
+
+To keep this addition to our `README.md` we need to commit these changes to save them.
+Scroll down to the bottom of the page, add a commit message if you wish, and then commit to the `main` branch.
+
+<img src="../fig/committing_formatting_addition_to_readme.png" alt="Committing the formatting added to the Readme" width=800>
+
+Let's do an exercise to try out writing more markdown.
+
+> ## Try out Markdown
+> Use [this cheatsheet][github-flavored-markdown] to add to your readme:
 >
-> Try to reproduce the source code of the following view.
+> - Another second level heading
+> - Some text under that second level heading that includes an link and ~~strikethrough~~ text.
+> - A third level heading
+> - A numbered list
+> - Bonus: Add this image <https://github.com/carpentries/carpentries.org/blob/main/images/TheCarpentries-opengraph.png>
 >
-> <img src="../fig/group_website_exercise_add_a_sub_heading.png" alt="Preview tab of README.md with additional lines inlcuding sub heading and emphasised text with line breaks" width=400>
->
->
-> > ## Solution
+> > ## Example Solution
+> > For example your markdown might look like the following:
+> > ```
+> > ## More info on the lesson
+> > You can find this lesson [here](https://carpentries-incubator.github.io/building-websites-with-jekyll-and-github-or-gitlab/).
 > >
-> >     # group-website
-> >     Repo for learning how to make websites with Jekyll pages
+> > ### Three reasons you should learn markdown:
 > >
-> >     Some **bold** font
+> > 1. Less formatting than HTML
+> > 1. Easy to read even with formatting
+> > 2. Commonly used for websites and software development
+> > 1. We ~~don't~~ use it in the Carpentries
 > >
-> >     ## Learning Markdown
-> >
-> >     Vanilla text may contain *italic* and **bold words**.
-> >
-> >     This paragraph is separated from the previous one by a blank line.
-> >     Line breaks
-> >     are caused by two trailing spaces at the end a line.
+> > ![Carpentries Logo](https://github.com/carpentries/carpentries.org/blob/main/images/TheCarpentries-opengraph.png)
+> > ```
+> > <img src="../fig/markdown_exercise.png" alt="Rendered solution to the markdown exercise" width=800>
 > >
 > {: .solution }
 {: .challenge }
 
-Displaying items in lists, sometimes increases readability.
-You can create lists by preceding lines with `-` or a bunch of other `-`-like characters.
-
-> ## List today's learning goals
->
-> Give it a try and write a short list of topics you want to learn today.
->
-> > ## Solution
-> >
-> >     - Write Markdown
-> >     - Host my first website on GitHub
-> >     - Learn about Jekyll
-> >     - Think about how my work group could benefit from what I have learned.
-> >
-> {: .solution }
-{: .challenge }
-
-If you would like to nest lists, i.e. specify a sub list as an item of another list, use indentation.
-Numbered enumerations are helpful for displaying sequences and the numbers may help to address individual points.
-
-> ## Nested Lists and Enumerations
->
-> Try to reproduce the source code of the following view.
->
-> <img src="../fig/exercise_nested_lists_enumerations.png" alt="Preview tab nested lists and enumerations" width=600>
->
-> > ## Solution
-> >
-> >     - A list of items
-> >     - can be
-> >       - deeply
-> >         - nested
-> >     - returning to the top-level like this.
-> >
-> >     2. Enumerations can start at any number but
-> >     3. continue to increase in steps of one
-> >     5. even if the numbering does not. This updates the rendered numbering to avoid gaps when individual items are deleted.
-> {: .solution }
-{: .challenge }
+We will continue to use markdown and learn more throughout the rest of the lesson.
 
 > ## Markdown Cheatsheet
 >
@@ -152,128 +148,6 @@ Numbered enumerations are helpful for displaying sequences and the numbers may h
 > Have a look at this [cheatsheet][github-flavored-markdown] to get an overview or look things up.
 >
 {: .callout}
-
-You can use single backticks to call out code, e.g. `print('Hello world')` and
-use triple backticks to format larger code snippets, creating code blocks.
-
-> ## Add Code
-> Reproduce the markdown source code to create the following view:
->
->
-> <img src="../fig/exercise_add_code.png" alt="Preview tab with blanks before code and code blocks" width=600>
->
-> Start from the following code and fill the blanks:
->
-> ~~~
-> You can reference code __message='Hello World'__
-> or commands __git status__ inside text.
-> Larger code snippets look like this:
-> __
-> print('Hello World')
-> __
-> ~~~
-> {: .source }
->
-> > ## Solution
-> >
-> >     You can reference code `message='Hello World'`
-> >     or commands `git status` inside text.
-> >     Larger code snippets look like this:
-> >     ```
-> >     print('Hello World')
-> >     ```
-> >
-> {: .solution }
-{: .challenge }
-
-Syntax highlighting of code blocks can increase readability a lot.
-You get nice coloured code by adding an language identifier right after the
-introductory triple backticks.
-
-Let's take an example with Python:
-
-~~~
-```python
-print("Hello everyone!")
-```
-~~~
-
-The code above will produce the following view:
-
-```python
-print("Hello everyone!")
-```
-
-> ## Syntax Highlighting
->
-> Try to reproduce the markdown source code to create the following view:
->
-> <img src="../fig/exercise_syntax_highlighting.png" alt="Preview tab of code blocks with syntax highlighting" width=400>
->
->
-> > ## Solution
-> >
-> >     ```r
-> >     print(paste("How","are","you?"), quote = FALSE)
-> >     ```
-> >
-> >     ```python
-> >     s = "How are you?"
-> >     print(s)
-> >     ```
-> >
-> >     ```html
-> >     <!DOCTYPE html>
-> >     <html>
-> >     <body>
-> >     <a href=https://carpentries.org/>This is a link</a>
-> >     </body>
-> >     </html>
-> >     ```
-> {: .solution }
-{: .challenge }
-
-
-Linking other websites is an essential feature of a website.
-Bare URLs like https://carpentries.org/ can be made clickable like this
-<https://carpentries.org/> by wrapping them into
-angle brackets "\< \>".
-However, usually the bare URL is not very nice and displaying a clickable
-alternative text is beneficial.
-
-You can define either
-1. Inline style links - specifying the URL in line - or
-2. Reference style links - referencing a reusable link reference
-
-
-> ## Links
-> Reproduce the markdown source code to create the following view, where both links point to <https://carpentries.org/>:
->
-> <img src="../fig/exercise_links.png" alt="Preview tab of inline and reference style links" width=200>
->
-> Start from the following code and fill the blanks:
->
-> ~~~
-> Example links:
-> 1. [___](https://carpentries.org/)
-> 2. [___]___case-InSeNsiTiVe-reference-tag___
->
-> [case-insensitive-reference-tag]: https://carpentries.org/
-> ~~~
-> {: .source }
->
->
-> > ## Solution
-> >
-> >     Example links:
-> >     1. [Inline link](https://carpentries.org/)
-> >     2. [Reference link][case-InSeNsiTiVe-reference-tag]
-> >
-> >     [case-insensitive-reference-tag]: https://carpentries.org/
-> >
-> >
-> {: .solution }
-{: .challenge }
 
 > ## Optional Exercise: Add Your Repository Details to CodiMD
 >

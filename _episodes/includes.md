@@ -15,7 +15,7 @@ keypoints:
 In the previous episode,
 we discussed the benefits of using global and local variables
 to re-use values throughout our pages.
-However, repeated use of content in across websites
+However, repeated use of content in and across websites
 is usually not limited to individual values such as
 email addresses and social media handles.
 
@@ -29,7 +29,7 @@ email addresses and social media handles.
 >
 > What content is being re-used between pages on these sites?
 > Pair up and compare your partner's notes with your own.
-> Can you identify any common type(s) of content that being re-used in these sites?
+> Can you identify any common type(s) of content that is being re-used in these sites?
 >
 > > ## Solution
 > >
@@ -50,7 +50,7 @@ email addresses and social media handles.
 > > helping to improve navigation and other aspects of the user experience
 > > and achieve consistent "branding" across the whole site.
 > > The books listed under each category include a title, a price,
-> > and cover image,.
+> > and cover image.
 > > The category links themselves are also shared across each page,
 > > probably generated from the existing categories of books in the collection,
 > > and updated automatically when a category is added or removed.
@@ -85,9 +85,9 @@ why don't we try adding a banner to the top of each page?
 
 We're going to add a pre-made banner image to our repository,
 and it is good practice to store all image files in a common folder.
-1. click "Create new file" under the "Add file"
+1. Click "Create new file" under the "Add file"
 dropdown on your repository homepage,
-2. in the "Name your file..." box, type `images/`.
+2. In the "Name your file..." box, type `images/`.
    The folder name should be automatically inserted in the path displayed
    next to this box for naming the file.
 3. You can then leave the file blank and name it `.gitkeep`.
@@ -151,12 +151,12 @@ at the top of your page.
 > It is common for banner logos like the one above to link back to the homepage
 > of the website they are displayed on.
 > With Markdown, turn the image into a link
-> the image to the landing page (`index.md`) of your site.
+> to the landing page (`index.md`) of your site.
 >
 > > ## Solution
 > >
 > > ```
-> > [![Group Website with Jekyll](../images/site_banner.png)]((https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/))
+> > [![Group Website with Jekyll](./images/site_banner.png)](https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/)
 > > ```
 > >
 > {: .solution }
@@ -224,27 +224,25 @@ We will see another example of this shortly.
 > ~~~
 > ## Contact us
 >
-> Email: [team@my.research.org](mailto:team@my.research.org)
->
-> Twitter: [@my_research_project](https://twitter.com/my_research_project)
+> - Email: [{% raw %}{{ site.email }}{% endraw %}](mailto:{% raw %}{{ site.email }}{% endraw %})
+> - Twitter: [{% raw %}{{ site.twitter }}{% endraw %}]({% raw %}{{ site.twitter }}{% endraw %})
 > ~~~
 > {: .source }
 >
 > Copy the snippet and save it into an appropriately-named file,
 > then use an `include` statement to re-insert it
 > at the bottom of your site's `index.md`,
-> and add it at the bottom of the `team.md` pages.
+> and add it at the bottom of the `about.md` pages.
 >
 > > ## Solution
-> > create a file called `contact.md`
+> > Create a file called `contact.md`
 > > (or similar) inside the `_includes` folder:
 > >
 > > ~~~
 > > ## Contact us
 > >
-> > Email: [team@my.research.org](mailto:team@my.research.org)
-> >
-> > Twitter: [@my_research_project](https://twitter.com/my_research_project)
+> > - Email: [{% raw %}{{ site.email }}{% endraw %}](mailto:{% raw %}{{ site.email }}{% endraw %})
+> > - Twitter: [{% raw %}{{ site.twitter }}{% endraw %}]({% raw %}{{ site.twitter }}{% endraw %})
 > > ~~~
 > > {: .source }
 > >

@@ -78,9 +78,11 @@ Let's make use of global parameters in our pages.
     ## Description
     {% raw %}{{ site.description }}{% endraw %}
 
+    More details about the project are available from the [About page](about).
+
     Have any questions about what we do? [We'd love to hear from you!]({% raw %}mailto:{{ site.email }}{% endraw %})
     ~~~  
-    
+   
 2. We can use the same parameter in different pages. Let's reuse `{% raw %}{{ site.description }}{% endraw %}` and 
 `{% raw %}{{ site.email }}{% endraw %}` in `about.md` like this:
 
@@ -203,7 +205,7 @@ Between these triple-dashed lines, you can overwrite predefined variables (like 
 > >
 > > Create a YAML header at the very top of `index.md` and add the `lesson-example` variable in between the
 > > triple-dash delimiters. You can then reference the value within your `index.md` page as 
-`{% raw %}{{{% endraw %} page.example-lesson {% raw %}}}{% endraw %}`. Your file should now look like:
+`{% raw %}{{{% endraw %} page.lesson-example {% raw %}}}{% endraw %}`. Your file should now look like:
 > > 
 > > ~~~
 > > ---  
@@ -214,8 +216,10 @@ Between these triple-dashed lines, you can overwrite predefined variables (like 
 > >   
 > > ## Description
 > > {% raw %}{{ site.description }}{% endraw %}
+> > 
+> > More details about the project are available from the [About page](about).
 > >                                    
-> > See some [examples of our work]({% raw %}{{{% endraw %} page.example-lesson {% raw %}}}{% endraw %}).
+> > See some [examples of our work]({% raw %}{{{% endraw %} page.lesson-example {% raw %}}}{% endraw %}).
 > >
 > > Have any questions about what we do? [We'd love to hear from you!]({% raw %}mailto:{{ site.email }}{% endraw %})
 > > ~~~
