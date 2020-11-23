@@ -107,8 +107,8 @@ By doing this, you add a link to the repository's website on your repository's l
 
 Up to now, the content of your webpage is identical to what visitors to your repository on GitHub will see in the project's `README.md` file. It is often better to have different content in the homepage of your site - aimed at visitors to the website - than in the README, which is supposed to provide information about the GitHub repository e.g. license information, local installation instructions, the structure and configuration of the repository, etc. By default, the homepage for a GitHub Pages website is built from a file called `index.md`: in the absence of a file with that name the "fallback" option is to use `README.md`, which is why your homepage is currently being built from that file.
 
-To separate the contents of the repository's README from the website's homepage, create a new file called 
-`index.md`. 
+To separate the contents of the repository's README from the website's homepage, create a new file called
+`index.md`.
 
 To create a new file from GitHub interface,
 click the `Add file` button and select `Create new file` from the dropdown.
@@ -138,6 +138,42 @@ We are now ready to start adding more content to our website. Let's do some exer
     ![Add About section to index](../fig/episode03_exercise01_add_description.png)
 > {: .solution }
 {: .challenge }
+
+Both the pages built from `README.md` and `index.md`
+have been served to us at the "root" of our site:
+the page we see when we point our browser to
+`https://YOURUSERNAME.github.io/REPONAME/`.
+The actual name of this page is `index.html`
+(navigate to `https://YOURUSERNAME.github.io/REPONAME/index.html`
+to see this for yourself),
+i.e. _the file `index.md` is converted by Jekyll to a page called `index.html`_.
+
+As more Markdown files are added to your repository,
+the same process will automatically occur for those files too.
+For example, a file called `contact.md` will be converted to `contact.html`
+and `cake-recipes.md` will become `cake-recipes.html`.
+However, unlike the special `index.html` file,
+which web browsers look for as the default "landing page" to display when
+pointed towards a URL with a trailing forward slash,
+we must request these pages by name when we want to view them on the Web.
+Continuing with the above examples,
+if we wanted to visit the `cake-recipes.html` page,
+we would need to point our browser at
+`https://YOURUSERNAME.github.io/REPONAME/cake-recipes.html`,
+and `https://YOURUSERNAME.github.io/REPONAME/contact.html`
+for the page built from `contact.md`.
+
+However, when linking **between pages of the same site** (_relative linking_),
+GitHub Pages allows us to refer to the name of the original Markdown file,
+and handles the URL conversion for us.
+This means that, to link to `cake-recipes.html` from `index.html`,
+we can write a link such as
+`[Read our recipe for Triple Chocolate Raspberry Surprise Cake and more](cake-recipes.md)` and Jekyll will convert this to the appropriate URL.
+(It won't write or bake the recipe for us, unfortunately.)
+Relative links can point to files in other directories too:
+`recipes/chocolate-salted-caramel-pudding.md` and `../local-dentists.md`
+are both valid link targets
+(assuming the relevant files exist in your repository).
 
 > ## Exercise: Create Links Between Pages
 > Create a new file `about.md` and link to it from `index.md`.
