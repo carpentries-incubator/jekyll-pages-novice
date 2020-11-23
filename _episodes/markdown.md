@@ -51,6 +51,7 @@ You can change the content and have a look at the rendered view by clicking the 
 <img src="../fig/group_website_readme_render.png" alt="Preview of the rendered content of the group websites README file" width=600>
 
 Let’s add `Some **bold** font` and see what happens when we preview it using the preview tab.
+If new sections were added you will also find green vertical bars visually highlighting the new content.
 To save the content to the file `README.md`, scroll down a bit and you'll see a `Commit changes` menu
 where you can commit your changes.
 After having changed something, the commit menu looks like this:
@@ -69,7 +70,7 @@ After having changed something, the commit menu looks like this:
 Now that we know about the editing interface and preview tab of our projects `README.md`
 we can use it as a text editor and investigate selected Markdown features.
 
-Our README.md already contains vanilla text and
+Our `README.md` already contains vanilla text and
 two formatting features:
 - Heading `# group-website`
 - Emphasis using `**bold**`.
@@ -89,6 +90,7 @@ Line breaks
 are caused by two trailing spaces at the end of a line.
 
 [Carpentries Webpage](carpentries.org)
+
 
 ### Carpentries Lesson Programs:
 - Software Carpentry

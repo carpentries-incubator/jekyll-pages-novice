@@ -15,7 +15,7 @@ keypoints:
 In the previous episode,
 we discussed the benefits of using global and local variables
 to re-use values throughout our pages.
-However, repeated use of content in across websites
+However, repeated use of content in and across websites
 is usually not limited to individual values such as
 email addresses and social media handles.
 
@@ -29,7 +29,7 @@ email addresses and social media handles.
 >
 > What content is being re-used between pages on these sites?
 > Pair up and compare your partner's notes with your own.
-> Can you identify any common type(s) of content that being re-used in these sites?
+> Can you identify any common type(s) of content that is being re-used in these sites?
 >
 > > ## Solution
 > >
@@ -50,7 +50,7 @@ email addresses and social media handles.
 > > helping to improve navigation and other aspects of the user experience
 > > and achieve consistent "branding" across the whole site.
 > > The books listed under each category include a title, a price,
-> > and cover image,.
+> > and cover image.
 > > The category links themselves are also shared across each page,
 > > probably generated from the existing categories of books in the collection,
 > > and updated automatically when a category is added or removed.
@@ -233,7 +233,7 @@ We will see another example of this shortly.
 > Copy the snippet and save it into an appropriately-named file,
 > then use an `include` statement to re-insert it
 > at the bottom of your site's `index.md`,
-> and add it at the bottom of the `team.md` pages.
+> and add it at the bottom of the `about.md` pages.
 >
 > > ## Solution
 > > create a file called `contact.md`
