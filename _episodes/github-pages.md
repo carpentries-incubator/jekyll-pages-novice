@@ -165,9 +165,8 @@ We are now ready to start adding more content to our website. Let's do some exer
 > >
 > >        ## Contact us
 > >
-> >        Email: [team@my.research.org](mailto:team@my.research.org)
-> >
-> >        Twitter: [@my_research_project](https://twitter.com/my_research_project)
+> >         - Email: [team@my.research.org](mailto:team@my.research.org)
+> >         - Twitter: [@my_research_project](https://twitter.com/my_research_project)
 > >
 > >     Note how we used various Markdown syntax: quoted text (`>`), italic font (`*`) and external links
 > >     (a combination of square `[]` and round brackets `()` containing the link text and mailto or regular Web URLs respectively).
