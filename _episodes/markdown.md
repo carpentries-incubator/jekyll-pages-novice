@@ -103,7 +103,7 @@ You can then click the preview tab again to see how the formatting renders.
 <img src="../fig/markdown_preview_formatting.png" alt="Preview of the formatting added to the Readme" width=600>
 
 To keep this addition to our `README.md` we need to commit these changes to save them.
-Scroll down to the bottom of the page, add a commit message if you wish, and then commit to the `main branch`.
+Scroll down to the bottom of the page, add a commit message if you wish, and then commit to the `main` branch.
 
 <img src="../fig/committing_formatting_addition_to_readme.png" alt="Committing the formatting added to the Readme" width=800>
 
