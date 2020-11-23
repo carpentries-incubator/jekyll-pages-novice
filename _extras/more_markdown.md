@@ -1,5 +1,5 @@
 ---
-title: "Authoring with Markdown"
+title: "Exploring Markdown"
 teaching: 0
 exercises: 0
 questions:
