@@ -85,9 +85,9 @@ why don't we try adding a banner to the top of each page?
 
 We're going to add a pre-made banner image to our repository,
 and it is good practice to store all image files in a common folder.
-1. click "Create new file" under the "Add file"
+1. Click "Create new file" under the "Add file"
 dropdown on your repository homepage,
-2. in the "Name your file..." box, type `images/`.
+2. In the "Name your file..." box, type `images/`.
    The folder name should be automatically inserted in the path displayed
    next to this box for naming the file.
 3. You can then leave the file blank and name it `.gitkeep`.
