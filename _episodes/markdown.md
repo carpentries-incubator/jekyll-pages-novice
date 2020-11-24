@@ -160,14 +160,14 @@ We will continue to use markdown and learn more throughout the rest of the lesso
 >
 {: .challenge }
 
-> ## Flavors
+> ## Markdown Flavours
 >
 > Basic Markdown features are the same on all platforms such as GitHub and GitLab.
 > However, there are differences in the details and scope of the features offered.
 > To address this situation, the Markdown
 > used at GitHub is called **GitHub-flavored Markdown**
 > and the one used at GitLab is called **GitLab Flavored Markdown**.
-> - So be aware of
+> - So be aware of:
 >   - [GitHub-flavored Markdown][github-flavored-markdown]
 >   - [GitLab-flavored Markdown][gitlab-flavored-markdown]
 {: .callout}
