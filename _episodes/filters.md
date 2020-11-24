@@ -4,7 +4,6 @@ teaching: 0
 exercises: 0
 questions:
 - "How can I control the format of variable values such as dates I insert them into a page?"
-- "Where can I find out more about Jekyll and Liquid?"
 objectives:
 - "Use simple filters to control the format and content of substituted values."
 keypoints:

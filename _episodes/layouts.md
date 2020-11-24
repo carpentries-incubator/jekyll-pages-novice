@@ -50,14 +50,14 @@ as an `<img>` element in HTML:
 #### Before
 
 ~~~
-![Group Website with Jekyll](../files/site_banner.png)
+![Group Website banner](./images/site_banner.png)
 ~~~
 {: .source }
 
 #### After
 
 ~~~
-<img src="../files/site_banner.png" alt="Group Website with Jekyll">
+<img src="../images/site_banner.png" alt="Group Website banner">
 ~~~
 {: .language-html }
 
