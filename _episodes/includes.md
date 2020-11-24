@@ -108,10 +108,10 @@ Now that the banner image is available in our site repository,
 add this Markdown immediately after the YAML front matter in `index.md`:
 
 ```
-![Group Website with Jekyll](../images/site_banner.png)
+![Group Website banner](./images/site_banner.png)
 ```
 
-![Group Website with Jekyll](../files/site_banner.png)
+![Group Website banner](../files/site_banner.png)
 
 Adding this should result in this title banner appearing
 at the top of your page.

@@ -17,7 +17,7 @@ keypoints:
 
 ---
 
-Now that you know how to create Markdown files, let's see how to turn them into web pages. GitHub has a
+Now that you know how to create Markdown files, let's see how to turn them into Web pages. GitHub has a
 service just for that called GitHub Pages.
 
 # Publishing a Website with GitHub Pages
@@ -43,25 +43,25 @@ You may have noticed that when we created our repository in previous episode, by
 {: .callout}
 1. Click on the repository's `Settings` tab (the one with the little cog) as shown on the figure below:
 
-    <img src="../fig/repo_settings.png" alt="Repository settings" width=800>
+    <img src="../fig/repo_settings.png" alt="Repository settings" width="width=800">
 
 2. Scroll down to "GitHub Pages" settings. You will see that these are currently disabled. Select branch `main` to
 enable GitHub Pages for this repository and to tell GitHub which branch to use as a source.
 
-    <img src="../fig/default_website.png" alt="Default website branch" width=800>
+    <img src="../fig/default_website.png" alt="Default website branch" width="width=800">
 
 3. The link to your repository's website will appear in the highlighted box above. If you click the link  - your default browser will open and show your project website. If this does not happen, you should manually open your favourite web browser and paste the URL.
 
-    <img src="../fig/website_url.png" alt="Project website URL" width=800>
+    <img src="../fig/website_url.png" alt="Project website URL" width="width=800">
 
 4. It may take a while (from a few seconds to a few minutes) for GitHub to compile your website (depending on GitHub's availability and the complexity of
 your website) and it may not become visible immediately. You will know it is ready when the link appears in green box with a "tick" in front of the web address (as shown in the figure below).
 
-    <img src="../fig/website_url_green_tick.png" alt="Project website URL - successfull build" width=800>
+    <img src="../fig/website_url_green_tick.png" alt="Project website URL - successfull build" width="width=800">
 
 5. Once ready, you should see the contents of the `README.md` file that we created earlier, rendered as a website.
 
-    <img src="../fig/first_website.png" alt="First website" width=800>
+    <img src="../fig/first_website.png" alt="First website" width="width=800">
 
 > ## Using branch `gh-pages` for websites
 > By convention, GitHub Pages uses branch called `gh-pages` to look for the website content. By creating a branch with that name, you implicitly tell GitHub that you want your content published and you do not need to configure
@@ -99,7 +99,7 @@ and add descriptive topics or tags about the content or technologies used in you
 
 You can edit the details of your repository by clicking on the little cog button as shown on the figure below.
 
-<img src="../fig/repository_details.png" alt="Repository details" width=800>
+<img src="../fig/repository_details.png" alt="Repository details" width="width=800">
 
 By doing this, you add a link to the repository's website on your repository's landing page and anyone (including yourself) can access it quickly when visiting your GitHub repository.
 
@@ -113,11 +113,11 @@ To separate the contents of the repository's README from the website's homepage,
 To create a new file from GitHub interface,
 click the `Add file` button and select `Create new file` from the dropdown.
 
-<img src="../fig/github_create_file.png" alt="Create file" width=800>
+<img src="../fig/github_create_file.png" alt="Create file" width="width=800">
 
 Next, type some text into `index.md`, as shown below.
 
-<img src="../fig/github_add_index.png" alt="Create file" width=800>
+<img src="../fig/github_add_index.png" alt="Create file" width="width=800">
 
 We are now ready to start adding more content to our website. Let's do some exercises.
 
@@ -150,7 +150,7 @@ We are now ready to start adding more content to our website. Let's do some exer
     ![Create file](../fig/github_create_file.png)
 > > Edit `about.md` file to look something like:
 > >
-> >         # About
+> >        # About
 > >
 > >        ## Project
 > >        This reseach project is all about teaching you how to create websites with GitHub pages.

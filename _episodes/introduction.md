@@ -214,25 +214,25 @@ choose "New Repository".
 
 Next you will need to fill in some info about your repository.
 
-<img src="../fig/blank_new_repo.png" alt="Blank new repository page" width=600>
+<img src="../fig/blank_new_repo.png" alt="Blank new repository page" width="600">
 
 In this lesson, we will be working on a general group website.
 You can imagine this website may be for your lab group, a specific project group,
 or another group you work with.
 Under the "Repository name" field type `group-website`.
 
-<img src="../fig/set_repo_name.png" alt="Repository name set to group-website" width=600>
+<img src="../fig/set_repo_name.png" alt="Repository name set to group-website" width="600">
 
 
 We can also add a description (for instance **Repo for learning how to make websites with jekyll pages**) so we know what this repo is when we find it again after the workshop. 
 
-<img src="../fig/set_repo_description.png" alt="Repository name set to group-website" width=600>
+<img src="../fig/set_repo_description.png" alt="Repository name set to group-website" width="600">
 
 Under the "Initialize this repository with:" section we will check `Add a README file`
 and `Choose a license`.  It is good practice to have a README file that gives more information
 about your repo and to set a license for your work.
 
-<img src="../fig/initialize_readme_license.png" alt="Repository name set to group-website" width=600>
+<img src="../fig/initialize_readme_license.png" alt="Repository name set to group-website" width="600">
 
 for this example repository we’ll use the `Creative Commons Zero v1.0 Universal` (CC0) license,
 which allows anyone to re-use and adapt the content of the repository without restriction,
@@ -245,17 +245,16 @@ your own website.
 > for more information about possible licenses.
 {: .callout}
 
-<img src="../fig/set_CC0_license.png" alt="Repository name set to group-website" width=400>
-
+<img src="../fig/set_CC0_license.png" alt="Repository name set to group-website" width="400">
 
 Once you've finished these steps you can click the "Create Repository" button to
 finish creating the repo.
 
-<img src="../fig/create_repository.png" alt="Filled in form with a create repository button" width=600>
+<img src="../fig/create_repository.png" alt="Filled in form with a create repository button" width="600">
 
 GitHub will then setup the repo and it should look like the following screenshot.
 
-<img src="../fig/group_website_repo.png" alt="Github repository for the group website" width=800>
+<img src="../fig/group_website_repo.png" alt="Github repository for the group website" width="800">
 
 [qwantz-easter-egg-ext]: https://chrome.google.com/webstore/detail/dinosaur-comics-easter-eg/bojkkeeefjmeogpgnlomodfkkfkfhabj
 
