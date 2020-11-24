@@ -126,12 +126,12 @@ Let's do an exercise to try out writing more markdown.
 > > ## More info on the lesson
 > > You can find this lesson [here](https://carpentries-incubator.github.io/building-websites-with-jekyll-and-github-or-gitlab/).
 > >
-> > ### Three reasons you should learn markdown:
+> > ### Four reasons you should learn Markdown:
 > >
 > > 1. Less formatting than HTML
-> > 1. Easy to read even with formatting
-> > 2. Commonly used for websites and software development
-> > 1. We ~~don't~~ use it in the Carpentries
+> > 2. Easy to read even with formatting
+> > 3. Commonly used for websites and software development
+> > 4. We ~~don't~~ use it in The Carpentries
 > >
 > > ![Carpentries Logo](https://github.com/carpentries/carpentries.org/blob/main/images/TheCarpentries-opengraph.png)
 > > ```
