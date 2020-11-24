@@ -49,12 +49,13 @@ Once you've clicked the pencil symbol, GitHub will open that file in the editing
 
 <img src="../fig/group_website_readme_edit.png" alt="Editing interface of the group websites README file" width=600>
 
-You can change the content and have a look at the rendered view by clicking the `Preview changes` tab.
+You can change the content and have a look at the rendered view by clicking the _Preview changes_ tab.
 
 <img src="../fig/group_website_readme_render.png" alt="Preview of the rendered content of the group websites README file" width=600>
 
 Let's add `Some **bold** font` and see what happens when we preview it using the preview tab.
-If you like to permanently save the content to the file `README.md`, scroll down a bit and you'll see a `Commit changes` menu
+If new sections were added you will also find green vertical bars visually highlighting the new content.
+To save the content to the file `README.md`, scroll down a bit and you'll see a _Commit changes_ menu
 where you can commit your changes.
 After having changed something, the commit menu looks like this:
 
@@ -73,10 +74,10 @@ After having changed something, the commit menu looks like this:
 Now that we know about the editing interface and preview tab of our projects `README.md`
 we can use it as a text editor and investigate selected Markdown features.
 
-Our README.md already contains vanilla text and
+Our `README.md` already contains vanilla text and
 two formatting features:
 - Heading `# group-website`
-- Text markup or emphasis `**bold**`.
+- Emphasis using `**bold**`.
 
 Let's do some exercises to learn more about structuring and emphasis.
 
@@ -100,7 +101,7 @@ Let's do some exercises to learn more about structuring and emphasis.
 > >     Vanilla text may contain *italic* and **bold words**.
 > >
 > >     This paragraph is separated from the previous one by a blank line.
-> >     Line breaks
+> >     Line breaks  
 > >     are caused by two trailing spaces at the end a line.
 > >
 > {: .solution }
@@ -123,7 +124,7 @@ You can create lists by preceding lines with `-` or a bunch of other `-`-like ch
 > {: .solution }
 {: .challenge }
 
-If you would like to nest lists, i.e. specify a sub list as an item of another list, use indentation.
+If you would like to nest lists, i.e. specify a sub list as an item of another list, use [indentation][indentation].
 Numbered enumerations are helpful for displaying sequences and the numbers may help to address individual points.
 
 > ## Nested Lists and Enumerations
@@ -142,7 +143,7 @@ Numbered enumerations are helpful for displaying sequences and the numbers may h
 > >
 > >     2. Enumerations can start at any number but
 > >     3. continue to increase in steps of one
-> >     5. even if the numbering does not. This updates the rendered numbering to avoid gaps when individual items are deleted.
+> >     4. even if the numbering does not. This updates the rendered numbering to avoid gaps when individual items are deleted.
 > {: .solution }
 {: .challenge }
 
@@ -153,7 +154,7 @@ Numbered enumerations are helpful for displaying sequences and the numbers may h
 >
 {: .callout}
 
-You can use single backticks to call out code, e.g. `print('Hello world')` and
+You can surround text with single backticks (\') to call out code, e.g. `print('Hello world')` and
 use triple backticks to format larger code snippets, creating code blocks.
 
 > ## Add Code
@@ -237,14 +238,14 @@ print("Hello everyone!")
 Linking other websites is an essential feature of a website.
 Bare URLs like https://carpentries.org/ can be made clickable like this
 <https://carpentries.org/> by wrapping them into
-angle brackets "\< \>".
+angle brackets `\< \>`.
 However, usually the bare URL is not very nice and displaying a clickable
 alternative text is beneficial.
+To specify alternative text you can surround the text with square brackets `[ ]`.
 
-You can define either
-1. Inline style links - specifying the URL in line - or
-2. Reference style links - referencing a reusable link reference
-
+You can then provide the URL in one of two ways:
+1. Inline style links - specifying the URL in line surrounded by parenthesis `( )`- or
+2. Reference style links - referencing a reusable link reference with a second set of square brackets `[ ]`.
 
 > ## Links
 > Reproduce the markdown source code to create the following view, where both links point to <https://carpentries.org/>:
