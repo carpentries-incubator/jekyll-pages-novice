@@ -179,54 +179,58 @@ are both valid link targets
 (assuming the relevant files exist in your repository).
 
 > ## Exercise: Create Links Between Pages
+>
 > Create a new file `about.md` and link to it from `index.md`.
 > 1. From the GitHub interface, create a new Markdown file called `about.md` and add some content to it.
 > 2. Add a link to `about.md` from `index.md`.
 > 3. View the changes on the website.
 >
 > > ## Solution
+> >
 > > 1. Create new file called `about.md` from the GitHub interface:
-    ![Create file](../fig/github_create_file.png)
-> >     Edit `about.md` file to look something like:
+> >    ![Create file](../fig/github_create_file.png)
+> >    Edit `about.md` file to look something like:
 > >
-> >     ~~~
-> >     # About
+> >    ~~~
+> >    # About
 > >
-> >     ## Project
-> >     This reseach project is all about teaching you how to create websites with GitHub pages.
+> >    ## Project
+> >    This reseach project is all about teaching you how to create websites with GitHub pages.
 > >
-> >     ## Funders
-> >     We gratefully acknowledge funding from the XYZ Founding Council, under grant number 'abc'.
+> >    ## Funders
+> >    We gratefully acknowledge funding from the XYZ Founding Council, under grant number 'abc'.
 > >
-> >     ## Cite us
-> >     You can cite the project as:
+> >    ## Cite us
+> >    You can cite the project as:
 > >
-> >     >    *My research project. Zenodo. https://zenodo.org/record/doi*
+> >    > *My research project. Zenodo. https://zenodo.org/record/doi*
 > >
-> >     ## Contact us
+> >    ## Contact us
 > >
-> >     - Email: [team@my.research.org](mailto:team@my.research.org)
-> >     - Twitter: [@my_research_project](https://twitter.com/my_research_project)
-> >     ~~~
-> >     {: .language-markdown }
+> >    - Email: [team@my.research.org](mailto:team@my.research.org)
+> >    - Twitter: [@my_research_project](https://twitter.com/my_research_project)
+> >    ~~~
+> >    {: .language-markdown }
 > >
-> >     Note how we used various Markdown syntax: quoted text (`>`), italic font (`*`) and external links
-> >     (a combination of square `[]` and round brackets `()` containing the link text and mailto or regular Web URLs respectively).
+> >    Note how we used various Markdown syntax: quoted text (`>`), italic font (`*`) and external links
+> >    (a combination of square `[]` and round brackets `()` containing the link text and mailto or regular Web URLs respectively).
+> >
 > > 2. Edit `index.md` to add a link to `about.md`.
 > >
-> >     ~~~
-> >     # My Research Project
+> >    ~~~
+> >    # My Research Project
 > >
-> >     ## Description
-> >     This research project is all about teaching you how to create websites with GitHub Pages.
+> >    ## Description
+> >    This research project is all about teaching you how to create websites with GitHub Pages.
 > >
-> >     More details about the project are available from the [About page](about).
-> >     ~~~
-> >     {: .language-markdown }
+> >    More details about the project are available from the [About page](about).
+> >    ~~~
+> >    {: .language-markdown }
 > >
-> >  3. Go to your website and click the link to 'About' page. It should look like:
-    ![About page](../fig/episode03_exercise01_about_page.png)
-> >     Note that the URL has '/about' appended to it - you can use this URL to access the 'About' page directly.
+> > 3. Go to your website and click the link to 'About' page. It should look like:
+> >    ![About page](../fig/episode03_exercise01_about_page.png)
+> >
+> >    Note that the URL has '/about' appended to it - you can use this URL to access the 'About' page directly.
 > {: .solution }
 {: .challenge }
 
