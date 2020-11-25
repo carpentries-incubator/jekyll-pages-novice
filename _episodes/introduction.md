@@ -56,10 +56,10 @@ The simplest, valid HTML `Hello world` is:
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hello World</title>
+    <title>Hello World from title</title>
   </head>
   <body>
-    <p>Hello World</p>
+    <p>Hello World from body</p>
   </body>
 </html>
 ~~~
