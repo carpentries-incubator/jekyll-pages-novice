@@ -53,7 +53,7 @@ Published on {{ page.publication_date }}
 
 {% endraw %}
 ~~~
-{: .source }
+{: .language-html }
 
 Save this layout to `_layouts/post.html`.
 Now we can create our first blog post, `1827-11-22-surgeon.md`,
@@ -73,7 +73,7 @@ Today was a good day. I was promoted to Surgeon to the Forces!
 
 {% endraw %}
 ~~~
-{: .source }
+{: .language-markdown }
 
 FIXME: add screenshot of rendered blog post.
 
@@ -99,7 +99,7 @@ our post layout.
 > >
 > > Good news: I have been promoted to Deputy Inspector-General of Hospitals.
 > > ~~~
-> > {: .source }
+> > {: .language-markdown }
 > {: .solution }
 {: .challenge }
 
@@ -122,7 +122,7 @@ using a _Filter_:
 Published on {{ page.publication_date | date_to_long_string: "ordinal" }}
 {% endraw %}
 ~~~
-{: .source }
+{: .language-markdown }
 
 FIXME: add screenshot of rendered publication date
 

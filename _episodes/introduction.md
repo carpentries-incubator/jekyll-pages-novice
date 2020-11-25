@@ -52,7 +52,7 @@ HTML documents tend to get verbose rather quickly.
 
 The simplest, valid HTML `Hello world` is:
 
-```html
+~~~
 <!DOCTYPE html>
 <html>
   <head>
@@ -62,7 +62,8 @@ The simplest, valid HTML `Hello world` is:
     <p>Hello World</p>
   </body>
 </html>
-```
+~~~
+{: .language-html }
 
 So as you can imagine, writing long HTML documents by hand is rather painful.
 Notice that we didn't specify anything about how and where the text should be displayed.
@@ -92,14 +93,15 @@ a web browser will make a best guess regarding the layout of HTML elements on th
 >
 > <h1><em>Hello</em> <strong>World</strong></h1>
 >
-> write the HTML will produce the same result.  
+> write the HTML will produce the same result.
 > **Hint** the big font is achieved by use of a heading.
 >
 > > ## Solution
 > >
-> > ```html
+> > ~~~
 > > <h1><em>Hello</em> <strong>World</strong></h1>
-> > ```
+> > ~~~
+> > {: .language-html }
 > {: .solution }
 {: .challenge }
 
@@ -224,7 +226,7 @@ Under the "Repository name" field type `group-website`.
 <img src="../fig/set_repo_name.png" alt="Repository name set to group-website" width="600">
 
 
-We can also add a description (for instance **Repo for learning how to make websites with jekyll pages**) so we know what this repo is when we find it again after the workshop. 
+We can also add a description (for instance **Repo for learning how to make websites with jekyll pages**) so we know what this repo is when we find it again after the workshop.
 
 <img src="../fig/set_repo_description.png" alt="Repository name set to group-website" width="600">
 

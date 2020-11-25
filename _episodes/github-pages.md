@@ -129,10 +129,13 @@ We are now ready to start adding more content to our website. Let's do some exer
 > > ## Solution
 > > 1. Edit `index.md` file to look something like:
 > >
-> >        # My Research Project
+> > ~~~
+> > # My Research Project
 > >
-> >        ## Description
-> >        This research project is all about teaching you how to create websites with GitHub pages.
+> > ## Description
+> > This research project is all about teaching you how to create websites with GitHub pages.
+> > ~~~
+> > {: .language-markdown }
 > >
 > > 2. Go to your website. It should now look like:
     ![Add About section to index](../fig/episode03_exercise01_add_description.png)
@@ -184,36 +187,42 @@ are both valid link targets
 > > ## Solution
 > > 1. Create new file called `about.md` from the GitHub interface:
     ![Create file](../fig/github_create_file.png)
-> > Edit `about.md` file to look something like:
+> >     Edit `about.md` file to look something like:
 > >
-> >        # About
+> >     ~~~
+> >     # About
 > >
-> >        ## Project
-> >        This reseach project is all about teaching you how to create websites with GitHub pages.
+> >     ## Project
+> >     This reseach project is all about teaching you how to create websites with GitHub pages.
 > >
-> >        ## Funders
-> >        We gratefully acknowledge funding from the XYZ Founding Council, under grant number 'abc'.
+> >     ## Funders
+> >     We gratefully acknowledge funding from the XYZ Founding Council, under grant number 'abc'.
 > >
-> >        ## Cite us
-> >        You can cite the project as:
+> >     ## Cite us
+> >     You can cite the project as:
 > >
-> >        >    *My research project. Zenodo. https://zenodo.org/record/doi*
+> >     >    *My research project. Zenodo. https://zenodo.org/record/doi*
 > >
-> >        ## Contact us
+> >     ## Contact us
 > >
-> >         - Email: [team@my.research.org](mailto:team@my.research.org)
-> >         - Twitter: [@my_research_project](https://twitter.com/my_research_project)
+> >     - Email: [team@my.research.org](mailto:team@my.research.org)
+> >     - Twitter: [@my_research_project](https://twitter.com/my_research_project)
+> >     ~~~
+> >     {: .language-markdown }
 > >
 > >     Note how we used various Markdown syntax: quoted text (`>`), italic font (`*`) and external links
 > >     (a combination of square `[]` and round brackets `()` containing the link text and mailto or regular Web URLs respectively).
 > > 2. Edit `index.md` to add a link to `about.md`.
 > >
-> >        # My Research Project
+> >     ~~~
+> >     # My Research Project
 > >
-> >        ## Description
-> >        This research project is all about teaching you how to create websites with GitHub Pages.
+> >     ## Description
+> >     This research project is all about teaching you how to create websites with GitHub Pages.
 > >
-> >        More details about the project are available from the [About page](about).
+> >     More details about the project are available from the [About page](about).
+> >     ~~~
+> >     {: .language-markdown }
 > >
 > >  3. Go to your website and click the link to 'About' page. It should look like:
     ![About page](../fig/episode03_exercise01_about_page.png)
