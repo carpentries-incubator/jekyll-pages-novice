@@ -41,17 +41,14 @@ the first thing we need to do is create a new layout for these posts,
 inheriting from the default layout we created earlier.
 
 ~~~
-{% raw %}
----
+{% raw %}---
 layout: default
 ---
 
 <strong>Author:</strong> {{page.author}}
 Published on {{ page.publication_date }}
 
-{{ content }}
-
-{% endraw %}
+{{ content }}{% endraw %}
 ~~~
 {: .language-html }
 
@@ -61,17 +58,14 @@ remembering to add the `author` and `publication_date` fields
 to the YAML front matter:
 
 ~~~
-{% raw %}
----
+{% raw %}---
 layout: post
 title: I am a Surgeon!
 author: Dr James Barry
 publication_date: 1827-11-22
 ---
 
-Today was a good day. I was promoted to Surgeon to the Forces!
-
-{% endraw %}
+Today was a good day. I was promoted to Surgeon to the Forces!{% endraw %}
 ~~~
 {: .language-markdown }
 
@@ -118,9 +112,7 @@ a more human format (e.g. 4th September 2019) at the top of each post,
 using a _Filter_:
 
 ~~~
-{% raw %}
-Published on {{ page.publication_date | date_to_long_string: "ordinal" }}
-{% endraw %}
+{% raw %}Published on {{ page.publication_date | date_to_long_string: "ordinal" }}{% endraw %}
 ~~~
 {: .language-markdown }
 
