@@ -9,8 +9,8 @@ objectives:
 - "Explain what a static site generator does."
 - "Choose the appropriate tool for a website/project."
 keypoints:
-- "A static site generator combines page-specific content with layout elements and styling information to construct individual webpages."
-- "GitHub/GitLab Pages is a good choice for people who are already familiar with Git and GitHub/GitLab."
+- "A static site generator combines page-specific content with layout elements and styling information to construct individual static webpages."
+- "GitHub Pages/GitLab Pages is a good choice for people who are already familiar with Git and GitHub/GitLab."
 - "This approach can be used to create a relatively small website/blog on a limited budget."
 ---
 
@@ -33,7 +33,7 @@ The page displayed by the web browser is the result of combining
 and any **images** that should be embedded in the page.
 Other information received from the server,
 but not displayed by the browser,
-includes **metadata** and other non-visible elements in the HTML -
+includes **metadata**, **cookies**, and other non-visible elements in the HTML -
 information about the site that could be relevant for a computer
 but probably isn't interesting to a human
 (there are [exceptions][qwantz-easter-egg-ext] to this) -
