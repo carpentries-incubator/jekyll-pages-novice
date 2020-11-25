@@ -45,70 +45,73 @@ Let's access the information about the team and display the name of the project 
 
 1. Modify `_config.yml` file and add the `team_members` parameter as defined above. The file should now look like:
 
-    ~~~
-    title: "Building Websites in GitHub"
-    description: "This research project develops training materials for reseachers wanting to learn to build project
-    websites in GitHub with GitHub Pages."
-    email: "team@my.research.org"
-    twitter: "https://twitter.com/my_research_project"
-    team_members: [
-        {name: "Sarah Becker", role: "project lead", start_date: "2016-02-01"},
-        {name: "Jane Smith", role: "maintainer", start_date: "2018-03-15"},
-        {name: "Albert Hamilton", role: "editor", start_date: "2017-12-01"}
-        ]
-    ~~~
-    {: .language-yaml}
+   ~~~
+   title: "Building Websites in GitHub"
+   description: "This research project develops training materials for reseachers wanting to learn to build project
+   websites in GitHub with GitHub Pages."
+   email: "team@my.research.org"
+   twitter: "https://twitter.com/my_research_project"
+   team_members: [
+       {name: "Sarah Becker", role: "project lead", start_date: "2016-02-01"},
+       {name: "Jane Smith", role: "maintainer", start_date: "2018-03-15"},
+       {name: "Albert Hamilton", role: "editor", start_date: "2017-12-01"}
+   ]
+   ~~~
+   {: .language-yaml}
 
 2. In file `about.md`, we add a new section for the team and iterate over the values defined in parameter `site.team_members` in a loop to display all team members' names and roles. The file now should look like:
 
-    ~~~
-    # About
+   ~~~
+   # About
 
-    ## Project
-    {% raw %}{{ site.description }}{% endraw %}
+   ## Project
+   {% raw %}{{ site.description }}{% endraw %}
 
-    ## Funders
-    We gratefully acknowledge funding from the XYZ Founding Council, under grant number 'abc'.
+   ## Funders
+   We gratefully acknowledge funding from the XYZ Founding Council, under grant number 'abc'.
 
-    ## Team
+   ## Team
 
-    The following people are members of our research team:
-    {% raw %}{% for team_member in site.team_members %}
-        - Name: {% raw %}{{ team_member.name }}{% endraw %}, role: {% raw %}{{ team_member.role }}{% endraw %}
-    {% raw %}{% endfor %}{% endraw %}
+   The following people are members of our research team:
+   {% raw %}{% for team_member in site.team_members %}
+      - Name: {% raw %}{{ team_member.name }}{% endraw %}, role: {% raw %}{{ team_member.role }}{% endraw %}
+   {% raw %}{% endfor %}{% endraw %}
 
-    ## Cite us
-    You can cite the project as:
+   ## Cite us
+   You can cite the project as:
 
-    >    *My research project. Zenodo. https://zenodo.org/record/doi*
+   >    *My research project. Zenodo. https://zenodo.org/record/doi*
 
-    ## Contact us
+   ## Contact us
 
-    Email: [team@my.research.org](mailto:{% raw %}{{ site.email }}{% endraw %})
+   Email: [team@my.research.org](mailto:{% raw %}{{ site.email }}{% endraw %})
 
-    Twitter: [@my_research_project]({% raw %}{{ site.twitter }}{% endraw %})
-    ~~~
+   Twitter: [@my_research_project]({% raw %}{{ site.twitter }}{% endraw %})
+   ~~~
+   {: .language-markdown}
+
 
 3. In file `index.md` add the team lead's name so that it looks like:
 
-    ~~~
-    # {% raw %}{{ site.title }}{% endraw %}
+   ~~~
+   # {% raw %}{{ site.title }}{% endraw %}
 
-    ## Description
-    {% raw %}{{ site.description }}{% endraw %}
+   ## Description
+   {% raw %}{{ site.description }}{% endraw %}
 
-    The project is led by {% raw %}{{ site.team_members[0]["name"] }}{% endraw %}.
-    [See our full team](/about#team)
+   The project is led by {% raw %}{{ site.team_members[0]["name"] }}{% endraw %}.
+   [See our full team](/about#team)
 
-    Have any questions about what we do? [We'd love to hear from you!]({% raw %}mailto:{{ site.email }}{% endraw %})
-    ~~~
+   Have any questions about what we do? [We'd love to hear from you!]({% raw %}mailto:{{ site.email }}{% endraw %})
+   ~~~
+   {: .language-markdown}
 
 If you need to add, remove or modify a team member, you can simply do it in `_config.yml` without modifying your pages.
 Let's now change the values of a global parameter and study the effect.
 
 > ## Exercise
 > Your project team has changed. The team lead has left and in her place is a new person: 'Tom Cat', who started on
->'2020-10-01'. In addition, the team was expanded and a new developer called 'Alice Dauncey' who joined on '2020-09-15'.
+> '2020-10-01'. In addition, the team was expanded and a new developer called 'Alice Dauncey' who joined on '2020-09-15'.
 > Update your website to reflect these team changes.
 > > ## Solution
 > > Luckily, we keep all our global settings in `_config.yml` so all we have to do is update the values there. This saved us some work as for the team lead we would otherwise have to modify both `index.md` and `about.md`.

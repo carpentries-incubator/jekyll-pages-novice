@@ -48,13 +48,13 @@ Let's create some configuration parameters for our website.
 1. From the GitHub interface, create `_config.yml` file in your site’s root directory.
 2. Add parameters `title`, `description` and `email` to it as:
 
-    ~~~
-    title: "Building Websites in GitHub"
-    description: "This research project develops training materials for reseachers wanting to learn to build project
-    websites in GitHub with GitHub Pages."
-    email: "team@my.research.org"
-    ~~~
-    {: .language-yaml}
+   ~~~
+   title: "Building Websites in GitHub"
+   description: "This research project develops training materials for reseachers wanting to learn to build project
+   websites in GitHub with GitHub Pages."
+   email: "team@my.research.org"
+   ~~~
+   {: .language-yaml}
 
 3. Commit your changes.
 
@@ -72,44 +72,44 @@ Let's make use of global parameters in our pages.
 
 1. Modify `index.md` file to make use of our global parameters like this:
 
-    ~~~
-    # {% raw %}{{ site.title }}{% endraw %}
+   ~~~
+   # {% raw %}{{ site.title }}{% endraw %}
 
-    ## Description
-    {% raw %}{{ site.description }}{% endraw %}
+   ## Description
+   {% raw %}{{ site.description }}{% endraw %}
 
-    More details about the project are available from the [About page](about).
+   More details about the project are available from the [About page](about).
 
-    Have any questions about what we do? [We'd love to hear from you!]({% raw %}mailto:{{ site.email }}{% endraw %})
-    ~~~
-    {: .language-markdown }
+   Have any questions about what we do? [We'd love to hear from you!]({% raw %}mailto:{{ site.email }}{% endraw %})
+   ~~~
+   {: .language-markdown }
 
 2. We can use the same parameter in different pages. Let's reuse `{% raw %}{{ site.description }}{% endraw %}` and
 `{% raw %}{{ site.email }}{% endraw %}` in `about.md` like this:
 
-    ~~~
-    # About
+   ~~~
+   # About
 
-    ## Project
+   ## Project
 
-    {% raw %}{{ site.description }}{% endraw %}
+   {% raw %}{{ site.description }}{% endraw %}
 
-    ## Funders
+   ## Funders
 
-    We gratefully acknowledge funding from the XYZ Founding Council, under grant number 'abc'.
+   We gratefully acknowledge funding from the XYZ Founding Council, under grant number 'abc'.
 
-    ## Cite us
+   ## Cite us
 
-    You can cite the project as:
+   You can cite the project as:
 
-    >    *My research project. Zenodo. https://zenodo.org/record/doi*
+   >    *My research project. Zenodo. https://zenodo.org/record/doi*
 
-    ## Contact us
+   ## Contact us
 
-    - Email: [{% raw %}{{ site.email }}{% endraw %}](mailto:{% raw %}{{ site.email }}{% endraw %})
-    - Twitter: [@my_research_project](https://twitter.com/my_research_project)
-    ~~~
-    {: .language-markdown }
+   - Email: [{% raw %}{{ site.email }}{% endraw %}](mailto:{% raw %}{{ site.email }}{% endraw %})
+   - Twitter: [@my_research_project](https://twitter.com/my_research_project)
+   ~~~
+   {: .language-markdown }
 
 3. Go to your website to see the changes.
 4. Note that site parameters will not render nicely when viewing files in GitHub (they will be displayed as text
