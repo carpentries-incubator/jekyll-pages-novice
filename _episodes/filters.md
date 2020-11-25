@@ -41,19 +41,16 @@ the first thing we need to do is create a new layout for these posts,
 inheriting from the default layout we created earlier.
 
 ~~~
-{% raw %}
----
+{% raw %}---
 layout: default
 ---
 
 <strong>Author:</strong> {{page.author}}
 Published on {{ page.publication_date }}
 
-{{ content }}
-
-{% endraw %}
+{{ content }}{% endraw %}
 ~~~
-{: .source }
+{: .language-html }
 
 Save this layout to `_layouts/post.html`.
 Now we can create our first blog post, `1827-11-22-surgeon.md`,
@@ -61,19 +58,16 @@ remembering to add the `author` and `publication_date` fields
 to the YAML front matter:
 
 ~~~
-{% raw %}
----
+{% raw %}---
 layout: post
 title: I am a Surgeon!
 author: Dr James Barry
 publication_date: 1827-11-22
 ---
 
-Today was a good day. I was promoted to Surgeon to the Forces!
-
-{% endraw %}
+Today was a good day. I was promoted to Surgeon to the Forces!{% endraw %}
 ~~~
-{: .source }
+{: .language-markdown }
 
 FIXME: add screenshot of rendered blog post.
 
@@ -99,7 +93,7 @@ our post layout.
 > >
 > > Good news: I have been promoted to Deputy Inspector-General of Hospitals.
 > > ~~~
-> > {: .source }
+> > {: .language-markdown }
 > {: .solution }
 {: .challenge }
 
@@ -118,11 +112,9 @@ a more human format (e.g. 4th September 2019) at the top of each post,
 using a _Filter_:
 
 ~~~
-{% raw %}
-Published on {{ page.publication_date | date_to_long_string: "ordinal" }}
-{% endraw %}
+{% raw %}Published on {{ page.publication_date | date_to_long_string: "ordinal" }}{% endraw %}
 ~~~
-{: .source }
+{: .language-markdown }
 
 FIXME: add screenshot of rendered publication date
 

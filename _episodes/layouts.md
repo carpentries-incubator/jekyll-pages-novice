@@ -52,7 +52,7 @@ as an `<img>` element in HTML:
 ~~~
 ![Group Website banner](./images/site_banner.png)
 ~~~
-{: .source }
+{: .language-markdown }
 
 #### After
 
@@ -69,7 +69,7 @@ we will start with a layout file that only `include`s this file:
 ~~~
 {% raw %}{% include banner.html %}{% endraw %}
 ~~~
-{: .source}
+{: .language-markdown }
 
 You have just defined the first layout for pages on your site.
 Congratulations!
@@ -91,7 +91,7 @@ To do that we need to add the special `content` variable into the layout file:
 
 {% raw %}{{ content }}{% endraw %}
 ~~~
-{: .source}
+{: .language-markdown }
 
 We can use the `content` variable to tell variable where it should place
 **all the content defined in the Markdown of the page** within this layout.
@@ -148,7 +148,7 @@ so we will come back to this issue of styling at the end of the section.
 > > <li>Twitter: <a href="https://twitter.com/my_research_project">@my_research_project</a></li>
 > > </ul>
 > > ~~~
-> > {: .source }
+> > {: .language-html }
 > >
 > > and your layout file, `_layouts/page.html`,
 > > should look like this:
@@ -160,7 +160,7 @@ so we will come back to this issue of styling at the end of the section.
 > >
 > > {% include contact.html %}{% endraw %}
 > > ~~~
-> > {: .source }
+> > {: .language-html }
 > {: .solution }
 {: .challenge }
 
@@ -215,7 +215,7 @@ This file defines the bare minimum layout your pages should have.
 >   </body>
 > </html>{% endraw %}
 > ~~~
-> {: .source }
+> {: .language-html }
 >
 > 1. Apply this layout to one of your pages and reload the page to check that
 >    it works as expected.
@@ -236,7 +236,7 @@ This file defines the bare minimum layout your pages should have.
 > >   An example website made with Jekyll.
 > > </footer>{% endraw %}
 > > ~~~
-> > {: .source }
+> > {: .language-html }
 > >
 > > And to `include` it back into the layout,
 > > replace that `footer` element with
@@ -244,7 +244,7 @@ This file defines the bare minimum layout your pages should have.
 > > ~~~
 > > {% raw %}{% include footer.html %}{% endraw %}
 > > ~~~
-> > {: .source }
+> > {: .language-html }
 > {: .solution}
 {: .challenge }
 
@@ -265,18 +265,15 @@ we should add YAML front matter to the layout file,
 specifying the `layout` to be `default`:
 
 ~~~
-{% raw %}
----
+{% raw %}---
 layout: default
 ---
 
 {{ content }}
 
-{% include contact.md}
-
-{% endraw %}
+{% include contact.md}{% endraw %}
 ~~~
-{: .source }
+{: .language-html }
 
 In the above, we have (once again!) removed the banner image,
 as that is included in the `default` layout.

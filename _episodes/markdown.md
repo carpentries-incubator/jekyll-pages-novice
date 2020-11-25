@@ -88,7 +88,7 @@ Repo for learning how to make websites with Jekyll pages
 Vanilla text may contain *italic* and **bold words**.
 
 This paragraph is separated from the previous one by a blank line.
-Line breaks  
+Line breaks
 are caused by two trailing spaces at the end of a line.
 
 [Carpentries Webpage](https://carpentries.org/)
@@ -123,7 +123,7 @@ Let's do an exercise to try out writing more markdown.
 >
 > > ## Example Solution
 > > For example your markdown might look like the following:
-> > ```
+> > ~~~
 > > ## More info on the lesson
 > > You can find this lesson [here](https://carpentries-incubator.github.io/building-websites-with-jekyll-and-github-or-gitlab/).
 > >
@@ -135,7 +135,8 @@ Let's do an exercise to try out writing more markdown.
 > > 4. We ~~don't~~ use it in The Carpentries
 > >
 > > ![Carpentries Logo](https://github.com/carpentries/carpentries.org/raw/main/images/TheCarpentries-opengraph.png)
-> > ```
+> > ~~~
+> > {: .language-markdown }
 > > <img src="../fig/markdown_exercise.png" alt="Rendered solution to the markdown exercise" width="width=800">
 > >
 > {: .solution }

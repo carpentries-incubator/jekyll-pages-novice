@@ -107,9 +107,10 @@ you can do this by navigating into the folder and choosing
 Now that the banner image is available in our site repository,
 add this Markdown immediately after the YAML front matter in `index.md`:
 
-```
+~~~
 ![Group Website banner](./images/site_banner.png)
-```
+~~~
+{: .language-markdown }
 
 ![Group Website banner](../files/site_banner.png)
 
@@ -155,9 +156,10 @@ at the top of your page.
 >
 > > ## Solution
 > >
-> > ```
+> > ~~~
 > > [![Group Website with Jekyll](./images/site_banner.png)](https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/)
-> > ```
+> > ~~~
+> > {: .language-markdown }
 > >
 > {: .solution }
 {: .challenge }
@@ -186,9 +188,10 @@ dropdown on your repository homepage,
 Now delete the HTML block you added to `index.md`,
 and replace it with the following `_includes` tag:
 
-```
+~~~
 {% raw %}{% include banner.md %}{% endraw %}
-```
+~~~
+{: .language-markdown }
 
 Refresh the page and, barring any typos e.g. in the name of the file,
 you should see the banner image on the page as before.
@@ -227,7 +230,7 @@ We will see another example of this shortly.
 > - Email: [{% raw %}{{ site.email }}{% endraw %}](mailto:{% raw %}{{ site.email }}{% endraw %})
 > - Twitter: [{% raw %}{{ site.twitter }}{% endraw %}]({% raw %}{{ site.twitter }}{% endraw %})
 > ~~~
-> {: .source }
+> {: .language-markdown }
 >
 > Copy the snippet and save it into an appropriately-named file,
 > then use an `include` statement to re-insert it
@@ -244,14 +247,14 @@ We will see another example of this shortly.
 > > - Email: [{% raw %}{{ site.email }}{% endraw %}](mailto:{% raw %}{{ site.email }}{% endraw %})
 > > - Twitter: [{% raw %}{{ site.twitter }}{% endraw %}]({% raw %}{{ site.twitter }}{% endraw %})
 > > ~~~
-> > {: .source }
+> > {: .language-markdown }
 > >
 > > and add the line
 > >
 > > ~~~
 > > {% raw %}{% include contact.md %}{% endraw %}
 > > ~~~
-> > {: .source }
+> > {: .language-markdown }
 > >
 > > at the end of `index.md` and `about.md`
 > > (replacing the equivalent section if it is still present).
