@@ -133,29 +133,29 @@ Let's make use of global parameters in our pages.
 > >
 > > 2. Make use of the twitter parameter in `about.md`:
 > >
-> >     ~~~
-> >     # About
+> >    ~~~
+> >    # About
 > >
-> >     ## Project
+> >    ## Project
 > >
-> >     {% raw %}{{ site.description }}{% endraw %}
+> >    {% raw %}{{ site.description }}{% endraw %}
 > >
-> >     ## Funders
+> >    ## Funders
 > >
-> >     We gratefully acknowledge funding from the XYZ Founding Council, under grant number 'abc'.
+> >    We gratefully acknowledge funding from the XYZ Founding Council, under grant number 'abc'.
 > >
-> >     ## Cite us
+> >    ## Cite us
 > >
-> >     You can cite the project as:
+> >    You can cite the project as:
 > >
-> >     > *My research project. Zenodo. https://zenodo.org/record/doi*
+> >    > *My research project. Zenodo. https://zenodo.org/record/doi*
 > >
-> >     ## Contact us
+> >    ## Contact us
 > >
-> >     - Email: [{% raw %}{{ site.email }}{% endraw %}](mailto:{% raw %}{{ site.email }}{% endraw %})
-> >     - Twitter: [{% raw %}{{ site.twitter }}{% endraw %}]({% raw %}{{ site.twitter }}{% endraw %})
-> >     ~~~
-> >     {: .language-markdown }
+> >    - Email: [{% raw %}{{ site.email }}{% endraw %}](mailto:{% raw %}{{ site.email }}{% endraw %})
+> >    - Twitter: [{% raw %}{{ site.twitter }}{% endraw %}]({% raw %}{{ site.twitter }}{% endraw %})
+> >    ~~~
+> >    {: .language-markdown }
 > >
 > > 3. Note that you should not see any changes to your website really. However, you can now access your Twitter URL from
 > > any website page, should you need to.
