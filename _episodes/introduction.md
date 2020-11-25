@@ -33,7 +33,7 @@ The page displayed by the web browser is the result of combining
 and any **images** that should be embedded in the page.
 Other information received from the server,
 but not displayed by the browser,
-includes **metadata** and other non-visible elements in the HTML -
+includes **metadata**, **cookies**, and other non-visible elements in the HTML -
 information about the site that could be relevant for a computer
 but probably isn't interesting to a human
 (there are [exceptions][qwantz-easter-egg-ext] to this) -
