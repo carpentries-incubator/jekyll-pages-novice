@@ -56,7 +56,7 @@ The simplest, valid HTML `Hello world` is:
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hello World</title>
+    <title>Page title</title>
   </head>
   <body>
     <p>Hello World</p>
