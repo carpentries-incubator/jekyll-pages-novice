@@ -59,7 +59,7 @@ The simplest, valid HTML `Hello world` is:
     <title>Hello World from title</title>
   </head>
   <body>
-    <p>Hello World from body</p>
+    <p>Hello World</p>
   </body>
 </html>
 ~~~
