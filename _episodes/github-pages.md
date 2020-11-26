@@ -129,13 +129,13 @@ We are now ready to start adding more content to our website. Let's do some exer
 > > ## Solution
 > > 1. Edit `index.md` file to look something like:
 > >
-> > ~~~
-> > # My Research Project
+> >    ~~~
+> >    # My Research Project
 > >
-> > ## Description
-> > This research project is all about teaching you how to create websites with GitHub pages.
-> > ~~~
-> > {: .language-markdown }
+> >    ## Description
+> >    This research project is all about teaching you how to create websites with GitHub pages.
+> >    ~~~
+> >    {: .language-markdown }
 > >
 > > 2. Go to your website. It should now look like:
     ![Add About section to index](../fig/episode03_exercise01_add_description.png)
