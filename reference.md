@@ -14,5 +14,6 @@ layout: reference
 - README 
 - <a href="https://glosario.carpentries.org/en/#repository" class="glossary-definition">Repository/repo</a>
 - <a href="https://glosario.carpentries.org/en/#version_control_system" class="glossary-definition">Version Control</a>
+- <a href="https://glosario.carpentries.org/en/#yaml" class="glossary-definition">YAML</a>
 
 {% include links.md %}
