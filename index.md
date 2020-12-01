@@ -5,16 +5,12 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 ---
 
 > ## Prerequisites
-> Before following this lesson, learners should be able to:
 >
-> - create a repository/project on [GitHub][github] and/or [GitLab][gitlab].
-> - clone a local copy of a project with Git, add and commit modified files, and push/pull changes between local and remote repositories.
-> - execute commands in the shell
->
-> If you'd like to learn any of the skills listed above,
-> the [Software Carpentry][swc] lessons on
-> [the Shell][swc-shell]
-> and [Git][swc-git] are a good place to start.
+> This lesson guides you through making webpages using Jekyll in a web hosting service.
+> If you are comfortable interacting with websites in a web browser, this lesson is for you.
+> 
+> There may be additional prerequisites for individual lessons in the extras section.
+> 
 {: .prereq }
 
 For those already familiar with the ways that Git
