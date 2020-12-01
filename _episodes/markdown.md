@@ -85,7 +85,7 @@ Repo for learning how to make websites with Jekyll pages
 
 ## Learning Markdown
 
-Vanilla text may contain *italic* and **bold words**.
+Vanilla text may contain *italics* and **bold words**.
 
 This paragraph is separated from the previous one by a blank line.
 Line breaks  
