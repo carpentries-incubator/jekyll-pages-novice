@@ -1,7 +1,7 @@
 ---
 title: "Authoring with Markdown"
-teaching: 0
-exercises: 0
+teaching: 20
+exercises: 15
 questions:
 - "How can I write content for my webpages?"
 - "How do I link to other pages?"
@@ -88,7 +88,7 @@ Repo for learning how to make websites with Jekyll pages
 Vanilla text may contain *italic* and **bold words**.
 
 This paragraph is separated from the previous one by a blank line.
-Line breaks  
+Line breaks
 are caused by two trailing spaces at the end of a line.
 
 [Carpentries Webpage](https://carpentries.org/)

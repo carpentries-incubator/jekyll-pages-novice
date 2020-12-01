@@ -1,7 +1,7 @@
 ---
 title: "Hosting Websites on GitHub"
-teaching: 0
-exercises: 0
+teaching: 20
+exercises: 20
 questions:
 - "How do I publish my page or a website on the Web via GitHub?"
 objectives:
