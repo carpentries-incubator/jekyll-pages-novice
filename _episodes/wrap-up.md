@@ -6,10 +6,13 @@ questions:
 - "What have we learned so far?"
 - "What other resources are available for learning more on Jekyll?"
 objectives:
-- "Summarise all the different technologies that are coming together to create Jekyll websites"
+- "Summarise all the different technologies that are coming together to create GitHub Pages websites"
 - "Recap the anatomy of a Jekyll website repository"
-- "Identify other resources about Jekyll and creating webpages."
+- "Identify other resources and further reading about Jekyll."
 keypoints:
+- "Jekyll is a powerful static site generator behind GitHub Pages that supports a high degree of reuse and separation of 
+   content and presentation."
+- "Learning more on Jekyll themes will enable you to create complex and professional-looking websites."   
 ---
 
 ## Summary
@@ -46,14 +49,23 @@ you get to learning about them.
 
 ## Jekyll Website Directory Structure
 
-We are going to visit the directory structure of the [Jekyll website used to develop this lesson](https://github.com/carpentries-incubator/building-websites-with-jekyll-and-github-or-gitlab), which uses the 
-following [Jekyll theme](https://github.com/carpentries-incubator/template). Reusing this template to create a new lesson can be achieved by copying the theme repository and customising it by adding your episodes in the appropriate place.
+Let's visit the directory structure of the [Jekyll website used to develop this lesson](https://github.com/carpentries-incubator/building-websites-with-jekyll-and-github-or-gitlab), which uses the 
+[The Carpentries Jekyll theme](https://github.com/carpentries-incubator/template), and see how it relates to visual components on the website's home page.
 
+![directory-structure-home-page](../fig/directory-structure-home-page-combined-annotated.png) 
 
+Other Jekyll websites will have slightly different structures but there are some common elements, such as `index.md`, 
+`_config.yml`, and folders starting with `_` (such as `_includes`, `_episodes`, `_site`) which have special meaning to Jekyll by
+convention (some of these names are reserved - `_includes`, `_site` and some are defined by the theme designer). 
+Other folders, such as `fig` and `data` are created by the theme designer to store figures and website data but do not have 
+any special meaning to Jekyll. 
 
-
+> ## Reusing Jekyll Lesson Theme 
+>Reusing [the lesson template](https://github.com/carpentries-incubator/template) to create a new lesson can be achieved by copying the theme repository and customising it by adding your episodes in the appropriate place. 
+{: .callout}
 
 ## Further Resources
+- [Getting started with GitHub Pages](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/getting-started-with-github-pages) from GitHub Docs
 - [JekyllRB - the ultimate source of Jekyll resources](https://jekyllrb.com/)
-- [Guides](https://jekyllrb.com/resources/#guides)
+- [Jekyll Guides](https://jekyllrb.com/resources/#guides)
 - [Jekyll themes](https://jekyllrb.com/resources#themes)
