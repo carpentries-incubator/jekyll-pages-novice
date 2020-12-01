@@ -142,6 +142,30 @@ Let's do an exercise to try out writing more markdown.
 > {: .solution }
 {: .challenge }
 
+> ## Reference-style links
+> 
+> Up to now, we have used `inline style links` for example:
+>
+> ~~~
+> [Carpentries Webpage](https://carpentries.org/)
+> ~~~
+> {: .language-markdown }
+>
+> If you use a link more than once, consider using so called `reference-style links` instead.
+> Unlike inline-style links which have the URL inline with the description text, reference-style links
+> reference the URL via a reference.
+> The reference goes into square brackets `[ ]`, for example:
+> ~~~
+> [Carpentries Webpage][carpentries]
+>
+> [carpentries]: https://carpentries.org/
+> ~~~
+> {: .language-markdown }
+> This helps to follow the [DRY principle][dry-principle], avoiding redundant specification of information.
+>
+{: .callout}
+
+
 We will continue to use markdown and learn more throughout the rest of the lesson.
 
 > ## Markdown Cheatsheet
