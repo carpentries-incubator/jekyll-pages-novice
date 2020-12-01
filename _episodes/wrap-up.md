@@ -4,10 +4,11 @@ teaching: 0
 exercises: 0
 questions:
 - "What have we learned so far?"
+- "How do all pieces of a Jekyll website fit into a directory structure?"
 - "What other resources are available for learning more on Jekyll?"
 objectives:
-- "Summarise all the different technologies that are coming together to create GitHub Pages websites"
-- "Recap the anatomy of a Jekyll website repository"
+- "Summarise all the different technologies that are coming together to create GitHub Pages websites."
+- "Look at the anatomy of a Jekyll website repository."
 - "Identify other resources and further reading about Jekyll."
 keypoints:
 - "Jekyll is a powerful static site generator behind GitHub Pages that supports a high degree of reuse and separation of 
@@ -57,7 +58,7 @@ Let's visit the directory structure of the [Jekyll website used to develop this 
 Other Jekyll websites will have slightly different structures but there are some common elements, such as `index.md`, 
 `_config.yml`, and folders starting with `_` (such as `_includes`, `_episodes`, `_site`) which have special meaning to Jekyll by
 convention (some of these names are reserved - `_includes`, `_site` and some are defined by the theme designer). 
-Other folders, such as `fig` and `data` are created by the theme designer to store figures and website data but do not have 
+Other folders, such as `fig` and `data`, are created by the theme designer to store figures and website data but do not have 
 any special meaning to Jekyll. 
 
 > ## Reusing Jekyll Lesson Theme 
