@@ -16,6 +16,14 @@ keypoints:
 - "Learning more on Jekyll themes will enable you to create complex and professional-looking websites."   
 ---
 
+If you are a learner or an instructor that has some time left in their workshop - at this point 
+we strongly recommend visiting the [Jekyll Themes episode in Extras section](../_extras/jekyll_themes.md) of the 
+lesson. It builds on the knowledge we 
+gained so far and expands on how to build more complex and 
+professional-looking websites by reusing existing website themes. Here, we are going to recap what we have learned 
+so far and look at the anatomy of a GitHub Pages website and its common building blocks, which will also help you 
+better understand Jekyll themes once you get to learning about them. 
+
 ## Summary
 
 Throughout this lesson, we learned how to create formatted webpage content with Markdown, configure a GitHub 
@@ -40,32 +48,62 @@ create some complex content assembly pipelines. That way, adding a new blog post
 creating a file in the `_posts` folder of your website, setting it to use the 'post' template and focusing on its 
 content - and it will magically appear at the top of your Blog timeline without any extra effort on your part.
 
-If you are a learner or an instructor that has some time left in their workshop - at this point 
-we strongly recommend visiting the [Jekyll Themes episode in Extras section](../_extras/jekyll_themes.md) of the 
-lesson. It builds on the knowledge we 
-gained so far and expands on how to build more complex and 
-professional-looking websites by reusing existing website themes. Here, we are going to recap the anatomy of 
-a GitHub Pages website and its common building blocks, which will also help you better understand Jekyll themes once 
-you get to learning about them. 
-
 ## Jekyll Website Directory Structure
 
-Let's visit the directory structure of the [Jekyll website used to develop this lesson](https://github.com/carpentries-incubator/building-websites-with-jekyll-and-github-or-gitlab), which uses the 
+Let's have a look at some directory structures of different Jekyll websites.
+
+First we will visit the directory structure of the [Jekyll website used to develop this lesson](https://github.com/carpentries-incubator/building-websites-with-jekyll-and-github-or-gitlab), which uses the 
 [The Carpentries Jekyll theme](https://github.com/carpentries-incubator/template), and see how it relates to visual components on the website's home page.
 
 ![directory-structure-home-page](../fig/directory-structure-home-page-combined-annotated.png) 
 
 Other Jekyll websites will have slightly different structures but there are some common elements, such as `index.md`, 
-`_config.yml`, and folders starting with `_` (such as `_includes`, `_episodes`, `_site`) which have special meaning to Jekyll by
-convention (some of these names are reserved - `_includes`, `_site` and some are defined by the theme designer). 
-Other folders, such as `fig` and `data`, are created by the theme designer to store figures and website data but do not have 
-any special meaning to Jekyll. 
+`_config.yml`, and folders starting with `_` (such as `_includes` and `_site`) which have special meaning to 
+Jekyll by convention. Other special folders in this case are `_episodes` and `_extras`, but these are defined by the 
+theme designer and Jekyll will not automatically process these. Similar for `fig` folder holding images for the website 
+(which could have been named `images` or `figures` just the same). 
 
-> ## Reusing Jekyll Lesson Theme 
+> ## Reusing The Carpentries Jekyll Lesson Theme 
 >Reusing [the lesson template](https://github.com/carpentries-incubator/template) to create a new lesson can be achieved by copying the theme repository and customising it by adding your episodes in the appropriate place. 
 {: .callout}
 
+Have a look at another example - a simplified directory structure of a blog website ([reproduced from JekyllRb](https://jekyllrb.com/docs/structure/)).
+~~~
+.
+├── _config.yml
+├── _data
+│   └── members.yml
+├── _drafts
+│   ├── begin-with-the-crazy-ideas.md
+│   └── on-simplicity-in-technology.md
+├── _includes
+│   ├── footer.html
+│   └── header.html
+├── _layouts
+│   ├── default.html
+│   └── post.html
+├── _posts
+│   ├── 2007-10-29-why-every-programmer-should-play-nethack.md
+│   └── 2009-04-26-barcamp-boston-4-roundup.md
+├── _sass
+│   ├── _base.scss
+│   └── _layout.scss
+├── _site
+├── .jekyll-metadata
+└── index.html # can also be an 'index.md' with valid front matter
+~~~
+{: .code}
+
+Things of note here are `_layouts` for storing theme's page templates, `_posts` for storing blog posts, 
+`_sass` where Jekyll looks for 'assets' such as CSS and JavaScript files, and `_data` for storing well-formatted site 
+data (in either the .yml, .yaml, .json, .csv or .tsv formats) that Jekyll will autoload and make accessible accessible 
+via `site.data` global variable.
+
+
 ## Further Resources
+- [W3C Schools HTML tutorial](https://www.w3schools.com/html/)
+- [W3C Schools CSS tutorial](https://www.w3schools.com/css/)
+- [Github-flavored Markdown info page](https://docs.github.com/en/free-pro-team@latest/github/writing-on-github)
 - [Getting started with GitHub Pages](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/getting-started-with-github-pages) from GitHub Docs
 - [JekyllRB - the ultimate source of Jekyll resources](https://jekyllrb.com/)
 - [Jekyll Guides](https://jekyllrb.com/resources/#guides)
