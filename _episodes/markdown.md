@@ -160,7 +160,7 @@ Let's do an exercise to try out writing more markdown.
 >
 > [carpentries]: https://carpentries.org/
 > ~~~
-and then later, usually at the bottom of the page, you can add that label and the url it references to complete the link (as shown in the second line above).
+> and then later, usually at the bottom of the page, you can add that label and the url it references to complete the link (as shown in the second line above).
 > {: .language-markdown }
 > This helps to follow the [DRY principle][dry-principle], avoiding redundant specification of information.
 >
