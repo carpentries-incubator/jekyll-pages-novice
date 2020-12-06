@@ -144,7 +144,7 @@ Let's do an exercise to try out writing more markdown.
 
 > ## Reference-style links
 > 
-> Up to now, we have used `inline style links` for example:
+> Up to now, we have used `inline style links` which have the URL inline with the description text, for example:
 >
 > ~~~
 > [Carpentries Webpage](https://carpentries.org/)
@@ -152,17 +152,18 @@ Let's do an exercise to try out writing more markdown.
 > {: .language-markdown }
 >
 > If you use a link more than once, consider using so called `reference-style links` instead.
-> Unlike inline-style links which have the URL inline with the description text, reference-style links
-> reference the URL via a label.
-> The label goes into square brackets `[ ]`, for example:
+> Reference-style links reference the URL via a label.
+> The label goes into square brackets `[ ]` right after the description text of the link and 
+> then later, usually at the bottom of the page, you can connect that label to the url it references to complete the link.
+> This looks like:
 > ~~~
 > [Carpentries Webpage][carpentries]
 >
 > [carpentries]: https://carpentries.org/
 > ~~~
-> and then later, usually at the bottom of the page, you can add that label and the url it references to complete the link (as shown in the second line above).
 > {: .language-markdown }
-> This helps to follow the [DRY principle][dry-principle], avoiding redundant specification of information.
+>
+> and helps to follow the [DRY principle][dry-principle], avoiding redundant specification of information.
 >
 {: .callout}
 
