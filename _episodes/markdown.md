@@ -153,13 +153,14 @@ Let's do an exercise to try out writing more markdown.
 >
 > If you use a link more than once, consider using so called `reference-style links` instead.
 > Unlike inline-style links which have the URL inline with the description text, reference-style links
-> reference the URL via a reference.
-> The reference goes into square brackets `[ ]`, for example:
+> reference the URL via a label.
+> The label goes into square brackets `[ ]`, for example:
 > ~~~
 > [Carpentries Webpage][carpentries]
 >
 > [carpentries]: https://carpentries.org/
 > ~~~
+and then later, usually at the bottom of the page, you can add that label and the url it references to complete the link (as shown in the second line above).
 > {: .language-markdown }
 > This helps to follow the [DRY principle][dry-principle], avoiding redundant specification of information.
 >
