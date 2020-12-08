@@ -10,7 +10,7 @@
 carpentry: "incubator"
 
 # Overall title for pages.
-title: "Building Websites with Jekyll and GitHub/GitLab"
+title: "Building Websites with Jekyll and GitHub"
 
 # Life cycle stage of the lesson
 # possible values: "pre-alpha", "alpha", "beta", "stable"
@@ -24,10 +24,10 @@ life_cycle: "alpha"
 kind: "lesson"
 
 
-repository: "grp-bio-it-workshops/building-websites-with-jekyll-and-github-or-gitlab"
+repository: "carpentries-incubator/jekyll-pages-novice"
 
 # Email address, no mailto:
-email: "toby.hodges@embl.de"
+email: "tobyhodges@carpentries.org"
 
 # Sites.
 amy_site: "https://amy.carpentries.org/workshops"
