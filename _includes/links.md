@@ -14,6 +14,7 @@
 [date-iso]: https://en.wikipedia.org/wiki/ISO_8601
 [dc-lessons]: http://www.datacarpentry.org/lessons/
 [diversekids]: https://diversekids.co.uk/
+[dry-principle]: https://en.wikipedia.org/wiki/Don%27t_repeat_yourself
 [email]: mailto:team@carpentries.org
 [filters]: https://jekyllrb.com/docs/liquid/filters/
 [ghp-dependencies]: https://pages.github.com/versions/
