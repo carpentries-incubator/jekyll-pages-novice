@@ -46,8 +46,8 @@ and to meet some of our community members.
 ## Where to Contribute
 
 1.  If you wish to change this lesson,
-    please work in <https://github.com/swcarpentry/FIXME>,
-    which can be viewed at <https://swcarpentry.github.io/FIXME>.
+    please work in [the lesson's GitHub repository][lesson-repo],
+    which can be viewed at [Building Websites with Jekyll and GitHub][lesson-jekyll].
 
 2.  If you wish to change the example lesson,
     please work in <https://github.com/carpentries/lesson-example>,
@@ -133,6 +133,8 @@ happens on the [discussion mailing list][discuss-list],
 which everyone is welcome to join.
 You can also [reach us by email][email].
 
+[lesson-repo]: https://github.com/carpentries-incubator/jekyll-pages-novice
+[lesson-jekyll]: https://carpentries-incubator.github.io/jekyll-pages-novice/
 [email]: mailto:admin@software-carpentry.org
 [dc-issues]: https://github.com/issues?q=user%3Adatacarpentry
 [dc-lessons]: http://datacarpentry.org/lessons/
