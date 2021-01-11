@@ -1,6 +1,25 @@
 ---
 title: "Instructor Notes"
 ---
-FIXME
+
+## Introduction
+
+- When mulitple instructors are teaching this lesson,
+  the person who demonstrates creating a repository
+  (at the end of the Introduction) should remember to add the
+  other instructors as collaborators on that repository.
+  This will save you trying to mainatin consistency between
+  multiple demo repositories while also handling questions,
+  helping people who are stuck, etc.
+- When demonstrating "Hello World in HTML,"
+  you may choose to write the example HTML in a text editor
+  before viewing the saved file in a browser.
+  Or you may prefer to write the HTML directly into the workshop HedgeDoc/CodiMD,
+  which will provide immediate visual feedback on the rendered equivalent.
+  The advantage to using the workshop CodiMD is that it reduces the
+  need to switch between so many windows and introduce the text editor.
+  The advantage of opening a plain `.html` file in the browser is that it
+  clearly demonstrates the utility of the `title` element.
+
 
 {% include links.md %}
