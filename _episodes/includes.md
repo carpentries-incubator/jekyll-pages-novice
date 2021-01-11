@@ -76,7 +76,7 @@ the sites linked in the previous exercise aren't built with Jekyll.
 But the principles behind reusing content apply regardless of
 the particular framework being used to build the site.
 
-## Carrying the Banner
+## Adding and Reusing a Site Banner 
 
 Let's look at an example of how we can create a block of common content
 and reuse it in multiple pages on our site.

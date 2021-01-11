@@ -14,7 +14,7 @@ keypoints:
 - "This approach can be used to create a relatively small website/blog on a limited budget."
 ---
 
-## What is a Static Site Generator?
+## How Websites Work
 
 When we use a web browser to visit a page on the World-Wide Web,
 the browser asks for information from a server -
