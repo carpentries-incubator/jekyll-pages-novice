@@ -106,7 +106,7 @@ The duplication is happening because the
 `{% raw %}{% include banner.md %}{% endraw %}`
 tag is still present in `index.md`.
 
-> ## Cleaning up
+> ## Exercise: Cleaning Up
 >
 > Remove the include tag for the banner from all the pages of your site,
 > and set every page to use the `page` layout.
@@ -126,7 +126,7 @@ we will need to start telling the browser how we would like our pages to be styl
 There is still more to learn about page layouts,
 so we will come back to this issue of styling at the end of the section.
 
-> ## Expanding the layout
+> ## Exercise: Expanding the Layout
 >
 > We will probably want to include the contact line we added in the previous section
 > in every standard page on our site.
@@ -192,7 +192,7 @@ It is common practice to define the structural elements of your site's pages
 inside a `_layouts/default.html` file.
 This file defines the bare minimum layout your pages should have.
 
-> ## Laying the groundwork
+> ## Exercise: Laying the Groundwork
 >
 > Create another layout file, `default.html`, with the following content:
 >

@@ -109,7 +109,7 @@ Let's access the information about the team and display the name of the project 
 If you need to add, remove or modify a team member, you can simply do it in `_config.yml` without modifying your pages.
 Let's now change the values of a global parameter and study the effect.
 
-> ## Exercise
+> ## Exercise: Personnel Changes
 > Your project team has changed. The team lead has left and in her place is a new person: 'Tom Cat', who started on
 > '2020-10-01'. In addition, the team was expanded and a new developer called 'Alice Dauncey' who joined on '2020-09-15'.
 > Update your website to reflect these team changes.
