@@ -1,7 +1,7 @@
 ---
 title: "Authoring with Markdown"
-teaching: 0
-exercises: 0
+teaching: 20
+exercises: 15
 questions:
 - "How can I write content for my webpages?"
 - "How do I link to other pages?"

@@ -1,7 +1,7 @@
 ---
 title: "Starting with Jekyll"
-teaching: 0
-exercises: 0
+teaching: 20
+exercises: 10
 questions:
 - "How can I use values stored in variables in my pages?"
 - "How can I configure global values/settings for my site?"
@@ -227,7 +227,7 @@ Between these triple-dashed lines, you can overwrite predefined variables (like 
 > > Have any questions about what we do? [We'd love to hear from you!]({% raw %}mailto:{{ site.email }}{% endraw %})
 > > ~~~
 > > {: .language-markdown }
-> > 
+> >
 > > Note that this variable is not accessible from `about.md` page and is local to `index.md`.
 > {: .solution}
 {: .challenge}
