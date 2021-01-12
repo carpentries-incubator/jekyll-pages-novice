@@ -105,6 +105,35 @@ You can then click the preview tab again to see how the formatting renders.
 
 <img src="../fig/markdown_preview_formatting.png" alt="Preview of the formatting added to the Readme" width="600">
 
+> ## Markdown trailing spaces are meaningful
+>
+> In the example above there are two spaces at the end of `Line breaks  `.
+> These introduce what is called a **hard line break**, causing that paragraph to
+> continue in the next line by adding a `<br/>` to the generated HTML.  
+>
+> If you break the line in a markdown file but don't include the two trailing spaces
+> the generated HTML will continue in the same line **without** introducing a `<br/>`.
+> This is called a **soft line break**.
+>
+> In some cases you may find that **soft line breaks** do introduce a `<br/>`.
+> This can happen when using different [markdown flavors](#markdown-flavours).
+>
+> See for instance:
+> ~~~
+> Soft line
+> break
+>
+> Hard line  
+> break
+> ~~~
+> {: .language-markdown }
+>
+> That produces:
+>
+> ![Difference between soft and hard breaks](../fig/soft_hard_markdown_line_break.png)
+>
+{: .callout}
+
 To keep this addition to our `README.md` we need to commit these changes to save them.
 Scroll down to the bottom of the page, add a commit message if you wish, and then commit to the `main` branch.
 
