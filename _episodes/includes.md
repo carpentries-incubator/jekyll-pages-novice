@@ -68,8 +68,13 @@ if you need to update that content - changing the contact address,
 updating a price or picture associated with a listing, and so on -
 you need only change this information in one place
 for the update to be propagated across the whole site.
-This is related to the _DRY (Don't Repeat Yourself)_ principle of
+This is related to the __DRY__ (Don't Repeat Yourself) principle of
 good practice in programming.
+
+>## __DRY__ (Don't Repeat Yourself) Principle       
+>[DRY principle](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself) 
+>is one of the basic principles of software development aimed at reducing repetition of information. 
+{: .callout}
 
 As far as we know,
 the sites linked in the previous exercise aren't built with Jekyll.
