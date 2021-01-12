@@ -142,7 +142,7 @@ Let's do an exercise to try out writing more markdown.
 > {: .solution }
 {: .challenge }
 
-> ## Reference-style links
+> ## Reference-Style Links
 > 
 > Up to now, we have used `inline style links` which have the URL inline with the description text, for example:
 >
@@ -200,7 +200,7 @@ We will continue to use markdown and learn more throughout the rest of the lesso
 {: .challenge }
 
 >## More Markdown Features
-> Check out our [Extras page on Markdown](/more_markdown/index.html) for a more comprehensive overview of 
+> Check out our [Extras page on Markdown](../more_markdown/index.html) for a more comprehensive overview of 
 > Markdown, including how to create fenced code blocks 
 > and do syntax highlighting for various languages.
 {: .callout}

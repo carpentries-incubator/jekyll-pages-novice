@@ -286,19 +286,4 @@ You can then provide the URL in one of two ways:
 >
 {: .challenge }
 
-> ## Flavors
->
-> Basic Markdown features are the same on all platforms such as GitHub and GitLab.
-> However, there are differences in the details and scope of the features offered.
-> To address this situation, the Markdown
-> used at GitHub is called **GitHub-flavored Markdown**
-> and the one used at GitLab is called **GitLab Flavored Markdown**.
-> - So be aware of
->   - [GitHub-flavored Markdown][github-flavored-markdown]
->   - [GitLab-flavored Markdown][gitlab-flavored-markdown]
-{: .callout}
-
-
-
-
 {% include links.md %}

@@ -40,7 +40,7 @@ but probably isn't interesting to a human
 and scripts that the browser may run to do something
 in response to various triggers.
 
-## Hello world in HTML
+## Hello World in HTML
 
 When learning a new programming language,
 you may often find a reference to the popular `Hello world`.
@@ -72,7 +72,7 @@ To achieve this we would additionally need to include stylized tags or Cascading
 If you do not provide CSS instructions (either inside your HTML document or as a separate file),
 a web browser will make a best guess regarding the layout of HTML elements on the page based on its defaults.
 
-> ## The many tags in HTML
+> ## The Many Tags in HTML
 >
 > In the `Hello world` example above 5 different tags are used (`html`, `head`, `title`, `body` and `p`) in their open `<>` and closed `</>` form.
 > We see also the special `doctype` tag that indicates the format and version of the document, in this case, [HTML(5)][html5-wikipedia].
@@ -241,7 +241,7 @@ which allows anyone to re-use and adapt the content of the repository without re
 but you may want to consider choosing something more restrictive when you’re building
 your own website.
 
-> ## Checkout other licenses
+> ## Checkout Other Licences
 > You may want to checkout [this lesson](https://swcarpentry.github.io/git-novice/11-licensing/index.html) or
 > [GitHub's license documentation](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/licensing-a-repository)
 > for more information about possible licenses.

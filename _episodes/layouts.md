@@ -248,8 +248,6 @@ This file defines the bare minimum layout your pages should have.
 > {: .solution}
 {: .challenge }
 
-
-
 ## Layout Inheritance
 
 To prevent the duplication of all this "invisible" HTML across all the layouts
