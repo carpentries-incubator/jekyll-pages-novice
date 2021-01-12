@@ -156,8 +156,8 @@ the same process will automatically occur for those files too.
 For example, a file called `contact.md` will be converted to `contact.html`
 and `cake-recipes.md` will become `cake-recipes.html`.
 However, unlike the special `index.html` file,
-which Web browsers look for as the default "landing page" to display when
-pointed towards a URL with a trailing forward slash,
+which Web servers look for as the default "landing page" to display when
+handling a request for a URL with a trailing forward slash,
 we must request these pages by name when we want to view them on the Web.
 Continuing with the above examples,
 if we wanted to visit the `cake-recipes.html` page,
