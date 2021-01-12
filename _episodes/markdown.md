@@ -88,7 +88,7 @@ Repo for learning how to make websites with Jekyll pages
 Vanilla text may contain *italics* and **bold words**.
 
 This paragraph is separated from the previous one by a blank line.
-Line breaks  
+Line breaks
 are caused by two trailing spaces at the end of a line.
 
 [Carpentries Webpage](https://carpentries.org/)
@@ -143,7 +143,7 @@ Let's do an exercise to try out writing more markdown.
 {: .challenge }
 
 > ## Reference-style links
-> 
+>
 > Up to now, we have used `inline style links` which have the URL inline with the description text, for example:
 >
 > ~~~
@@ -153,7 +153,7 @@ Let's do an exercise to try out writing more markdown.
 >
 > If you use a link more than once, consider using so called `reference-style links` instead.
 > Reference-style links reference the URL via a label.
-> The label goes into square brackets `[ ]` right after the description text of the link and 
+> The label goes into square brackets `[ ]` right after the description text of the link and
 > then later, usually at the bottom of the page, you can connect that label to the url it references to complete the link.
 > This looks like:
 > ~~~
@@ -189,19 +189,19 @@ We will continue to use markdown and learn more throughout the rest of the lesso
 
 > ## Optional Exercise: Add Your Repository Details to CodiMD
 >
-> If your instructors are using _CodiMD_ (or _HackMD_ or any other Markdown-based shared document platform) 
-> to take notes during this workshop, 
+> If your instructors are using _CodiMD_ (or _HackMD_ or any other Markdown-based shared document platform)
+> to take notes during this workshop,
 > use Markdown syntax to add a link in that document to the repository you are using
 > to follow along with this lesson.
 > The link text should be your GitHub username, and the target your repository.
 > Your instructors will direct you towards the appropriate location in the
 > document to add your link.
->        
+>
 {: .challenge }
 
 >## More Markdown Features
-> Check out our [Extras page on Markdown](/more_markdown/index.html) for a more comprehensive overview of 
-> Markdown, including how to create fenced code blocks 
+> Check out our [Extras page on Markdown](../more_markdown/) for a more comprehensive overview of 
+> Markdown, including how to create fenced code blocks
 > and do syntax highlighting for various languages.
 {: .callout}
 
