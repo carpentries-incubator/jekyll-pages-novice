@@ -76,7 +76,7 @@ two formatting features:
 - Heading `# group-website`
 - Emphasis using `**bold**`.
 
-Let's learn some more markdown by adding some formatting and see what happens when we preview it using the preview tab.
+Let's learn some more Markdown by adding some formatting and see what happens when we preview it using the preview tab.
 Add the following to your `README.md` file.
 
 ~~~
@@ -112,8 +112,8 @@ Scroll down to the bottom of the page, add a commit message if you wish, and the
 
 Let's do an exercise to try out writing more markdown.
 
-> ## Try out Markdown
-> Use [this cheatsheet][github-flavored-markdown] to add to your readme:
+> ## Exercise: try out Markdown
+> Use [this cheatsheet][github-flavored-markdown] to add the following to your `README.md`:
 >
 > - Another second level heading
 > - Some text under that second level heading that includes an link and ~~strikethrough~~ text.
@@ -167,26 +167,13 @@ Let's do an exercise to try out writing more markdown.
 >
 {: .callout}
 
-
 We will continue to use markdown and learn more throughout the rest of the lesson.
 
 > ## Markdown Cheatsheet
 >
 > Markdown offers a variety of formatting features.
 > Have a look at this [cheatsheet][github-flavored-markdown] to get an overview or look things up.
->
 {: .callout}
-
-> ## Optional Exercise: Add Your Repository Details to CodiMD
->
-> If your instructors are using _CodiMD_ to take notes during this workshop,
-> use Markdown to add a link in that document to the repository you are using
-> to follow along with this lesson.
-> The link text should be your GitHub username, and the target your repository.
-> Your instructors will direct you towards the appropriate location in the
-> document to add your link.
->
-{: .challenge }
 
 > ## Markdown Flavours
 >
@@ -200,7 +187,22 @@ We will continue to use markdown and learn more throughout the rest of the lesso
 >   - [GitLab-flavored Markdown][gitlab-flavored-markdown]
 {: .callout}
 
+> ## Optional Exercise: Add Your Repository Details to CodiMD
+>
+> If your instructors are using _CodiMD_ (or _HackMD_ or any other Markdown-based shared document platform) 
+> to take notes during this workshop, 
+> use Markdown syntax to add a link in that document to the repository you are using
+> to follow along with this lesson.
+> The link text should be your GitHub username, and the target your repository.
+> Your instructors will direct you towards the appropriate location in the
+> document to add your link.
+>        
+{: .challenge }
 
+>## More Markdown Features
+> Check out our [Extras page on Markdown](../_extras/more_markdown/index.html) for a more comprehensive overview of Markdown, including how to create code blocks 
+> and do syntax highlighting for various languages in these fenced blocks.
+{: .callout}
 
 
 {% include links.md %}
