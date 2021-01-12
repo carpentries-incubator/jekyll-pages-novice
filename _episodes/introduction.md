@@ -91,15 +91,15 @@ a web browser will make a best guess regarding the layout of HTML elements on th
 >
 > Given the stylized text:
 >
-> <h1><em>Hello</em> <strong>World</strong></h1>
+> <h1><em>Hello</em> World</h1>
 >
-> write the HTML will produce the same result.
+> write the HTML that will produce the same result.
 > **Hint** the big font is achieved by use of a heading.
 >
 > > ## Solution
 > >
 > > ~~~
-> > <h1><em>Hello</em> <strong>World</strong></h1>
+> > <h1><em>Hello</em> World</h1>
 > > ~~~
 > > {: .language-html }
 > {: .solution }
