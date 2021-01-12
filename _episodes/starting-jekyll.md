@@ -115,7 +115,7 @@ Let's make use of global parameters in our pages.
 4. Note that site parameters will not render nicely when viewing files in GitHub (they will be displayed as text
 `{% raw %}{{ site.PARAMETER_NAME }}{% endraw %}` rather than the parameter's rendered value) but will in the website.
 
-> ## Exercise
+> ## Exercise: Create a Global Twitter Parameter
 > In `about.md` we have a Twitter URL under the 'Contact us' section. That's one piece of information that could go into
 > global parameters in `_config.yml` as you may want to repeat it on a footer of every page.
 > Make changes to your website to extract Twitter URL as a global parameter.
@@ -194,7 +194,7 @@ author: "Danger Mouse"
 
 Between these triple-dashed lines, you can overwrite predefined variables (like `page.layout` or `page.title`) or create custom ones you need locally on the page (like `page.author`). These variables will then be available for you to access using Liquid's tags {% raw %}{{{% endraw %} and {% raw %}}}{% endraw %} further down in the file and also in any files that include this one.
 
-> ## Exercise
+> ## Exercise: Practice with Local Variables
 >
 > Let's practice making and using local variables. Think of a local variable you may want to use only in your `about.md` or `index.md` page.
 > If you cannot think of any, create a local variable called 'lesson-example' with the value
