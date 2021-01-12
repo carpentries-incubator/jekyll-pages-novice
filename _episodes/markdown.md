@@ -200,8 +200,9 @@ We will continue to use markdown and learn more throughout the rest of the lesso
 {: .challenge }
 
 >## More Markdown Features
-> Check out our [Extras page on Markdown](../_extras/more_markdown/index.html) for a more comprehensive overview of Markdown, including how to create code blocks 
-> and do syntax highlighting for various languages in these fenced blocks.
+> Check out our [Extras page on Markdown](/more_markdown/index.html) for a more comprehensive overview of 
+> Markdown, including how to create fenced code blocks 
+> and do syntax highlighting for various languages.
 {: .callout}
 
 
