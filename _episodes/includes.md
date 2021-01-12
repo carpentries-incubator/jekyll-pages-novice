@@ -265,7 +265,7 @@ We will see another example of this shortly.
 >
 > You can use `include` tags to help minimise the effort required to
 > keep links up-to-date across your site.
-> In the [Authoring with Markdown]({{relative_root_path}}/markdown) section,
+> In the [Authoring with Markdown]({{relative_root_path}}/markdown#reference-style-links) section,
 > we learned about writing reference-style links in Markdown,
 > e.g. `[link text][link-target]` in the body of the file with a corresponding
 > `[link-target]: https://carpentries.org` link reference
