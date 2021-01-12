@@ -112,7 +112,7 @@ Scroll down to the bottom of the page, add a commit message if you wish, and the
 
 Let's do an exercise to try out writing more markdown.
 
-> ## Try out Markdown
+> ## Exercisee: Try Out Markdown
 > Use [this cheatsheet][github-flavored-markdown] to add to your readme:
 >
 > - Another second level heading

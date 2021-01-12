@@ -87,7 +87,7 @@ a web browser will make a best guess regarding the layout of HTML elements on th
 > covering a rich range of features powering today's [world wide web][www-wikipedia].
 {: .callout }
 
-> ## Writing Basic HTML
+> ## Exercise: Writing Basic HTML
 >
 > Given the stylized text:
 >
@@ -147,7 +147,7 @@ Among other things this means that,
 unlike with static pages (see the rest of this lesson),
 you're unlikely to find cost-free platforms to help you deliver dynamic content.
 
-> ## The perfect tool for the job
+> ## Exercise: The Perfect Tool for the Job
 >
 > Given the following types of websites,
 > reason if a static site generator is an appropriate solution to implement them.

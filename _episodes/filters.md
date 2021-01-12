@@ -74,7 +74,7 @@ FIXME: add screenshot of rendered blog post.
 This is a good start! Let's make a second post before we try to further improve
 our post layout.
 
-> ## Creating Another Post
+> ## Exercise: Creating Another Post
 >
 > Write another blog post, in a file called `1851-05-16-DIG.md`,
 > so that the rendered page looks like this:
@@ -125,7 +125,7 @@ in the example above, it converts the format of the date string.
 We will explore the `"ordinal"` part in the exercise below.
 
 
-> ## Date Formats
+> ## Exercise: Date Formats
 >
 > `"ordinal"` is being passed as an argment to the `date_to_long_string` filter.
 > To see how this argument is changing the behaviour of the filter,

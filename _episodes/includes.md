@@ -19,7 +19,7 @@ However, repeated use of content in and across websites
 is usually not limited to individual values such as
 email addresses and social media handles.
 
-> ## What gets re-used?
+> ## Exercise: What Gets Re-used?
 >
 > Look at the two pages linked below,
 > and browse some other pages on the same site.
@@ -147,7 +147,7 @@ at the top of your page.
 > and the alt text as the `alt` parameter.
 {: .callout }
 
-> ## Optional Exercise
+> ## Optional Exercise: Creating a Linked Banner
 >
 > It is common for banner logos like the one above to link back to the homepage
 > of the website they are displayed on.
@@ -219,7 +219,7 @@ We will see another example of this shortly.
 > and using it in a page (`{% raw %}{{site.social}}{% endraw %}` for the example above).
 {: .callout }
 
-> ## Including Contact Information
+> ## Exercise: Including Contact Information
 >
 > The last line of `index.md` includes the kind of information you might want to
 > re-use in multiple places throughout your site.
