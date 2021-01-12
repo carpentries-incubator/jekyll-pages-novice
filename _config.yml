@@ -107,9 +107,6 @@ exclude:
 # Turn on built-in syntax highlighting.
 highlighter: rouge
 
-# Remote theme
-remote_theme: carpentries/carpentries-theme
-
 # variables used within the lesson
 
 exercise-repo: project-pages
