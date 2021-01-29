@@ -35,7 +35,7 @@ using the style information included in the source text.
 Chances are high, your editor can do this.
 As we are working towards authoring websites using Jekyll and GitHub pages,
 we will use GitHub straight away for learning the basics of Markdown.
-The GitHub project you created in the last episode contains a file `README.md`.
+The GitHub project you created in the first episode of this lesson contains a file `README.md`.
 
 The picture below shows the projects default view.
 This view includes a rendered view of the content inside the file `README.md`.
