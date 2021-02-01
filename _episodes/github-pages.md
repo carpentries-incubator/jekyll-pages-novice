@@ -203,12 +203,12 @@ are both valid link targets
 > >    ## Cite us
 > >    You can cite the project as:
 > >
-> >    > *My research project. Zenodo. https://zenodo.org/record/doi*
+> >    > *The Carpentries 2019 Annual Report. Zenodo. https://doi.org/10.5281/zenodo.3840372*
 > >
 > >    ## Contact us
 > >
-> >    - Email: [team@my.research.org](mailto:team@my.research.org)
-> >    - Twitter: [@my_research_project](https://twitter.com/my_research_project)
+> >    - Email: [team@carpentries.org](mailto:team@carpentries.org)
+> >    - Twitter: [@thecarpentries](https://twitter.com/thecarpentries)
 > >    ~~~
 > >    {: .language-markdown }
 > >
