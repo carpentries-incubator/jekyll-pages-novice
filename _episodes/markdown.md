@@ -206,7 +206,7 @@ We will continue to use markdown and learn more throughout the rest of the lesso
 
 > ## Markdown Flavours
 >The initial description of Markdown was informal and contained certain ambiguities so over the years [different Markdown 
->implementations and syntax variations](https://github.com/commonmark/commonmark-spec/wiki/markdown-flavors) 
+>implementations and syntax variations](https://github.com/commonmark/commonmark-spec/wiki/markdown-flavors) (often referred to as "flavours")
 >appeared to support various syntax features and extensions. As a consequence, the syntax from one variant may not 
 >be interpreted as expected in another - you have to be aware which one is being used by a particular platform. Here are 
 >a few well-known variants:
