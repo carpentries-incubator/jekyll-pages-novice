@@ -1,7 +1,7 @@
 ---
 title: "Authoring with Markdown"
-teaching: 0
-exercises: 0
+teaching: 20
+exercises: 15
 questions:
 - "How can I write content for my webpages?"
 - "How do I link to other pages?"
@@ -88,7 +88,7 @@ Repo for learning how to make websites with Jekyll pages
 Vanilla text may contain *italics* and **bold words**.
 
 This paragraph is separated from the previous one by a blank line.
-Line breaks  
+Line breaks
 are caused by two trailing spaces at the end of a line.
 
 [Carpentries Webpage](https://carpentries.org/)
@@ -104,6 +104,35 @@ are caused by two trailing spaces at the end of a line.
 You can then click the preview tab again to see how the formatting renders.
 
 <img src="../fig/markdown_preview_formatting.png" alt="Preview of the formatting added to the Readme" width="600">
+
+> ## Markdown trailing spaces are meaningful
+>
+> In the example above there are two spaces at the end of `Line breaks  `.
+> These introduce what is called a **hard line break**, causing that paragraph to
+> continue in the next line by adding a `<br/>` to the generated HTML.  
+>
+> If you break the line in a markdown file but don't include the two trailing spaces
+> the generated HTML will continue in the same line **without** introducing a `<br/>`.
+> This is called a **soft line break**.
+>
+> In some cases you may find that **soft line breaks** do introduce a `<br/>`.
+> This can happen when using different [markdown flavors](#markdown-flavours).
+>
+> See for instance:
+> ~~~
+> Soft line
+> break
+>
+> Hard line  
+> break
+> ~~~
+> {: .language-markdown }
+>
+> That produces:
+>
+> ![Difference between soft and hard breaks](../fig/soft_hard_markdown_line_break.png)
+>
+{: .callout}
 
 To keep this addition to our `README.md` we need to commit these changes to save them.
 Scroll down to the bottom of the page, add a commit message if you wish, and then commit to the `main` branch.
@@ -142,6 +171,7 @@ Let's do an exercise to try out writing more markdown.
 > {: .solution }
 {: .challenge }
 
+
 > ## Reference-Style Links
 > 
 > Up to now, we have used `inline style links` which have the URL inline with the description text, for example:
@@ -153,7 +183,7 @@ Let's do an exercise to try out writing more markdown.
 >
 > If you use a link more than once, consider using so called `reference-style links` instead.
 > Reference-style links reference the URL via a label.
-> The label goes into square brackets `[ ]` right after the description text of the link and 
+> The label goes into square brackets `[ ]` right after the description text of the link and
 > then later, usually at the bottom of the page, you can connect that label to the url it references to complete the link.
 > This looks like:
 > ~~~
@@ -176,27 +206,26 @@ We will continue to use markdown and learn more throughout the rest of the lesso
 {: .callout}
 
 > ## Markdown Flavours
->
-> Basic Markdown features are the same on all platforms such as GitHub and GitLab.
-> However, there are differences in the details and scope of the features offered.
-> To address this situation, the Markdown
-> used at GitHub is called **GitHub-flavored Markdown**
-> and the one used at GitLab is called **GitLab Flavored Markdown**.
-> - So be aware of:
->   - [GitHub-flavored Markdown][github-flavored-markdown]
->   - [GitLab-flavored Markdown][gitlab-flavored-markdown]
+>The initial description of Markdown was informal and contained certain ambiguities so over the years [different Markdown 
+>implementations and syntax variations](https://github.com/commonmark/commonmark-spec/wiki/markdown-flavors) (often referred to as "flavours")
+>appeared to support various syntax features and extensions. As a consequence, the syntax from one variant may not 
+>be interpreted as expected in another - you have to be aware which one is being used by a particular platform. Here are 
+>a few well-known variants:
+>   - [GitHub-flavored Markdown][github-flavored-markdown] (used on this lesson and by GitHub)
+>   - [GitLab-flavored Markdown][gitlab-flavored-markdown] (used by GitLab)      
+>   - [Kramdown][kramdown] (a fast, Ruby, open source implementation released under the MIT licence)
 {: .callout}
 
 > ## Optional Exercise: Add Your Repository Details to CodiMD
 >
-> If your instructors are using _CodiMD_ (or _HackMD_ or any other Markdown-based shared document platform) 
-> to take notes during this workshop, 
+> If your instructors are using _CodiMD_ (or _HackMD_ or any other Markdown-based shared document platform)
+> to take notes during this workshop,
 > use Markdown syntax to add a link in that document to the repository you are using
 > to follow along with this lesson.
 > The link text should be your GitHub username, and the target your repository.
 > Your instructors will direct you towards the appropriate location in the
 > document to add your link.
->        
+>
 {: .challenge }
 
 >## More Markdown Features

@@ -80,13 +80,13 @@ Let's access the information about the team and display the name of the project 
    ## Cite us
    You can cite the project as:
 
-   >    *My research project. Zenodo. https://zenodo.org/record/doi*
+   >    *The Carpentries 2019 Annual Report. Zenodo. https://doi.org/10.5281/zenodo.3840372*
 
    ## Contact us
 
-   Email: [team@my.research.org](mailto:{% raw %}{{ site.email }}{% endraw %})
+   Email: [team@carpentries.org](mailto:{% raw %}{{ site.email }}{% endraw %})
 
-   Twitter: [@my_research_project]({% raw %}{{ site.twitter }}{% endraw %})
+   Twitter: [@thecarpentries]({% raw %}{{ site.twitter }}{% endraw %})
    ~~~
    {: .language-markdown}
 

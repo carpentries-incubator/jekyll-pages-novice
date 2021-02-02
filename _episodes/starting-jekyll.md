@@ -1,7 +1,7 @@
 ---
 title: "Starting with Jekyll"
-teaching: 0
-exercises: 0
+teaching: 20
+exercises: 10
 questions:
 - "How can I use values stored in variables in my pages?"
 - "How can I configure global values/settings for my site?"
@@ -52,7 +52,7 @@ Let's create some configuration parameters for our website.
    title: "Building Websites in GitHub"
    description: "This research project develops training materials for reseachers wanting to learn to build project
    websites in GitHub with GitHub Pages."
-   email: "team@my.research.org"
+   email: "team@carpentries.org"
    ~~~
    {: .language-yaml}
 
@@ -102,12 +102,12 @@ Let's make use of global parameters in our pages.
 
    You can cite the project as:
 
-   >    *My research project. Zenodo. https://zenodo.org/record/doi*
+   >    *The Carpentries 2019 Annual Report. Zenodo. https://doi.org/10.5281/zenodo.3840372*
 
    ## Contact us
 
    - Email: [{% raw %}{{ site.email }}{% endraw %}](mailto:{% raw %}{{ site.email }}{% endraw %})
-   - Twitter: [@my_research_project](https://twitter.com/my_research_project)
+   - Twitter: [@thecarpentries](https://twitter.com/thecarpentries)
    ~~~
    {: .language-markdown }
 
@@ -126,8 +126,8 @@ Let's make use of global parameters in our pages.
 > >    title: "Building Websites in GitHub"
 > >    description: "This research project develops training materials for reseachers wanting to learn to build project
 > >    websites in GitHub with GitHub Pages."
-> >    email: "team@my.research.org"
-> >    twitter: "https://twitter.com/my_research_project"
+> >    email: "team@carpentries.org"
+> >    twitter: "https://twitter.com/thecarpentries"
 > >    ~~~
 > >    {: .language-yaml}
 > >
@@ -148,7 +148,7 @@ Let's make use of global parameters in our pages.
 > >
 > >    You can cite the project as:
 > >
-> >    > *My research project. Zenodo. https://zenodo.org/record/doi*
+> >    > *The Carpentries 2019 Annual Report. Zenodo. https://doi.org/10.5281/zenodo.3840372*
 > >
 > >    ## Contact us
 > >
@@ -227,7 +227,7 @@ Between these triple-dashed lines, you can overwrite predefined variables (like 
 > > Have any questions about what we do? [We'd love to hear from you!]({% raw %}mailto:{{ site.email }}{% endraw %})
 > > ~~~
 > > {: .language-markdown }
-> > 
+> >
 > > Note that this variable is not accessible from `about.md` page and is local to `index.md`.
 > {: .solution}
 {: .challenge}

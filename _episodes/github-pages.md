@@ -1,7 +1,7 @@
 ---
 title: "Hosting Websites on GitHub"
-teaching: 0
-exercises: 0
+teaching: 20
+exercises: 20
 questions:
 - "How do I publish my page or a website on the Web via GitHub?"
 objectives:
@@ -156,8 +156,8 @@ the same process will automatically occur for those files too.
 For example, a file called `contact.md` will be converted to `contact.html`
 and `cake-recipes.md` will become `cake-recipes.html`.
 However, unlike the special `index.html` file,
-which Web browsers look for as the default "landing page" to display when
-pointed towards a URL with a trailing forward slash,
+which Web servers look for as the default "landing page" to display when
+handling a request for a URL with a trailing forward slash,
 we must request these pages by name when we want to view them on the Web.
 Continuing with the above examples,
 if we wanted to visit the `cake-recipes.html` page,
@@ -203,12 +203,12 @@ are both valid link targets
 > >    ## Cite us
 > >    You can cite the project as:
 > >
-> >    > *My research project. Zenodo. https://zenodo.org/record/doi*
+> >    > *The Carpentries 2019 Annual Report. Zenodo. https://doi.org/10.5281/zenodo.3840372*
 > >
 > >    ## Contact us
 > >
-> >    - Email: [team@my.research.org](mailto:team@my.research.org)
-> >    - Twitter: [@my_research_project](https://twitter.com/my_research_project)
+> >    - Email: [team@carpentries.org](mailto:team@carpentries.org)
+> >    - Twitter: [@thecarpentries](https://twitter.com/thecarpentries)
 > >    ~~~
 > >    {: .language-markdown }
 > >
