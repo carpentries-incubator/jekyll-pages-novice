@@ -313,7 +313,7 @@ add a new for loop to iterate over the titles and dates of the `posts` collectio
 ## Blog Posts
 
 {% raw %}{% for post in site.posts %}
-- {{ post.publication_date | date_to_string }}: [{{ post.title }}]({{ post.url }})
+- {{ post.date | date_to_string }}: [{{ post.title }}]({{ post.url }})
 {% endfor %}{% endraw %}
 ~~~
 {: .language-markdown }
@@ -328,7 +328,7 @@ Let's break it down into smaller chunks and explore them one-by-one:
    The collection itself is made available to us as a `site` variable,
    with the name we gave it in `_config.yml`.
 2. `- ` will create a bullet point for each post.
-3. `{{ post.publication_date | date_to_string }}` accesses the `publication_date`
+3. `{{ post.date | date_to_string }}` accesses the `date`
    defined in the post's YAML header and displays it in the list as a string.
 4. `[{{ post.title }}]({{ post.url }})` creates a link with the post's title
    (again extracted from the YAML header of the post file) as the link text,
@@ -337,6 +337,26 @@ Let's break it down into smaller chunks and explore them one-by-one:
    collection (i.e. every file in the `_posts` folder) has been iterated over.
 
 Clicking on one of these links takes us to the rendered version of the blog post page.
+
+What's even better is that
+Jekyll has taken care of ordering the posts according to their publication date:
+this is a special handling of the `date` parameter -
+if it is present in the YAML header of pages in a collection it will automatically
+be used to define the order in which the collection is delivered in the site.
+If you would like to order a collection by a different field in the YAML header,
+you can pass the collection through the [`sort`][liquid-sort] filter
+when initialising the for loop:
+
+~~~
+{% raw %}{% for post in site.posts | sort: "author" %}{% endraw %}
+~~~
+{: .source }
+
+Other filters also exist for working with lists of values,
+such as [`group_by`][liquid-group_by],
+which can be used to group the values by a particular field,
+and [`sample`][liquid-sample],
+which returns a random sample of the values in the list.
 
 > ## Exercise: Adding the Post Author
 >
@@ -347,7 +367,7 @@ Clicking on one of these links takes us to the rendered version of the blog post
 > >
 > > ~~~
 > > {% raw %}{% for post in site.posts %}
-> > - {{ post.publication_date | date_to_string }}: [{{ post.title }}]({{ post.url }}) by {{ post.author }}
+> > - {{ post.date | date_to_string }}: [{{ post.title }}]({{ post.url }}) by {{ post.author }}
 > > {% endfor %}{% endraw %}
 > > ~~~
 > > {: .source }
@@ -369,7 +389,7 @@ Clicking on one of these links takes us to the rendered version of the blog post
 > > <h2>Blog Posts</h2>
 > > <ul>
 > > {% raw %}{% for post in site.posts %}
-> > <li>{{ post.publication_date | date_to_string }}: <a href="{{ post.url }}">{{ post.title }}</a></li>
+> > <li>{{ post.date | date_to_string }}: <a href="{{ post.url }}">{{ post.title }}</a></li>
 > > {% endfor %}{% endraw %}
 > > </ul>
 > > ~~~
@@ -392,7 +412,7 @@ Clicking on one of these links takes us to the rendered version of the blog post
 > > ## Solution
 > >
 > > Write another post Markdown file and save it into the `_posts` folder,
-> > making sure you remember to add (at least) the `publication_date` and
+> > making sure you remember to add (at least) the `date` and
 > > `title` fields in the YAML header.
 > >
 > > A link to the rendered version of that file should automatically appear
