@@ -4,7 +4,7 @@ title: "Instructor Notes"
 
 ## Introduction
 
-- We recommend the usage of [HedgeDoc](https://hedgedoc.org).
+- We recommend the usage of [HedgeDoc](https://hedgedoc.org) (formerly called CodiMD).
   All instructors can use it for note-taking when preparing or teaching this lesson and we also encourage
   its usage during the workshop for asking questions and collaborate during  exercises, especially when using breakout rooms.
   The main advantage is that it uses Markdown so it can easily convince learners on the importance of learning Markdown.
