@@ -64,7 +64,7 @@ theme designer and Jekyll will not automatically process these. Similar for `fig
 (which could have been named `images` or `figures` just the same). 
 
 > ## Reusing The Carpentries Jekyll Lesson Theme 
->Reusing [the lesson template](https://github.com/carpentries-incubator/template) to create a new lesson can be achieved by copying the theme repository and customising it by adding your episodes in the appropriate place. 
+>Reusing [the lesson template](https://github.com/carpentries/styles) to create a new lesson can be achieved by copying the theme repository and customising it by adding your episodes in the appropriate place. 
 {: .callout}
 
 Have a look at another example - a simplified directory structure of a blog website ([reproduced from JekyllRb](https://jekyllrb.com/docs/structure/)).
