@@ -2,6 +2,7 @@
 title: "More on Markdown"
 teaching: 0
 exercises: 0
+layout: episode
 questions:
 - "How can I write content for my webpages?"
 - "How do I link to other pages?"
@@ -10,7 +11,7 @@ objectives:
 keypoints:
 - "Markdown is an relatively easy way to write formatted text"
 - "Markdown and HTML tags can be used together in a single page"
-- "I recommend writing Markdown links 'reference-style'"
+- "We recommend writing Markdown links 'reference-style'"
 - "The landing page for a website is conventionally named `index.md`"
 ---
 
@@ -35,7 +36,7 @@ using the style information included in the source text.
 Chances are high, your editor can do this.
 As we are working towards authoring websites using Jekyll and GitHub pages,
 we will use GitHub straight away for learning the basics of Markdown.
-The GitHub project you created in the last episode contains a file `README.md`.
+The GitHub project you created in the first episode of this lesson contains a file `README.md`.
 
 The picture below shows the projects default view.
 This view includes a rendered view of the content inside the file `README.md`.
@@ -102,7 +103,7 @@ Let's do some exercises to learn more about structuring and emphasis.
 > >     This paragraph is separated from the previous one by a blank line.
 > >     Line breaks  
 > >     are caused by two trailing spaces at the end a line.
-> >
+> > {: .language-markdown }
 > {: .solution }
 {: .challenge }
 
@@ -119,7 +120,7 @@ You can create lists by preceding lines with `-` or a bunch of other `-`-like ch
 > >     - Host my first website on GitHub
 > >     - Learn about Jekyll
 > >     - Think about how my work group could benefit from what I have learned.
-> >
+> > {: .language-markdown }
 > {: .solution }
 {: .challenge }
 
@@ -143,6 +144,7 @@ Numbered enumerations are helpful for displaying sequences and the numbers may h
 > >     2. Enumerations can start at any number but
 > >     3. continue to increase in steps of one
 > >     4. even if the numbering does not. This updates the rendered numbering to avoid gaps when individual items are deleted.
+> > {: .language-markdown }
 > {: .solution }
 {: .challenge }
 
@@ -182,7 +184,7 @@ use triple backticks to format larger code snippets, creating code blocks.
 > >     ```
 > >     print('Hello World')
 > >     ```
-> >
+> > {: .language-markdown }
 > {: .solution }
 {: .challenge }
 
@@ -192,11 +194,10 @@ introductory triple backticks.
 
 Let's take an example with Python:
 
-~~~
-```python
-print("Hello everyone!")
-```
-~~~
+    ```python
+    print("Hello everyone!")
+    ```
+{: .language-markdown }
 
 The code above will produce the following view:
 
@@ -230,6 +231,7 @@ print("Hello everyone!")
 > >     </body>
 > >     </html>
 > >     ```
+> > {: .language-markdown }
 > {: .solution }
 {: .challenge }
 
@@ -270,8 +272,7 @@ You can then provide the URL in one of two ways:
 > >     2. [Reference link][case-InSeNsiTiVe-reference-tag]
 > >
 > >     [case-insensitive-reference-tag]: https://carpentries.org/
-> >
-> >
+> > {: .language-markdown }
 > {: .solution }
 {: .challenge }
 
@@ -285,20 +286,5 @@ You can then provide the URL in one of two ways:
 > document to add your link.
 >
 {: .challenge }
-
-> ## Flavors
->
-> Basic Markdown features are the same on all platforms such as GitHub and GitLab.
-> However, there are differences in the details and scope of the features offered.
-> To address this situation, the Markdown
-> used at GitHub is called **GitHub-flavored Markdown**
-> and the one used at GitLab is called **GitLab Flavored Markdown**.
-> - So be aware of
->   - [GitHub-flavored Markdown][github-flavored-markdown]
->   - [GitLab-flavored Markdown][gitlab-flavored-markdown]
-{: .callout}
-
-
-
 
 {% include links.md %}
