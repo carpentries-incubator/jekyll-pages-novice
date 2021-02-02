@@ -8,7 +8,7 @@ title: "Instructor Notes"
   All instructors can use it for note-taking when preparing or teaching this lesson and we also encourage
   its usage during the workshop for asking questions and collaborate during exercises, especially when using breakout rooms.
   The main advantage is that it uses Markdown so it can easily convince learners on the importance of learning Markdown.
-  Make use of [HackMD Mechanics](https://coderefinery.github.io/manuals/hackmd-mechanics/#basic-controls) from [CodeRefinery](https://coderefinery.org/): it is important everyone understands how to use HedgeDoc from the very beginning of the workshop.
+  Make use of [HackMD Mechanics](https://coderefinery.github.io/manuals/hackmd-mechanics/#basic-controls) from [CodeRefinery](https://coderefinery.org/). Take time to orient your learners to using the document early on to be ensure everyone understands how to use HedgeDoc.
 - When mulitple instructors are teaching this lesson,
   the person who demonstrates creating a repository
   (at the end of the Introduction) should remember to add the
