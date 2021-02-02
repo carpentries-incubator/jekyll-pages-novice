@@ -4,6 +4,11 @@ title: "Instructor Notes"
 
 ## Introduction
 
+- We recommend the usage of [HedgeDoc](https://hedgedoc.org) (formerly called CodiMD) and for instance [The Carpentries CodiMD instance](https://codimd.carpentries.org) for creating your new documents.
+  All instructors can use it for note-taking when preparing or teaching this lesson and we also encourage
+  its usage during the workshop for asking questions and collaborate during exercises, especially when using breakout rooms.
+  The main advantage is that it uses Markdown so it can easily convince learners on the importance of learning Markdown.
+  Make use of [HackMD Mechanics](https://coderefinery.github.io/manuals/hackmd-mechanics/#basic-controls) from [CodeRefinery](https://coderefinery.org/). Take time to orient your learners to using the document early on to be ensure everyone understands how to use HedgeDoc.
 - When mulitple instructors are teaching this lesson,
   the person who demonstrates creating a repository
   (at the end of the Introduction) should remember to add the
