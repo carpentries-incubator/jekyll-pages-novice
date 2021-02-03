@@ -46,7 +46,7 @@ layout: default
 ---
 
 <strong>Author:</strong> {{page.author}}
-Published on {{ page.publication_date }}
+Published on {{ page.date }}
 
 {{ content }}{% endraw %}
 ~~~
@@ -54,7 +54,7 @@ Published on {{ page.publication_date }}
 
 Save this layout to `_layouts/post.html`.
 Now we can create our first blog post, `1827-11-22-surgeon.md`,
-remembering to add the `author` and `publication_date` fields
+remembering to add the `author` and `date` fields
 to the YAML front matter:
 
 ~~~
@@ -62,7 +62,7 @@ to the YAML front matter:
 layout: post
 title: I am a Surgeon!
 author: Dr James Barry
-publication_date: 1827-11-22
+date: 1827-11-22
 ---
 
 Today was a good day. I was promoted to Surgeon to the Forces!{% endraw %}
@@ -88,7 +88,7 @@ our post layout.
 > > layout: post
 > > title: Promoted Again
 > > author: Dr James Barry
-> > publication_date: 1851-05-16
+> > date: 1851-05-16
 > > ---
 > >
 > > Good news: I have been promoted to Deputy Inspector-General of Hospitals.
@@ -112,7 +112,7 @@ a more human format (e.g. 4th September 2019) at the top of each post,
 using a _Filter_:
 
 ~~~
-{% raw %}Published on {{ page.publication_date | date_to_long_string: "ordinal" }}{% endraw %}
+{% raw %}Published on {{ page.date | date_to_long_string: "ordinal" }}{% endraw %}
 ~~~
 {: .language-markdown }
 
@@ -130,7 +130,7 @@ We will explore the `"ordinal"` part in the exercise below.
 > `"ordinal"` is being passed as an argment to the `date_to_long_string` filter.
 > To see how this argument is changing the behaviour of the filter,
 > try removing it, i.e.
-> `{% raw %}{{ publication_date | date_to_long_string }}{% endraw %}`.
+> `{% raw %}{{ page.date | date_to_long_string }}{% endraw %}`.
 > What happens?
 > Which output do you prefer?
 >
