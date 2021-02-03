@@ -52,7 +52,7 @@ Let's create some configuration parameters for our website.
    title: "Building Websites in GitHub"
    description: "This research project develops training materials for reseachers wanting to learn to build project
    websites in GitHub with GitHub Pages."
-   email: "team@my.research.org"
+   email: "team@carpentries.org"
    ~~~
    {: .language-yaml}
 
@@ -102,12 +102,12 @@ Let's make use of global parameters in our pages.
 
    You can cite the project as:
 
-   >    *My research project. Zenodo. https://zenodo.org/record/doi*
+   >    *The Carpentries 2019 Annual Report. Zenodo. https://doi.org/10.5281/zenodo.3840372*
 
    ## Contact us
 
    - Email: [{% raw %}{{ site.email }}{% endraw %}](mailto:{% raw %}{{ site.email }}{% endraw %})
-   - Twitter: [@my_research_project](https://twitter.com/my_research_project)
+   - Twitter: [@thecarpentries](https://twitter.com/thecarpentries)
    ~~~
    {: .language-markdown }
 
@@ -126,8 +126,8 @@ Let's make use of global parameters in our pages.
 > >    title: "Building Websites in GitHub"
 > >    description: "This research project develops training materials for reseachers wanting to learn to build project
 > >    websites in GitHub with GitHub Pages."
-> >    email: "team@my.research.org"
-> >    twitter: "https://twitter.com/my_research_project"
+> >    email: "team@carpentries.org"
+> >    twitter: "https://twitter.com/thecarpentries"
 > >    ~~~
 > >    {: .language-yaml}
 > >
@@ -148,7 +148,7 @@ Let's make use of global parameters in our pages.
 > >
 > >    You can cite the project as:
 > >
-> >    > *My research project. Zenodo. https://zenodo.org/record/doi*
+> >    > *The Carpentries 2019 Annual Report. Zenodo. https://doi.org/10.5281/zenodo.3840372*
 > >
 > >    ## Contact us
 > >
@@ -231,5 +231,33 @@ Between these triple-dashed lines, you can overwrite predefined variables (like 
 > > Note that this variable is not accessible from `about.md` page and is local to `index.md`.
 > {: .solution}
 {: .challenge}
+
+
+> ## Exercise: Practice with Troubleshooting
+>
+> Sometimes typos happen and can make your website change in surprising ways.
+> Let's experiment with some possible issues that might come up and see what happens.
+>
+> Try the changes listed below on your `index.md` file and see what happens when the page renders.
+> You will want to correct the previous mistake each time.
+> 1. Use a global or local variable in a page that you didn't define first.
+> 2. Leave the dash off the end of the YAML header.
+> 3. Don't put a space between the YAML header and the rest of the page
+> 4. Put the YAML header in a different location in the page.
+>
+> > ## Solution
+> >
+> > 1. The place where you used the undefined variable is blank but otherwise no error.
+> > 2. The header shows somewhat in the file and the variable that was defined goes to
+> >    the index page intead of the link we set.
+> > 3. This doesn't seem to affect our page but can often make more complex pages break.
+> > 4. This also makes the header somewhat show in the page and breaks the variable link we created.
+> >
+> {: .solution}
+> Note: Be sure to fix any errors you intentionally introduced in your page before moving on.
+{: .challenge}
+
+
+
 
 {% include links.md %}

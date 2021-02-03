@@ -144,8 +144,8 @@ so we will come back to this issue of styling at the end of the section.
 > > <h2>Contact us</h2>
 > >
 > > <ul>
-> > <li>Email: <a href="mailto:team@my.research.org">team@my.research.org</a></li>
-> > <li>Twitter: <a href="https://twitter.com/my_research_project">@my_research_project</a></li>
+> > <li>Email: <a href="mailto:team@carpentries.org">team@carpentries.org</a></li>
+> > <li>Twitter: <a href="https://twitter.com/thecarpentries">@thecarpentries</a></li>
 > > </ul>
 > > ~~~
 > > {: .language-html }
@@ -247,8 +247,6 @@ This file defines the bare minimum layout your pages should have.
 > > {: .language-html }
 > {: .solution}
 {: .challenge }
-
-
 
 ## Layout Inheritance
 

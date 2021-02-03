@@ -3,4 +3,4 @@ image:
 
 tasks:
   - init: make site
-  - command: make serve
+    command: make serve

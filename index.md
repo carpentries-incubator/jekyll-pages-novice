@@ -30,7 +30,7 @@ This tutorial aims to address this,
 by providing a step-by-step guide to creating a collection of pages
 and combining them into a coherent site using a framework called _Jekyll_.
 
-> ## Outdated screenshots
+> ## Outdated Screenshots
 >
 > Throughout this lesson we will make use and show content and screenshots from GitHub.com.
 > As an ever evolving platform, GitHub is always adding new features
