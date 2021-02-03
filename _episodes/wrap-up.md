@@ -3,7 +3,6 @@ title: "Wrap-up"
 teaching: 0
 exercises: 0
 questions:
-- "What have we learned so far?"
 - "How do all pieces of a Jekyll website fit into a directory structure?"
 - "What other resources are available for learning more on Jekyll?"
 objectives:
@@ -48,25 +47,47 @@ create some complex content assembly pipelines. That way, adding a new blog post
 creating a file in the `_posts` folder of your website, setting it to use the 'post' template and focusing on its 
 content - and it will magically appear at the top of your Blog timeline without any extra effort on your part.
 
-## Jekyll Website Directory Structure
+As a last thing, let's put it all together by having a look at a directory structure of a Jekyll website, where different 
+pieces are located and see how they relate to visual components on the rendered website pages.
 
-Let's have a look at some directory structures of different Jekyll websites.
+### Jekyll Website Directory Structure
 
-First we will visit the directory structure of the [Jekyll website used to develop this lesson](https://github.com/carpentries-incubator/building-websites-with-jekyll-and-github-or-gitlab), which uses the 
-[The Carpentries Jekyll theme](https://github.com/carpentries-incubator/template), and see how it relates to visual components on the website's home page.
+As an example, we will have a look the [Jekyll website used to develop this lesson][jekyll-novice] (shown in the image below). 
+It uses the [Carpentries Jekyll theme](https://github.com/carpentries/styles), which contains 
+page layouts for various Carpentry websites - lesson materials, workshop websites, etc. We have created a new repository
+for this lesson by copying the Carpentries theme repository and customising it by adding our episodes and other content.
+ 
+Note that if you look at other Jekyll websites - they will have slightly different directory structures as 
+they may use different themes. However, there are some common elements, such as `index.md` (the home page), 
+`_config.yml` (website's global configuration), 
+and folders starting with `_` which have special meaning to Jekyll by convention, such as:
+- `_includes` - containing reusable page snippets, 
+- `_layouts` - for storing theme's page templates, 
+- `_sass` or `assets` (without the leading `_`) where Jekyll looks for 'assets' such as CSS and 
+JavaScript files,
+- `_data` - for storing well-formatted site data (in either the .yml, .yaml, .json, .csv or .tsv formats) 
+that Jekyll autoloads and makes accessible accessible via `site.data` global variable,  
+- `_site` - containing the static version of the website ready to be served to users once Jekyll compiles it. 
 
-![directory-structure-home-page](../fig/directory-structure-home-page-combined-annotated.png) 
+Other 'special' folders particular to this example only are `_episodes` and `_extras` - they are defined by the theme 
+designer and have a special role in this website/theme for storing lesson and extra episodes. 
+They will not be automatically processed by Jekyll despite starting with the `_` as they are special to this theme 
+alone - the theme designer makes sure they are embedded in the website as intended (e.g. by using them in Liquid 
+code snippets). In the website example we have been building throughout this lesson, 
+we have seen a similar folder `_posts` where we stored content of blog posts.
+ 
+ Other commonly seen folders in Jekyll websites are `fig` for storing website images and figures 
+ (sometimes also named `images` or `figures`). There is no firm naming convention in this case - Jekyll will not process 
+ these folders automatically and the website designer will have to make sure to access/link to the content 
+ of these folders appropriately.  
 
-Other Jekyll websites will have slightly different structures but there are some common elements, such as `index.md`, 
-`_config.yml`, and folders starting with `_` (such as `_includes` and `_site`) which have special meaning to 
-Jekyll by convention. Other special folders in this case are `_episodes` and `_extras`, but these are defined by the 
-theme designer and Jekyll will not automatically process these. Similar for `fig` folder holding images for the website 
-(which could have been named `images` or `figures` just the same). 
+![directory-structure-home-page](../fig/directory-structure-rendered-website-with-annotations.png){: height="1200px"} 
 
 > ## Reusing The Carpentries Jekyll Lesson Theme 
 >Reusing [the lesson template](https://github.com/carpentries/styles) to create a new lesson can be achieved by copying the theme repository and customising it by adding your episodes in the appropriate place. 
 {: .callout}
 
+{% comment %}
 Have a look at another example - a simplified directory structure of a blog website ([reproduced from JekyllRb](https://jekyllrb.com/docs/structure/)).
 ~~~
 .
@@ -93,18 +114,17 @@ Have a look at another example - a simplified directory structure of a blog webs
 └── index.html # can also be an 'index.md' with valid front matter
 ~~~
 {: .code}
-
-Things of note here are `_layouts` for storing theme's page templates, `_posts` for storing blog posts, 
-`_sass` where Jekyll looks for 'assets' such as CSS and JavaScript files, and `_data` for storing well-formatted site 
-data (in either the .yml, .yaml, .json, .csv or .tsv formats) that Jekyll will autoload and make accessible accessible 
-via `site.data` global variable.
-
+{% endcomment %}
 
 ## Further Resources
+Below are some recommended resources to help you continue learning about Jekyll websites:
+
 - [W3C Schools HTML tutorial](https://www.w3schools.com/html/)
 - [W3C Schools CSS tutorial](https://www.w3schools.com/css/)
 - [Github-flavored Markdown info page](https://docs.github.com/en/free-pro-team@latest/github/writing-on-github)
 - [Getting started with GitHub Pages](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/getting-started-with-github-pages) from GitHub Docs
 - [JekyllRB - the ultimate source of Jekyll resources](https://jekyllrb.com/)
-- [Jekyll Guides](https://jekyllrb.com/resources/#guides)
+- [Jekyll guides](https://jekyllrb.com/resources/#guides)
 - [Jekyll themes](https://jekyllrb.com/resources#themes)
+
+{% include links.md %}
