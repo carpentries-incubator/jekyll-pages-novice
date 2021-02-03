@@ -25,30 +25,32 @@ professional-looking websites by reusing existing website themes. Here, we are g
 so far and look at the anatomy of a GitHub Pages website and its common building blocks, which will also help you
 better understand Jekyll themes once you get to learning about them.
 
-## Summary
-
-Throughout this lesson, we learned how to create formatted webpage content with Markdown, configure a GitHub
-repository to use the Jekyll static site generator,
-and how to use Jekyll to build our Markdown pages and various other files
-(HTML snippets, CSS, images, etc.) into a set of HTML documents that are then served via the GitHub Pages framework.
-
-HTML is the basic building block of webpages served on the Internet. It describes the structural elements of the
-page and their raw content and is often aided by CSS - an ordered set of styling instructions telling the browser
-how the content described in the HTML document should be organised and formatted. HTML is very verbose and difficult
-to write by hand - beyond their initial design HTML pages are meant to be processed by machines.
-For that reason, Markdown was introduced - a lightweight Markup language and a convention for
-adding style information to textual content while retaining the human-readable form. It is not as rich in syntax as HTML,
-but comparably more usable by a wider audience.
-
-Jekyll is a powerful static site generator behind GitHub Pages that supports a high degree of reuse and separation of
-content and presentation. It can be configured via the `_config.yml` YAML file
-that stores site-wide variables accessible from anywhere within our site.
-It also allows us to define and reuse page-wide variables, by defining them as the *front matter* at the beginning of
-our Markdown pages. Used in conjunction with Liquid, its scripting language, Jekyll allows us to include content from
-reusable markup snippets that can be repeated on multiple pages and to embed code snippets and filters into our pages to
-create some complex content assembly pipelines. That way, adding a new blog post to your website may only involve
-creating a file in the `_posts` folder of your website, setting it to use the 'post' template and focusing on its
-content - and it will magically appear at the top of your Blog timeline without any extra effort on your part.
+> ## Summary
+>
+> Throughout this lesson, we learned how to
+> [create formatted webpage content with Markdown]({{ relative_root_path }}/markdown/),
+> [configure a GitHub repository to use the Jekyll static site generator]({{ relative_root_path }}/github-pages/),
+> and [how to use Jekyll to build our Markdown pages and various other files]({{ relative_root_path }}/starting-jekyll/)
+> (HTML snippets, CSS, images, etc.) into a set of HTML documents that are then served via the GitHub Pages framework.
+>
+> **HTML** is the basic building block of webpages served on the Internet. It describes the structural elements of the
+> page and their raw content and is often aided by **CSS** - an ordered set of styling instructions telling the browser
+> how the content described in the HTML document should be organised and formatted. HTML is very verbose and difficult
+> to write by hand - beyond their initial design HTML pages are meant to be processed by machines.
+> For that reason, **Markdown** was introduced - a lightweight Markup language and a convention for
+> adding style information to textual content while retaining the human-readable form. It is not as rich in syntax as HTML,
+> but comparably more usable by a wider audience.
+>
+> **Jekyll** is a powerful static site generator behind **GitHub Pages** that supports a high degree of reuse and separation of
+> content and presentation. It can be configured via the `_config.yml` **YAML** file
+> that stores site-wide variables accessible from anywhere within our site.
+> It also allows us to define and reuse page-wide variables, by defining them as the **front matter** at the beginning of
+> our Markdown pages. Used in conjunction with **Liquid**, its scripting language, Jekyll allows us to include content from
+> reusable markup snippets that can be repeated on multiple pages and to embed code snippets and filters into our pages to
+> create some complex content assembly pipelines. That way, adding a new blog post to your website may only involve
+> creating a file in the `_posts` folder of your website, setting it to use the 'post' template and focusing on its
+> content - and it will magically appear at the top of your Blog timeline without any extra effort on your part.
+{: .keypoints }
 
 As a last thing, let's put it all together by having a look at a directory structure of a Jekyll website, where different
 pieces are located and see how they relate to visual components on the rendered website pages.
@@ -95,7 +97,7 @@ of these folders appropriately.
 > You will often find that other Jekyll themes are available with a similarly
 > permissive license, but you should always check the terms to make sure you
 > understand what you can and cannot do with your chosen theme.
-> 
+>
 {: .callout}
 
 {% comment %}
