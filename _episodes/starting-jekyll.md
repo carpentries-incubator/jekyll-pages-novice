@@ -232,4 +232,32 @@ Between these triple-dashed lines, you can overwrite predefined variables (like 
 > {: .solution}
 {: .challenge}
 
+
+> ## Exercise: Practice with Troubleshooting
+>
+> Sometimes typos happen and can make your website change in surprising ways.
+> Let's experiment with some possible issues that might come up and see what happens.
+>
+> Try the changes listed below on your `index.md` file and see what happens when the page renders.
+> You will want to correct the previous mistake each time.
+> 1. Use a global or local variable in a page that you didn't define first.
+> 2. Leave the dash off the end of the YAML header.
+> 3. Don't put a space between the YAML header and the rest of the page
+> 4. Put the YAML header in a different location in the page.
+>
+> > ## Solution
+> >
+> > 1. The place where you used the undefined variable is blank but otherwise no error.
+> > 2. The header shows somewhat in the file and the variable that was defined goes to
+> >    the index page intead of the link we set.
+> > 3. This doesn't seem to affect our page but can often make more complex pages break.
+> > 4. This also makes the header somewhat show in the page and breaks the variable link we created.
+> >
+> {: .solution}
+> Note: Be sure to fix any errors you intentionally introduced in your page before moving on.
+{: .challenge}
+
+
+
+
 {% include links.md %}

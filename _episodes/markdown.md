@@ -171,8 +171,9 @@ Let's do an exercise to try out writing more markdown.
 > {: .solution }
 {: .challenge }
 
-> ## Reference-style links
->
+
+> ## Reference-Style Links
+> 
 > Up to now, we have used `inline style links` which have the URL inline with the description text, for example:
 >
 > ~~~
@@ -205,15 +206,14 @@ We will continue to use markdown and learn more throughout the rest of the lesso
 {: .callout}
 
 > ## Markdown Flavours
->
-> Basic Markdown features are the same on all platforms such as GitHub and GitLab.
-> However, there are differences in the details and scope of the features offered.
-> To address this situation, the Markdown
-> used at GitHub is called **GitHub-flavored Markdown**
-> and the one used at GitLab is called **GitLab Flavored Markdown**.
-> - So be aware of:
->   - [GitHub-flavored Markdown][github-flavored-markdown]
->   - [GitLab-flavored Markdown][gitlab-flavored-markdown]
+>The initial description of Markdown was informal and contained certain ambiguities so over the years [different Markdown 
+>implementations and syntax variations](https://github.com/commonmark/commonmark-spec/wiki/markdown-flavors) (often referred to as "flavours")
+>appeared to support various syntax features and extensions. As a consequence, the syntax from one variant may not 
+>be interpreted as expected in another - you have to be aware which one is being used by a particular platform. Here are 
+>a few well-known variants:
+>   - [GitHub-flavored Markdown][github-flavored-markdown] (used on this lesson and by GitHub)
+>   - [GitLab-flavored Markdown][gitlab-flavored-markdown] (used by GitLab)      
+>   - [Kramdown][kramdown] (a fast, Ruby, open source implementation released under the MIT licence)
 {: .callout}
 
 > ## Optional Exercise: Add Your Repository Details to CodiMD
@@ -229,8 +229,8 @@ We will continue to use markdown and learn more throughout the rest of the lesso
 {: .challenge }
 
 >## More Markdown Features
-> Check out our [Extras page on Markdown](../more_markdown/) for a more comprehensive overview of 
-> Markdown, including how to create fenced code blocks
+> Check out our [Extras page on Markdown](../more_markdown/index.html) for a more comprehensive overview of 
+> Markdown, including how to create fenced code blocks 
 > and do syntax highlighting for various languages.
 {: .callout}
 
