@@ -76,7 +76,7 @@ that Jekyll autoloads and makes accessible accessible via the `site.data` global
 
 Other 'special' folders, particular to this example only, are `_episodes` and `_extras` - they are collections defined by the theme
 designer and have a special role in this website/theme for storing lesson and extra episodes.
-Uness these collections are configured as described in the previous episode,
+Unless these collections are configured as described in the previous episode,
 they will not be automatically processed by Jekyll despite starting with the `_`. The theme designer has made sure they are embedded in the website as intended,
 by defining them in `_config.yml` and referring to them in Liquid code snippets
 throughout the site.
