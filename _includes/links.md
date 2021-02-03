@@ -35,6 +35,7 @@
 [jekyll-windows]: http://jekyll-windows.juthilo.com/
 [jekyll]: https://jekyllrb.com/
 [jekyllthemes]: https://jekyllthemes.io/
+[jekyll-novice]: https://github.com/carpentries-incubator/jekyll-pages-novice
 [js4ds]: http://js4ds.org
 [jupyter]: https://jupyter.org/
 [kramdown]: https://kramdown.gettalong.org/
