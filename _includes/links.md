@@ -48,6 +48,9 @@
 [lesson-setup]: {{ relative_root_path }}{% link setup.md %}
 [lesson-webpage]: {{ relative_root_path }}
 [liquid]: https://shopify.dev/docs/themes/liquid/
+[liquid-group_by]: https://jekyllrb.com/docs/liquid/filters/#group-by
+[liquid-sample]: https://jekyllrb.com/docs/liquid/filters/#sample
+[liquid-sort]: https://jekyllrb.com/docs/liquid/filters/#sort
 [mit-license]: https://opensource.org/licenses/mit-license.html
 [morea]: https://morea-framework.github.io/
 [numfocus]: https://numfocus.org/
