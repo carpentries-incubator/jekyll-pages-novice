@@ -26,7 +26,7 @@ This might be one reason for Markdown having become the language of choice
 for formatted user input on websites like, for example:
 - [Stack Exchange](https://stackexchange.com/)
 - [GitHub](https://github.com/)
-- [GitLab](https://about.gitlab.com/).
+- [GitLab](https://about.gitlab.com/)
 
 
 # Where to Start Writing Markdown?
