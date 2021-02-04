@@ -216,7 +216,7 @@ you only need to update the list in `_config.yml` without modifying your pages.
 > > ## Solution
 > > Luckily, we keep all our global settings in `_config.yml` so all we have to do is update the values there. This saved us some work as for the team lead we would otherwise have to modify both `index.md` and `about.md`.
 > >
-> >For the new developer joining the team, we also only need to her information to `team_members` in `_config.yml` and our `for loop` from `about.md` will simply pick up the changes automatically. Magic! Our `_config.yml` file should now look like:
+> > For the new developer joining the team, we also only need to her information to `team_members` in `_config.yml` and our `for loop` from `about.md` will simply pick up the changes automatically. Magic! Our `_config.yml` file should now look like:
 > >
 > > ~~~
 > > title: "Building Websites in GitHub"
@@ -385,6 +385,7 @@ which returns a random sample of the values in the list.
 > > ## Solution
 > >
 > > Create a new file, `_includes/post_list.html`, with the following content:
+> >
 > > ~~~
 > > <h2>Blog Posts</h2>
 > > <ul>
