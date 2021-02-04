@@ -82,9 +82,12 @@ $(function() {
     // and without relying on cookies (avoiding Cookie Law implications)
     // when a visitor clicks on any <a> the github/gitlab value
     // is added as a URL parameter
-    // FIXME Only add the parameter if the URL is local
-    // i.e. if it lacks a hostname or the hostname matches the current URL
-    $("a").click(function(e) {
+    // Note, only consider relative URLs that start with ./ or ../
+    let anchors = $("a[href^='./'],a[href^='../']");
+    // exclude anchors with dropdown behavior
+    anchors = anchors.not("[data-toggle='dropdown']")
+
+    anchors.click(function(e) {
         e.preventDefault();
         let ghgl_value = ghgl_selector.filter(":checked").val();
         let href = this.href;
