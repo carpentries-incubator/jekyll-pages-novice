@@ -5,11 +5,9 @@ exercises: 10
 questions:
 - "How can I use values stored in variables in my pages?"
 - "How can I configure global values/settings for my site?"
-- "How can I reuse the same chunks of material in multiple pages?"
 objectives:
 - "Substitute variable values into page content"
 - "Adjust the configuration of the site and individual pages"
-- "Create reusable blocks of content and insert them into pages"
 keypoints:
 - "Variables can be defined globally in `_config.yml` or locally within YAML header (*front matter*) of a page"
 - "Variable values can be substituted into page content with Liquid notation: `{{ variable }}`"
