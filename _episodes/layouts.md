@@ -309,6 +309,32 @@ to all the relevant pages.
 >
 {: .callout}
 
+> ## Exercise: Troubleshooting Revisited
+>
+> When working with `_layouts` and `_includes`
+> it is easy to introduce typos or forget to update your page front matter
+> after renaming a file.
+> This exercise will help you recognise what some common mistakes look like
+> when working with these elements of a Jekyll website.
+>
+> Try making the changes listed below on your `index.md` file and
+> see what happens when the page renders.
+> You will want to correct the previous mistake each time.
+>
+> 1. Change the value of the `layout` field to `mistake`
+>    (a layout that has not been defined).
+> 2. Add a line `{% raw %}{% include mistake.html %}{% endraw %}`
+>    (a file that does not exist in the `_includes` directory)
+>    to the end of the file.
+>
+> > ## Solution
+> >
+> > 1. FIXME
+> > 2. FIXME
+> {: .solution }
+> Note: Be sure to fix any errors you intentionally introduced in your page before moving on.
+{: .challenge }
+
 ## Using a Pre-Existing Theme
 
 We have now seen how to create pages,
