@@ -238,7 +238,7 @@ Between these triple-dashed lines, you can overwrite predefined variables (like 
 >
 > Try the changes listed below on your `index.md` file and see what happens when the page renders.
 > You will want to correct the previous mistake each time.
-> 1. Use a global or local variable in a page that you didn't define first.
+> 1. Use a global or local variable that you didn't define first.
 > 2. Leave the dash off the end of the YAML header.
 > 3. Don't put a space between the YAML header and the rest of the page
 > 4. Put the YAML header in a different location in the page.
