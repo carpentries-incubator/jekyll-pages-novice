@@ -246,16 +246,46 @@ Between these triple-dashed lines, you can overwrite predefined variables (like 
 > > ## Solution
 > >
 > > 1. The place where you used the undefined variable is blank but otherwise no error.
+> >    Example:
+> >
+> >    ~~~
+> >    Hi! {% raw %}{{ site.greeting }}{% endraw %}. What have you been up to?
+> >    ~~~
+> >    {: .language-markdown }
+> >
 > > 2. The header shows somewhat in the file and the variable that was defined goes to
 > >    the index page intead of the link we set.
+> >
+> >    ~~~
+> >    ---
+> >    lesson-example: "https://carpentries.github.io/lesson-example/"
+> >    
+> >    Examples of our work can be found at: {% raw %}{{ page.lesson-example }}{% endraw %}
+> >    ~~~
+> >    {: .language-markdown }
+> >
 > > 3. This doesn't seem to affect our page but can often make more complex pages break.
+> >
+> >    ~~~
+> >    ---
+> >    lesson-example: "https://carpentries.github.io/lesson-example/"
+> >    ---
+> >    Examples of our work can be found at: {% raw %}{{ page.lesson-example }}{% endraw %}
+> >    ~~~
+> >    {: .language-markdown }
+> >
 > > 4. This also makes the header somewhat show in the page and breaks the variable link we created.
+> >
+> >    ~~~
+> >    Examples of our work can be found at: {% raw %}{{ page.lesson-example }}{% endraw %}
+> >    ---
+> >    lesson-example: "https://carpentries.github.io/lesson-example/"
+> >    ---
+> >    ~~~
+> >    {: .language-markdown }
 > >
 > {: .solution}
 > Note: Be sure to fix any errors you intentionally introduced in your page before moving on.
 {: .challenge}
-
-
-
 
 {% include links.md %}
