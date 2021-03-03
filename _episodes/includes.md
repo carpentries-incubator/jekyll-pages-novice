@@ -104,7 +104,8 @@ while uploading existing files, only while creating new ones.
 When making these blank files,
 which exist only to allow the existence of their parent repository,
 it is traditional to call them `.gitkeep`.
-Now [download this banner image that we will add to our pages][banner-image] and
+Now [download this banner image that we will add to our pages][banner-image]
+save it with the name `site_banner.png` and
 upload the file to your newly-created `images` folder on GitHub:
 you can do this by navigating into the folder and choosing
 "Upload files" from the "Add file" dropdown you used before.
