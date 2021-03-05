@@ -57,7 +57,7 @@ as an `<img>` element in HTML:
 #### After
 
 ~~~
-<img src="../images/site_banner.png" alt="Group Website banner">
+<img src="./images/site_banner.png" alt="Group Website banner">
 ~~~
 {: .language-html }
 
