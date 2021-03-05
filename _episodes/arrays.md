@@ -421,3 +421,16 @@ which returns a random sample of the values in the list.
 > >
 > {: .solution }
 {: .challenge }
+
+> ## Comments on a static blog
+>
+> Comments section can be included in a static blog using one of the below approaches.
+> 1. Disqus is the first approach. Disqus website offers [instructions](https://disqus.com/admin/install/platforms/jekyll/) on how to enable comments for Jekyll platform (used for GitHub pages). [Demo](https://erresen.github.io/jekyll/disqus/2016/08/26/getting-comments-working-jekyll-disqus.html). Although if you are privacy inclined, the likes of Privacy Badger blocks Disqus widget and might look for alternatives.
+> 2. [Staticman](https://staticman.net/) is the second approach. This setup is tedious and it is easy to get the configuration wrong. [Demo](https://travisdowns.github.io/blog/2020/02/05/now-with-comments.html).
+> 3. [Just Comments](https://just-comments.com/) is the third approach. [Demo](https://60devs.com/adding-comments-to-your-jekyll-blog.html).
+> 4. [fastpages](https://github.com/fastai/fastpages) is the most recent addition to enable comments via GitHub comments (uses [Utterances](https://utteranc.es/)). fastpages comes with lots of options and is used by several researchers. [Demo](https://fastpages.fast.ai/fastpages/jupyter/2020/02/21/introducing-fastpages.html).
+> From the comments section implementation standpoint, Disqus looks most simple followed by Just Comments and Staticman.
+> Fastpages is much more than enabling a comments section. It's a blog template that uses Jekyll as a base, improves on Jekyll experience and offers additional features. For researchers this may be the option to go.
+>
+> {: .source}
+{: .callout}
