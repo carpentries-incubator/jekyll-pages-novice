@@ -153,7 +153,7 @@ at the top of your page.
 > and the alt text as the `alt` parameter.
 {: .callout }
 
-> ## Optional Exercise: Creating a Linked Banner
+> ## Exercise: Creating a Linked Banner
 >
 > It is common for banner logos like the one above to link back to the homepage
 > of the website they are displayed on.
