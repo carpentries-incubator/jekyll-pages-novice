@@ -436,7 +436,10 @@ which returns a random sample of the values in the list.
 >    [Here is a demo of comments with Staticman](https://travisdowns.github.io/blog/2020/02/05/now-with-comments.html).
 > 3. [Just Comments](https://just-comments.com/) is the third approach. 
 >    [Here is a demo of comments with Just Comments](https://60devs.com/adding-comments-to-your-jekyll-blog.html).
-> 4. [fastpages](https://github.com/fastai/fastpages) is the most recent addition to enable comments via GitHub comments (uses [Utterances](https://utteranc.es/)). fastpages comes with lots of options and is used by several researchers. [Demo](https://fastpages.fast.ai/fastpages/jupyter/2020/02/21/introducing-fastpages.html).
+> 4. [fastpages](https://github.com/fastai/fastpages) is the most recent addition to 
+>    enable comments via GitHub comments (uses [Utterances](https://utteranc.es/)). 
+>    fastpages comes with lots of options and is used by several researchers. 
+>    [Here is a demo of comments with fastpages](https://fastpages.fast.ai/fastpages/jupyter/2020/02/21/introducing-fastpages.html).
 > From the comments section implementation standpoint, Disqus looks most simple followed by Just Comments and Staticman.
 > Fastpages is much more than enabling a comments section. It's a blog template that uses Jekyll as a base, improves on Jekyll experience and offers additional features. For researchers this may be the option to go.
 >
