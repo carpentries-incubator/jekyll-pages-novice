@@ -45,19 +45,20 @@ but the catch is that these must also be HTML.
 That means we need to convert the banner Markdown to HTML.
 
 Create a new file `_includes/banner.html` (copy the contents from `_includes/banner.md`),
-and redefine the banner image as an `<img>` element in HTML:
+and redefine the banner image as an `<img>` element in HTML.
+We can also replicate the link behavior we added in a previous exercise by using an anchor `<a>...</a>` tag.
 
 #### Before
 
 ~~~
-![Group Website banner](./images/site_banner.png)
+[![Group Website banner](./images/site_banner.png)](https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/)
 ~~~
 {: .language-markdown }
 
 #### After
 
 ~~~
-<img src="./images/site_banner.png" alt="Group Website banner">
+<a href="https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/"><img src="./images/site_banner.png" alt="Group Website banner"></a>
 ~~~
 {: .language-html }
 
