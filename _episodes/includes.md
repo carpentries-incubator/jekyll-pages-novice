@@ -163,7 +163,7 @@ at the top of your page.
 > > ## Solution
 > >
 > > ~~~
-> > [![Group Website with Jekyll](./images/site_banner.png)](https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/)
+> > [![Group Website banner](./images/site_banner.png)](https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/)
 > > ~~~
 > > {: .language-markdown }
 > >
