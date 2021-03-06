@@ -44,8 +44,8 @@ Just like our site's pages, layouts can `include` blocks defined in other files,
 but the catch is that these must also be HTML.
 That means we need to convert the banner Markdown to HTML.
 
-Edit the file `_includes/banner.html`, and redefine the banner image
-as an `<img>` element in HTML:
+Create a new file `_includes/banner.html` (copy the contents from `_includes/banner.md`),
+and redefine the banner image as an `<img>` element in HTML:
 
 #### Before
 
