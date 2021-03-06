@@ -108,7 +108,7 @@ tag is still present in `index.md`.
 
 > ## Exercise: Cleaning Up
 >
-> Remove the include tag for the banner from all the pages of your site,
+> Remove the `{% raw %}{% include %}{% endraw %}` tag for the banner from all the pages of your site,
 > and set every page to use the `page` layout.
 >
 {: .challenge }
