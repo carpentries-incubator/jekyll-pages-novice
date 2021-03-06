@@ -432,7 +432,7 @@ which returns a random sample of the values in the list.
 >    [Here is a demo of Disqus with Jekyll](https://erresen.github.io/jekyll/disqus/2016/08/26/getting-comments-working-jekyll-disqus.html). 
 >    Although if you are privacy inclined, browser extensions such as Privacy Badger block the Disqus widget so you might look for alternatives.
 > 2. [Staticman](https://staticman.net/) is the second approach. 
->    This setup is tedious and it is easy to get the configuration wrong. 
+>    The setup is more complex than some of the other options and, in our experience, it is easy to get the configuration wrong.
 >    [Here is a demo of comments with Staticman](https://travisdowns.github.io/blog/2020/02/05/now-with-comments.html).
 > 3. [Just Comments](https://just-comments.com/) is the third approach. 
 >    [Here is a demo of comments with Just Comments](https://60devs.com/adding-comments-to-your-jekyll-blog.html).
