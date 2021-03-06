@@ -311,8 +311,10 @@ to all the relevant pages.
 
 > ## Exercise: Troubleshooting Revisited
 >
-> When working with `_layouts` and `_includes`
-> it is easy to introduce typos or forget to update your page front matter
+> As we saw before with `_includes` Jekyll can refuse to build
+> a website when files are missing or the configuration is not correct.
+> This is specially true when working with `_layouts`
+> as it is easy to introduce typos or forget to update your page front matter
 > after renaming a file.
 > This exercise will help you recognise what some common mistakes look like
 > when working with these elements of a Jekyll website.
@@ -323,16 +325,12 @@ to all the relevant pages.
 >
 > 1. Change the value of the `layout` field to `mistake`
 >    (a layout that has not been defined).
-> 2. Add a line `{% raw %}{% include mistake.html %}{% endraw %}`
->    (a file that does not exist in the `_includes` directory)
->    to the end of the file.
 >
 > > ## Solution
 > >
 > > 1. FIXME
-> > 2. FIXME
 > {: .solution }
-> Note: Be sure to fix any errors you intentionally introduced in your page before moving on.
+> **Note:** Be sure to fix any errors you intentionally introduced in your page before moving on.
 {: .challenge }
 
 ## Using a Pre-Existing Theme
