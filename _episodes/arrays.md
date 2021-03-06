@@ -441,7 +441,9 @@ which returns a random sample of the values in the list.
 >    fastpages comes with lots of options and is used by several researchers. 
 >    [Here is a demo of comments with fastpages](https://fastpages.fast.ai/fastpages/jupyter/2020/02/21/introducing-fastpages.html).
 > From the comments section implementation standpoint, Disqus looks most simple followed by Just Comments and Staticman.
-> Fastpages is much more than enabling a comments section. It's a blog template that uses Jekyll as a base, improves on Jekyll experience and offers additional features. For researchers this may be the option to go.
+> Fastpages is much more than enabling a comments section. 
+> It is a blog template that uses Jekyll as a base, improves on Jekyll experience and offers additional features. 
+> For researchers this may be the option to go.
 >
 > {: .source}
 {: .callout}
