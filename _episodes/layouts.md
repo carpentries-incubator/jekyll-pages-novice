@@ -269,7 +269,7 @@ layout: default
 
 {{ content }}
 
-{% include contact.md}{% endraw %}
+{% include contact.html %}{% endraw %}
 ~~~
 {: .language-html }
 
