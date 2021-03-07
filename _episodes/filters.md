@@ -45,7 +45,7 @@ inheriting from the default layout we created earlier.
 layout: default
 ---
 
-<strong>Author:</strong> {{page.author}}
+<strong>Author:</strong> {{ page.author }}
 Published on {{ page.date }}
 
 {{ content }}{% endraw %}
