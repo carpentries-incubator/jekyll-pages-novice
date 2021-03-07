@@ -161,6 +161,10 @@ so we will come back to this issue of styling at the end of the section.
 > > {% include contact.html %}{% endraw %}
 > > ~~~
 > > {: .language-html }
+> >
+> > If you check `index.md` and `about.md` you will find the contacts section duplicated.
+> > Delete {% raw %}`{% include contact.md %}`{% endraw %} from both files to remove the duplicated content.
+> > {: .language-html }
 > {: .solution }
 {: .challenge }
 
