@@ -228,7 +228,7 @@ This file defines the bare minimum layout your pages should have.
 > > ## Solution
 > >
 > > To separate the footer from the layout,
-> > copy the {% raw %}<footer></footer>{% endraw %} tags and the text between
+> > copy the {% raw %}`<footer></footer>`{% endraw %} tags and the text between
 > > them into a file `_includes/footer.html`:
 > >
 > > ~~~
@@ -309,26 +309,38 @@ to all the relevant pages.
 >
 {: .callout}
 
-> ## Exercise: Troubleshooting Revisited
+> ## Exercise: Troubleshooting Revisited II
 >
 > As we saw before with `_includes` Jekyll can refuse to build
 > a website when files are missing or the configuration is not correct.
 > This is specially true when working with `_layouts`
 > as it is easy to introduce typos or forget to update your page front matter
 > after renaming a file.
-> This exercise will help you recognise what some common mistakes look like
-> when working with these elements of a Jekyll website.
 >
 > Try making the changes listed below on your `index.md` file and
 > see what happens when the page renders.
 > You will want to correct the previous mistake each time.
 >
-> 1. Change the value of the `layout` field to `mistake`
+> 1. Change the value of the `layout` field in `index.md` to `mistake`
 >    (a layout that has not been defined).
+> 2. Include `banner.html` in `contact.html` and
+>    include `contact.html` in `banner.html`.
 >
 > > ## Solution
 > >
-> > 1. FIXME
+> > 1. The page will be successfully built but only the content in the `index.md` file will be displayed.
+> >    For instance, the index page will be missing the banner.  
+> >    If we were using Jekyll locally a warning would be logged, however warnings are not visible in GitHub.
+> >
+> > 2. File `banner.html` includes `contact.html` which in turn includes `banner.html`
+> >    This situation creates what is called a *circular reference* or *circular include*
+> >    and happens rather often when using complex layouts and includes
+> >    together with inheritance.
+> >    It's also common when moving entire sections between different layouts or includes.  
+> >    In this case, the error displayed by GitHub is not that helpful and simply tells us that
+> >    something went wrong with the error `Page build failed`.  
+> >    If we were using Jekyll locally we would see `stack level too deep`.
+> >    This error tells us that Jekyll tried to resolve which file includes which but hit a system limit.
 > {: .solution }
 > **Note:** Be sure to fix any errors you intentionally introduced in your page before moving on.
 {: .challenge }
