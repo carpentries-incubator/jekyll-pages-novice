@@ -440,6 +440,9 @@ which returns a random sample of the values in the list.
 >    enable comments via GitHub comments (uses [Utterances](https://utteranc.es/)). 
 >    fastpages comes with lots of options and is used by several researchers. 
 >    [Here is a demo of comments with fastpages](https://fastpages.fast.ai/fastpages/jupyter/2020/02/21/introducing-fastpages.html).
+> 5. [Welcomments](https://welcomments.io/) (currently in beta testing) provides a webform for comments, 
+>    and a bot that commits these to your website's source GitHub repository so that they are included 
+>    and displayed when the page is rebuilt.
 > From the comments section implementation standpoint, Disqus looks most simple followed by Just Comments and Staticman.
 > Fastpages is much more than enabling a comments section. 
 > It is a blog template that uses Jekyll as a base, improves on Jekyll experience and offers additional features. 
