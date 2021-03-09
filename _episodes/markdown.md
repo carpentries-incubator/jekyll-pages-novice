@@ -197,7 +197,7 @@ Let's do an exercise to try out writing more markdown.
 >
 {: .callout}
 
-We will continue to use markdown and learn more throughout the rest of the lesson.
+We will continue to use Markdown and learn more throughout the rest of the lesson.
 
 > ## Markdown Cheatsheet
 >
