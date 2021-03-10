@@ -232,7 +232,10 @@ This file defines the bare minimum layout your pages should have.
 >
 > > ## Solution
 > >
-> > To separate the footer from the layout,
+> > 1. After creating `_layouts/default.html` with the content above
+> > edit `index.md` and change `layout: page` to `layout: default`.
+> >
+> > 2. To separate the footer from the layout,
 > > copy the {% raw %}`<footer></footer>`{% endraw %} tags and the text between
 > > them into a file `_includes/footer.html`:
 > >
