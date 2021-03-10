@@ -154,7 +154,7 @@ Let's do an exercise to try out writing more markdown.
 > > For example your markdown might look like the following:
 > > ~~~
 > > ## More info on the lesson
-> > You can find this lesson [here](https://carpentries-incubator.github.io/building-websites-with-jekyll-and-github-or-gitlab/).
+> > You can find this lesson [here](https://carpentries-incubator.github.io/jekyll-pages-novice/).
 > >
 > > ### Four reasons you should learn Markdown:
 > >
