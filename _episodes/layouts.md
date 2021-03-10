@@ -222,7 +222,7 @@ This file defines the bare minimum layout your pages should have.
 > ~~~
 > {: .language-html }
 >
-> 1. Apply this layout to one of your pages and reload the page to check that
+> 1. Apply this layout to `index.md` and reload the page to check that
 >    it works as expected.
 >    You should see a footer at the bottom of the page.
 > 2. Note that we are using `include` to add the banner image
