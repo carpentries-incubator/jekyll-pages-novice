@@ -265,7 +265,25 @@ and is refreshingly easy to use.
 
 To set our `page` layout to inherit from `default.html`,
 we should add YAML front matter to the layout file,
-specifying the `layout` to be `default`:
+specifying the `layout` to be `default`.
+
+~~~
+{% raw %}---
+layout: default
+---
+
+{% include banner.html %}
+
+{{ content }}
+
+{% include contact.html %}{% endraw %}
+~~~
+{: .language-html }
+
+If we visit the site now we will (once again!!) have a duplicated banner
+as it is included both in the `page` and `default` layouts.
+
+To fix it we should remove {% raw %}`{% include banner.html %}`{% endraw %} from `page.html`:
 
 ~~~
 {% raw %}---
@@ -278,11 +296,10 @@ layout: default
 ~~~
 {: .language-html }
 
-In the above, we have (once again!) removed the banner image,
-as that is included in the `default` layout.
-If you reload a page using the `page` layout,
+After this change, if you reload the `about` page, that still uses the `page` layout,
 you should now see that it has all of the structure provided in `default.html`
 as well as the contact information included in `page.html`.
+
 The purpose of this approach, defining the core structure that will be common
 to every page across your site in a default layout,
 then basing more specific layouts on this foundation,
