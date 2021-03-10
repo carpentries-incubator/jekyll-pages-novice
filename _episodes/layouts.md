@@ -253,6 +253,23 @@ This file defines the bare minimum layout your pages should have.
 > > {% raw %}{% include footer.html %}{% endraw %}
 > > ~~~
 > > {: .language-html }
+> >
+> > If you refresh the page you may find an unexpected {% raw %}`{{ site.title }}`{% endraw %}
+> > close to the banner. Alternatively you may find that the page title is not what we defined
+> > in `_config.yml` but is instead empty.
+> >
+> > Whichever the case, this happens because we are referencing {% raw %}`{{ page.title }}`{% endraw %}
+> > in `default.html` but we didn't define the `title` variable in the front matter of `index.md`.
+> >
+> > We can go ahead and correct this after which our `index.md` will look like:
+> > ~~~
+> > {% raw %}---
+> > lesson-example: "https://carpentries.github.io/lesson-example/"
+> > layout: default
+> > title: "Welcome to my group website"
+> > ---{% endraw %}
+> > ~~~
+> > {: .language-yaml}
 > {: .solution}
 {: .challenge }
 
