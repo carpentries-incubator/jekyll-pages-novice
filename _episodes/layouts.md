@@ -312,7 +312,7 @@ to all the relevant pages.
 > ## You Can't Include Link References in the Layout
 >
 > In the previous section,
-> [we recommended that you `include` a file of references](/includes/indx.html#including-link-references)
+> [we recommended that you `include` a file of references](/includes/index.html#including-link-references)
 > for the links on your site.
 > Unfortunately, you cannot add this `{% raw %}{% include links.md %}{% endraw %}`
 > tag to the default layout of your site to prevent you from needing to
