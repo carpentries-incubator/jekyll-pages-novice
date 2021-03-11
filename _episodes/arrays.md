@@ -271,7 +271,7 @@ collections:
 ~~~
 {: .language-yaml }
 
-The `- posts:` line says that our site includes this collection of files,
+The `posts:` line says that our site includes this collection of files,
 and `output: true` tells Jekyll to create a rendered HTML page from the content
 of each of these files.
 
