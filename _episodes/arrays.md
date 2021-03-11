@@ -329,7 +329,7 @@ Let's break it down into smaller chunks and explore them one-by-one:
 2. `- ` will create a bullet point for each post.
 3. `{% raw %}{{ post.date | date_to_string }}{% endraw %}` accesses the `date`
    defined in the post's YAML header and displays it in the list as a string.
-4. `[{{ post.title }}]({{ post.url }})` creates a link with the post's title
+4. `{% raw %}[{{ post.title }}]({{ post.url }}){% endraw %}` creates a link with the post's title
    (again extracted from the YAML header of the post file) as the link text,
    and the url of the rendered post page as the link target.
 5. `{% raw %}{% endfor %}{% endraw %}` ends the for loop after every post in the
