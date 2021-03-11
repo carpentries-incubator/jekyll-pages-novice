@@ -113,9 +113,9 @@ display it in `about.md`.
     layout: page
     ---
     # About
-    
+
     ## Project
-    
+
     {{ site.description }}
 
     ## Funders
@@ -352,7 +352,7 @@ when initialising the for loop:
 {: .source }
 
 Other filters also exist for working with lists of values,
-such as [`group_by`][liquid-group_by],
+such as [`group_by`][liquid-group-by],
 which can be used to group the values by a particular field,
 and [`sample`][liquid-sample],
 which returns a random sample of the values in the list.
@@ -423,29 +423,31 @@ which returns a random sample of the values in the list.
 
 > ## Comments on a static blog
 >
-> When setting up a blog on a website, it is common to want to include a comment feed 
+> When setting up a blog on a website, it is common to want to include a comment feed
 > as a way for readers to respond to the content of a post, direct questions to the author, etc.
 > A comments section can be included in a static blog using one of the below approaches.
-> 1. Disqus is the first approach. The Disqus website offers 
->    [instructions on how to enable comments for Jekyll platform (used for GitHub pages)](https://disqus.com/admin/install/platforms/jekyll/). 
->    [Here is a demo of Disqus with Jekyll](https://erresen.github.io/jekyll/disqus/2016/08/26/getting-comments-working-jekyll-disqus.html). 
+> 1. Disqus is the first approach. The Disqus website offers
+>    [instructions on how to enable comments for Jekyll platform (used for GitHub pages)](https://disqus.com/admin/install/platforms/jekyll/).
+>    [Here is a demo of Disqus with Jekyll](https://erresen.github.io/jekyll/disqus/2016/08/26/getting-comments-working-jekyll-disqus.html).
 >    Although if you are privacy inclined, browser extensions such as Privacy Badger block the Disqus widget so you might look for alternatives.
-> 2. [Staticman](https://staticman.net/) is the second approach. 
+> 2. [Staticman](https://staticman.net/) is the second approach.
 >    The setup is more complex than some of the other options and, in our experience, it is easy to get the configuration wrong.
 >    [Here is a demo of comments with Staticman](https://travisdowns.github.io/blog/2020/02/05/now-with-comments.html).
-> 3. [Just Comments](https://just-comments.com/) is the third approach. 
+> 3. [Just Comments](https://just-comments.com/) is the third approach.
 >    [Here is a demo of comments with Just Comments](https://60devs.com/adding-comments-to-your-jekyll-blog.html).
-> 4. [fastpages](https://github.com/fastai/fastpages) is the most recent addition to 
->    enable comments via GitHub comments (uses [Utterances](https://utteranc.es/)). 
->    fastpages comes with lots of options and is used by several researchers. 
+> 4. [fastpages](https://github.com/fastai/fastpages) is the most recent addition to
+>    enable comments via GitHub comments (uses [Utterances](https://utteranc.es/)).
+>    fastpages comes with lots of options and is used by several researchers.
 >    [Here is a demo of comments with fastpages](https://fastpages.fast.ai/fastpages/jupyter/2020/02/21/introducing-fastpages.html).
-> 5. [Welcomments](https://welcomments.io/) (currently in beta testing) provides a webform for comments, 
->    and a bot that commits these to your website's source GitHub repository so that they are included 
+> 5. [Welcomments](https://welcomments.io/) (currently in beta testing) provides a webform for comments,
+>    and a bot that commits these to your website's source GitHub repository so that they are included
 >    and displayed when the page is rebuilt.
 > From the comments section implementation standpoint, Disqus looks most simple followed by Just Comments and Staticman.
-> Fastpages is much more than enabling a comments section. 
-> It is a blog template that uses Jekyll as a base, improves on Jekyll experience and offers additional features. 
+> Fastpages is much more than enabling a comments section.
+> It is a blog template that uses Jekyll as a base, improves on Jekyll experience and offers additional features.
 > For researchers this may be the option to go.
 >
 > {: .source}
 {: .callout}
+
+{% include links.md %}
