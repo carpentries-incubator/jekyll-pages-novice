@@ -266,8 +266,8 @@ In `_config.yml`, we add the following lines:
 
 ~~~
 collections:
-  - posts:
-      output: true
+    posts:
+        output: true
 ~~~
 {: .language-yaml }
 
