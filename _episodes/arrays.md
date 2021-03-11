@@ -327,7 +327,7 @@ Let's break it down into smaller chunks and explore them one-by-one:
    The collection itself is made available to us as a `site` variable,
    with the name we gave it in `_config.yml`.
 2. `- ` will create a bullet point for each post.
-3. `{{ post.date | date_to_string }}` accesses the `date`
+3. `{% raw %}{{ post.date | date_to_string }}{% endraw %}` accesses the `date`
    defined in the post's YAML header and displays it in the list as a string.
 4. `[{{ post.title }}]({{ post.url }})` creates a link with the post's title
    (again extracted from the YAML header of the post file) as the link text,
