@@ -80,7 +80,7 @@ In Liquid syntax, loops are created by surrounding the loop body in `for`/`endfo
 ~~~
 {% raw %}{% for thing in list %}
 [ This is the loop body. Do something with the "thing" variable here. ]
-{% endfor %}{% endraw %}`
+{% endfor %}{% endraw %}
 ~~~
 {: .source }
 
