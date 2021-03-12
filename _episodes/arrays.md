@@ -30,7 +30,7 @@ or profile pages for individual team members.
 
 Using what we already know about Markdown,
 we _could_ write these lists by ourselves.
-But this would be time-consuming and ineffecient:
+But this would be time-consuming and inefficient:
 we would have to manually adjust these listings every time we
 write a new post/start a new project/welcome a new team member to the group.
 Instead, we will learn about two more features of Jekyll,
