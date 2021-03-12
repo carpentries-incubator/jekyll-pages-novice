@@ -10,7 +10,7 @@ title: "Instructor Notes"
   The main advantage is that it uses Markdown so it can easily convince learners on the importance of learning Markdown.
   Make use of [HackMD Mechanics](https://coderefinery.github.io/manuals/hackmd-mechanics/#basic-controls) from [CodeRefinery](https://coderefinery.org/). Take time to orient your learners to using the document early on to be ensure everyone understands how to use HedgeDoc.
 - We recommend the "Optional Exercise: Add Your Repository Details to CodiMD" exercise when teaching online, as it is very 
-  useful for helpers to have links to all the learner repos for troubleshooting.
+  useful for helpers to have links to all the learner repos **and** rendered websites for troubleshooting.
   Then when a learner messages in chat, the helper can find their repo and look at the commit history to find the error.
 - When mulitple instructors are teaching this lesson,
   the person who demonstrates creating a repository
