@@ -6,10 +6,8 @@ questions:
 - "How can I reuse the same chunks of material in multiple pages?"
 objectives:
 - "Create reusable blocks of content and insert them into pages"
-- "Learn how to identify and correct errors that lead to Jekyll build failures"
 keypoints:
 - "The content of files in the `_includes/` directory can be inserted into a page with `{ % include file_name % }`"
-- "Errors can happen but Jekyll will often tell us what's wrong" 
 ---
 
 {% include base_path.html %}

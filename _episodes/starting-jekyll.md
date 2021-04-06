@@ -8,11 +8,13 @@ questions:
 objectives:
 - "Substitute variable values into page content"
 - "Adjust the configuration of the site and individual pages"
+- "Learn how to identify and correct errors that lead to Jekyll build failures"
 keypoints:
 - "Variables can be defined globally in `_config.yml` or locally within YAML header (*front matter*) of a page"
 - "Variable values can be substituted into page content with Liquid notation: `{{ variable }}`"
 - "Global variables are accessible from any page of your website; local variables can only be accessed within
 the page in which they were defined (and any pages that include this page)"
+- "Errors can happen but Jekyll will often tell us what's wrong"
 ---
 
 [Jekyll](https://jekyllrb.com/) is a powerful static site generator behind GitHub Pages. It creates static HTML
