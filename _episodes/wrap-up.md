@@ -139,5 +139,6 @@ Below are some recommended resources to help you continue learning about Jekyll 
 - [JekyllRB - the ultimate source of Jekyll resources](https://jekyllrb.com/)
 - [Jekyll guides](https://jekyllrb.com/resources/#guides)
 - [Jekyll themes](https://jekyllrb.com/resources#themes)
+- [Jekyll liquid documentation](https://jekyllrb.com/docs/liquid/)
 
 {% include links.md %}
