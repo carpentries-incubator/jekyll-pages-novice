@@ -222,7 +222,7 @@ This file defines the bare minimum layout your pages should have.
 > ~~~
 > {: .language-html }
 >
-> 1. Apply this layout to one of your pages and reload the page to check that
+> 1. Apply this layout to `index.md` and reload the page to check that
 >    it works as expected.
 >    You should see a footer at the bottom of the page.
 > 2. Note that we are using `include` to add the banner image
@@ -232,7 +232,10 @@ This file defines the bare minimum layout your pages should have.
 >
 > > ## Solution
 > >
-> > To separate the footer from the layout,
+> > 1. After creating `_layouts/default.html` with the content above
+> > edit `index.md` and change `layout: page` to `layout: default`.
+> >
+> > 2. To separate the footer from the layout,
 > > copy the {% raw %}`<footer></footer>`{% endraw %} tags and the text between
 > > them into a file `_includes/footer.html`:
 > >
@@ -250,6 +253,23 @@ This file defines the bare minimum layout your pages should have.
 > > {% raw %}{% include footer.html %}{% endraw %}
 > > ~~~
 > > {: .language-html }
+> >
+> > If you refresh the page you may find an unexpected {% raw %}`{{ site.title }}`{% endraw %}
+> > close to the banner. Alternatively you may find that the page title is not what we defined
+> > in `_config.yml` but is instead empty.
+> >
+> > Whichever the case, this happens because we are referencing {% raw %}`{{ page.title }}`{% endraw %}
+> > in `default.html` but we didn't define the `title` variable in the front matter of `index.md`.
+> >
+> > We can go ahead and correct this after which our `index.md` will look like:
+> > ~~~
+> > {% raw %}---
+> > lesson-example: "https://carpentries.github.io/lesson-example/"
+> > layout: default
+> > title: "Welcome to my group website"
+> > ---{% endraw %}
+> > ~~~
+> > {: .language-yaml}
 > {: .solution}
 {: .challenge }
 
@@ -265,7 +285,25 @@ and is refreshingly easy to use.
 
 To set our `page` layout to inherit from `default.html`,
 we should add YAML front matter to the layout file,
-specifying the `layout` to be `default`:
+specifying the `layout` to be `default`.
+
+~~~
+{% raw %}---
+layout: default
+---
+
+{% include banner.html %}
+
+{{ content }}
+
+{% include contact.html %}{% endraw %}
+~~~
+{: .language-html }
+
+If we visit the site now we will (once again!!) have a duplicated banner
+as it is included both in the `page` and `default` layouts.
+
+To fix it we should remove {% raw %}`{% include banner.html %}`{% endraw %} from `page.html`:
 
 ~~~
 {% raw %}---
@@ -278,11 +316,10 @@ layout: default
 ~~~
 {: .language-html }
 
-In the above, we have (once again!) removed the banner image,
-as that is included in the `default` layout.
-If you reload a page using the `page` layout,
+After this change, if you reload the `about` page, that still uses the `page` layout,
 you should now see that it has all of the structure provided in `default.html`
 as well as the contact information included in `page.html`.
+
 The purpose of this approach, defining the core structure that will be common
 to every page across your site in a default layout,
 then basing more specific layouts on this foundation,
@@ -295,7 +332,7 @@ to all the relevant pages.
 > ## You Can't Include Link References in the Layout
 >
 > In the previous section,
-> [we recommended that you `include` a file of references](/includes/indx.html#including-link-references)
+> [we recommended that you `include` a file of references](/includes/index.html#including-link-references)
 > for the links on your site.
 > Unfortunately, you cannot add this `{% raw %}{% include links.md %}{% endraw %}`
 > tag to the default layout of your site to prevent you from needing to
