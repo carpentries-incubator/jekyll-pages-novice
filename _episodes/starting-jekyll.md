@@ -179,6 +179,11 @@ used to set variables and metadata on individual pages in your Jekyll site.
 >   >   Any file that contains a YAML front matter block will be processed by Jekyll as a special file. The front matter must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines.
 {: .callout}
 
+> ## Global and Local Parameters are Case Sensitive
+> It is important to note that the parameters used in the sites are case sensitive.
+> By convention, usually they are all lowercase parameters.
+{: .callout}
+
 Here is an example:
 
 ~~~
