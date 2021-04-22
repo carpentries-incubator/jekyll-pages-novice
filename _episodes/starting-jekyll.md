@@ -195,7 +195,7 @@ author: "Danger Mouse"
 ~~~
 {: .language-yaml }
 
-Between these triple-dashed lines, you can overwrite predefined variables (like `page.layout` or `page.title`) or create custom ones you need locally on the page (like `page.author`). These variables will then be available for you to access using Liquid's tags {% raw %}{{{% endraw %} and {% raw %}}}{% endraw %} further down in the file and also in any files that include this one.  Note that these variables are only accessible on that page.  You will get an error if you try to reference a `page.variable` that was defined on different page.
+Between these triple-dashed lines, you can overwrite predefined variables (like `page.layout` or `page.title`) or create custom ones you need locally on the page (like `page.author`). These variables will then be available for you to access using Liquid's tags {% raw %}{{{% endraw %} and {% raw %}}}{% endraw %} further down in the file and also in any files that include this one.  Note that these variables are only accessible on that page.  You will get an error if you try to reference a `page.variable` that was defined on a different page.
 
 > ## Exercise: Practice with Local Variables
 >
