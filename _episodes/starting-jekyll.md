@@ -209,7 +209,7 @@ This indicates that something went wrong with our Jekyll build process.
 ![Jekyll pending/successful build](../fig/includes_fail_pending_successful.png)
 
 You may also find an email from GitHub in your inbox with details about the error.
-But lets look at our repository again.
+But let's look at our repository again.
 If we click the red cross next to the commit message (❌) a little pop-up will appear with additional information.
 
 ![Jekyll failed to build](../fig/includes_build_error.png)
