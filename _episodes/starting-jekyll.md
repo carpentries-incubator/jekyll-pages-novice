@@ -175,7 +175,7 @@ either due to a typo or missing information.
 
 > ## Exercise: Troubleshooting Jekyll
 >
-> This exercise will help you recognise how common mistakes look like
+> This exercise will help you recognise what common mistakes look like
 > when working with these elements of a Jekyll website.
 >
 > Edit your `_config.yml` file and omit a closing quote `"` in one of the variables.
