@@ -50,6 +50,8 @@ Once you've clicked the pencil symbol, GitHub will open that file in the editing
 <img src="../fig/group_website_readme_edit.png" alt="Editing interface of the group websites README file" width="600">
 
 You can change the content and have a look at the rendered view by clicking the _Preview changes_ tab.
+On the right hand side, the preview shows us a vertical bar indicating how the conetent has changed from our edits.
+The bar is green for new lines, yellow for changed lines, and red for removed lines.
 
 <img src="../fig/group_website_readme_render.png" alt="Preview of the rendered content of the group websites README file" width="600">
 
@@ -87,7 +89,7 @@ Let's do some exercises to learn more about structuring and emphasis.
 > Try to reproduce the source code of the following view.
 >
 > <img src="../fig/group_website_exercise_add_a_sub_heading.png" alt="Preview tab of README.md with additional lines inlcuding sub heading and emphasised text with line breaks" width="400">
->
+> Hint: The new header you add should be a level two header.
 >
 > > ## Solution
 > >
@@ -109,6 +111,10 @@ Let's do some exercises to learn more about structuring and emphasis.
 
 Displaying items in lists, sometimes increases readability.
 You can create lists by preceding lines with `-` or a bunch of other `-`-like characters.
+
+Note paragraphs are separated by a blank line and by default consecutive lines
+will wrap around into a single paragraph.  If you'd like to force a line break
+you need to include two spaces at the end of that line.
 
 > ## List today's learning goals
 >
@@ -210,7 +216,22 @@ print("Hello everyone!")
 > Try to reproduce the markdown source code to create the following view:
 >
 > <img src="../fig/exercise_syntax_highlighting.png" alt="Preview tab of code blocks with syntax highlighting" width="400">
->
+> Here is the code so you can copy paste it instead of retyping.
+> R code: `print(paste("How","are","you?"), quote = FALSE)`
+> Python code: 
+> ```
+> s = "How are you?"
+> print(s)
+> ```
+> HTML code: 
+> ```
+> <!DOCTYPE html>
+> <html>
+> <body>
+> <a href=https://carpentries.org/>This is a link</a>
+> </body>
+> </html>
+> ```
 >
 > > ## Solution
 > >
@@ -248,8 +269,11 @@ You can then provide the URL in one of two ways:
 1. Inline style links - specifying the URL in line surrounded by parenthesis `( )`- or
 2. Reference style links - referencing a reusable link reference with a second set of square brackets `[ ]`.
 
+Reference style links can be very useful for ongoing maintenence to avoid repeating (and later updating) the same links on many pages.
+
 > ## Links
 > Reproduce the markdown source code to create the following view, where both links point to <https://carpentries.org/>:
+> Hint: Remember you can use this [cheatsheet][github-flavored-markdown] to see more about links.
 >
 > <img src="../fig/exercise_links.png" alt="Preview tab of inline and reference style links" width="200">
 >
@@ -259,7 +283,7 @@ You can then provide the URL in one of two ways:
 > Example links:
 > 1. [___](https://carpentries.org/)
 > 2. [___]___case-InSeNsiTiVe-reference-tag___
->
+> 
 > [case-insensitive-reference-tag]: https://carpentries.org/
 > ~~~
 > {: .source }
