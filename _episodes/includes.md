@@ -1,7 +1,7 @@
 ---
 title: "Re-using Blocks of Content"
-teaching: 0
-exercises: 0
+teaching: 45
+exercises: 30
 questions:
 - "How can I reuse the same chunks of material in multiple pages?"
 objectives:

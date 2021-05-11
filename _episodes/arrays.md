@@ -1,7 +1,7 @@
 ---
 title: "Loops and Collections"
-teaching: 0
-exercises: 0
+teaching: 60
+exercises: 20
 questions:
 - "How do I work with variables containing multiple values in Jekyll?"
 - "How do I add a list of blog posts to my site?"

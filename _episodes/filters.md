@@ -1,7 +1,7 @@
 ---
 title: "Working with Filters"
-teaching: 0
-exercises: 0
+teaching: 20
+exercises: 5
 questions:
 - "How can I control the format of variable values such as dates I insert them into a page?"
 objectives:
