@@ -107,8 +107,8 @@ the folder is automatically inserted in the path displayed in front of the box f
     ~~~
     {% raw %}<table>
     <tr>
-    <td><a href="/">Home</a></td>
-    <td><a href="/about">About</a></td>
+    <td><a href=".">Home</a></td>
+    <td><a href="about">About</a></td>
     </tr>
     </table>
     <hr>{% endraw %}
