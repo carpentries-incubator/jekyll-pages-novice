@@ -266,12 +266,12 @@ In `_config.yml`, we add the following lines:
 
 ~~~
 collections:
-    posts:
+    blogposts:
         output: true
 ~~~
 {: .language-yaml }
 
-The `posts:` line says that our site includes this collection of files,
+The `blogposts:` line says that our site includes this collection of files,
 and `output: true` tells Jekyll to create a rendered HTML page from the content
 of each of these files.
 
@@ -280,7 +280,7 @@ we need to populate it.
 Jekyll will look for a folder in our site repository that shares its name with
 the collection we defined, but with a preceding underscore in the folder name,
 and build the collection from its contents.
-In this case, we need to move all our blog post files into a `_posts` folder.
+In this case, we need to move all our blog post files into a `_blogposts` folder.
 
 Once we have done that,
 we can check that the collection has been created correctly by
@@ -288,7 +288,7 @@ trying to use it in a page.
 
 > ## Why `output: true`?
 >
-> When creating our `posts` collection in `_config.yml` above,
+> When creating our `blogposts` collection in `_config.yml` above,
 > we configured it with the parameter `output: true`,
 > to ensure the pages of the collection were rendered to HTML by Jekyll.
 >
@@ -299,20 +299,20 @@ trying to use it in a page.
 > we could have created an individual file for
 > each of the members of our team, defined a collection, and looped through
 > those members that way.
-> To use the collection of files that way,
+> To use the collection of files like this,
 > we would keep the default value of `output`, `false`.
 {: .callout }
 
 ## Looping Over a Collection
 
 At the end of your `index.md`,
-add a new for loop to iterate over the titles and dates of the `posts` collection:
+add a new for loop to iterate over the titles and dates of the `blogposts` collection:
 
 ~~~
 ## Blog Posts
 
-{% raw %}{% for post in site.posts %}
-- {{ post.date | date_to_string }}: [{{ post.title }}]({{ post.url }})
+{% raw %}{% for post in site.blogposts %}
+- {{ post.date | date_to_string }}: [{{ post.title }}]({{ post.url | relative_url }})
 {% endfor %}{% endraw %}
 ~~~
 {: .language-markdown }
@@ -322,18 +322,23 @@ FIXME: add screenshot of blog post list
 There is a lot happening in those few lines above!
 Let's break it down into smaller chunks and explore them one-by-one:
 
-1. `{% raw %}{% for post in site.posts %}{% endraw %}`
+1. `{% raw %}{% for post in site.blogposts %}{% endraw %}`
    initialises a loop through the collection.
    The collection itself is made available to us as a `site` variable,
    with the name we gave it in `_config.yml`.
 2. `- ` will create a bullet point for each post.
 3. `{% raw %}{{ post.date | date_to_string }}{% endraw %}` accesses the `date`
    defined in the post's YAML header and displays it in the list as a string.
-4. `{% raw %}[{{ post.title }}]({{ post.url }}){% endraw %}` creates a link with the post's title
+4. `{% raw %}[{{ post.title }}]({{ post.url | relative_url }}){% endraw %}` creates a link with the post's title
    (again extracted from the YAML header of the post file) as the link text,
-   and the url of the rendered post page as the link target.
+   and the URL of the rendered post page as the link target.
+   Unlike the page title,
+   the URL is not defined in the page front matter but instead provided by Jekyll.
+   This page URL is passed to the `relative_url` filter,
+   which ensures the base URL of the GitHub Pages site is prepended and
+   the link resolves correctly.
 5. `{% raw %}{% endfor %}{% endraw %}` ends the for loop after every post in the
-   collection (i.e. every file in the `_posts` folder) has been iterated over.
+   collection (i.e. every file in the `_blogposts` folder) has been iterated over.
 
 Clicking on one of these links takes us to the rendered version of the blog post page.
 
@@ -348,7 +353,7 @@ when initialising the for loop:
 
 You might be tempted to write:
 ~~~
-{% raw %}{% for post in site.posts | sort: "author" %}{% endraw %}
+{% raw %}{% for post in site.blogposts | sort: "author" %}{% endraw %}
 ~~~
 {: .warning }
 
@@ -360,7 +365,7 @@ This a limitation of liquid in that it doesn't allow combining `for` instruction
 with filters.
 Instead, we need to reuse the `assign` instruction we used above:
 ~~~
-{% raw %}{% assign sorted_posts = site.posts | sort: "author" %}
+{% raw %}{% assign sorted_posts = site.blogposts | sort: "author" %}
 {% for post in sorted_posts %}{% endraw %}
 ~~~
 {: .source }
@@ -379,7 +384,7 @@ which returns a random sample of the values in the list.
 > > ## Solution
 > >
 > > ~~~
-> > {% raw %}{% for post in site.posts %}
+> > {% raw %}{% for post in site.blogposts %}
 > > - {{ post.date | date_to_string }}: [{{ post.title }}]({{ post.url }}) by {{ post.author }}
 > > {% endfor %}{% endraw %}
 > > ~~~
@@ -403,7 +408,7 @@ which returns a random sample of the values in the list.
 > > <h2>Blog Posts</h2>
 > > <ul>
 > > {% raw %}{% for post in site.posts %}
-> > <li>{{ post.date | date_to_string }}: <a href="{{ post.url }}">{{ post.title }}</a></li>
+> > <li>{{ post.date | date_to_string }}: <a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
 > > {% endfor %}{% endraw %}
 > > </ul>
 > > ~~~
@@ -420,12 +425,12 @@ which returns a random sample of the values in the list.
 
 > ## Exercise: Extend the Collection
 >
-> Create another blog post and add it to the `posts` collection.
+> Create another blog post and add it to the `blogposts` collection.
 > Check that your new post appears in the list.
 >
 > > ## Solution
 > >
-> > Write another post Markdown file and save it into the `_posts` folder,
+> > Write another post Markdown file and save it into the `_blogposts` folder,
 > > making sure you remember to add (at least) the `date` and
 > > `title` fields in the YAML header.
 > >
@@ -434,6 +439,78 @@ which returns a random sample of the values in the list.
 > >
 > {: .solution }
 {: .challenge }
+
+## Blogging in the Wild: the `_posts` Collection
+
+We named our collection `blogposts` above but it is much more common to find
+Jekyll sites using a collection called `posts`
+(and associated `_posts` folder for blog post files).
+The `posts` collection has a special meaning to Jekyll:
+the platform is so often used for blogging that it has some
+"magic" built in to work with the files in `_posts`.
+
+One of the key differences is the way that URLs are created for pages built from
+the `posts` collection:
+the `YYYY-MM-DD` date string defining the date of the post is used
+to create a nested URL structure of `/YYYY/MM/DD/`.
+For this reason, _Jekyll requires that files in the `posts` collection
+follow the naming structure `YYYY-MM-DD-post-slug.md` in order to be built for
+the site.
+For example, a file in `posts` called `2019-09-04-rise-and-shine.md`
+will be published at the URL `<site-url>/2019/09/04/rise-and-shine.html`.
+
+Jekyll also provides some other special features for working with a collection
+called `posts`, such as tags and categories to help organise the pages of your
+site.
+You can read more about the [features of the `posts` collection in the
+associated page of the Jekyll documentation](https://jekyllrb.com/docs/posts/).
+
+Finally, it is common to need to create a listing of posts
+(or some other collection)
+that is displayed in smaller chunks e.g. ten posts at a time.
+This is called _pagination_,
+and is enabled in Jekyll via a plugin called `jekyll-paginate`.
+(This plugin is included by default in GitHub Pages.)
+The Jekyll documentation describes
+[the steps for setting up pagination for a list of blog posts](https://jekyllrb.com/docs/pagination/).
+
+## Linking to Other Pages on your Site
+
+Creating internal links that are robust to changes in your site
+base URL, and that work both online and in locally-built preview versions
+of your site, requires a bit of extra work.
+
+You can access the URL of a built page via the `page.url` variable
+(as we did when listing the entries in our `blogposts` collection above)
+or, if referring to that page from the body of another page,
+with the `{% raw %}{% link <path_to_post_file> %}{% endraw %}` tag.
+The path provided here should be relative to the root of your site -
+the directory where your `config.yml` is located.
+Taking the example from the `posts` collection above:
+
+```
+{% raw %}{% link _posts/2019-09-04-rise-and-shine.md %}{% endraw %}
+```
+{: .source }
+
+```
+/2019/09/04/rise-and-shine.html
+```
+{: .output }
+
+If you would like to
+[set up your computer to build your site locally]()
+e.g. to preview changes to your site before they "go live" on GitHub Pages,
+you should get into the habit of substituting in the `site.baseurl` variable
+at the start of these internal links:
+
+```
+{% raw %}{{ site.baseurl }}{% link _posts/2019-09-04-rise-and-shine.md %}{% endraw %}
+```
+{: .source}
+
+This will ensure that the links within your site work correctly in the local
+version of the site as well as on GitHub Pages.
 
 > ## Comments on a static blog
 >
