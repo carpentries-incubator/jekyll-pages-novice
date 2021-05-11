@@ -462,8 +462,8 @@ will be published at the URL `<site-url>/2019/09/04/rise-and-shine.html`.
 Jekyll also provides some other special features for working with a collection
 called `posts`, such as tags and categories to help organise the pages of your
 site.
-You can read more about the [features of the `posts` collection in the
-associated page of the Jekyll documentation](https://jekyllrb.com/docs/posts/).
+You can read more about the
+[features of the `posts` collection in the associated page of the Jekyll documentation](https://jekyllrb.com/docs/posts/).
 
 Finally, it is common to need to create a listing of posts
 (or some other collection)
@@ -499,7 +499,7 @@ Taking the example from the `posts` collection above:
 {: .output }
 
 If you would like to
-[set up your computer to build your site locally]()
+[set up your computer to build your site locally][jekyll-install]
 e.g. to preview changes to your site before they "go live" on GitHub Pages,
 you should get into the habit of substituting in the `site.baseurl` variable
 at the start of these internal links:
