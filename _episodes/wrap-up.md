@@ -17,13 +17,9 @@ keypoints:
 
 {% include base_path.html %}
 
-If you are a learner or an instructor that has some time left in their workshop - at this point
-we strongly recommend visiting the [Jekyll Themes episode in Extras section]({{ relative_root_path }}/jekyll_themes/) of the
-lesson. It builds on the knowledge we
-gained so far and expands on how to build more complex and
-professional-looking websites by reusing existing website themes. Here, we are going to recap what we have learned
-so far and look at the anatomy of a GitHub Pages website and its common building blocks, which will also help you
-better understand Jekyll themes once you get to learning about them.
+Thinking more about how you might use what you've learned in practice.
+You may want to make professional-looking websites by reusing existing website themes. Here, we are going to recap what we have learned
+so far and look at the anatomy of a GitHub Pages website and its common building blocks, and try using an existing theme template.
 
 > ## Summary
 >
