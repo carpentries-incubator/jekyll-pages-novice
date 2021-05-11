@@ -112,7 +112,7 @@ Let's do some exercises to learn more about structuring and emphasis.
 Displaying items in lists, sometimes increases readability.
 You can create lists by preceding lines with `-` or a bunch of other `-`-like characters.
 
-Note paragraphs are separated by a blank line and by default conseutive lines
+Note paragraphs are separated by a blank line and by default consecutive lines
 will wrap around into a single paragraph.  If you'd like to force a line break
 you need to include two spaces at the end of that line.
 
