@@ -145,14 +145,12 @@ We will be using some and leaving others for you to explore later.
 To get your own copy of this repository, click the "Fork" button the upper right-hand side
 of the GitHub interface.
 
-<!--- ![the GitHub interface fork button](../fig/FIXME.png){: height="1200px"} -->
-<!--- Add screenshoot of the fork button -->
+![the GitHub interface fork button](../fig/gh-fork-button.png){: height="50px"}
 
 If you belong to many GitHub organizations, you might have to 
 choose which account to copy/fork the repo to.
 
-<!--- ![the GitHub copying the fork](../fig/FIXME.png){: height="1200px"} -->
-<!---  Add screenshot of the fork repo page -->
+![GitHub copying the fork](../fig/github-forking-progress.png){: height="200px"}
 
 Now you will have your own copy of the template to modify.
 You can see the repo it was forked from in the upper left-hand side of the page.
@@ -163,13 +161,10 @@ called `gh-pages` which automatically turns on this functionality.
 
 Click on the button on the left-hand side of the page that shows a branching icon and
 says `main`.  
-
-<!--- Add screenshot of the branches button -->
-
 Then in the box that reads "Find or create a branch" type `gh-pages`.
 Then click the "Create branch: gh-pages from 'main'" option that appears below.
 
-<!--- Add screenshot of the branch typed in -->
+![GitHub branching dropdown menu with gh-pages typed in box](../fig/github-branch-ghpages.png){: height="300px"}
 
 Once you've clicked that option you will see the box change to say `gh-pages` instead
 of `main` indicating you are working on the new branch you created.
