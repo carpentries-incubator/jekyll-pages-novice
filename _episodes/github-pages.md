@@ -45,21 +45,25 @@ You may have noticed that when we created our repository in previous episode, by
 
     <img src="../fig/repo_settings.png" alt="Repository settings" width="width=800">
 
-2. Scroll down to "GitHub Pages" settings. You will see that these are currently disabled. Select branch `main` to
+2. On the menu on the left hand side, click on `Pages`
+
+    <img src="../fig/settings_pages_tab.png" alt="Select Pages in Repository Settings" width="width=800">
+
+3. You will see that the GitHub Pages settings are currently disabled. Select branch `main` to
 enable GitHub Pages for this repository and to tell GitHub which branch to use as a source.
 
-    <img src="../fig/default_website.png" alt="Default website branch" width="width=800">
+    <img src="../fig/pages_checkmain.png" alt="Default website branch" width="width=800">
 
-3. The link to your repository's website will appear in the highlighted box above. If you click the link  - your default browser will open and show your project website. If this does not happen, you should manually open your favourite web browser and paste the URL.
+4. The link to your repository's website will appear in the highlighted box above. If you click the link  - your default browser will open and show your project website. If this does not happen, you should manually open your favourite web browser and paste the URL.
 
     <img src="../fig/website_url.png" alt="Project website URL" width="width=800">
 
-4. It may take a while (from a few seconds to a few minutes) for GitHub to compile your website (depending on GitHub's availability and the complexity of
+5. It may take a while (from a few seconds to a few minutes) for GitHub to compile your website (depending on GitHub's availability and the complexity of
 your website) and it may not become visible immediately. You will know it is ready when the link appears in green box with a "tick" in front of the web address (as shown in the figure below).
 
     <img src="../fig/website_url_green_tick.png" alt="Project website URL - successfull build" width="width=800">
 
-5. Once ready, you should see the contents of the `README.md` file that we created earlier, rendered as a website.
+6. Once ready, you should see the contents of the `README.md` file that we created earlier, rendered as a website.
 
     <img src="../fig/first_website.png" alt="First website" width="width=800">
 
