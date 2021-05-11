@@ -154,7 +154,7 @@ choose which account to copy/fork the repo to.
 
 Now you will have your own copy of the template to modify.
 You can see the repo it was forked from in the upper left-hand side of the page.
-As we did earlier in the lesson in the [GitHub pages episode](github-pages.md),
+As we did earlier in the lesson in the [Hosting Websites on GitHub episode](github-pages.md),
 we need to turn on the option for GitHub to render the page as a website.
 Last time we did this in the settings, this time we will create a new branch
 called `gh-pages` which automatically turns on this functionality.
@@ -175,11 +175,28 @@ and check in "Settings" to see that it worked as expected.
 The following series of challenges will have you practice the skills you
 learned in this lesson to modify this template.
 
-<!--- Challenge: update the About link in GitHub to show the new website instead of the original mundana link -->
+> ## Update GitHub About Section Link to Site
+> As we did before in the [Hosting Websites on GitHub episode](github-pages.md), update
+> the repository details to link directly to the rendering website
+> from your fork. 
+> 
+{: .challenge}
 
-<!--- Challenge: Update config - name and description? -->
+> ## Update the Configuration
+> Update the name and the description variables for the site.
+> Reload the rendered page to see the changes to the actual site.
+> 
+> Hint: See the [Starting with Jekyll episode](starting-jekyll.md) for review
+> 
+{: .challenge}
 
-<!--- Challenge: Add a blog post -->
+> ## Add a New Blogpost
+> Update the name and the description variables for the site.
+> Reload the rendered page to see the changes to the actual site.
+> 
+> Hint: See the [Starting with Jekyll episode](starting-jekyll.md) for review
+> 
+{: .challenge}
 
 <!--- Challenge: Update layout -->
 
