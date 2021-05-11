@@ -1,7 +1,7 @@
 ---
 title: "Page Layouts"
-teaching: 0
-exercises: 0
+teaching: 30
+exercises: 25
 questions:
 - "How can I design the layout for all pages on my site?"
 - "Where can I find pre-built themes for my site?"
