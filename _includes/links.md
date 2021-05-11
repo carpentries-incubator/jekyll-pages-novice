@@ -53,6 +53,9 @@
 [liquid-sample]: https://jekyllrb.com/docs/liquid/filters/#sample
 [liquid-sort]: https://jekyllrb.com/docs/liquid/filters/#sort
 [mit-license]: https://opensource.org/licenses/mit-license.html
+[mundana-repo]: https://github.com/wowthemesnet/mundana-theme-jekyll
+[mundana-repo-copy]: https://github.com/UW-Madison-DataScience/mundana-theme-jekyll
+[mundana-site]: https://wowthemesnet.github.io/mundana-theme-jekyll/
 [morea]: https://morea-framework.github.io/
 [numfocus]: https://numfocus.org/
 [osi]: https://opensource.org

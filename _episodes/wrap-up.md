@@ -129,6 +129,73 @@ Have a look at another example - a simplified directory structure of a blog webs
 {: .code}
 {% endcomment %}
 
+## Practice Customizing a Theme
+
+We explored building our group website piece by piece to aid in learning.
+It is somewhat rare that you will be constructing the site from scratch as we did.
+It is much more likely you will be reusing one of the existing templates that
+others have made, many of which are freely available to use.
+Let's give using a template a try using the [mundana template][mundana-site].
+
+We have created a [copy][mundana-repo-copy] of the [original mundana repo][mundana-repo].
+First open **our copy** of the [mundana template repository][mundana-repo-copy].
+You will notice many directions in the `README.md` file on how to use this template.
+We will be using some and leaving others for you to explore later.
+
+To get your own copy of this repository, click the "Fork" button the upper right-hand side
+of the GitHub interface.
+
+<!--- ![the GitHub interface fork button](../fig/FIXME.png){: height="1200px"} -->
+<!--- Add screenshoot of the fork button -->
+
+If you belong to many GitHub organizations, you might have to 
+choose which account to copy/fork the repo to.
+
+<!--- ![the GitHub copying the fork](../fig/FIXME.png){: height="1200px"} -->
+<!---  Add screenshot of the fork repo page -->
+
+Now you will have your own copy of the template to modify.
+You can see the repo it was forked from in the upper left-hand side of the page.
+As we did earlier in the lesson in the [GitHub pages episode](github-pages.md),
+we need to turn on the option for GitHub to render the page as a website.
+Last time we did this in the settings, this time we will create a new branch
+called `gh-pages` which automatically turns on this functionality.
+
+Click on the button on the left-hand side of the page that shows a branching icon and
+says `main`.  
+
+<!--- Add screenshot of the branches button -->
+
+Then in the box that reads "Find or create a branch" type `gh-pages`.
+Then click the "Create branch: gh-pages from 'main'" option that appears below.
+
+<!--- Add screenshot of the branch typed in -->
+
+Once you've clicked that option you will see the box change to say `gh-pages` instead
+of `main` indicating you are working on the new branch you created.
+Creating a `gh-pages` branch also has turned on the website to render at
+`<USERNAME>.github.io/mundana-theme-jekyll`.  You can navigate to `<USERNAME>.github.io/mundana-theme-jekyll`
+and check in "Settings" to see that it worked as expected.
+
+The following series of challenges will have you practice the skills you
+learned in this lesson to modify this template.
+
+<!--- Challenge: update the About link in GitHub to show the new website instead of the original mundana link -->
+
+<!--- Challenge: Update config - name and description? -->
+
+<!--- Challenge: Add a blog post -->
+
+<!--- Challenge: Update layout -->
+
+<!--- Challenge: filter (change date) ? -->
+
+<!--- Challenge:  collection changes - Authors? -->
+
+<!--- Challenge: detective work - find the tool that works with comments in the blogposts -->
+
+
+
 ## Further Resources
 Below are some recommended resources to help you continue learning about Jekyll websites:
 
