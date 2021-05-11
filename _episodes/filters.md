@@ -23,11 +23,11 @@ are unlikely to change very often and,
 after the site has been built,
 new pages like this probably won't be created often.
 This is good because,
-if you would like to construct a navigational menu
+if you would like to construct a list or a navigational menu
 to browse through these pages,
 it would be annoying to have to expand/reorganise this all the time
 when a new page is added to the site.
-(We will actually build a navigational menu like this in the final section.)
+(We will actually build an automatically-updating list of pages like this in the final section.)
 
 However, it is common for sites to also host a series of shorter pages
 as blog posts
