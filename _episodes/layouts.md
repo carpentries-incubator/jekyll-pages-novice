@@ -96,7 +96,7 @@ tag is still present in `index.md`.
 {: .challenge }
 
 Now that we have cleaned the duplicated navigation links, we may want to add another element to our layout. In a similar manner 
-to the navigation links appearing on every page, we may want a common footer to appear as well.
+to the navigation links appearing on every page, we may want a common footer to appear too.
 
 > ## Exercise: Expanding the Layout
 >
@@ -181,7 +181,7 @@ This file defines the bare minimum layout your pages should have.
 {: .challenge }
 
 Note that we have also included some additional HTML elements in out default layout- the display of the 
-page title wrapping the main page content within <section> and </section> tags.
+page title as level-one heading and wrapping the main page content within <section> and </section> tags.
 
 ## Layout Inheritance
 
