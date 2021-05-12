@@ -71,7 +71,7 @@ Today was a good day. I was promoted to Surgeon to the Forces!{% endraw %}
 
 You can view the post at `https://GITHUB_USERNAME.github.io/REPOSITORY_NAME/1827-11-22-surgeon.html`.
 
-![Blog post 1851-05-06](../fig/filters-post-1827-11-22-surgeon.png){: width="700px"}
+![Blog post 1827-11-22](../fig/filters-post-1827-11-22-surgeon.png){: width="700px"}
 
 This is a good start! Let's make a second post before we try to further improve
 our post layout.
