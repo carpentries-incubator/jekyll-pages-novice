@@ -194,7 +194,7 @@ This is referred to as _layout inheritance_,
 and is refreshingly easy to use.
 
 For example, let's say we want to create a slightly different 
-layout for our home page and include a banner image just below navigation links to make is pretty. 
+layout for our home page and include a banner image just below navigation links to make it pretty. 
 To do so, we first need to upload a banner image to our repository and create a HTML snippet 
 `_includes/banner.html` to include the banner image:
 
@@ -301,12 +301,15 @@ as long as you follow the terms of the license
 (e.g. remember to give due credit to the original -
 check the full terms for details),
 can be adapted/customised to suit your purposes.
-**You can browse a list of Jekyll themes on [jekyllthemes.io][jekyllthemes]**.
+**You can browse a list of Jekyll themes on [jekyllthemes.io][jekyllthemes]**. 
 
 These themes can be elaborate and quite complicated.
 We hope that the knowledge of Jekyll that you have gained from
 following this lesson will help you understand how they work
 and determine what you need to change and where, to make the customisations
-you need for your site.
+you need for your site. 
+Reusing pre-existing themes designed by professional web designers helps you
+focus more on the **content** of your site, which you can write using 
+more user-friendly and human-readable Markdown. 
 
 {% include links.md %}
