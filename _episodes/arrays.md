@@ -90,7 +90,6 @@ display it in `about.md`.
 1. Modify `_config.yml` file and add the `team_members` parameter as defined above. The file should now look like:
 
    ~~~
-   title: "Building Websites in GitHub"
    description: "This research project develops training materials for reseachers wanting to learn to build project
    websites in GitHub with GitHub Pages."
    email: "team@my.research.org"
@@ -193,7 +192,7 @@ next section.
 3. In file `index.md` add the team lead's name so that it looks like:
 
    ~~~
-   # {% raw %}{{ site.title }}
+   # {% raw %}Building Websites in GitHub
 
    ## Description
    {{ site.description }}
@@ -218,7 +217,6 @@ you only need to update the list in `_config.yml` without modifying your pages.
 > > For the new developer joining the team, we also only need to her information to `team_members` in `_config.yml` and our `for loop` from `about.md` will simply pick up the changes automatically. Magic! Our `_config.yml` file should now look like:
 > >
 > > ~~~
-> > title: "Building Websites in GitHub"
 > > description: "This research project develops training materials for reseachers wanting to learn to build project
 > > websites in GitHub with GitHub Pages."
 > > email: team@my.research.org

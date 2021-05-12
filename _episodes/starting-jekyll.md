@@ -46,10 +46,9 @@ are global or site-wide - that means they are accessible in every page of your w
 Let's create some configuration parameters for our website.
 
 1. From the GitHub interface, create `_config.yml` file in your site’s root directory.
-2. Add parameters `title`, `description` and `email` to it as:
+2. Add parameters `description` and `email` to it as:
 
    ~~~
-   title: "Building Websites in GitHub"
    description: "This research project develops training materials for reseachers wanting to learn to build project
    websites in GitHub with GitHub Pages."
    email: "team@carpentries.org"
@@ -73,7 +72,7 @@ Let's make use of global parameters in our pages.
 1. Modify `index.md` file to make use of our global parameters like this:
 
    ~~~
-   # {% raw %}{{ site.title }}{% endraw %}
+   # Building Websites in GitHub
 
    ## Description
    {% raw %}{{ site.description }}{% endraw %}
@@ -123,7 +122,6 @@ Let's make use of global parameters in our pages.
 > > 1. Add parameter twitter to `_config.yml`:
 > >
 > >    ~~~
-> >    title: "Building Websites in GitHub"
 > >    description: "This research project develops training materials for reseachers wanting to learn to build project
 > >    websites in GitHub with GitHub Pages."
 > >    email: "team@carpentries.org"
@@ -184,7 +182,6 @@ either due to a typo or missing information.
 > >
 > > For instance, a missing closing quote `"` in the `twitter` variable.
 > > ~~~
-> > title: "Building Websites in GitHub"
 > > description: "This research project develops training materials for reseachers wanting to learn to build project
 > > websites in GitHub with GitHub Pages."
 > > email: "team@carpentries.org"
@@ -234,7 +231,6 @@ Since this typo prevents Jekyll from building the page, the process cannot conti
 Lets go ahead and fix your intentional typo and re-add the missing `"`:
 
 ~~~
-title: "Building Websites in GitHub"
 description: "This research project develops training materials for reseachers wanting to learn to build project
 websites in GitHub with GitHub Pages."
 email: "team@carpentries.org"
@@ -298,7 +294,7 @@ Between these triple-dashed lines, you can overwrite predefined variables (like 
 > > lesson-example: "https://carpentries.github.io/lesson-example/"
 > > ---
 > >
-> > # {% raw %}{{ site.title }}{% endraw %}
+> > # Building Websites in GitHub
 > >
 > > ## Description
 > > {% raw %}{{ site.description }}{% endraw %}
