@@ -202,7 +202,7 @@ We will see another example of this shortly.
 > ## Exercise: Including Contact Information in Footer
 >
 > The last line of `index.md` includes the kind of information you might want to
-> re-use in multiple places throughout your site as a footer.
+> reuse in multiple places throughout your site as a footer.
 >
 > ~~~
 > ## Contact us
