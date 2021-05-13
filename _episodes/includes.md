@@ -90,6 +90,8 @@ To make these links appear above every page on our site,
 we could add the same code immediately after the YAML header of each Markdown file in our repository.
 But if we wanted to adjust the menu - adjust the navigation link target, add a new navigation link, remove a link, etc. -
 we would need to make the same adjustment on every page.
+This is both time-consuming and error-prone: 
+it would be easy to accidentally mistype a link or forget to update one of the files.
 Instead, we can go some way to avoid this hassle by using
 some magic that Jekyll provides: `include` tags.
 To demonstrate this, we will save an HTML snippet for creating navigation links into
