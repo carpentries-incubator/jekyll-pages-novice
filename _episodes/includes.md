@@ -81,7 +81,7 @@ the sites linked in the previous exercise aren't built with Jekyll.
 But the principles behind reusing content apply regardless of
 the particular framework being used to build the site.
 
-## Reusing Site Navigation 
+## Reusing Site Navigation Header
 
 Let's look at an example of how we can create a block of common content
 and reuse it in multiple pages on our site.
@@ -126,7 +126,7 @@ The snippet will create a table with a single row of links followed by a horizon
              
     {% include navigation.html %}
              
-    # Building Websites in GitHub
+    # {{ site.title }}
              
     ## Description
     {{ site.description }}
@@ -141,13 +141,16 @@ The snippet will create a table with a single row of links followed by a horizon
 
 Refresh the `index.html` page and, barring any typos, e.g. in the name of the file,
 you should see the navigation links on the top of the page.
+
+![A page displaying the navigation links header](../fig/includes_navigation_links_header.png){: width="800px"}
+
 You can add the same `include` tag at the top of
 all the other Markdown files for your site
 to get the same navigation section displayed on every page.
 
 > ## Exercise: Reuse Site Navigation
 >
-> Re-use the navigation snippet to add navigation links to the About page.
+> Reuse the navigation snippet to add navigation links to the About page.
 >
 > > ## Solution
 > > Insert the `include` directive at the top of `about.md` so that it now looks as follows:
@@ -200,56 +203,56 @@ We will see another example of this shortly.
 > and using it in a page (`{% raw %}{{site.social}}{% endraw %}` for the example above).
 {: .callout }
 
-## Reusable Footer 
+## Reusing Footer 
 
-> ## Exercise: Including Contact Information in Footer
->
-> The last line of `index.md` includes the kind of information you might want to
-> reuse in multiple places throughout your site as a footer.
->
-> ~~~
-> ## Contact us
->
-> - Email: [{% raw %}{{ site.email }}{% endraw %}](mailto:{% raw %}{{ site.email }}{% endraw %})
-> - Twitter: [{% raw %}{{ site.twitter }}{% endraw %}]({% raw %}{{ site.twitter }}{% endraw %})
-> ~~~
-> {: .language-markdown }
->
-> Convert the above Markdown snippet into HTML and save it into a `_includes/footer.html` file,
-> then use the `include` directive to re-insert it
-> at the bottom of your site's `index.md` page (making sure you remove the equivalent code). Also insert 
-> it at the bottom of the `about.md` page in a similar manner. We will explain 
-> why we need the file to be in HTML rather than Markdown shortly.
->
-> > ## Solution
-> > Create a file called `footer.html` inside the `_includes` folder to include the following HTML snippet:
-> >
-> > ~~~
-> > <hr>
-> ><p>Contact us</p>
-> ><ul>
-> >  {% raw %}<li>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>{% endraw %}
-> >  {% raw %}<li>Twitter: <a href="{{ site.twitter }}">{{ site.twitter }}</a></li>{% endraw %}
-> ></ul>
-> > ~~~
-> > {: .language-html }
-> >
-> > and add the line
-> >
-> > ~~~
-> > {% raw %}{% include footer.html %}{% endraw %}
-> > ~~~
-> > {: .language-markdown }
-> >
-> > at the end of both `index.md` and `about.md`
-> > (replacing the equivalent section if present). After refreshing any of these two pages - you should see a horizontal
-> > line separating the main page content from the footer of the page which now contains contact information.
-> {: .solution }
-{: .challenge }
+The last line of `about.md` includes contact details - this is the kind of information you might want to reuse 
+in multiple places throughout your site as a footer.
+
+~~~
+## Contact us
+
+- Email: [{% raw %}{{ site.email }}{% endraw %}](mailto:{% raw %}{{ site.email }}{% endraw %})
+- Twitter: [{% raw %}{{ site.twitter }}{% endraw %}]({% raw %}{{ site.twitter }}{% endraw %})
+~~~
+{: .language-markdown }
+
+Let's convert the above Markdown snippet into HTML and save it as `_includes/footer.html` file, and
+then use the `include` directive to insert it at the bottom of `index.md`. We also want to insert 
+it at the bottom of `about.md` (making sure we remove the equivalent contact section from `about.md` to avoid
+repetition). We will explain why we need the file to be in HTML rather than Markdown shortly.
+
+1. Create a file called `footer.html` inside the `_includes` folder containing the following HTML snippet:
+    
+    ~~~ 
+   <hr>
+   <p>Contact us</p>
+   <ul>
+   {% raw %}<li>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>{% endraw %}
+   {% raw %}<li>Twitter: <a href="{{ site.twitter }}">{{ site.twitter }}</a></li>{% endraw %}
+   </ul>
+   ~~~
+   {: .language-html }
+
+    This HTML snippet will create a horizontal like separator beneath which will be a list with email address and 
+    Twitter links. 
+
+2. Add the line:
+
+    ~~~
+    {% raw %}{% include footer.html %}{% endraw %}
+    ~~~
+    {: .language-markdown }
+
+   at the bottom of both `index.md` and `about.md` (replacing the equivalent contact section where present). 
+   
+After refreshing any of these two pages - you should see a horizontal 
+line separating the main page content from the footer of the page which now contains contact information.
+
+![A page displaying contact links as footer](../fig/includes_contact_links_footer.png){: width="800px"}
 
 This is another example of how we can create a block of common content and reuse it in multiple pages on our site
-by using Jekyll's `include` directive and placing code snippets in the `_includes` directory where Jekyll can find them 
-by name only (rather than a full path) by convention.  
+by using Jekyll's `include` directive and placing code snippets in the `_includes` directory 
+(where Jekyll looks for them by name by convention).  
 
 ## Reusing Link References
 
