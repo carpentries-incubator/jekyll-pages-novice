@@ -216,7 +216,7 @@ We will see another example of this shortly.
 > then use the `include` directive to re-insert it
 > at the bottom of your site's `index.md` page (making sure you remove the equivalent code). Also insert 
 > it at the bottom of the `about.md` page in a similar manner. We will explain 
-> why we meed the file to be in HTML rather than Markdown shortly.
+> why we need the file to be in HTML rather than Markdown shortly.
 >
 > > ## Solution
 > > Create a file called `footer.html` inside the `_includes` folder to include the following HTML snippet:
