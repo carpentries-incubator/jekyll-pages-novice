@@ -126,7 +126,7 @@ The snippet will create a table with a single row of links followed by a horizon
              
     {% include navigation.html %}
              
-    # {{ site.title }}
+    # Building Websites in GitHub
              
     ## Description
     {{ site.description }}
