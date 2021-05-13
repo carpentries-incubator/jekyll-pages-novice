@@ -200,7 +200,7 @@ We will see another example of this shortly.
 > and using it in a page (`{% raw %}{{site.social}}{% endraw %}` for the example above).
 {: .callout }
 
-## Reusing Footer 
+## Reusable Footer 
 
 > ## Exercise: Including Contact Information in Footer
 >
