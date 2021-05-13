@@ -94,6 +94,7 @@ This is both time-consuming and error-prone:
 it would be easy to accidentally mistype a link or forget to update one of the files.
 Instead, we can go some way to avoid this hassle by using
 some magic that Jekyll provides: `include` tags.
+
 To demonstrate this, we will save an HTML snippet for creating navigation links into
 a new file called `navigation.html` in a new folder called `_includes` within our repository. The folder `_includes` has special
 meaning to Jekyll - it tells Jekyll where to look for code snippets that can be reused (included) in other parts of the website. 
