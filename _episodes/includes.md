@@ -114,7 +114,7 @@ the folder is automatically inserted in the path displayed in front of the box f
     <hr>{% endraw %}
     ~~~
 The snippet will create a table with a single row of links followed by a horizontal line separator. 
-5. Now insert the following `_include` directive at the beginning of `index.md`:
+5. Now insert the following `include` directive at the beginning of `index.md`:
 
     ~~~
     {% raw %}---
