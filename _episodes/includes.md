@@ -87,7 +87,7 @@ Let's look at an example of how we can create a block of common content
 and reuse it in multiple pages on our site.
 Websites typically have some navigation links at the top of each page to help visitors navigate to various portions of the site.
 To make these links appear above every page on our site,
-we could add the same code above to each Markdown file in our repository.
+we could add the same code immediately after the YAML header of each Markdown file in our repository.
 But if we wanted to adjust the - adjust the navigation link target, add a new navigation link, remove a link, etc. -
 we would need to make the same adjustment on every page.
 Instead, we can go some way to avoid this hassle by using
