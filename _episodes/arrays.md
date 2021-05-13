@@ -1,7 +1,7 @@
 ---
 title: "Loops and Collections"
-teaching: 0
-exercises: 0
+teaching: 60
+exercises: 20
 questions:
 - "How do I work with variables containing multiple values in Jekyll?"
 - "How do I add a list of blog posts to my site?"
@@ -30,7 +30,7 @@ or profile pages for individual team members.
 
 Using what we already know about Markdown,
 we _could_ write these lists by ourselves.
-But this would be time-consuming and ineffecient:
+But this would be time-consuming and inefficient:
 we would have to manually adjust these listings every time we
 write a new post/start a new project/welcome a new team member to the group.
 Instead, we will learn about two more features of Jekyll,
@@ -80,7 +80,7 @@ In Liquid syntax, loops are created by surrounding the loop body in `for`/`endfo
 ~~~
 {% raw %}{% for thing in list %}
 [ This is the loop body. Do something with the "thing" variable here. ]
-{% endfor %}{% endraw %}`
+{% endfor %}{% endraw %}
 ~~~
 {: .source }
 
@@ -90,7 +90,6 @@ display it in `about.md`.
 1. Modify `_config.yml` file and add the `team_members` parameter as defined above. The file should now look like:
 
    ~~~
-   title: "Building Websites in GitHub"
    description: "This research project develops training materials for reseachers wanting to learn to build project
    websites in GitHub with GitHub Pages."
    email: "team@my.research.org"
@@ -109,9 +108,13 @@ display it in `about.md`.
    The file now should look like:
 
     ~~~
+    {% raw %}---
+    layout: page
+    ---
     # About
-    {% raw %}
+
     ## Project
+
     {{ site.description }}
 
     ## Funders
@@ -128,6 +131,7 @@ display it in `about.md`.
     </table>
 
     ## Cite us
+
     You can cite the project as:
 
     >    *The Carpentries 2019 Annual Report. Zenodo. https://doi.org/10.5281/zenodo.3840372*
@@ -187,13 +191,13 @@ next section.
 3. In file `index.md` add the team lead's name so that it looks like:
 
    ~~~
-   # {% raw %}{{ site.title }}
+   # {% raw %}Building Websites in GitHub
 
    ## Description
    {{ site.description }}
    {% assign lead = site.team_members | where:"role", "project lead" | first %}
    The project is led by {{ lead.name }}.
-   [See our full team](/about#team)
+   [See our full team](about#team)
 
    Have any questions about what we do? [We'd love to hear from you!](mailto:{{ site.email }}{% endraw %})
    ~~~
@@ -209,10 +213,9 @@ you only need to update the list in `_config.yml` without modifying your pages.
 > > ## Solution
 > > Luckily, we keep all our global settings in `_config.yml` so all we have to do is update the values there. This saved us some work as for the team lead we would otherwise have to modify both `index.md` and `about.md`.
 > >
-> >For the new developer joining the team, we also only need to her information to `team_members` in `_config.yml` and our `for loop` from `about.md` will simply pick up the changes automatically. Magic! Our `_config.yml` file should now look like:
+> > For the new developer joining the team, we also only need to her information to `team_members` in `_config.yml` and our `for loop` from `about.md` will simply pick up the changes automatically. Magic! Our `_config.yml` file should now look like:
 > >
 > > ~~~
-> > title: "Building Websites in GitHub"
 > > description: "This research project develops training materials for reseachers wanting to learn to build project
 > > websites in GitHub with GitHub Pages."
 > > email: team@my.research.org
@@ -260,12 +263,12 @@ In `_config.yml`, we add the following lines:
 
 ~~~
 collections:
-  - posts:
-      output: true
+    blogposts:
+        output: true
 ~~~
 {: .language-yaml }
 
-The `- posts:` line says that our site includes this collection of files,
+The `blogposts:` line says that our site includes this collection of files,
 and `output: true` tells Jekyll to create a rendered HTML page from the content
 of each of these files.
 
@@ -274,7 +277,7 @@ we need to populate it.
 Jekyll will look for a folder in our site repository that shares its name with
 the collection we defined, but with a preceding underscore in the folder name,
 and build the collection from its contents.
-In this case, we need to move all our blog post files into a `_posts` folder.
+In this case, we need to move all our blog post files into a `_blogposts` folder.
 
 Once we have done that,
 we can check that the collection has been created correctly by
@@ -282,7 +285,7 @@ trying to use it in a page.
 
 > ## Why `output: true`?
 >
-> When creating our `posts` collection in `_config.yml` above,
+> When creating our `blogposts` collection in `_config.yml` above,
 > we configured it with the parameter `output: true`,
 > to ensure the pages of the collection were rendered to HTML by Jekyll.
 >
@@ -293,20 +296,20 @@ trying to use it in a page.
 > we could have created an individual file for
 > each of the members of our team, defined a collection, and looped through
 > those members that way.
-> To use the collection of files that way,
+> To use the collection of files like this,
 > we would keep the default value of `output`, `false`.
 {: .callout }
 
 ## Looping Over a Collection
 
 At the end of your `index.md`,
-add a new for loop to iterate over the titles and dates of the `posts` collection:
+add a new for loop to iterate over the titles and dates of the `blogposts` collection:
 
 ~~~
 ## Blog Posts
 
-{% raw %}{% for post in site.posts %}
-- {{ post.date | date_to_string }}: [{{ post.title }}]({{ post.url }})
+{% raw %}{% for post in site.blogposts %}
+- {{ post.date | date_to_string }}: [{{ post.title }}]({{ post.url | relative_url }})
 {% endfor %}{% endraw %}
 ~~~
 {: .language-markdown }
@@ -316,18 +319,23 @@ FIXME: add screenshot of blog post list
 There is a lot happening in those few lines above!
 Let's break it down into smaller chunks and explore them one-by-one:
 
-1. `{% raw %}{% for post in site.posts %}{% endraw %}`
+1. `{% raw %}{% for post in site.blogposts %}{% endraw %}`
    initialises a loop through the collection.
    The collection itself is made available to us as a `site` variable,
    with the name we gave it in `_config.yml`.
 2. `- ` will create a bullet point for each post.
-3. `{{ post.date | date_to_string }}` accesses the `date`
+3. `{% raw %}{{ post.date | date_to_string }}{% endraw %}` accesses the `date`
    defined in the post's YAML header and displays it in the list as a string.
-4. `[{{ post.title }}]({{ post.url }})` creates a link with the post's title
+4. `{% raw %}[{{ post.title }}]({{ post.url | relative_url }}){% endraw %}` creates a link with the post's title
    (again extracted from the YAML header of the post file) as the link text,
-   and the url of the rendered post page as the link target.
+   and the URL of the rendered post page as the link target.
+   Unlike the page title,
+   the URL is not defined in the page front matter but instead provided by Jekyll.
+   This page URL is passed to the `relative_url` filter,
+   which ensures the base URL of the GitHub Pages site is prepended and
+   the link resolves correctly.
 5. `{% raw %}{% endfor %}{% endraw %}` ends the for loop after every post in the
-   collection (i.e. every file in the `_posts` folder) has been iterated over.
+   collection (i.e. every file in the `_blogposts` folder) has been iterated over.
 
 Clicking on one of these links takes us to the rendered version of the blog post page.
 
@@ -340,13 +348,27 @@ If you would like to order a collection by a different field in the YAML header,
 you can pass the collection through the [`sort`][liquid-sort] filter
 when initialising the for loop:
 
+You might be tempted to write:
 ~~~
-{% raw %}{% for post in site.posts | sort: "author" %}{% endraw %}
+{% raw %}{% for post in site.blogposts | sort: "author" %}{% endraw %}
+~~~
+{: .warning }
+
+which seems to work but may not produce the result we expect.
+
+In fact, Jekyll will generate a **silent warning** that isn't visible in GitHub
+but can be seen if building the site locally.
+This a limitation of liquid in that it doesn't allow combining `for` instructions directly
+with filters.
+Instead, we need to reuse the `assign` instruction we used above:
+~~~
+{% raw %}{% assign sorted_posts = site.blogposts | sort: "author" %}
+{% for post in sorted_posts %}{% endraw %}
 ~~~
 {: .source }
 
 Other filters also exist for working with lists of values,
-such as [`group_by`][liquid-group_by],
+such as [`group_by`][liquid-group-by],
 which can be used to group the values by a particular field,
 and [`sample`][liquid-sample],
 which returns a random sample of the values in the list.
@@ -359,7 +381,7 @@ which returns a random sample of the values in the list.
 > > ## Solution
 > >
 > > ~~~
-> > {% raw %}{% for post in site.posts %}
+> > {% raw %}{% for post in site.blogposts %}
 > > - {{ post.date | date_to_string }}: [{{ post.title }}]({{ post.url }}) by {{ post.author }}
 > > {% endfor %}{% endraw %}
 > > ~~~
@@ -378,11 +400,12 @@ which returns a random sample of the values in the list.
 > > ## Solution
 > >
 > > Create a new file, `_includes/post_list.html`, with the following content:
+> >
 > > ~~~
 > > <h2>Blog Posts</h2>
 > > <ul>
 > > {% raw %}{% for post in site.posts %}
-> > <li>{{ post.date | date_to_string }}: <a href="{{ post.url }}">{{ post.title }}</a></li>
+> > <li>{{ post.date | date_to_string }}: <a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
 > > {% endfor %}{% endraw %}
 > > </ul>
 > > ~~~
@@ -399,12 +422,12 @@ which returns a random sample of the values in the list.
 
 > ## Exercise: Extend the Collection
 >
-> Create another blog post and add it to the `posts` collection.
+> Create another blog post and add it to the `blogposts` collection.
 > Check that your new post appears in the list.
 >
 > > ## Solution
 > >
-> > Write another post Markdown file and save it into the `_posts` folder,
+> > Write another post Markdown file and save it into the `_blogposts` folder,
 > > making sure you remember to add (at least) the `date` and
 > > `title` fields in the YAML header.
 > >
@@ -413,3 +436,106 @@ which returns a random sample of the values in the list.
 > >
 > {: .solution }
 {: .challenge }
+
+## Blogging in the Wild: the `_posts` Collection
+
+We named our collection `blogposts` above but it is much more common to find
+Jekyll sites using a collection called `posts`
+(and associated `_posts` folder for blog post files).
+The `posts` collection has a special meaning to Jekyll:
+the platform is so often used for blogging that it has some
+"magic" built in to work with the files in `_posts`.
+
+One of the key differences is the way that URLs are created for pages built from
+the `posts` collection:
+the `YYYY-MM-DD` date string defining the date of the post is used
+to create a nested URL structure of `/YYYY/MM/DD/`.
+For this reason, _Jekyll requires that files in the `posts` collection
+follow the naming structure `YYYY-MM-DD-post-slug.md` in order to be built for
+the site.
+For example, a file in `posts` called `2019-09-04-rise-and-shine.md`
+will be published at the URL `<site-url>/2019/09/04/rise-and-shine.html`.
+
+Jekyll also provides some other special features for working with a collection
+called `posts`, such as tags and categories to help organise the pages of your
+site.
+You can read more about the
+[features of the `posts` collection in the associated page of the Jekyll documentation](https://jekyllrb.com/docs/posts/).
+
+Finally, it is common to need to create a listing of posts
+(or some other collection)
+that is displayed in smaller chunks e.g. ten posts at a time.
+This is called _pagination_,
+and is enabled in Jekyll via a plugin called `jekyll-paginate`.
+(This plugin is included by default in GitHub Pages.)
+The Jekyll documentation describes
+[the steps for setting up pagination for a list of blog posts](https://jekyllrb.com/docs/pagination/).
+
+## Linking to Other Pages on your Site
+
+Creating internal links that are robust to changes in your site
+base URL, and that work both online and in locally-built preview versions
+of your site, requires a bit of extra work.
+
+You can access the URL of a built page via the `page.url` variable
+(as we did when listing the entries in our `blogposts` collection above)
+or, if referring to that page from the body of another page,
+with the `{% raw %}{% link <path_to_post_file> %}{% endraw %}` tag.
+The path provided here should be relative to the root of your site -
+the directory where your `config.yml` is located.
+Taking the example from the `posts` collection above:
+
+```
+{% raw %}{% link _posts/2019-09-04-rise-and-shine.md %}{% endraw %}
+```
+{: .source }
+
+```
+/2019/09/04/rise-and-shine.html
+```
+{: .output }
+
+If you would like to
+[set up your computer to build your site locally][jekyll-install]
+e.g. to preview changes to your site before they "go live" on GitHub Pages,
+you should get into the habit of substituting in the `site.baseurl` variable
+at the start of these internal links:
+
+```
+{% raw %}{{ site.baseurl }}{% link _posts/2019-09-04-rise-and-shine.md %}{% endraw %}
+```
+{: .source}
+
+This will ensure that the links within your site work correctly in the local
+version of the site as well as on GitHub Pages.
+
+> ## Comments on a static blog
+>
+> When setting up a blog on a website, it is common to want to include a comment feed
+> as a way for readers to respond to the content of a post, direct questions to the author, etc.
+> A comments section can be included in a static blog using one of the below approaches.
+> 1. Disqus is the first approach. The Disqus website offers
+>    [instructions on how to enable comments for Jekyll platform (used for GitHub pages)](https://disqus.com/admin/install/platforms/jekyll/).
+>    [Here is a demo of Disqus with Jekyll](https://erresen.github.io/jekyll/disqus/2016/08/26/getting-comments-working-jekyll-disqus.html).
+>    Although if you are privacy inclined, browser extensions such as Privacy Badger block the Disqus widget so you might look for alternatives.
+> 2. [Staticman](https://staticman.net/) is the second approach.
+>    The setup is more complex than some of the other options and, in our experience, it is easy to get the configuration wrong.
+>    [Here is a demo of comments with Staticman](https://travisdowns.github.io/blog/2020/02/05/now-with-comments.html).
+> 3. [Just Comments](https://just-comments.com/) is the third approach.
+>    [Here is a demo of comments with Just Comments](https://60devs.com/adding-comments-to-your-jekyll-blog.html).
+> 4. [fastpages](https://github.com/fastai/fastpages) is the most recent addition to
+>    enable comments via GitHub comments (uses [Utterances](https://utteranc.es/)).
+>    fastpages comes with lots of options and is used by several researchers.
+>    [Here is a demo of comments with fastpages](https://fastpages.fast.ai/fastpages/jupyter/2020/02/21/introducing-fastpages.html).
+> 5. [Welcomments](https://welcomments.io/) (currently in beta testing) provides a webform for comments,
+>    and a bot that commits these to your website's source GitHub repository so that they are included
+>    and displayed when the page is rebuilt.
+> From the comments section implementation standpoint, Disqus looks most simple followed by Just Comments and Staticman.
+> Fastpages is much more than enabling a comments section.
+> It is a blog template that uses Jekyll as a base, improves on Jekyll experience and offers additional features.
+> For researchers this may be the option to go.
+>
+> {: .source}
+{: .callout}
+
+{% include links.md %}

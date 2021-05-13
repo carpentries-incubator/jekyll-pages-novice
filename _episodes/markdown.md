@@ -88,7 +88,7 @@ Repo for learning how to make websites with Jekyll pages
 Vanilla text may contain *italics* and **bold words**.
 
 This paragraph is separated from the previous one by a blank line.
-Line breaks
+Line breaks  
 are caused by two trailing spaces at the end of a line.
 
 [Carpentries Webpage](https://carpentries.org/)
@@ -154,7 +154,7 @@ Let's do an exercise to try out writing more markdown.
 > > For example your markdown might look like the following:
 > > ~~~
 > > ## More info on the lesson
-> > You can find this lesson [here](https://carpentries-incubator.github.io/building-websites-with-jekyll-and-github-or-gitlab/).
+> > You can find this lesson [here](https://carpentries-incubator.github.io/jekyll-pages-novice/).
 > >
 > > ### Four reasons you should learn Markdown:
 > >
@@ -197,7 +197,7 @@ Let's do an exercise to try out writing more markdown.
 >
 {: .callout}
 
-We will continue to use markdown and learn more throughout the rest of the lesson.
+We will continue to use Markdown and learn more throughout the rest of the lesson.
 
 > ## Markdown Cheatsheet
 >

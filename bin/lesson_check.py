@@ -390,6 +390,10 @@ class CheckBase:
 
         for node in self.find_all(self.doc, {'type': 'codeblock'}):
             cls = self.get_val(node, 'attr', 'class')
+            if cls is None:
+                # cls is only None if there's some error in rmarkdown
+                # Most often a missing line around a codeblock or a typo close by
+                cls = ''
             self.reporter.check(cls in KNOWN_CODEBLOCKS or cls.startswith('language-'),
                                 (self.filename, self.get_loc(node)),
                                 'Unknown or missing code block type {0}',

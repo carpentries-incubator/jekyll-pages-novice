@@ -1,7 +1,7 @@
 ---
 title: "Reusing Blocks of Content"
-teaching: 0
-exercises: 0
+teaching: 35
+exercises: 40
 questions:
 - "How can I reuse the same chunks of material in multiple pages?"
 objectives:
@@ -126,7 +126,7 @@ The snippet will create a table with a single row of links followed by a horizon
              
     {% include navigation.html %}
              
-    # {{ site.title }}
+    # Building Websites in GitHub
              
     ## Description
     {{ site.description }}

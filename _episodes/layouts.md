@@ -1,7 +1,7 @@
 ---
 title: "Page Layouts"
-teaching: 0
-exercises: 0
+teaching: 30
+exercises: 25
 questions:
 - "How can I design the layout for all pages on my site?"
 - "Where can I find pre-built themes for my site?"
@@ -79,7 +79,7 @@ We can use the `content` variable to tell variable where it should place
 **all the content defined in the Markdown of the page** within this layout.
 If we make the change above to `_layouts/default.html` and reload our site's homepage,
 we now see the page content has returned but we have two more problems:
-the styling of our pages has changed (for the worse) from before using a layout and
+the styling of our pages has changed (for the worse) and
 the navigational links appear twice!
 
 ![A page displaying the navigation section twice.](../fig/layouts_double_navigation.png){: width="800px"}
