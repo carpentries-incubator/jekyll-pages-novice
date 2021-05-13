@@ -92,7 +92,7 @@ But if we wanted to adjust the menu - adjust the navigation link target, add a n
 we would need to make the same adjustment on every page.
 Instead, we can go some way to avoid this hassle by using
 some magic that Jekyll provides: `include` tags.
-To demonstrate this, we will save the HTML snippet for creating navigation links into
+To demonstrate this, we will save an HTML snippet for creating navigation links into
 a new file called `navigation.html` in a new folder called `_includes` within our repository. The folder `_includes` has special
 meaning to Jekyll - it tells Jekyll where to look for code snippets that can be reused (included) in other parts of the website. 
 
