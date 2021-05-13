@@ -212,7 +212,7 @@ We will see another example of this shortly.
 > ~~~
 > {: .language-markdown }
 >
-> Convert the above Markdown snippet into HTML and save it into `_includes/footer.html` file,
+> Convert the above Markdown snippet into HTML and save it into a `_includes/footer.html` file,
 > then use the `include` directive to re-insert it
 > at the bottom of your site's `index.md` page (making sure you remove the equivalent code). Also insert 
 > it at the bottom of the `about.md` page in a similar manner. We will explain 
