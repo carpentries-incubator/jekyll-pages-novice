@@ -47,7 +47,7 @@ instead of Markdown?).
 We will now define a new page layout called `default`,
 which we will save in a file `_layouts/default.html`.
 Having defined our navigational links in a separate file,
-we will start with a layout file that only includes this file:
+we will start with a layout file that only includes this these links:
 
 ~~~
 {% raw %}{% include navigation.html %}{% endraw %}
