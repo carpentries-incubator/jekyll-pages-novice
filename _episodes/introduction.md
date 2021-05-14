@@ -184,8 +184,8 @@ The service is free for public repositories and simple pages can be created and 
 Behind the scenes GitHub Pages uses a static site generator called Jekyll, which we're going to learn about later 
 in this lesson. There are many different technologies that come together when creating a website with GitHub Pages 
 that you have to be familiar with (as shown in the diagram below). It may sound overwhelming at first 
-but we will explain most of these technologies in this lesson - we only won't cover CSS/Sass (styling language that gets compiled into CSS) and 
-JavaScript/CoffeeScript (scripting language that gets compiled into JavaScript).
+but we will explain most of these technologies in this lesson - we only don't cover CSS/Sass (styling language that gets compiled into CSS) and 
+JavaScript/CoffeeScript (scripting language that gets compiled into JavaScript) in detail.
 
 <img src="../fig/jekyll-gh-pages-website-overview.png" alt="Static websites in GitHub Pages technology overview diagram" width="700">
 
