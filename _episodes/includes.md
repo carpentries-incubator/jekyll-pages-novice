@@ -1,7 +1,7 @@
 ---
-title: "Re-using Blocks of Content"
-teaching: 45
-exercises: 30
+title: "Reusing Blocks of Content"
+teaching: 35
+exercises: 40
 questions:
 - "How can I reuse the same chunks of material in multiple pages?"
 objectives:
@@ -14,12 +14,12 @@ keypoints:
 
 In the previous episode,
 we discussed the benefits of using global and local variables
-to re-use values throughout our pages.
+to reuse values throughout our pages.
 However, repeated use of content in and across websites
 is usually not limited to individual values such as
 email addresses and social media handles.
 
-> ## Exercise: What Gets Re-used?
+> ## Exercise: What Gets Reused?
 >
 > Look at the two pages linked below,
 > and browse some other pages on the same site.
@@ -27,20 +27,20 @@ email addresses and social media handles.
 > * [The Software Sustainability Institute][ssi-homepage]
 > * [DiverseKids Book Store][diversekids]
 >
-> What content is being re-used between pages on these sites?
+> What content is being reused between pages on these sites?
 > Pair up and compare your partner's notes with your own.
-> Can you identify any common type(s) of content that is being re-used in these sites?
+> Can you identify any common type(s) of content that is being reused in these sites?
 >
 > > ## Solution
 > >
-> > The Software Sustainability Institute website re-uses many structural
+> > The Software Sustainability Institute website reuses many structural
 > > elements, such as the **page header**
 > > (containing the "top menu," the institute's logo, links to social media, etc)
 > > and **footer**
 > > (containing copyright and licensing information,
 > > links to the privacy policy and accessibility statement,
-> > a form to subscribe to the institute's newletter, etc).
-> > Elsewhere, blocks of text and images are re-used in the main body
+> > a form to subscribe to the institute's newsletter, etc).
+> > Elsewhere, blocks of text and images are reused in the main body
 > > of multiple pages, e.g.
 > > blog and news posts all end with a description of
 > > how the reader can contact the SSI to discuss the content.
@@ -81,132 +81,110 @@ the sites linked in the previous exercise aren't built with Jekyll.
 But the principles behind reusing content apply regardless of
 the particular framework being used to build the site.
 
-## Adding and Reusing a Site Banner 
+## Reusing Site Navigation Header
 
 Let's look at an example of how we can create a block of common content
 and reuse it in multiple pages on our site.
-At the moment our pages are quite plain:
-why don't we try adding a banner to the top of each page?
+Websites typically have some navigation links at the top of each page to help visitors navigate to various portions of the site.
+To make these links appear above every page on our site,
+we could add the same code immediately after the YAML header of each Markdown file in our repository.
+But if we wanted to adjust the menu - adjust the navigation link target, add a new navigation link, remove a link, etc. -
+we would need to make the same adjustment on every page.
+This is both time-consuming and error-prone: 
+it would be easy to accidentally mistype a link or forget to update one of the files.
+Instead, we can go some way to avoid this hassle by using
+some magic that Jekyll provides: `include` tags.
 
-We're going to add a pre-made banner image to our repository,
-and it is good practice to store all image files in a common folder.
+To demonstrate this, we will save an HTML snippet for creating navigation links into
+a new file called `navigation.html` in a new folder called `_includes` within our repository. The folder `_includes` has special
+meaning to Jekyll - it tells Jekyll where to look for code snippets that can be reused (included) in other parts of the website. 
+
 1. Click "Create new file" under the "Add file"
-dropdown on your repository homepage,
-2. In the "Name your file..." box, type `images/`.
-   The folder name should be automatically inserted in the path displayed
-   next to this box for naming the file.
-3. You can then leave the file blank and name it `.gitkeep`.
-   When you commit the changes, the `images` folder will have been
-   added to your repository.
-We will be uploading our banner image to this folder in a moment
-and unfortunately GitHub does not provide a way to create a new folder
-while uploading existing files, only while creating new ones.
-When making these blank files,
-which exist only to allow the existence of their parent repository,
-it is traditional to call them `.gitkeep`.
-Now [download this banner image that we will add to our pages][banner-image]
-save it with the name `site_banner.png` and
-upload the file to your newly-created `images` folder on GitHub:
-you can do this by navigating into the folder and choosing
-"Upload files" from the "Add file" dropdown you used before.
+dropdown on your repository homepage
+2. In the "Name your file..." box, type `_includes/`. As you enter the "/" after the folder name "_includes", 
+the folder is automatically inserted in the path displayed in front of the box for naming the file you are adding.
+3. You can then name the file `navigation.html` and, when you commit the changes,
+   the `_includes` folder will have been added to your repository too.
+4. Insert the following HTML snippet into `navigation.html` and commit the changes:
 
-Now that the banner image is available in our site repository,
-add this Markdown immediately after the YAML front matter in `index.md`:
+    ~~~
+    {% raw %}<table>
+    <tr>
+    <td><a href=".">Home</a></td>
+    <td><a href="about">About</a></td>
+    </tr>
+    </table>
+    <hr>{% endraw %}
+    ~~~
+The snippet will create a table with a single row of links followed by a horizontal line separator. 
+5. Now insert the following `include` directive at the beginning of `index.md`:
 
-~~~
-![Group Website banner](./images/site_banner.png)
-~~~
-{: .language-markdown }
+    ~~~
+    {% raw %}---
+    lesson-example: "https://carpentries.github.io/lesson-example/"
+    ---
+             
+    {% include navigation.html %}
+             
+    # Building Websites in GitHub
+             
+    ## Description
+    {{ site.description }}
+             
+    More details about the project are available from the [About page](about).
+             
+    See some [examples of our work]({{ page.lesson-example }}).
+             
+    Have any questions about what we do? [We'd love to hear from you!](mailto:{{ site.email }}){% endraw %}
+    ~~~
+    {: .language-markdown }
 
-![Group Website banner](../files/site_banner.png)
+Refresh the `index.html` page and, barring any typos, e.g. in the name of the file,
+you should see the navigation links on the top of the page.
 
-Adding this should result in this title banner appearing
-at the top of your page.
+![A page displaying the navigation links header](../fig/includes_navigation_links_header.png){: width="800px"}
 
-> ## Image Elements
+You can add the same `include` tag at the top of
+all the other Markdown files for your site
+to get the same navigation section displayed on every page.
+
+> ## Exercise: Reuse Site Navigation
 >
-> When adding the image above with Markdown,
-> the filepath in `()` tells the web browser the location of
-> the image file to display on the page,
-> and the text in `[]` defines _alternative text_
-> (often abbreviated to _alt text_).
-> This alternative text is important for two reasons:
->
-> 1. It defines the description given to anyone using
->    [a screen reader][screen-reader] to access your site,
->    who cannot view the image itself.
->    If you do not define alt text for an image/figure,
->    the content of your site becomes less accessible for these users.
-> 2. If the browser cannot display the image for some reason
->    (e.g. the image is moved/renamed/cannot be served)
->    the alt text is displayed instead.
->
-> It is good practice to _always_ define alt text for your images,
-> and you should aim to limit this alt text to a brief description
-> of the information provided by the image,
-> ideally providing no more or less detail
-> than is displayed in the image itself.
->
-> When defining an image (`img`) element in HTML
-> (as we will do in the next section),
-> the filepath, or _source_, of the image is provided as the `src` parameter,
-> and the alt text as the `alt` parameter.
-{: .callout }
-
-> ## Exercise: Creating a Linked Banner
->
-> It is common for banner logos like the one above to link back to the homepage
-> of the website they are displayed on.
-> With Markdown, turn the image into a link
-> to the landing page (`index.md`) of your site.
+> Reuse the navigation snippet to add navigation links to the About page.
 >
 > > ## Solution
+> > Insert the `include` directive at the top of `about.md` so that it now looks as follows:
+> > 
+> >~~~
+> >{% raw %}{% include navigation.html %}{% endraw %}   
 > >
-> > ~~~
-> > [![Group Website banner](./images/site_banner.png)](https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/)
-> > ~~~
-> > {: .language-markdown }
+> ># About
 > >
+> >## Project
+> >
+> >{% raw %}{{ site.description }}{% endraw %}
+> >
+> >## Funders
+> >
+> >We gratefully acknowledge funding from the XYZ Founding Council, under grant number 'abc'.
+> >
+> >## Cite us
+> >
+> >You can cite the project as:
+> >
+> >   >    *The Carpentries 2019 Annual Report. Zenodo. https://doi.org/10.5281/zenodo.3840372*
+> >
+> >## Contact us
+> >
+> >   - Email: [{% raw %}{{ site.email }}{% endraw %}](mailto:{% raw %}{{ site.email }}{% endraw %})
+> >   - Twitter: [{% raw %}{{ site.twitter }}]({{ site.twitter }}{% endraw %})
+> >   ~~~
+> >    {: .language-markdown }
 > {: .solution }
 {: .challenge }
 
-To make the banner to appear above every page on our site,
-we could add the code above to each Markdown file in our repository.
-But if we wanted to adjust it - display a different image,
-adjust the link target, etc -
-we would need to make the same adjustment on every page.
-Instead, we can go some way to avoid this hassle by using
-some magic that Jekyll provides: `include` tags.
-To demonstrate this, save the HTML snippet used to display the image into
-a new file in your repository, called `_includes/banner.md`.
-Unlike when we wanted to upload a pre-existing file
-to a new folder earlier,
-we can create the new folder and the new file simultaneously:
-
-1. click "Create new file" under the "Add file"
-dropdown on your repository homepage,
-2. in the "Name your file..." box, type `_includes/`.
-   As before, the folder name should be automatically inserted
-   next to the box.
-3. You can then name the file `banner.md` and, when you commit the changes,
-   the `_includes` folder will have been added to your repository.
-
-Now delete the HTML block you added to `index.md`,
-and replace it with the following `_includes` tag:
-
-~~~
-{% raw %}{% include banner.md %}{% endraw %}
-~~~
-{: .language-markdown }
-
-Refresh the page and, barring any typos e.g. in the name of the file,
-you should see the banner image on the page as before.
-You can add the same `include` tag at the top of
-all the other Markdown files for your site
-to get the same banner displayed on every page.
-
 The `include` tag can be used to insert the Markdown or HTML contained in
-any file saved within `_includes`: provide the path to that file
+any file saved within `_includes` directory: provide the path to that file
 relative to `_includes/` and Jekyll will substitute the contents into the page
 before rendering it as HTML.
 Like the `_config.yml` file that contains the configuration for your Jekyll site,
@@ -225,66 +203,74 @@ We will see another example of this shortly.
 > and using it in a page (`{% raw %}{{site.social}}{% endraw %}` for the example above).
 {: .callout }
 
-> ## Exercise: Including Contact Information
->
-> The last line of `index.md` includes the kind of information you might want to
-> re-use in multiple places throughout your site.
->
-> ~~~
-> ## Contact us
->
-> - Email: [{% raw %}{{ site.email }}{% endraw %}](mailto:{% raw %}{{ site.email }}{% endraw %})
-> - Twitter: [{% raw %}{{ site.twitter }}{% endraw %}]({% raw %}{{ site.twitter }}{% endraw %})
-> ~~~
-> {: .language-markdown }
->
-> Copy the snippet and save it into an appropriately-named file,
-> then use an `include` statement to re-insert it
-> at the bottom of your site's `index.md`,
-> and add it at the bottom of the `about.md` pages.
->
-> > ## Solution
-> > Create a file called `contact.md`
-> > (or similar) inside the `_includes` folder:
-> >
-> > ~~~
-> > ## Contact us
-> >
-> > - Email: [{% raw %}{{ site.email }}{% endraw %}](mailto:{% raw %}{{ site.email }}{% endraw %})
-> > - Twitter: [{% raw %}{{ site.twitter }}{% endraw %}]({% raw %}{{ site.twitter }}{% endraw %})
-> > ~~~
-> > {: .language-markdown }
-> >
-> > and add the line
-> >
-> > ~~~
-> > {% raw %}{% include contact.md %}{% endraw %}
-> > ~~~
-> > {: .language-markdown }
-> >
-> > at the end of `index.md` and `about.md`
-> > (replacing the equivalent section if it is still present).
-> {: .solution }
-{: .challenge }
+## Reusing Footer 
 
-> ## Including Link References
->
-> You can use `include` tags to help minimise the effort required to
-> keep links up-to-date across your site.
-> In the [Authoring with Markdown]({{relative_root_path}}/markdown#reference-style-links) section,
-> we learned about writing reference-style links in Markdown,
-> e.g. `[link text][link-target]` in the body of the file with a corresponding
-> `[link-target]: https://carpentries.org` link reference
-> (usually all such references are kept at the bottom of the file).
-> Using `include` tags,
-> the link references for every page on your site can be stored in a file in the
-> `_includes` folder (we recommend the name `_includes/links.md`)
-> and inserted into the end of each page.
-> With this approach, any time you need to update one of these link references,
-> e.g. if the URL changes to your host institute website,
-> you only need to change the URL in `_includes/links.md` to update the target
-> of all the relevant links across your site.
-{: .callout }
+The last line of `about.md` includes contact details - this is the kind of information you might want to reuse 
+in multiple places throughout your site as a footer.
+
+~~~
+## Contact us
+
+- Email: [{% raw %}{{ site.email }}{% endraw %}](mailto:{% raw %}{{ site.email }}{% endraw %})
+- Twitter: [{% raw %}{{ site.twitter }}{% endraw %}]({% raw %}{{ site.twitter }}{% endraw %})
+~~~
+{: .language-markdown }
+
+Let's convert the above Markdown snippet into HTML and save it as `_includes/footer.html` file, and
+then use the `include` directive to insert it at the bottom of `index.md`. We also want to insert 
+it at the bottom of `about.md` (making sure we remove the equivalent contact section from `about.md` to avoid
+repetition). We will explain why we need the file to be in HTML rather than Markdown shortly.
+
+1. Create a file called `footer.html` inside the `_includes` folder containing the following HTML snippet:
+    
+    ~~~ 
+   <hr>
+   <p>Contact us</p>
+   <ul>
+   {% raw %}<li>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>{% endraw %}
+   {% raw %}<li>Twitter: <a href="{{ site.twitter }}">{{ site.twitter }}</a></li>{% endraw %}
+   </ul>
+   ~~~
+   {: .language-html }
+
+    This HTML snippet will create a horizontal like separator beneath which will be a list with email address and 
+    Twitter links. 
+
+2. Add the line:
+
+    ~~~
+    {% raw %}{% include footer.html %}{% endraw %}
+    ~~~
+    {: .language-markdown }
+
+   at the bottom of both `index.md` and `about.md` (replacing the equivalent contact section where present). 
+   
+After refreshing any of these two pages - you should see a horizontal 
+line separating the main page content from the footer of the page which now contains contact information.
+
+![A page displaying contact links as footer](../fig/includes_contact_links_footer.png){: width="800px"}
+
+This is another example of how we can create a block of common content and reuse it in multiple pages on our site
+by using Jekyll's `include` directive and placing code snippets in the `_includes` directory 
+(where Jekyll looks for them by name by convention).  
+
+## Reusing Link References
+
+ You can use `include` tags to help minimise the effort required to
+ keep links up-to-date across your site.
+ In the [Authoring with Markdown]({{relative_root_path}}/markdown#reference-style-links) section,
+ we learned about writing reference-style links in Markdown,
+ e.g. `[link text][link-target]` in the body of the file with a corresponding
+ `[link-target]: https://carpentries.org` link reference
+ (usually all such references are kept at the bottom of the file).
+ Using `include` tags,
+ the link references for every page on your site can be stored in a file in the
+ `_includes` folder (we recommend the name `_includes/links.md`)
+ and inserted into the end of each page.
+ With this approach, any time you need to update one of these link references,
+ e.g. if the URL changes to your host institute website,
+ you only need to change the URL in `_includes/links.md` to update the target
+ of all the relevant links across your site.
 
 
 {% include links.md %}

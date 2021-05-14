@@ -141,7 +141,6 @@ display it in `about.md`.
 
 FIXME: add screenshot of rendered team member listing
 
-
 ## Filtering a List
 
 What if we want to pull out the information for a specific team member,
