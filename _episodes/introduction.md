@@ -181,9 +181,16 @@ then creating it with GitHub Pages is a good option.
 GitHub Pages is a system allowing users to create and serve websites directly from their GitHub repositories.
 The service is free for public repositories and simple pages can be created and served with very little configuration required.
 
-Behind the scenes GitHub Pages uses a static site generator called Jekyll, which we're going to learn about later in this lesson.
-First, we need to learn more about how to author and format the content of our pages,
-before configuring GitHub to display this content as a website.
+Behind the scenes GitHub Pages uses a static site generator called Jekyll, which we're going to learn about later 
+in this lesson. There are many different technologies that come together when creating a website with GitHub Pages 
+that you have to be familiar with (as shown in the diagram below). It may sound overwhelming at first 
+but we will explain most of these technologies in this lesson - we only won't cover CSS/Sass (styling language that gets compiled into CSS) and 
+JavaScript/CoffeeScript (scripting language that gets compiled into JavaScript).
+
+<img src="../fig/jekyll-gh-pages-website-overview.png" alt="Static websites in GitHub Pages technology overview diagram" width="700">
+
+First, we are going to set up a repository to store our files and learn more about how to author and format the content 
+of our pages using HTML and Markdown, before configuring GitHub to display this content as a website using GitHub Pages.
 
 ## Setting Up a Repository
 
@@ -224,7 +231,6 @@ or another group you work with.
 Under the "Repository name" field type `group-website`.
 
 <img src="../fig/set_repo_name.png" alt="Repository name set to group-website" width="600">
-
 
 We can also add a description (for instance **Repo for learning how to make websites with jekyll pages**) so we know what this repo is when we find it again after the workshop.
 

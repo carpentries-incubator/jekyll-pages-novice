@@ -6,8 +6,9 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 
 > ## Prerequisites
 >
-> This lesson guides you through making webpages using Jekyll in a web hosting service.
-> If you are comfortable interacting with websites in a web browser, this lesson is for you.
+> This lesson guides you through making websites using Jekyll in a web hosting service GitHub Pages.
+> If you are comfortable interacting with websites in a web browser, this lesson is for you. Basic understanding
+> of HTML and/or Markdown as webpage authoring languages is welcome but not a must.
 > 
 > There may be additional prerequisites for individual lessons in the extras section.
 > 
