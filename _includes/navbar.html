@@ -97,10 +97,15 @@
 	{% endif %}
       </ul>
       <div id="github-gitlab-selector" class="navbar-right btn-group" style="padding: 15px 1px 15px 1px;" id="status" data-toggle="buttons">
+        {% if site.debug_github_gitlab %}
+        {% assign ghgl_input_type = "checkbox" %}
+        {% else %}
+        {% assign ghgl_input_type = "radio" %}
+        {% endif %}
         <label class="btn btn-default btn-on btn-xs active">
-        <input type="radio" value="github" name="github-gitlab-selector" checked="checked">GitHub</label>
+          <input type="{{ ghgl_input_type }}" value="github" name="github-gitlab-selector" checked="checked">GitHub</label>
         <label class="btn btn-default btn-off btn-xs ">
-        <input type="radio" value="gitlab" name="github-gitlab-selector">GitLab</label>
+          <input type="{{ ghgl_input_type }}" value="gitlab" name="github-gitlab-selector">GitLab</label>
       </div>
 
       <form class="navbar-form navbar-right" role="search" id="search" onsubmit="google_search(); return false;">

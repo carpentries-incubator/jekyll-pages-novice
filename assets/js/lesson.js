@@ -35,16 +35,21 @@ $(function(){
 // Toggle between GitHub and GitLab content
 // article tags with an id github- or gitlab- are alternatively shown/hidden
 function check_github_gitlab_selection() {
-    if (this.value === 'github' && this.checked) {
-        console.log("Enabling GitHub content");
-        $("article[id^=github-]").show();
-        $("article[id^=gitlab-]").hide();
-    }
-    else if (this.value === 'gitlab' && this.checked) {
-        console.log("Enabling GitLab content");
-        $("article[id^=gitlab-]").show();
-        $("article[id^=github-]").hide();
-    }
+    // Hide all platform specific content first
+    $(".gitlab-content").hide();
+    $(".github-content").hide();
+    // Display only active content
+    $('#github-gitlab-selector input[name=github-gitlab-selector]').each(function () {
+        // Enable then if active in selector buttons
+        if (this.value === 'github' && this.checked) {
+            console.log("Enabling GitHub content");
+            $(".github-content").show();
+        }
+        if (this.value === 'gitlab' && this.checked) {
+            console.log("Enabling GitLab content");
+            $(".gitlab-content").show();
+        }
+    });
 }
 
 $(function() {
@@ -54,7 +59,7 @@ $(function() {
     // Name of url parameter
     let ghgl_attr = "github_gitlab";
     // Widget to select between GitHub and GitLab content
-    let ghgl_selector = $('#github-gitlab-selector input[type=radio][name=github-gitlab-selector]');
+    let ghgl_selector = $('#github-gitlab-selector input[name=github-gitlab-selector]');
 
     if (urlParams.has(ghgl_attr)) {
         // When URL is set we need to get its value to

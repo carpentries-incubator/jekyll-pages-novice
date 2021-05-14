@@ -19,6 +19,17 @@
     {% if page.math %}
     <link rel="stylesheet" type="text/css" href="{{ relative_root_path }}/assets/css/katex.min.css" />
     {% endif %}
+    {% if site.debug_github_gitlab %}
+    <!-- Add colors to debug GitHub/GitLab content -->
+    <style>
+      .github-content {
+        background-color: #c8e1ff;
+      }
+      .gitlab-content {
+        background-color: #ffe1b8;
+      }
+    </style>
+    {% endif %}
     <link rel="license" href="#license-info" />
 
     {% include favicons.html %}

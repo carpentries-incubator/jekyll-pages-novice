@@ -173,55 +173,31 @@ you're unlikely to find cost-free platforms to help you deliver dynamic content.
 > {: .solution }
 {: .challenge }
 
-{::options parse_block_html="true" /}
-
-<article id="github-01">
-
-## GitHub Pages
+## {{ site.github_or_gitlab }} Pages
 
 If the site you want to create is a good match to the strengths of a static site generator -
 it's relatively small, will be updated relatively infrequently, and the content does not need to be personalised to the visitor -
-then creating it with GitHub Pages is a good option.
-GitHub Pages is a system allowing users to create and serve websites directly from their GitHub repositories.
+then creating it with {{ site.github_or_gitlab }} Pages is a good option.
+{{ site.github_or_gitlab }} Pages is a system allowing users to create and serve websites directly from their {{ site.github_or_gitlab }} repositories.
 The service is free for public repositories and simple pages can be created and served with very little configuration required.
 
-Behind the scenes GitHub Pages uses a static site generator called Jekyll, which we're going to learn about later
-in this lesson. There are many different technologies that come together when creating a website with GitHub Pages
+Behind the scenes {{ site.github_or_gitlab }} Pages uses a static site generator called Jekyll, which we're going to learn about later
+in this lesson. There are many different technologies that come together when creating a website with {{ site.github_or_gitlab }} Pages
 that you have to be familiar with (as shown in the diagram below). It may sound overwhelming at first
 but we will explain most of these technologies in this lesson - we only don't cover CSS/Sass (styling language that gets compiled into CSS) and
 JavaScript/CoffeeScript (scripting language that gets compiled into JavaScript) in detail.
 
-<img src="../fig/jekyll-gh-pages-website-overview.svg" alt="Static websites in GitHub Pages technology overview diagram" width="700">
+<img src="../fig/jekyll-gh-pages-website-overview.svg" alt="Static websites in GitHub/GitLab Pages technology overview diagram" width="700">
 
 First, we are going to set up a repository to store our files and learn more about how to author and format the content
-of our pages using HTML and Markdown, before configuring GitHub to display this content as a website using GitHub Pages.
-
-</article>
-
-<article id="gitlab-01">
-
-## GitLab Pages
-
-If the site you want to create is a good match to the strengths of a static site generator -
-it's relatively small, will be updated relatively infrequently, and the content does not need to be personalised to the visitor -
-then creating it with GitLab Pages is a good option.
-GitLab Pages is a system allowing users to create and serve websites directly from their GitLab repositories.
-The service is free for public repositories and simple pages can be created and served with very little configuration required.
-
-Behind the scenes GitLab Pages uses a static site generator to produce your website.
-In the next section we will configure GitLab Pages to use the Jekyll static site generator,
-which we're going to learn about later in this lesson.
-First, we need to learn more about how to author and format the content of our pages,
-before configuring GitLab to display this content as a website.
-
-</article>
+of our pages using HTML and Markdown, before configuring {{ site.github_or_gitlab }} to display this content as a website using {{ site.github_or_gitlab }} Pages.
 
 ## Setting Up a Repository
 
 Before we get into working with Markdown we must first create a
 repository to work in.
 This repo (short for repository) is similar to a folder on your computer, the main differences
-being that the folder lives on the web in GitHub/GitLab (though you can
+being that the folder lives on the web in {{ site.github_or_gitlab }} (though you can
 also keep a copy on your computer if needed) and that folder is using
 a version control software called [`git`][git] to track changes to the files.
 For our purposes we will mostly be ignoring the version control software,
@@ -232,7 +208,7 @@ the website we will be creating.
 
 {::options parse_block_html="true" /}
 
-<article id="github-02">
+<article class="github-content">
 
 ## GitHub Pages
 
@@ -296,7 +272,7 @@ GitHub will then setup the repo and it should look like the following screenshot
 
 </article>
 
-<article id="gitlab-02">
+<article class="gitlab-content">
 
 > ## Setup a GitLab account
 > Before you can create a repo, you will need to
