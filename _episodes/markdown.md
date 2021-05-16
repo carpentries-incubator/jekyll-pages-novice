@@ -62,7 +62,7 @@ In the preview you will find a `Edit` blue button.
 You can change the content and have a look at the rendered view by clicking the _Preview changes_ tab.
 
 <img class="github-content" src="../fig/group_website_readme_render.png" alt="Preview of the rendered content of the group websites README file" width="600">
-<img class="gitlab-content" src="../fig/gitlab_group_website_readme_render.png" alt="Preview of the rendered content of the group websites README file" width="600">
+<img class="gitlab-content" src="../fig/gitlab_group_website_readme_render.png" alt="Preview of the rendered content of the group websites README file" width="958">
 
 
 Let's add `Some **bold** font` and see what happens when we preview it using the preview tab.
@@ -71,7 +71,8 @@ To save the content to the file `README.md`, scroll down a bit and you'll see a 
 where you can commit your changes.
 After having changed something, the commit menu looks like this:
 
-<img src="../fig/group_website_readme_commit.png" alt="Commit menu for changes done in the GitHub web interface is located at the bottom of the website" width="600">
+<img class="github-content" src="../fig/group_website_readme_commit.png" alt="Commit menu for changes done in the GitHub web interface is located at the bottom of the website" width="600">
+<img class="gitlab-content" src="../fig/gitlab_group_website_readme_commit.png" alt="Commit menu for changes done in the GitLab web interface is located at the bottom of the website" width="958">
 
 > ## Writing a Commit Message
 >
@@ -118,7 +119,8 @@ are caused by two trailing spaces at the end of a line.
 
 You can then click the preview tab again to see how the formatting renders.
 
-<img src="../fig/markdown_preview_formatting.png" alt="Preview of the formatting added to the Readme" width="600">
+<img class="github-content" src="../fig/markdown_preview_formatting.png" alt="Preview of the formatting added to the Readme" width="600">
+<img class="gitlab-content" src="../fig/gitlab_markdown_preview_formatting.png" alt="Preview of the formatting added to the Readme" width="957">
 
 > ## Markdown trailing spaces are meaningful
 >
@@ -150,14 +152,15 @@ You can then click the preview tab again to see how the formatting renders.
 {: .callout}
 
 To keep this addition to our `README.md` we need to commit these changes to save them.
-Scroll down to the bottom of the page, add a commit message if you wish, and then commit to the `main` branch.
+Scroll down to the bottom of the page, add a commit message if you wish, and then commit to the {{ site.main_or_master }} branch.
 
-<img src="../fig/committing_formatting_addition_to_readme.png" alt="Committing the formatting added to the Readme" width="800">
+<img class="github-content" src="../fig/committing_formatting_addition_to_readme.png" alt="Committing the formatting added to the Readme" width="800">
+<img class="gitlab-content" src="../fig/gitlab_committing_formatting_addition_to_readme.png" alt="Committing the formatting added to the Readme" width="943">
 
 Let's do an exercise to try out writing more markdown.
 
 > ## Exercise: Try Out Markdown
-> Use [this cheatsheet][github-flavored-markdown] to add the following to your `README.md`:
+> Use <span class="github-content">[this cheatsheet][github-flavored-markdown]</span><span class="gitlab-content">[this cheatsheet][gitlab-flavored-markdown]</span> to add the following to your `README.md`:
 >
 > - Another second level heading
 > - Some text under that second level heading that includes an link and ~~strikethrough~~ text.
@@ -181,7 +184,8 @@ Let's do an exercise to try out writing more markdown.
 > > ![Carpentries Logo](https://github.com/carpentries/carpentries.org/raw/main/images/TheCarpentries-opengraph.png)
 > > ~~~
 > > {: .language-markdown }
-> > <img src="../fig/markdown_exercise.png" alt="Rendered solution to the markdown exercise" width="width=800">
+> > <img class="github-content" src="../fig/markdown_exercise.png" alt="Rendered solution to the markdown exercise" width="width=800">
+> > <img class="gitlab-content" src="../fig/gitlab_markdown_exercise.png" alt="Rendered solution to the markdown exercise" width="width=914">
 > >
 > {: .solution }
 {: .challenge }
