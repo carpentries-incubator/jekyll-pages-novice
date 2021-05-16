@@ -30,25 +30,40 @@ A lot of tools for rendering Markdown source code exist.
 Rendering is the process of generating a nice view of the content
 using the style information included in the source text.
 Chances are high, your editor can do this.
-As we are working towards authoring websites using Jekyll and GitHub pages,
-we will use GitHub straight away for learning the basics of Markdown.
-The GitHub project you created in the last episode contains a file `README.md`.
+As we are working towards authoring websites using Jekyll and {{ site.github_or_gitlab }} Pages,
+we will use {{ site.github_or_gitlab }} straight away for learning the basics of Markdown.
+The {{ site.github_or_gitlab }} project you created in the last episode contains a file `README.md`.
 
 The picture below shows the projects default view.
 This view includes a rendered view of the content inside the file `README.md`.
-Your project should look quite similar except for the red circle around the pencil symbol.
+
+{::options parse_block_html="true" /}
+<div class="github-content">Your project should look quite similar except for the red circle around the pencil symbol.
 
 <img src="../fig/group_website_repo_edit.png" alt="On the homepage of a GitHub repository, the edit button is positioned to the top right of the README preview" width="600">
-
 
 You can click on that pencil symbol to open an editing interface of your projects `README.md` file.
 Once you've clicked the pencil symbol, GitHub will open that file in the editing interface.
 
 <img src="../fig/group_website_readme_edit.png" alt="Editing interface of the group websites README file" width="600">
+</div>
+
+{::options parse_block_html="true" /}
+<div class="gitlab-content">
+<img src="../fig/gitlab_group_website_repo.png" alt="GitLab repository for the group website" width="1000">
+
+To edit `README.md`, click the filename to open a preview of this file.
+In the preview you will find a `Edit` blue button.
+
+<img src="../fig/gitlab_edit_readme.png" alt="GitLab editing README.md and highlighting Edit button" width="962">
+
+</div>
 
 You can change the content and have a look at the rendered view by clicking the _Preview changes_ tab.
 
-<img src="../fig/group_website_readme_render.png" alt="Preview of the rendered content of the group websites README file" width="600">
+<img class="github-content" src="../fig/group_website_readme_render.png" alt="Preview of the rendered content of the group websites README file" width="600">
+<img class="gitlab-content" src="../fig/gitlab_group_website_readme_render.png" alt="Preview of the rendered content of the group websites README file" width="600">
+
 
 Let's add `Some **bold** font` and see what happens when we preview it using the preview tab.
 If new sections were added you will also find green vertical bars visually highlighting the new content.

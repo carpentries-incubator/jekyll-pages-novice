@@ -110,6 +110,7 @@ exclude:
 # content simultaneously, one next to the other with
 # distinctive background colors for GitHub and GitLab blocks.
 github_or_gitlab: "<span class='github-content'>GitHub</span><span class='gitlab-content'>GitLab</span>"
+main_or_master: "<span class='github-content'>`main`</span><span class='gitlab-content'>`master`</span>"
 
 # Turn on built-in syntax highlighting.
 highlighter: rouge
