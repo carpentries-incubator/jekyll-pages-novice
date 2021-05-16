@@ -210,7 +210,7 @@ the website we will be creating.
 
 <article class="github-content">
 
-## GitHub Pages
+## GitHub
 
 > ## Setup a GitHub account
 > Before you can create a repo, you will need to
@@ -253,11 +253,104 @@ which allows anyone to re-use and adapt the content of the repository without re
 but you may want to consider choosing something more restrictive when you’re building
 your own website.
 
-> ## Checkout other licenses
-> You may want to checkout [this lesson](https://swcarpentry.github.io/git-novice/11-licensing/index.html) or
+</article>
+
+<article class="gitlab-content">
+
+## GitLab
+
+> ## Setup a GitLab account
+> Before you can create a repo, you will need to
+> [create a GitLab account](https://gitlab.com/users/sign_up)
+{: .callout}
+
+Make sure to login with your GitLab account and visit https://gitlab.com.
+
+Click the blue "New project" button on the right hand side:
+
+<img src="../fig/gitlab_project_button.png" alt="Blue New Project Button" width="1000">
+
+You can then select if you wish to start a blank project or one of the provided templates.
+GitLab provides a ready-to-use Jekyll template, but using it from the get-go can be overwhelming.
+Instead we will start from scratch and take small steps in order to understand how Jekyll works.
+
+Go ahead and select "Create blank project".
+
+<img src="../fig/gitlab_project_create_blank.png" alt="GitLab create blank option" width="1000">
+
+Next you will need to fill in some info about your repository.
+
+<img src="../fig/gitlab_blank_project.png" alt="GitLab blank project" width="885">
+
+In this lesson, we will be working on a general group website.
+You can imagine this website may be for your lab group, a specific project group,
+or another group you work with.
+Under "Project name" type `Group Website`. Notice that "Project slug" will be filled for you and will display `group-website`.
+
+<img src="../fig/gitlab_project_name.png" alt="GitLab specify project name" width="884">
+
+We can also add a description (for instance **Repo for learning how to make websites with Jekyll on GitLab Pages**) so we know what this repo is when we find it again after the workshop.
+
+<img src="../fig/gitlab_project_description.png" alt="GitLab specify project description" width="883">
+
+and choose between two visibility levels for your repository and website.
+
+Since we want to build a group website, we will select **Public** here.  
+Selecting **Private** would restrict both the repository and website to only be visible by members of the project.
+
+Finally we can also request that a README is added to our repository.
+It is good practice to have a README file that gives more information
+about your repo.
+
+<img src="../fig/gitlab_project_visibility_and_readme.png" alt="GitLab project visibility and readme" width="872">
+
+Once done we can go ahead and hit the **Create project** button.
+
+<img src="../fig/gitlab_create_project.png" alt="GitLab create project" width="884">
+
+After a few seconds GitLab will present us with our new project. Huzzah!
+
+<img src="../fig/gitlab_project_created.png" alt="GitLab project is created" width="1000">
+
+Before we proceed with creating content, we should first select a **License**,
+for all the content we will be adding to our project.
+We can to this by clicking the `Add LICENSE` button:
+
+<img src="../fig/gitlab_project_create_license.png" alt="GitLab add license" width="965">
+
+which will take us to a new page where we can find the `Apply a template` selector
+
+<img src="../fig/gitlab_select_license_template.png" alt="GitLab select license from templates" width="783">
+
+that displays some of the most commonly used licenses.
+
+<img src="../fig/gitlab_select_license_choices.png" alt="GitLab license choices" width="314">
+
+For this example repository we’ll use the `Creative Commons Zero v1.0 Universal` (CC0) license,
+which allows anyone to re-use and adapt the content of the repository without restriction,
+but you may want to consider choosing something more restrictive when you’re building
+your own website.
+
+So go ahead, select it, scroll down, modify the "Commit message" if you wish and hit `Commit changes` to confirm.
+
+<img src="../fig/gitlab_commit_license.png" alt="GitLab selecting CC0 license" width="965">
+
+If we now navigate to the "Project overview" we can see a `LICENSE` file in the repository
+and `Create Commons Zero v1.0 Universal` is displayed.
+
+<img src="../fig/gitlab_license_in_effect.png" alt="GitLab license in effect" width="959">
+
+</article>
+
+> ## Checkout Other Licences
+> You may want to checkout [this lesson](https://swcarpentry.github.io/git-novice/11-licensing/index.html),
 > [GitHub's license documentation](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/licensing-a-repository)
 > for more information about possible licenses.
 {: .callout}
+
+{::options parse_block_html="true" /}
+
+<article class="github-content">
 
 <img src="../fig/set_CC0_license.png" alt="Repository name set to group-website" width="400">
 
@@ -272,68 +365,14 @@ GitHub will then setup the repo and it should look like the following screenshot
 
 </article>
 
+
+{::options parse_block_html="true" /}
+
 <article class="gitlab-content">
 
-> ## Setup a GitLab account
-> Before you can create a repo, you will need to
-> [create a GitLab account](https://gitlab.com/users/sign_up)
-{: .callout}
+Once done will all the above, our freshly created repo should look like the following screenshot.
 
-Make sure to login with your GitLab account and visit https://gitlab.com.
-
-
-Click the green "New" repo button on the left hand side of GitHub:
-
-<img src="../fig/new_repo_button.png" alt="Green New Repo Button" width="100">
-
-**or** click the "+" menu in the upper righthand corner and
-choose "New Repository".
-
-<img src="../fig/plus_new_repo.png" alt="Dropdown plus menu with new repository option highlighted" width="200">
-
-Next you will need to fill in some info about your repository.
-
-<img src="../fig/blank_new_repo.png" alt="Blank new repository page" width="600">
-
-In this lesson, we will be working on a general group website.
-You can imagine this website may be for your lab group, a specific project group,
-or another group you work with.
-Under the "Repository name" field type `group-website`.
-
-<img src="../fig/set_repo_name.png" alt="Repository name set to group-website" width="600">
-
-
-We can also add a description (for instance **Repo for learning how to make websites with jekyll pages**) so we know what this repo is when we find it again after the workshop.
-
-<img src="../fig/set_repo_description.png" alt="Repository name set to group-website" width="600">
-
-Under the "Initialize this repository with:" section we will check `Add a README file`
-and `Choose a license`.  It is good practice to have a README file that gives more information
-about your repo and to set a license for your work.
-
-<img src="../fig/initialize_readme_license.png" alt="Repository name set to group-website" width="600">
-
-for this example repository we’ll use the `Creative Commons Zero v1.0 Universal` (CC0) license,
-which allows anyone to re-use and adapt the content of the repository without restriction,
-but you may want to consider choosing something more restrictive when you’re building
-your own website.
-
-> ## Checkout Other Licences
-> You may want to checkout [this lesson](https://swcarpentry.github.io/git-novice/11-licensing/index.html) or
-> [GitHub's license documentation](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/licensing-a-repository)
-> for more information about possible licenses.
-{: .callout}
-
-<img src="../fig/set_CC0_license.png" alt="Repository name set to group-website" width="400">
-
-Once you've finished these steps you can click the "Create Repository" button to
-finish creating the repo.
-
-<img src="../fig/create_repository.png" alt="Filled in form with a create repository button" width="600">
-
-GitHub will then setup the repo and it should look like the following screenshot.
-
-<img src="../fig/group_website_repo.png" alt="Github repository for the group website" width="800">
+<img src="../fig/gitlab_group_website_repo.png" alt="GitLab repository for the group website" width="1000">
 
 </article>
 
