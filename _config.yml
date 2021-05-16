@@ -105,11 +105,10 @@ exclude:
   - .vendor/
   - .docker-vendor/
 
-# Set to true to allow displaying GitHub and GitLab
-# content simultaneously, one after the other.
-# Setting this to true also adds a distinctive background
-# colors to GitHub and GitLab blocks.
-debug_github_gitlab: false
+# On GitHub Pages jekyll builds with JEKYLL_ENV=production
+# We use this to allow displaying GitHub and GitLab
+# content simultaneously, one next to the other with
+# distinctive background colors for GitHub and GitLab blocks.
 github_or_gitlab: "<span class='github-content'>GitHub</span><span class='gitlab-content'>GitLab</span>"
 
 # Turn on built-in syntax highlighting.

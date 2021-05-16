@@ -97,10 +97,10 @@
 	{% endif %}
       </ul>
       <div id="github-gitlab-selector" class="navbar-right btn-group" style="padding: 15px 1px 15px 1px;" id="status" data-toggle="buttons">
-        {% if site.debug_github_gitlab %}
-        {% assign ghgl_input_type = "checkbox" %}
-        {% else %}
+        {% if jekyll.environment == "production" %}
         {% assign ghgl_input_type = "radio" %}
+        {% else %}
+        {% assign ghgl_input_type = "checkbox" %}
         {% endif %}
         <label class="btn btn-default btn-on btn-xs active">
           <input type="{{ ghgl_input_type }}" value="github" name="github-gitlab-selector" checked="checked">GitHub</label>

@@ -19,7 +19,7 @@
     {% if page.math %}
     <link rel="stylesheet" type="text/css" href="{{ relative_root_path }}/assets/css/katex.min.css" />
     {% endif %}
-    {% if site.debug_github_gitlab %}
+    {% if jekyll.environment != "production" %}
     <!-- Add colors to debug GitHub/GitLab content -->
     <style>
       .github-content {
