@@ -64,16 +64,17 @@ $(function() {
     if (urlParams.has(ghgl_attr)) {
         // When URL is set we need to get its value to
         // configure the GitHub/GitLab selector widget
-        let ghgl = urlParams.get(ghgl_attr);
+        let ghgl = urlParams.getAll(ghgl_attr);
 
         // The active class gives the label the "effect" of being selected
         ghgl_selector.parent().removeClass('active');
 
         // Force ghgl_selector to match the URL provided element
-        let selected_radio = ghgl_selector.filter(`[value=${ghgl}]`)
-        selected_radio.parent().addClass('active');
-        selected_radio.prop('checked', true);
-        console.log(`Selected and forced option ${ghgl}`);
+        ghgl.forEach(function (target) {
+            let selected_options = ghgl_selector.filter(`[value=${target}]`)
+            selected_options.prop('checked', true).parent().addClass('active');
+            console.log(`Selected and forced option ${ghgl}`);
+        });
     }
 
     // Trigger content change when the GitHub/GitLab widget is used
@@ -83,26 +84,36 @@ $(function() {
     // based on the selection in the GitHub/GitLab widget
     ghgl_selector.trigger("change");
 
+    // If neither GitHub or GitLab has been selected on page load,
+    // force GitHub to be selected.
+    if (ghgl_selector.filter(":checked").length === 0) {
+        ghgl_selector.first().prop('checked', true).parent().addClass('active');
+        // We also need to manually trigger showing GitHub content
+        ghgl_selector.trigger("change");
+    };
+
     // To preserve the GitHub/GitLab selection across pages
     // and without relying on cookies (avoiding Cookie Law implications)
     // when a visitor clicks on any <a> the github/gitlab value
     // is added as a URL parameter
     // Note, only consider relative URLs that start with ./ or ../
-    let anchors = $("a[href^='./'],a[href^='../']");
+    let anchors = $("a[href^='/'],a[href^='./'],a[href^='../']");
     // exclude anchors with dropdown behavior
     anchors = anchors.not("[data-toggle='dropdown']")
 
     anchors.click(function(e) {
         e.preventDefault();
-        let ghgl_value = ghgl_selector.filter(":checked").val();
         let href = this.href;
-        if (href.indexOf('?') != -1) {
-            // when URL already contains at least 1 parameter
-            href = href + `&${ghgl_attr}=${ghgl_value}`;
-        } else {
-            // when URL contains no parameters
-            href = href + `?${ghgl_attr}=${ghgl_value}`;
-        }
+        ghgl_selector.filter(":checked").each(function () {
+            let ghgl_value = $(this).val();
+            if (href.indexOf('?') != -1) {
+                // when URL already contains at least 1 parameter
+                href = href + `&${ghgl_attr}=${ghgl_value}`;
+            } else {
+                // when URL contains no parameters
+                href = href + `?${ghgl_attr}=${ghgl_value}`;
+            }
+        });
         window.location.href = href;
     });
 });

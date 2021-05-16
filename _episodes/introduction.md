@@ -343,8 +343,8 @@ and `Create Commons Zero v1.0 Universal` is displayed.
 </article>
 
 > ## Checkout Other Licences
-> You may want to checkout [this lesson](https://swcarpentry.github.io/git-novice/11-licensing/index.html),
-> [GitHub's license documentation](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/licensing-a-repository)
+> You may want to checkout [this lesson](https://swcarpentry.github.io/git-novice/11-licensing/index.html)
+> or [GitHub's license documentation](https://docs.github.com/en/free-pro-team@latest/github/creating-cloning-and-archiving-repositories/licensing-a-repository)
 > for more information about possible licenses.
 {: .callout}
 
