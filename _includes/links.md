@@ -48,7 +48,6 @@
 [lesson-mainpage]: {{ relative_root_path }}{% link index.md %}
 [lesson-reference]: {{ relative_root_path }}{% link reference.md %}
 [lesson-setup]: {{ relative_root_path }}{% link setup.md %}
-[lesson-webpage]: {{ relative_root_path }}
 [liquid]: https://shopify.dev/docs/themes/liquid/
 [liquid-group-by]: https://jekyllrb.com/docs/liquid/filters/#group-by
 [liquid-sample]: https://jekyllrb.com/docs/liquid/filters/#sample
