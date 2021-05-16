@@ -255,6 +255,7 @@ your own website.
 
 </article>
 
+{::options parse_block_html="true" /}
 <article class="gitlab-content">
 
 ## GitLab
@@ -349,8 +350,7 @@ and `Create Commons Zero v1.0 Universal` is displayed.
 {: .callout}
 
 {::options parse_block_html="true" /}
-
-<article class="github-content">
+<div class="github-content">
 
 <img src="../fig/set_CC0_license.png" alt="Repository name set to group-website" width="400">
 
@@ -363,18 +363,16 @@ GitHub will then setup the repo and it should look like the following screenshot
 
 <img src="../fig/group_website_repo.png" alt="Github repository for the group website" width="800">
 
-</article>
-
+</div>
 
 {::options parse_block_html="true" /}
-
-<article class="gitlab-content">
+<div class="gitlab-content">
 
 Once done will all the above, our freshly created repo should look like the following screenshot.
 
 <img src="../fig/gitlab_group_website_repo.png" alt="GitLab repository for the group website" width="1000">
 
-</article>
+</div>
 
 [qwantz-easter-egg-ext]: https://chrome.google.com/webstore/detail/dinosaur-comics-easter-eg/bojkkeeefjmeogpgnlomodfkkfkfhabj
 
