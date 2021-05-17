@@ -32,7 +32,7 @@ better understand Jekyll themes once you get to learning about them.
 > [configure a GitHub repository to use the Jekyll static site generator]({{ relative_root_path }}/github-pages/),
 > and [how to use Jekyll to build our Markdown pages and various other files]({{ relative_root_path }}/starting-jekyll/)
 > (HTML snippets, CSS, images, etc.) into a set of HTML documents that are then served via the GitHub Pages framework.
-> <img src="../fig/jekyll-gh-pages-website-overview.png" alt="Static websites in GitHub Pages technology overview diagram" width="700">
+> <img src="../fig/jekyll-gh-pages-website-overview.svg" alt="Static websites in GitHub Pages technology overview diagram" width="700">
 > **HTML** is the basic building block of webpages served on the Internet. It describes the structural elements of the
 > page and their raw content and is often aided by **CSS** - an ordered set of styling instructions telling the browser
 > how the content described in the HTML document should be organised and formatted. HTML is very verbose and difficult
@@ -49,11 +49,11 @@ better understand Jekyll themes once you get to learning about them.
 > reusable markup snippets that can be repeated on multiple pages and to embed code snippets and filters into our pages to
 > create some complex content assembly pipelines. That way, adding a new blog post to your website may only involve
 > creating a file in the `_posts` folder of your website, setting it to use the 'post' template and focusing on its
-> content - and it will magically appear at the top of your Blog timeline without any extra effort on your part.   
+> content - and it will magically appear at the top of your Blog timeline without any extra effort on your part.
 {: .keypoints }
 
-As a last thing, let's put it all together by having a look at a directory structure of a real-life 
-Jekyll website, where different pieces are located and see how they relate to visual components on the 
+As a last thing, let's put it all together by having a look at a directory structure of a real-life
+Jekyll website, where different pieces are located and see how they relate to visual components on the
 rendered website pages.
 
 ### Jekyll Website Directory Structure
