@@ -29,7 +29,7 @@ title: "Instructor Notes"
   The advantage of opening a plain `.html` file in the browser is that it
   clearly demonstrates the utility of the `title` element.
 
-## Common Issues
+## Reusing Blocks of Content
 
 - Learners sometimes get confused about when to use "includes" vs "include".  Good to stress that the folder is `_includes`
       and when you want to use something for that folder you `include` it.
