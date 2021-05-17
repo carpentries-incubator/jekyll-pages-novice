@@ -17,6 +17,34 @@ keypoints:
 
 ---
 
+{::options parse_block_html="true" /}
+
+<div class="gitlab-content">
+
+# FIXME
+
+Images to use:
+
+<img src="../fig/gitlab_settings_description.png"/>
+<img src="../fig/gitlab_settings_pages.png"/>
+<img src="../fig/gitlab_build_success.png"/>
+<img src="../fig/gitlab_create_gemfile.png"/>
+<img src="../fig/gitlab_build_fail.png"/>
+<img src="../fig/gitlab_build_in_progress.png"/>
+<img src="../fig/gitlab_create_gitlabci_jekyll_template_commit.png"/>
+<img src="../fig/gitlab_create_gitlabci_jekyll_template.png"/>
+<img src="../fig/gitlab_create_new_file.png"/>  
+
+Things to check:
+
+- [ ] Build succeeded but `README.md` was not transformed to HTML. Is this a GitHub feature?
+- [ ] No index.html was created.
+- [ ] First build took an awful long time. Check if other builds do as well.
+- [ ] Consider using `jekyll/jekyll` as starting docker image. `Gemfile` may not be necessary in this case. See also https://github.com/envygeeks/jekyll-docker and `jekyll/builder`.
+
+
+</div>
+
 Now that you know how to create Markdown files, let's see how to turn them into Web pages. GitHub has a
 service just for that called GitHub Pages.
 
