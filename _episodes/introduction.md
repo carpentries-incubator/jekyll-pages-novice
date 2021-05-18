@@ -137,7 +137,7 @@ A similar example written using HTML lists would look as follows:
 ~~~ 
 {: .language-html }
 
-Here, we used unordered list tags `<ul>` and `</ul>` to define a list with 4 items, each in turn wrapped in 
+Here, we used **u**nordered **l**ist tags `<ul>` and `</ul>` to define a list with 4 items, each in turn wrapped in 
 individual list item (`<li>` and `</li>`) tags. 
 
 ## Static vs Dynamic Sites
