@@ -114,7 +114,7 @@ The HTML to produce such a table looks like this (you can copy+paste the snippet
 ~~~
 <table>
     <tr><th>Language</th><th>Text</th></tr>
-    <tr><td>English </td><td>Hello, World!</td></tr>  
+    <tr><td>English</td><td>Hello, World!</td></tr>  
     <tr><td>French</td><td>Bonjour, le monde!</td></tr>
     <tr><td>Portuguese</td><td>Olá, Mundo!</td></tr>
     <tr><td>Serbian</td><td>Zdravo, svete!</td></tr>
