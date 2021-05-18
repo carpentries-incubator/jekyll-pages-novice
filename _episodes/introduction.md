@@ -77,7 +77,7 @@ a web browser will make a best guess regarding the layout of HTML elements on th
 > In the `Hello world` example above 5 different tags are used (`html`, `head`, `title`, `body` and `p`) in their open `<>` and closed `</>` form.
 > We see also the special `doctype` tag that indicates the format and version of the document, in this case, [HTML(5)][html5-wikipedia].
 >
-> Other examples of frequently used tags are for: 
+> Many other tags exist to define: 
 > - *structural elements*, such as `table`, `div`, `span`, `nav`, `section`;            
 > - *lists*, such as `ul` (for unordered lists) and `or` (for ordered lists);
 > - *stylized elements*, such as `i`/`em` (for *italics/emphasis*), `b`/`strong` (for **bold**) and `u` (for <u>underlined text</u>);
