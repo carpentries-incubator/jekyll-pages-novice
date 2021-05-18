@@ -79,7 +79,7 @@ a web browser will make a best guess regarding the layout of HTML elements on th
 >
 > Other examples of frequently used tags are for: 
 > - *structural elements*, such as `table`, `div`, `span`, `nav`, `section`;            
-> - *lists*, such as `ul` (for unordered lists), `or` (for ordered lists), and `li` for individual list items;
+> - *lists*, such as `ul` (for unordered lists) and `or` (for ordered lists);
 > - *stylized elements*, such as `i`/`em` (for *italics/emphasis*), `b`/`strong` (for **bold**) and `u` (for <u>underlined text</u>);
 > - *headings*, numbered from `h1` to `h6` for titles and progressively smaller sub-titles;
 > - *media elements*, such as `img`, `video`, `audio` to embed rich media content; and
