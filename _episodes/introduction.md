@@ -122,7 +122,7 @@ The HTML to produce such a table looks like this (you can copy+paste the snippet
 ~~~ 
 {: .language-html }
 
-Each row in enclosed between `<tr>` and `</tr>` tags; within a row, `<th>` and `</th>` tags are used to contain table headings 
+Each row in enclosed between **t**able **r**ow `<tr>` and `</tr>` tags; within a row, `<th>` and `</th>` tags are used to contain **t**able **h**eadings. 
 (special table cells displayed in bold font) while regular table data cells are contained within `<td>` and `</td>` tags.
 
 A similar example written using HTML lists would look as follows:
