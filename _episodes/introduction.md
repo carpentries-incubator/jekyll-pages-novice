@@ -122,8 +122,8 @@ The HTML to produce such a table looks like this (you can copy+paste the snippet
 ~~~ 
 {: .language-html }
 
-Each row in enclosed between **t**able **r**ow `<tr>` and `</tr>` tags; within a row, `<th>` and `</th>` tags are used to contain **t**able **h**eadings. 
-(special table cells displayed in bold font) while regular **t**able **d**ata cells are contained within `<td>` and `</td>` tags.
+Each row in enclosed between **t**able **r**ow `<tr>` and `</tr>` tags. Within a row, `<th>` and `</th>` tags are used to contain **t**able **h**eadings 
+(special table cells displayed in bold font), while regular **t**able **d**ata cells are contained within `<td>` and `</td>` tags.
 
 A similar example written using HTML lists would look as follows:
 ![HTML list example](../fig/html-list.png){: width="600px"}
@@ -138,7 +138,7 @@ A similar example written using HTML lists would look as follows:
 {: .language-html }
 
 Here, we used **u**nordered **l**ist tags `<ul>` and `</ul>` to define a list with 4 items, each in turn wrapped in 
-individual **li**st item (`<li>` and `</li>`) tags. 
+individual **l**ist **i**tem (`<li>` and `</li>`) tags. 
 
 ## Static vs Dynamic Sites
 
