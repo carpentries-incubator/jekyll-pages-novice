@@ -181,7 +181,7 @@ This file defines the bare minimum layout your pages should have.
 {: .challenge }
 
 Note that we have also included some additional HTML elements in out default layout- the display of the 
-page title as level-one heading and wrapping the main page content within <section> and </section> tags.
+page title as level-one heading and wrapping the main page content within `<section>` and `</section>` tags.
 
 ## Layout Inheritance
 

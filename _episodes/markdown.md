@@ -93,7 +93,6 @@ are caused by two trailing spaces at the end of a line.
 
 [Carpentries Webpage](https://carpentries.org/)
 
-
 ### Carpentries Lesson Programs:
 - Software Carpentry
 - Data Carpentry
