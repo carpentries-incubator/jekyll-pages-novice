@@ -80,3 +80,4 @@
 [w3-viewport]: https://www.w3schools.com/css/css_rwd_viewport.asp
 [www-wikipedia]: https://en.wikipedia.org/wiki/World_Wide_Web
 [yaml]: http://yaml.org/
+[yaml-lists]: https://yaml.org/spec/1.2/spec.html#id2759963
