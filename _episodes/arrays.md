@@ -173,12 +173,9 @@ display it in `about.md`.
     ## Team
 
     The following people are members of our research team:
-    <table>
-    <tr><th>Name</th><th>Role</th></tr>
     {% for team_member in site.team_members %}
-    <tr><td>{{ team_member.name }}</td><td>{{ team_member.role }}</td></tr>
+    - {{ team_member.name }}, role: {{ team_member.role }}
     {% endfor %}
-    </table>
 
     ## Cite us
 

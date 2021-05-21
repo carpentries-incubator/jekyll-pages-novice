@@ -43,9 +43,9 @@ in response to various triggers.
 ## Hello World in HTML
 
 When learning a new programming language,
-you may often find a reference to the popular `Hello world`.
+you may often find a reference to the popular `Hello world` example.
 These examples typically capture the simplest code that
-can produce and display the `Hello world` on screen.
+can produce and display the text "Hello, World!" on screen.
 
 As HTML requires certain tags to be present and almost always in matching pairs (open `<tag>` and closing `</tag>`),
 HTML documents tend to get verbose rather quickly.
@@ -59,7 +59,7 @@ The simplest, valid HTML `Hello world` is:
     <title>Page title</title>
   </head>
   <body>
-    <p>Hello World</p>
+    <p>Hello, World!</p>
   </body>
 </html>
 ~~~
@@ -77,11 +77,13 @@ a web browser will make a best guess regarding the layout of HTML elements on th
 > In the `Hello world` example above 5 different tags are used (`html`, `head`, `title`, `body` and `p`) in their open `<>` and closed `</>` form.
 > We see also the special `doctype` tag that indicates the format and version of the document, in this case, [HTML(5)][html5-wikipedia].
 >
-> Other examples include frequently used tags for structural elements such as `div`, `span`, `nav`, `section`;
-> stylized tags `i`/`em`, `b`/`strong` and `u` for *italics/emphasis*, **bold** and <u>underlined text</u>;
-> headings numbered from `h1` to `h6` for titles and progressively smaller sub-titles;
-> `img`, `video`, `audio` to embed rich media;
-> and the important `a` tag (anchor) used to [link](#) to sections in the same or other documents.
+> Many other tags exist to define: 
+> - *structural elements*, such as `table`, `div`, `span`, `nav`, `section`;            
+> - *lists*, such as `ul` (for unordered lists) and `or` (for ordered lists);
+> - *stylized elements*, such as `i`/`em` (for *italics/emphasis*), `b`/`strong` (for **bold**) and `u` (for <u>underlined text</u>);
+> - *headings*, numbered from `h1` to `h6` for titles and progressively smaller sub-titles;
+> - *media elements*, such as `img`, `video`, `audio` to embed rich media content; and
+> - *links*, using the important `a` (anchor) tag to [link](#) to sections in the same page or other pages within the same or external websites.
 >
 > The [list of valid HTML tags][html5-tags] is rather extensive,
 > covering a rich range of features powering today's [world wide web][www-wikipedia].
@@ -91,7 +93,7 @@ a web browser will make a best guess regarding the layout of HTML elements on th
 >
 > Given the stylized text:
 >
-> <h1><em>Hello</em> World</h1>
+> <h1><em>Hello</em>, World!</h1>
 >
 > write the HTML that will produce the same result.
 > **Hint** the big font is achieved by use of a heading.
@@ -99,11 +101,44 @@ a web browser will make a best guess regarding the layout of HTML elements on th
 > > ## Solution
 > >
 > > ~~~
-> > <h1><em>Hello</em> World</h1>
+> > <h1><em>Hello</em>, World!</h1>
 > > ~~~
 > > {: .language-html }
 > {: .solution }
-{: .challenge }
+{: .challenge }      
+
+Let's write a more complex HTML example using a table showing the "Hello, World!" text in different languages that renders like: 
+![HTML table example](../fig/html-table.png){: width="600px"}
+
+The HTML to produce such a table looks like this (you can copy+paste the snippet into the HTML file you created in the previous example):
+~~~
+<table>
+    <tr><th>Language</th><th>Text</th></tr>
+    <tr><td>English</td><td>Hello, World!</td></tr>  
+    <tr><td>French</td><td>Bonjour, le monde!</td></tr>
+    <tr><td>Portuguese</td><td>Olá, Mundo!</td></tr>
+    <tr><td>Serbian</td><td>Zdravo, svete!</td></tr>
+</table>
+~~~ 
+{: .language-html }
+
+Each row in enclosed between **t**able **r**ow `<tr>` and `</tr>` tags. Within a row, `<th>` and `</th>` tags are used to contain **t**able **h**eadings 
+(special table cells displayed in bold font), while regular **t**able **d**ata cells are contained within `<td>` and `</td>` tags.
+
+A similar example written using HTML lists would look as follows:
+![HTML list example](../fig/html-list.png){: width="600px"}
+~~~
+<ul>
+    <li>English: Hello, World!</li>  
+    <li>French: Bonjour, le monde!</li>
+    <li>Portuguese: Olá, Mundo!</li>
+    <li>Serbian: Zdravo, svete!</li>
+</ul>
+~~~ 
+{: .language-html }
+
+Here, we used **u**nordered **l**ist tags `<ul>` and `</ul>` to define a list with 4 items, each in turn wrapped in 
+individual **l**ist **i**tem (`<li>` and `</li>`) tags. 
 
 ## Static vs Dynamic Sites
 

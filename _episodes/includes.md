@@ -109,14 +109,15 @@ the folder is automatically inserted in the path displayed in front of the box f
 
     ~~~
     {% raw %}<table>
-    <tr>
-    <td><a href=".">Home</a></td>
-    <td><a href="about">About</a></td>
-    </tr>
+        <tr>
+            <td><a href=".">Home</a></td>
+            <td><a href="about">About</a></td>
+        </tr>
     </table>
     <hr>{% endraw %}
     ~~~
-The snippet will create a table with a single row of links followed by a horizontal line separator. 
+    {: .language-html }
+The snippet will create a table with a single row with two links followed by a horizontal line separator. 
 5. Now insert the following `include` directive at the beginning of `index.md`:
 
     ~~~
@@ -227,14 +228,14 @@ repetition). We will explain why we need the file to be in HTML rather than Mark
    <hr>
    <p>Contact us</p>
    <ul>
-   {% raw %}<li>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>{% endraw %}
-   {% raw %}<li>Twitter: <a href="{{ site.twitter }}">{{ site.twitter }}</a></li>{% endraw %}
+        {% raw %}<li>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>{% endraw %}
+        {% raw %}<li>Twitter: <a href="{{ site.twitter }}">{{ site.twitter }}</a></li>{% endraw %}
    </ul>
    ~~~
    {: .language-html }
 
-    This HTML snippet will create a horizontal like separator beneath which will be a list with email address and 
-    Twitter links. 
+    This HTML snippet will create a horizontal line separator followed by an unordered list with two elements: 
+    a contact email address and the Twitter URL wrapped as links using the anchor tag. 
 
 2. Add the line:
 
