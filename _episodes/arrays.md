@@ -330,8 +330,8 @@ collections:
 
 The `collections` field is a list of lists!
 This list contains only one entry, which is also a list that contains only one entry.
-It is reasonable to find this confusing,
-and you might find that it makes (a little) more sense
+It is reasonable to find this confusing.
+You might find that it makes (a little) more sense
 if you consider that we may wish to define multiple collections for our site
 and configure them each differently.
 
