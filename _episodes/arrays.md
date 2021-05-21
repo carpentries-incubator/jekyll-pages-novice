@@ -47,18 +47,60 @@ For example, we may want to list the names of all the team members for a project
 together with their roles and start dates, inside `_config.yml`
 and make use of this information throughout the website.
 
-To do so in YAML notation would look something like:
+To do so in YAML notation would look like this:
 
 ~~~
-team_members: [
-    {name: "Sarah Becker", role: "project lead", start_date: "2016-02-01"},
-    {name: "Jane Smith", role: "maintainer", start_date: "2018-03-15"},
-    {name: "Albert Hamilton", role: "editor", start_date: "2017-12-01"},
-]
+team_members:
+  -
+    name: "Sarah Becker"
+    role: "project lead"
+    start_date: "2016-02-01"
+  -
+    name: "Jane Smith"
+    role: maintainer
+    start_date: "2018-03-15"
+  -
+    name: "Albert Hamilton"
+    role: editor
+    start_date: "2017-12-01"
 ~~~
 {: .language-yaml}
 
 This defines 'team_members' as a list of 3 elements; each element is a dictionary with key-value pairs for name, role and date.
+The syntax for lists in YAML can be a little hard to grasp at first glance.
+Each entry in the list is marked by a `-`, indented once to the right.
+After this, the contents of the list item is described on lines
+indented twice to the right,
+with pairs on keys and values.
+The keys - `name`, `role`, and `start_date` -
+are identical for all entries in the list
+but the values differ from one team member to the next.
+
+> ## YAML Syntax is Flexible
+> When browsing documentation and examples of YAML
+> you will sometimes see lists represented slightly differently,
+> with the first part of the entry value written on the same line
+> as the `-`, e.g.
+>
+> ~~~
+> team_members:
+>   - name: "Sarah Becker"
+>     role: "project lead"
+>     start_date: "2016-02-01"
+>   - name: "Jane Smith"
+>     role: maintainer
+>     start_date: "2018-03-15"
+>   - name: "Albert Hamilton"
+>     role: editor
+>     start_date: "2017-12-01"
+> ~~~
+> {: .language-yaml}
+>
+> This is also valid syntax and a little more compact,
+> but we will place `-` on its own line in this lesson as
+> [that syntax is described in the official YAML specification][yaml-lists].
+>
+{: .callout }
 
 > ## Indentation in YAML
 > Note that indentation level in YAML is important -
@@ -94,11 +136,19 @@ display it in `about.md`.
    websites in GitHub with GitHub Pages."
    email: "team@my.research.org"
    twitter: "https://twitter.com/my_research_project"
-   team_members: [
-       {name: "Sarah Becker", role: "project lead", start_date: "2016-02-01"},
-       {name: "Jane Smith", role: "maintainer", start_date: "2018-03-15"},
-       {name: "Albert Hamilton", role: "editor", start_date: "2017-12-01"}
-   ]
+   team_members:
+     -
+       name: "Sarah Becker"
+       role: "project lead"
+       start_date: "2016-02-01"
+     -
+       name: "Jane Smith"
+       role: maintainer
+       start_date: "2018-03-15"
+     -
+       name: "Albert Hamilton"
+       role: editor
+       start_date: "2017-12-01"
    ~~~
    {: .language-yaml}
 
@@ -217,12 +267,23 @@ you only need to update the list in `_config.yml` without modifying your pages.
 > > websites in GitHub with GitHub Pages."
 > > email: team@my.research.org
 > > twitter: "https://twitter.com/my_research_project"
-> > team_members: [
-> >    {name: "Tom Cat", role: "project lead", start_date: "2020-10-01"},
-> >    {name: "Jane Smith", role: "maintainer", start_date: "2018-03-15"},
-> >    {name: "Albert Hamilton", role: "editor", start_date: "2017-12-01"},
-> >    {name: "Alice Dauncey", role: "developer", start_date: "2020-09-15"}
-> > ]
+> > team_members:
+> >   -
+> >     name: "Tom Cat"
+> >     role: "project lead"
+> >     start_date: "2020-10-01"
+> >   -
+> >     name: "Jane Smith"
+> >     role: maintainer
+> >     start_date: "2018-03-15"
+> >   -
+> >     name: "Albert Hamilton"
+> >     role: editor
+> >     start_date: "2017-12-01"
+> >   -
+> >     name: "Alice Dauncey"
+> >     role: "developer"
+> >     start_date: "2020-09-15"
 > > ~~~
 > > {: .language-yaml}
 > > Check the changes in your website.
@@ -260,13 +321,25 @@ In `_config.yml`, we add the following lines:
 
 ~~~
 collections:
+  -
     blogposts:
+      -
         output: true
 ~~~
 {: .language-yaml }
 
-The `blogposts:` line says that our site includes this collection of files,
-and `output: true` tells Jekyll to create a rendered HTML page from the content
+The `collections` field is a list of lists!
+This list contains only one entry, which is also a list that contains only one entry.
+It is reasonable to find this confusing.
+You might find that it makes (a little) more sense
+if you consider that we may wish to define multiple collections for our site
+and configure them each differently.
+
+The entry in the `collections` list, `blogposts`,
+says that our site includes this collection of files,
+and the entry in that `blogposts` list, `output: true`,
+is a configures an option for that collection.
+It tells Jekyll to create a rendered HTML page from the content
 of each of these files.
 
 Now that we have configured our site to build this collection,
