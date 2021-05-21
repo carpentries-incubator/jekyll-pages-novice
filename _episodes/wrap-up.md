@@ -168,6 +168,19 @@ Creating a `gh-pages` branch also has turned on the website to render at
 `<USERNAME>.github.io/mundana-theme-jekyll`.  You can navigate to `<USERNAME>.github.io/mundana-theme-jekyll`
 and check in "Settings" to see that it worked as expected.
 
+We will be making lots of edits to the new `gh-pages` branch in the challenges below.
+This will be easier to do if we make it the default branch.
+To change the `gh-pages` branch to the default branch, first click 
+the branches button to the right of the drop-down menu we used to create
+the `gh-pages` branch.
+Then in the box that shows the `Default branch` click the two arrows button
+on the upper right-hand side of the box.
+Click that two arrows button again on the next page, choose `gh-pages`
+from the drop down menu options, and click `Update`.
+Confirm your choice by clicking `I understand, update the default branch.`.
+Now when you return to the `Code` tab or the main page of your repo, you will see
+`gh-pages` in the branch drop down by default.
+
 The following series of challenges will have you practice the skills you
 learned in this lesson to modify this template.
 
@@ -178,7 +191,7 @@ learned in this lesson to modify this template.
 > 
 {: .challenge}
 
-> ## Update the Configuration
+> ## Customize the Configuration
 > Update the name and the description variables for the site.
 > Reload the rendered page to see the changes to the actual site.
 > 
@@ -186,21 +199,79 @@ learned in this lesson to modify this template.
 > 
 {: .challenge}
 
-> ## Add a New Blogpost
-> Update the name and the description variables for the site.
-> Reload the rendered page to see the changes to the actual site.
+> ## Customize the Header Menu
 > 
-> Hint: See the [Starting with Jekyll episode](starting-jekyll.md) for review
+> Find where the header menu is created and remove the "WP", "Ghost", and 
+> "Buy me a coffee" items.
+>
+> Hint: See the [Reusing Blocks of Content](includes.md) section for more information
+> about where to find the header menu.
+> 
+> > ## Solution
+> > 
+> > Remove lines 12-20 in the `_includes/menu-header.html` file.
+> > 
+> {: .solution}
+{: .challenge}
+
+> ## Update a Layout
+> 
+> NEED SUGGESTION FOR LAYOUT CHANGE 
+>
 > 
 {: .challenge}
 
-<!--- Challenge: Update layout -->
-
-<!--- Challenge: filter (change date) ? -->
+> ## Customize the About Page
+>
+> 1. Find the `About` page, update the layout to the `page` layout,
+>  turn off the comments option, remove the image and the "made with" text.
+> 1. Make the page content a reference to the site description you updated
+>  and any other text you'd like to include.
+> 1. Link the `About` page to the header menu and preview it.
+>
+>
+{: .challenge}
+<!--- Should I add directions in the solution? -->
 
 <!--- Challenge:  collection changes - Authors? -->
+> ## Add Yourself as an Author
+>
+> 1. Find where the authors collection is defined and add yourself.
+>
+{: .challenge}
+<!--- Should I add directions in the solution? -->
 
-<!--- Challenge: detective work - find the tool that works with comments in the blogposts -->
+> ## Add a New Blogpost
+> Add a new blog post for today's date with the announcment of your new website.
+> 
+> Hint: See the [Loops and Collections](arrays.md) for reminders and more information,
+> Pay close attention to the Blogging in the Wild section as it tells you more about
+> how to use the built-in `_posts` functionality.
+> 
+{: .challenge}
+
+
+> ## Use A Filter
+> 
+> NEED SUGGESTION FOR USING A FILTER
+> POSSIBLY COULD COMBINE THIS WITH THE ABOUT PAGE CUSTOMIZATIONS.
+>
+> 
+{: .challenge}
+
+
+> ## Detective Work: Find Comments
+> Look through the site and see if you can find how it allows for comments.
+> 
+> > ## Solution
+> > 
+> > This site uses [Disqus](https://disqus.com/) to manage comments.
+> > If you'd like, you can create your own account and configure the site
+> > to manage your comments.
+> > 
+> {: .solution}
+> 
+{: .challenge}
 
 
 
