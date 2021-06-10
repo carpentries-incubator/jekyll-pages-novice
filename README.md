@@ -10,8 +10,8 @@ The lesson is aimed at researchers and research software engineers who understan
 
 ## Development Status & Contributing
 
-The lesson is currently **under active development**, with [collaborative sprints taking place monthly through the remaining months of 2020](https://hackmd.io/8IuM80wURA2uolBgzy_HZg?view#Timeline).
-The authors hope it will be ready for beta testing (i.e. ready to be taught by other Carpentries Instructors) by the beginning of 2021.
+The lesson is currently **under active development**, with [collaborative sprints taking place frequently]((https://hackmd.io/8IuM80wURA2uolBgzy_HZg?view)). 
+The authors hope it will be ready for beta testing (i.e. ready to be taught by other Carpentries Instructors) in summer 2021.
 We would be delighted if you contributed to making that happen! To find out more about what needs to be done and what's happened so far, please take a look at:
 
 * the open [Issues](https://github.com/carpentries-incubator/jekyll-pages-novice/issues) and [Pull Requests](https://github.com/carpentries-incubator/jekyll-pages-novice/pulls)
