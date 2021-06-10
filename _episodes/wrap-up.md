@@ -227,7 +227,7 @@ learned in this lesson to modify this template.
 >  turn off the comments option, remove the image and the "made with" text.
 > 1. Make the page content a reference to the site description you updated
 >  and any other text you'd like to include.
-> 1. Link the `About` page to the header menu and preview it.
+> 1. Add a link for the `About` page into the header menu.
 >
 >
 {: .challenge}
