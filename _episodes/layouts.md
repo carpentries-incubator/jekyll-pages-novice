@@ -82,7 +82,7 @@ we now see the page content has returned but we have two more problems:
 the styling of our pages has changed (for the worse) and
 the navigational links appear twice!
 
-![A page displaying the navigation section twice.](../fig/layouts_double_navigation.png){: width="800px"}
+![A page displaying the navigation section twice.](../fig/layouts_double_navigation.png){: .image-with-shadow width="800px" }
 
 The duplication is happening because the
 `{% raw %}{% include navigation.html %}{% endraw %}`
@@ -253,7 +253,7 @@ If you reload the home page now,
 you should now see that it has all of the structure provided in `default` layout
 as well as the banner image included from the `home` layout.
 
-![Home page with inherited layout](../fig/layouts_homepage_layout.png){: width="800px"}
+![Home page with inherited layout](../fig/layouts_homepage_layout.png){: .image-with-shadow width="800px" }
 
 The purpose of this approach, defining the core structure that will be common
 to every page across your site in a default layout,
