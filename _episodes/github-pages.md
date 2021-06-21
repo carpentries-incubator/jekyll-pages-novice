@@ -43,29 +43,30 @@ You may have noticed that when we created our repository in previous episode, by
 {: .callout}
 1. Click on the repository's `Settings` tab (the one with the little cog) as shown on the figure below:
 
-    <img src="../fig/repo_settings.png" alt="Repository settings" width="width=800">
+    ![Repository 'Settings' button in GitHub interface](../fig/repo_settings.png){: .image-with-shadow width="900px" }
 
 2. On the menu on the left hand side, click on `Pages`
 
-    <img src="../fig/settings_pages_tab.png" alt="Select Pages in Repository Settings" width="width=800">
+    ![Select 'Pages' tab in repository settings](../fig/settings_pages_tab.png){: .image-with-shadow width="900px" }
 
 3. You will see that the GitHub Pages settings are currently disabled. Select branch `main` to
-enable GitHub Pages for this repository and to tell GitHub which branch to use as a source.
+tell GitHub which branch to use as a source and
+click `Save` to enable GitHub Pages for this repository.
 
-    <img src="../fig/pages_checkmain.png" alt="Default website branch" width="width=800">
+    ![Set default branch for the website in repository settings](../fig/pages_check_main.png){: .image-with-shadow width="900px" }
 
 4. The link to your repository's website will appear in the highlighted box above. If you click the link  - your default browser will open and show your project website. If this does not happen, you should manually open your favourite web browser and paste the URL.
 
-    <img src="../fig/website_url.png" alt="Project website URL" width="width=800">
+    ![URL where the project website will be published by GitHub Pages](../fig/website_url.png){: .image-with-shadow width="900px" }
 
 5. It may take a while (from a few seconds to a few minutes) for GitHub to compile your website (depending on GitHub's availability and the complexity of
 your website) and it may not become visible immediately. You will know it is ready when the link appears in green box with a "tick" in front of the web address (as shown in the figure below).
 
-    <img src="../fig/website_url_green_tick.png" alt="Project website URL - successfull build" width="width=800">
+    ![Project website URL - indication of a successful build](../fig/website_url_green_tick.png){: .image-with-shadow width="900px" }
 
 6. Once ready, you should see the contents of the `README.md` file that we created earlier, rendered as a website.
 
-    <img src="../fig/first_website.png" alt="First website" width="width=800">
+    ![Our first website rendered by GitHub and showing the contents of README](../fig/first_website.png){: .image-with-shadow width="900px" }
 
 > ## Using Branch `gh-pages` for Websites
 > By convention, GitHub Pages uses branch called `gh-pages` to look for the website content. By creating a branch with that name, you implicitly tell GitHub that you want your content published and you do not need to configure
@@ -103,7 +104,7 @@ and add descriptive topics or tags about the content or technologies used in you
 
 You can edit the details of your repository by clicking on the little cog button as shown on the figure below.
 
-<img src="../fig/repository_details.png" alt="Repository details" width="width=800">
+![About section of a repository - edit repository details](../fig/repository_details.png){: .image-with-shadow width="900px" }
 
 By doing this, you add a link to the repository's website on your repository's landing page and anyone (including yourself) can access it quickly when visiting your GitHub repository.
 
@@ -117,11 +118,11 @@ To separate the contents of the repository's README from the website's homepage,
 To create a new file from GitHub interface,
 click the `Add file` button and select `Create new file` from the dropdown.
 
-<img src="../fig/github_create_file.png" alt="Create file" width="width=800">
+![Create a new file button in the GitHub interface](../fig/github_create_file.png){: .image-with-shadow width="900px" }
 
 Next, type some text into `index.md`, as shown below.
 
-<img src="../fig/github_add_index.png" alt="Create file" width="width=800">
+![Create index.md file](../fig/github_add_index.png){: .image-with-shadow width="900px" }
 
 We are now ready to start adding more content to our website. Let's do some exercises.
 
@@ -137,12 +138,12 @@ We are now ready to start adding more content to our website. Let's do some exer
 > >    # My Research Project
 > >
 > >    ## Description
-> >    This research project is all about teaching you how to create websites with GitHub pages.
+> >    This is an example website built while learning how to use Jekyll and GitHub Pages.
 > >    ~~~
 > >    {: .language-markdown }
 > >
 > > 2. Go to your website. It should now look like:
-    ![Add About section to index](../fig/episode03_exercise01_add_description.png)
+    ![Add 'About' section to index.md file](../fig/first_index_page.png){: .image-with-shadow width="900px" }
 > {: .solution }
 {: .challenge }
 
@@ -191,15 +192,15 @@ are both valid link targets
 >
 > > ## Solution
 > >
-> > 1. Create new file called `about.md` from the GitHub interface:
-> >    ![Create file](../fig/github_create_file.png)
+> > 1. Create a new file called `About.md` from the GitHub interface:
+> >    ![Create another page in GitHub called 'About.md'](../fig/github_create_another_file.png){: .image-with-shadow width="900px" }
 > >    Edit `about.md` file to look something like:
 > >
 > >    ~~~
 > >    # About
 > >
 > >    ## Project
-> >    This reseach project is all about teaching you how to create websites with GitHub pages.
+> >    This research project is all about teaching you how to create websites with GitHub pages.
 > >
 > >    ## Funders
 > >    We gratefully acknowledge funding from the XYZ Founding Council, under grant number 'abc'.
@@ -225,14 +226,14 @@ are both valid link targets
 > >    # My Research Project
 > >
 > >    ## Description
-> >    This research project is all about teaching you how to create websites with GitHub Pages.
+> >    This is an example website built while learning how to use Jekyll and GitHub Pages.
 > >
 > >    More details about the project are available from the [About page](about).
 > >    ~~~
 > >    {: .language-markdown }
 > >
 > > 3. Go to your website and click the link to 'About' page. It should look like:
-> >    ![About page](../fig/episode03_exercise01_about_page.png)
+> >    ![Rendered contents of the 'About.md' page](../fig/about_page.png){: .image-with-shadow width="900px" }
 > >
 > >    Note that the URL has '/about' appended to it - you can use this URL to access the 'About' page directly.
 > {: .solution }
