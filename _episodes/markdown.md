@@ -89,7 +89,7 @@ Repo for learning how to make websites with Jekyll pages
 Vanilla text may contain *italics* and **bold words**.
 
 This paragraph is separated from the previous one by a blank line.
-Line breaks  
+Line breaks
 are caused by two trailing spaces at the end of a line.
 
 [Carpentries Webpage](https://carpentries.org/)
@@ -109,7 +109,7 @@ You can then click the preview tab again to see how the formatting renders.
 >
 > In the example above there are two spaces at the end of `Line breaks  `.
 > These introduce what is called a **hard line break**, causing that paragraph to
-> continue in the next line by adding a `<br/>` to the generated HTML.  
+> continue in the next line by adding a `<br/>` to the generated HTML.
 >
 > If you break the line in a markdown file but don't include the two trailing spaces
 > the generated HTML will continue in the same line **without** introducing a `<br/>`.
@@ -123,7 +123,7 @@ You can then click the preview tab again to see how the formatting renders.
 > Soft line
 > break
 >
-> Hard line  
+> Hard line
 > break
 > ~~~
 > {: .language-markdown }
@@ -173,15 +173,15 @@ Let's do an exercise to try out writing more markdown.
 
 
 > ## Reference-Style Links
-> 
-> Up to now, we have used `inline style links` which have the URL inline with the description text, for example:
+>
+> Up to now, we have used _inline-style_ links which have the URL inline with the description text, for example:
 >
 > ~~~
 > [Carpentries Webpage](https://carpentries.org/)
 > ~~~
 > {: .language-markdown }
 >
-> If you use a link more than once, consider using so called `reference-style links` instead.
+> If you use a link more than once, consider using so called _reference-style_ links instead.
 > Reference-style links reference the URL via a label.
 > The label goes into square brackets `[ ]` right after the description text of the link and
 > then later, usually at the bottom of the page, you can connect that label to the url it references to complete the link.
@@ -207,13 +207,13 @@ Though later we will find we need HTML again for some features.
 {: .callout}
 
 > ## Markdown Flavours
->The initial description of Markdown was informal and contained certain ambiguities so over the years [different Markdown 
+>The initial description of Markdown was informal and contained certain ambiguities so over the years [different Markdown
 >implementations and syntax variations](https://github.com/commonmark/commonmark-spec/wiki/markdown-flavors) (often referred to as "flavours")
->appeared to support various syntax features and extensions. As a consequence, the syntax from one variant may not 
->be interpreted as expected in another - you have to be aware which one is being used by a particular platform. Here are 
+>appeared to support various syntax features and extensions. As a consequence, the syntax from one variant may not
+>be interpreted as expected in another - you have to be aware which one is being used by a particular platform. Here are
 >a few well-known variants:
 >   - [GitHub-flavored Markdown][github-flavored-markdown] (used on this lesson and by GitHub)
->   - [GitLab-flavored Markdown][gitlab-flavored-markdown] (used by GitLab)      
+>   - [GitLab-flavored Markdown][gitlab-flavored-markdown] (used by GitLab)
 >   - [Kramdown][kramdown] (a fast, Ruby, open source implementation released under the MIT licence)
 {: .callout}
 
@@ -230,8 +230,8 @@ Though later we will find we need HTML again for some features.
 {: .challenge }
 
 >## More Markdown Features
-> Check out our [Extras page on Markdown](../more_markdown/index.html) for a more comprehensive overview of 
-> Markdown, including how to create fenced code blocks 
+> Check out our [Extras page on Markdown](../more_markdown/index.html) for a more comprehensive overview of
+> Markdown, including how to create fenced code blocks
 > and do syntax highlighting for various languages.
 {: .callout}
 
