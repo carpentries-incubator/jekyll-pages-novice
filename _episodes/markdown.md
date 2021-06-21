@@ -104,7 +104,7 @@ You can then click the preview tab again to see how the formatting renders.
 
 <img src="../fig/markdown_preview_formatting.png" alt="Preview of the formatting added to the Readme" width="600">
 
-> ## Markdown trailing spaces are meaningful
+> ## Markdown Trailing Spaces Are Meaningful
 >
 > In the example above there are two spaces at the end of `Line breaks  `.
 > These introduce what is called a **hard line break**, causing that paragraph to
