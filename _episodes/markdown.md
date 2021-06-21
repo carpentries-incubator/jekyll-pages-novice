@@ -34,26 +34,26 @@ As we are working towards authoring websites using Jekyll and GitHub pages,
 we will use GitHub straight away for learning the basics of Markdown.
 The GitHub project you created in the last episode contains a file `README.md`.
 
-The picture below shows the projects default view.
+The image below shows the projects default view.
 This view includes a rendered view of the content inside the file `README.md`.
 Your project should look quite similar except for the red circle around the pencil symbol.
 
 <img src="../fig/group_website_repo_edit.png" alt="On the homepage of a GitHub repository, the edit button is positioned to the top right of the README preview" width="600">
 
 
-You can click on that pencil symbol to open an editing interface of your projects `README.md` file.
-Once you've clicked the pencil symbol, GitHub will open that file in the editing interface.
+Click on that pencil symbol to open an editing interface of your project's `README.md` file.
+Once we've clicked the pencil symbol, GitHub will open that file in the editing interface.
 
 <img src="../fig/group_website_readme_edit.png" alt="Editing interface of the group websites README file" width="600">
 
-You can change the content and have a look at the rendered view by clicking the _Preview changes_ tab.
+We can change the content and have a look at the rendered view by clicking the _Preview changes_ tab.
 
 <img src="../fig/group_website_readme_render.png" alt="Preview of the rendered content of the group websites README file" width="600">
 
 Let's add `Some **bold** font` and see what happens when we preview it using the preview tab.
-If new sections were added you will also find green vertical bars visually highlighting the new content.
-To save the content to the file `README.md`, scroll down a bit and you'll see a _Commit changes_ menu
-where you can commit your changes.
+If new sections were added GitHub will show green vertical bars visually highlighting the new content.
+To save the content to the file `README.md`, scroll down a bit and search for a _Commit changes_ menu
+at the bottom of the page.
 After having changed something, the commit menu looks like this:
 
 <img src="../fig/group_website_readme_commit.png" alt="Commit menu for changes done in the GitHub web interface is located at the bottom of the website" width="600">
@@ -65,6 +65,7 @@ After having changed something, the commit menu looks like this:
 >
 {: .callout}
 
+Commit this change to the `main` branch.
 
 # Writing Markdown
 
@@ -197,6 +198,7 @@ Let's do an exercise to try out writing more markdown.
 {: .callout}
 
 We will continue to use Markdown and learn more throughout the rest of the lesson.
+Though later we will find we need HTML again for some features.
 
 > ## Markdown Cheatsheet
 >
