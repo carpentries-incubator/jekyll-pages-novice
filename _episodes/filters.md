@@ -1,5 +1,5 @@
 ---
-title: "Working with Filters"
+title: "Working With Filters"
 teaching: 20
 exercises: 5
 questions:

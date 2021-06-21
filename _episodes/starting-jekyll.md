@@ -1,5 +1,5 @@
 ---
-title: "Starting with Jekyll"
+title: "Starting With Jekyll"
 teaching: 20
 exercises: 10
 questions:
