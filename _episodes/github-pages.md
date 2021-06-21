@@ -121,7 +121,7 @@ click the `Add file` button and select `Create new file` from the dropdown.
 <img src="../fig/github_create_file.png" alt="Create file" width="width=800">
 
 Next, type some text into `index.md`.
-As shown below add a first level header that says `group-website`.
+As shown below add a first level header that says `Building Websites in GitHub`.
 
 <img src="../fig/github_add_index.png" alt="Create file" width="width=800">
 
