@@ -71,7 +71,7 @@ Today was a good day. I was promoted to Surgeon to the Forces!{% endraw %}
 
 You can view the post at `https://GITHUB_USERNAME.github.io/REPOSITORY_NAME/1827-11-22-surgeon.html`.
 
-![Blog post 1827-11-22](../fig/filters-post-1827-11-22-surgeon.png){: width="700px"}
+![Blog post '1827-11-22'](../fig/filters_post_1827-11-22_surgeon.png){: .image-with-shadow width="700px" }
 
 This is a good start! Let's make a second post before we try to further improve
 our post layout.
@@ -81,7 +81,7 @@ our post layout.
 > Write another blog post, in a file called `1851-05-06-DIG.md` in the root of our website repository,
 > so that the rendered page looks like this:
 >
-> ![Blog post 1851-05-06](../fig/filters-post-1851-05-06-DIG.png){: width="600px"}
+> ![Blog post '1851-05-06'](../fig/filters_post_1851-05-06_DIG.png){: .image-with-shadow width="700px" }
 >
 > > ## Solution
 > > Create the file `1851-05-06-DIG.md` in the root of the repository with the following content:
@@ -119,7 +119,7 @@ using a _Filter_:
 ~~~
 {: .language-markdown }
 
-![Blog post 1851-05-06 with human readable date using ordinal parameter](../fig/filters-post-1851-05-06-DIG-ordinal.png){: width="600px"}
+![Blog post '1851-05-06' with human readable date using ordinal parameter](../fig/filters_post_1851-05-06_DIG_ordinal.png){: .image-with-shadow width="700px" }
 
 Filters like `date_to_long_string` can be used when
 working with variable values on a page.
@@ -143,7 +143,7 @@ We will explore the `"ordinal"` part in the exercise below.
 > > `06 May 1851` (i.e. using the two digits to represent day).
 > > Whether you prefer this format is entirely subjective,
 > > and we encourage you to use which ever you prefer in your post layout.   
-> > ![Blog post 1851-05-06 with human readable date without ordinal parameter](../fig/filters-post-1851-05-06-DIG-without-ordinal.png){: width="600px"}
+> > ![Blog post '1851-05-06' with human readable date without ordinal parameter](../fig/filters_post_1851-05-06_DIG_without_ordinal.png){: .image-with-shadow width="700px" }
 > >
 > {: .solution }
 {: .challenge }
