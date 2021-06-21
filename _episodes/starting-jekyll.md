@@ -199,21 +199,20 @@ either due to a typo or missing information.
 
 If you were keeping an eye on the GitHub repository page until now, you may have noticed 
 a yellow circle visible when the website is still being processed and a green check mark (✓) when successful.
-You may have also noticed that in the same location there is now a red cross next to the commit message (❌).
+You may have also noticed that in the same location there is now a red cross next to the commit message (❌). 
+This indicates that something went wrong with the Jekyll build process after that commit.
 
-This indicates that something went wrong with our Jekyll build process.
-
-![Jekyll pending/successful build](../fig/includes_fail_pending_successful.png)
+![Jekyll pending/successful/failed builds after different commits](../fig/jekyll_fail_pending_successful.png){: .image-with-shadow width="800px" }
 
 You may also find an email from GitHub in your inbox with details about the error.
 But let's look at our repository again.
 If we click the red cross next to the commit message (❌) a little pop-up will appear with additional information.
 
-![Jekyll failed to build](../fig/includes_build_error.png)
+![Jekyll - a failed build](../fig/jekyll_build_error.png){: .image-with-shadow width="800px" }
 
 Visiting the page behind the **Details** link will give us the information we were missing.
 
-![Jekyll failed to build detail](../fig/includes_build_error_detail.png)
+![Jekyll - error details of a failed build](../fig/jekyll_build_error_detail.png){: .image-with-shadow width="800px" }
 
 From this page we can see that what caused the failure affected line 5 of the `_config.yml` file.
 This matches the line where we deleted the `"`.
