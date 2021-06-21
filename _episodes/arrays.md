@@ -186,7 +186,6 @@ display it in `about.md`.
     ~~~
     {: .language-markdown}
 
-FIXME: add screenshot of rendered team member listing
 ![Rendered team members list in the 'about.md' page](../fig/team_members_list.png){: .image-with-shadow width="800px" }
 
 ## Filtering a List
@@ -385,8 +384,7 @@ add a new for loop to iterate over the titles and dates of the `blogposts` colle
 ~~~
 {: .language-markdown }
 
-FIXME: add screenshot of blog post list
-![Rendered blog post list in the index page](../fig/blog_post_list.png){: .image-with-shadow width="800px" }
+![Rendered blog post list in the index page](../fig/blog_posts_list.png){: .image-with-shadow width="800px" }
 
 There is a lot happening in those few lines above!
 Let's break it down into smaller chunks and explore them one-by-one:
