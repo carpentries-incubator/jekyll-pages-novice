@@ -143,7 +143,7 @@ The snippet will create a table with a single row with two links followed by a h
 Refresh the `index.html` page and, barring any typos, e.g. in the name of the file,
 you should see the navigation links on the top of the page.
 
-![A page displaying the navigation links header](../fig/includes_navigation_links_header.png){: width="800px"}
+![A page displaying the navigation links header](../fig/includes_navigation_links_header.png){: .image-with-shadow width="800px" }
 
 You can add the same `include` tag at the top of
 all the other Markdown files for your site
@@ -249,7 +249,7 @@ repetition). We will explain why we need the file to be in HTML rather than Mark
 After refreshing any of these two pages - you should see a horizontal 
 line separating the main page content from the footer of the page which now contains contact information.
 
-![A page displaying contact links as footer](../fig/includes_contact_links_footer.png){: width="800px"}
+![A page displaying contact links as footer](../fig/includes_contact_links_footer.png){: .image-with-shadow width="800px" }
 
 This is another example of how we can create a block of common content and reuse it in multiple pages on our site
 by using Jekyll's `include` directive and placing code snippets in the `_includes` directory 
