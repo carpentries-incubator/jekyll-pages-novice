@@ -192,8 +192,8 @@ are both valid link targets
 >
 > > ## Solution
 > >
-> > 1. Create a new file called `About.md` from the GitHub interface:
-> >    ![Create another page in GitHub called 'About.md'](../fig/github_create_another_file.png){: .image-with-shadow width="900px" }
+> > 1. Create a new file called `about.md` from the GitHub interface:
+> >    ![Create another page in GitHub called 'about.md'](../fig/github_create_another_file.png){: .image-with-shadow width="900px" }
 > >    Edit `about.md` file to look something like:
 > >
 > >    ~~~
@@ -233,7 +233,7 @@ are both valid link targets
 > >    {: .language-markdown }
 > >
 > > 3. Go to your website and click the link to 'About' page. It should look like:
-> >    ![Rendered contents of the 'About.md' page](../fig/about_page.png){: .image-with-shadow width="900px" }
+> >    ![Rendered contents of the 'about.md' page](../fig/about_page.png){: .image-with-shadow width="900px" }
 > >
 > >    Note that the URL has '/about' appended to it - you can use this URL to access the 'About' page directly.
 > {: .solution }
