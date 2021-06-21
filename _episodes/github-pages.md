@@ -38,10 +38,11 @@ In order to tell GitHub that your repository contains a website that needs rende
 You may have noticed that when we created our repository in previous episode, by default GitHub created a branch called `main` and stored our files there. We now need to tell GitHub Pages that this branch contains our website files.
 
 > ## What is a Branch?
-> You may have never heard about Git branches and wonder what they mean. A branch is one version of your project (the files in your repository) that can contain its own set of commits - you can have many branches (versions) of your repository. The default branch automatically created with a new github repository is called `main`.
+> You may have never heard about Git branches and wonder what they mean. A branch is one version of your project (the files in your repository) that can contain its own set of commits - you can have many branches (versions) of your repository. The default branch automatically created with a new GitHub repository is called `main`.
 >
 {: .callout}
-1. Click on the repository's _Settings_ tab (the one with the little cog) as shown on the figure below:
+1. Click on the repository's _Settings_ tab (the one with the little cog/gear) as shown on the figure below:
+1. Click on the repository's `Settings` tab (the one with the little cog/gear icon) as shown on the figure below:
 
     <img src="../fig/repo_settings.png" alt="Repository settings" width="width=800">
 
@@ -101,7 +102,7 @@ practice to update your repository details with a brief description. This is als
 your repository's Web URL (as not everyone will have access to your repository's `Settings` to find it)
 and add descriptive topics or tags about the content or technologies used in your repository or project.
 
-You can edit the details of your repository by clicking on the little cog button as shown on the figure below.
+You can edit the details of your repository by clicking on the little cog/gear button as shown on the figure below.
 
 <img src="../fig/repository_details.png" alt="Repository details" width="width=800">
 
@@ -119,7 +120,8 @@ click the `Add file` button and select `Create new file` from the dropdown.
 
 <img src="../fig/github_create_file.png" alt="Create file" width="width=800">
 
-Next, type some text into `index.md`, as shown below.
+Next, type some text into `index.md`.
+As shown below add a first level header that says `group-website`.
 
 <img src="../fig/github_add_index.png" alt="Create file" width="width=800">
 
