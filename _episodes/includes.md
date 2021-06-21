@@ -217,39 +217,44 @@ in multiple places throughout your site as a footer.
 ~~~
 {: .language-markdown }
 
-Let's convert the above Markdown snippet into HTML and save it as `_includes/footer.html` file, and
-then use the `include` directive to insert it at the bottom of `index.md`. We also want to insert 
-it at the bottom of `about.md` (making sure we remove the equivalent contact section from `about.md` to avoid
-repetition). We will explain why we need the file to be in HTML rather than Markdown shortly.
+Let's convert the above Markdown snippet into HTML as shown below and reuse it in 
+`index.md` and `about.md` files. We will explain why we need the file to be in HTML rather than Markdown shortly.
 
-1. Create a file called `footer.html` inside the `_includes` folder containing the following HTML snippet:
-    
-    ~~~ 
-   <hr>
-   <p>Contact us</p>
-   <ul>
-        {% raw %}<li>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>{% endraw %}
-        {% raw %}<li>Twitter: <a href="{{ site.twitter }}">{{ site.twitter }}</a></li>{% endraw %}
-   </ul>
-   ~~~
-   {: .language-html }
+~~~ 
+<hr>
+<p>Contact us</p>
+<ul>
+    {% raw %}<li>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>{% endraw %}
+    {% raw %}<li>Twitter: <a href="{{ site.twitter }}">{{ site.twitter }}</a></li>{% endraw %}
+</ul>
+~~~
+{: .language-html }
+This HTML snippet will create a horizontal line separator followed by an unordered list with two elements: 
+a contact email address and the Twitter URL wrapped as links using the anchor tag.
 
-    This HTML snippet will create a horizontal line separator followed by an unordered list with two elements: 
-    a contact email address and the Twitter URL wrapped as links using the anchor tag. 
-
-2. Add the line:
-
-    ~~~
-    {% raw %}{% include footer.html %}{% endraw %}
-    ~~~
-    {: .language-markdown }
-
-   at the bottom of both `index.md` and `about.md` (replacing the equivalent contact section where present). 
-   
-After refreshing any of these two pages - you should see a horizontal 
+> ## Exercise: Reuse Footer     
+> Create the footer inside the `_includes` folder containing the above HTML snippet and use 
+> the `include` directive to insert it at the bottom of `index.md` and 
+>`about.md` (making sure to remove the equivalent contact section from `about.md` to avoid repetition). 
+>
+> > ## Solution
+> > 1. Create a file called `footer.html` inside the `_includes` folder to contain the footer HTML snippet.
+> >
+> >2. Add the line:
+> >
+> >    ~~~
+> >    {% raw %}{% include footer.html %}{% endraw %}
+> >    ~~~
+> >    {: .language-markdown }
+> >
+> >   at the bottom of both `index.md` and `about.md` (replacing the equivalent contact section where present). 
+> >   
+> >After refreshing any of these two pages - you should see a horizontal 
 line separating the main page content from the footer of the page which now contains contact information.
-
-![A page displaying contact links as footer](../fig/includes_contact_links_footer.png){: .image-with-shadow width="800px" }
+> >
+> >![A page displaying contact links as footer](../fig/includes_contact_links_footer.png){: .image-with-shadow width="800px" }
+> {: .solution }
+{: .challenge }
 
 This is another example of how we can create a block of common content and reuse it in multiple pages on our site
 by using Jekyll's `include` directive and placing code snippets in the `_includes` directory 
