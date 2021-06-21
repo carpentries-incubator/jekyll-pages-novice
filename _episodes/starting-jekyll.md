@@ -165,7 +165,7 @@ Let's make use of global parameters in our pages.
 > a single place (even if you only use them once). In combination with Jekyll layouts/templates (to be covered in the next episode) they are a great way of creating reusable markup snippets that can be repeated on multiple or even on every page of your website. Reuse helps you reduce the amount of code you have to write.
 {: .callout}
 
-## When things go wrong
+## When Things Go Wrong
 
 So far we have seen how to successfully use Jekyll to produce a website.
 There are however some situations where Jekyll may fail to do so
@@ -219,7 +219,7 @@ From this page we can see that what caused the failure affected line 5 of the `_
 This matches the line where we deleted the `"`.
 Since this typo prevents Jekyll from building the page, the process cannot continue.
 
-> ## Failure will not remove your website
+> ## Failure Will Not Remove Your Website
 >
 > Given the failure you may be wondering what happened to the website?
 > If you visit the address you will find that the website is still be available.
@@ -255,7 +255,7 @@ used to set variables and metadata on individual pages in your Jekyll site.
 >   >   Any file that contains a YAML front matter block will be processed by Jekyll as a special file. The front matter must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines.
 {: .callout}
 
-> ## Global and Local Parameters are Case Sensitive
+> ## Global and Local Parameters Are Case Sensitive
 > It is important to note that the parameters used in the sites are case sensitive.
 > By convention, usually they are all lowercase parameters.
 {: .callout}
@@ -273,7 +273,7 @@ author: "Danger Mouse"
 
 Between these triple-dashed lines, you can overwrite predefined variables (like `page.layout` or `page.title`) or create custom ones you need locally on the page (like `page.author`). These variables will then be available for you to access using Liquid's tags {% raw %}{{{% endraw %} and {% raw %}}}{% endraw %} further down in the file and also in any files that include this one.  Note that these variables are only accessible on that page.  You will get an error if you try to reference a `page.variable` that was defined on a different page.
 
-> ## Exercise: Practice with Local Variables
+> ## Exercise: Practice With Local Variables
 >
 > Let's practice making and using local variables. Think of a local variable you may want to use only in your `about.md` or `index.md` page.
 > If you cannot think of any, create a local variable called 'lesson-example' with the value
@@ -312,7 +312,7 @@ Between these triple-dashed lines, you can overwrite predefined variables (like 
 {: .challenge}
 
 
-> ## Exercise: Practice with Troubleshooting
+> ## Exercise: Practice With Troubleshooting
 >
 > Sometimes typos happen and can make your website change in surprising ways.
 > Let's experiment with some possible issues that might come up and see what happens.
