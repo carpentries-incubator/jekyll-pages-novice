@@ -37,7 +37,7 @@ In order to tell GitHub that your repository contains a website that needs rende
 
 You may have noticed that when we created our repository in previous episode, by default GitHub created a branch called `main` and stored our files there. We now need to tell GitHub Pages that this branch contains our website files.
 
-> ## What is a Branch?
+> ## What Is a Branch?
 > You may have never heard about Git branches and wonder what they mean. A branch is one version of your project (the files in your repository) that can contain its own set of commits - you can have many branches (versions) of your repository. The default branch automatically created with a new github repository is called `main`.
 >
 {: .callout}
