@@ -199,7 +199,7 @@ either due to a typo or missing information.
 
 If you were keeping an eye on the GitHub repository page until now, you may have noticed 
 a yellow circle visible when the website is still being processed and a green check mark (✓) when successful.
-You may have also noticed that in the same location there is now a red cross next to the commit message (❌).
+You may have also noticed that in the same location there is now a red cross/X next to the commit message (❌).
 
 This indicates that something went wrong with our Jekyll build process.
 
@@ -207,7 +207,7 @@ This indicates that something went wrong with our Jekyll build process.
 
 You may also find an email from GitHub in your inbox with details about the error.
 But let's look at our repository again.
-If we click the red cross next to the commit message (❌) a little pop-up will appear with additional information.
+If we click the red cross/X next to the commit message (❌) a little pop-up will appear with additional information.
 
 ![Jekyll failed to build](../fig/includes_build_error.png)
 
@@ -257,7 +257,7 @@ used to set variables and metadata on individual pages in your Jekyll site.
 
 > ## Global and Local Parameters are Case Sensitive
 > It is important to note that the parameters used in the sites are case sensitive.
-> By convention, usually they are all lowercase parameters.
+> By convention, usually they are all lowercase characters.
 {: .callout}
 
 Here is an example:
@@ -271,7 +271,7 @@ author: "Danger Mouse"
 ~~~
 {: .language-yaml }
 
-Between these triple-dashed lines, you can overwrite predefined variables (like `page.layout` or `page.title`) or create custom ones you need locally on the page (like `page.author`). These variables will then be available for you to access using Liquid's tags {% raw %}{{{% endraw %} and {% raw %}}}{% endraw %} further down in the file and also in any files that include this one.  Note that these variables are only accessible on that page.  You will get an error if you try to reference a `page.variable` that was defined on a different page.
+Between these triple-dashed lines, you can overwrite predefined variables (like `page.layout` or `page.title`) or create custom ones you need locally on the page (like `page.author`). These variables will then be available for you to access using Liquid's tags further down in the file and also in any files that include this one.  Note that these variables are only accessible on that page.  You will get an error if you try to reference a `page.variable` that was defined on a different page.
 
 > ## Exercise: Practice with Local Variables
 >
