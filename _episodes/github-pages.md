@@ -41,7 +41,7 @@ You may have noticed that when we created our repository in previous episode, by
 > You may have never heard about Git branches and wonder what they mean. A branch is one version of your project (the files in your repository) that can contain its own set of commits - you can have many branches (versions) of your repository. The default branch automatically created with a new github repository is called `main`.
 >
 {: .callout}
-1. Click on the repository's `Settings` tab (the one with the little cog) as shown on the figure below:
+1. Click on the repository's _Settings_ tab (the one with the little cog) as shown on the figure below:
 
     <img src="../fig/repo_settings.png" alt="Repository settings" width="width=800">
 
