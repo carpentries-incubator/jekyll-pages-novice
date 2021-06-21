@@ -51,7 +51,7 @@ We can change the content and have a look at the rendered view by clicking the _
 <img src="../fig/group_website_readme_render.png" alt="Preview of the rendered content of the group websites README file" width="600">
 
 Let's add `Some **bold** font` and see what happens when we preview it using the preview tab.
-If new sections were added GitHub will show green vertical bars visually highlighting the new content.
+If you check the "Show diff" box on the upper-right hand side, GitHub will show green vertical bars visually highlighting the new content.
 To save the content to the file `README.md`, scroll down a bit and search for a _Commit changes_ menu
 at the bottom of the page.
 After having changed something, the commit menu looks like this:
