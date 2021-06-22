@@ -292,7 +292,7 @@ your own website.
 > for more information about possible licenses.
 {: .callout}
 
-![Set licence to CC0](../fig/set_CC0_license.png){: .image-with-shadow width="400px" }
+![Set licence to CC0](../fig/set_CC0_license.png){: .image-with-shadow width="600px" }
 
 Once you've finished these steps you can click the "Create Repository" button to
 finish creating the repo.
