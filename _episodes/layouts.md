@@ -22,7 +22,7 @@ like the banner image we included in our pages in the previous section,
 form part of the structure of the page:
 unlike the content specific to each page,
 these structural elements do not change from page to page.
-As such, although the `include` tags reduce the pain we endure when
+As such, although the `include` tags reduce the pain endured when
 adjusting that repeated content,
 it is not good practice to `include` the same content over and over again.
 This structure can instead be defined within the _layout_ of the pages of the site.
@@ -47,7 +47,7 @@ instead of Markdown?).
 We will now define a new page layout called `default`,
 which we will save in a file `_layouts/default.html`.
 Having defined our navigational links in a separate file,
-we will start with a layout file that only includes this these links:
+we will start with a layout file that only includes these links:
 
 ~~~
 {% raw %}{% include navigation.html %}{% endraw %}
@@ -57,9 +57,9 @@ we will start with a layout file that only includes this these links:
 You have just defined the first layout for pages on your site.
 Congratulations!
 
-To apply this layout to your site's home page,
-add `layout: default` to the YAML front matter of `index.md`. Similarly, to apply this layout to the site's About 
-page, add `layout: default` to the YAML front matter of `about.md`.
+Add `layout: default` to the YAML front matter of `index.md`
+to apply this layout to your site's home page,
+then do the same in the front matter of `about.md`.
 When you reload your site's homepage (or any page you applied the layout to), you will see
 that there is good news and bad news:
 The good news: the navigation links are there again;
@@ -75,9 +75,10 @@ To do that we need to add the special `content` variable into the layout file:
 ~~~
 {: .language-markdown }
 
-We can use the `content` variable to tell variable where it should place
+We can use the `content` variable to tell Jekyll where it should place
 **all the content defined in the Markdown of the page** within this layout.
-If we make the change above to `_layouts/default.html` and reload our site's homepage,
+If we make the change shown in the example above
+to `_layouts/default.html` and reload our site's homepage,
 we now see the page content has returned but we have two more problems:
 the styling of our pages has changed (for the worse) and
 the navigational links appear twice!
@@ -95,7 +96,7 @@ tag is still present in `index.md`.
 >
 {: .challenge }
 
-Now that we have cleaned the duplicated navigation links, we may want to add another element to our layout. In a similar manner 
+Now that we have cleaned the duplicated navigation links, we may want to add another element to our layout. In a similar manner
 to the navigation links appearing on every page, we may want a common footer to appear too.
 
 > ## Exercise: Expanding the Layout
@@ -113,10 +114,10 @@ to the navigation links appearing on every page, we may want a common footer to 
 > >
 > > {% include footer.html %}{% endraw %}
 > > ~~~
-> > {: .language-html }     
+> > {: .language-html }
 > >
-> > Remove all references to `footer.html` from pages as they will now be included via the layout. 
-> > Check that this works by reloading any of the pages that uses the `default` layout. You should see a footer at 
+> > Remove all references to `footer.html` from pages as they will now be included via the layout.
+> > Check that this works by reloading any of the pages that use the `default` layout. You should see a footer at
 > > the bottom of the page.
 > {: .solution }
 {: .challenge }
@@ -180,7 +181,7 @@ This file defines the bare minimum layout your pages should have.
 > {: .language-html }
 {: .challenge }
 
-Note that we have also included some additional HTML elements in out default layout- the display of the 
+Note that we have also included some additional HTML elements in out default layout- the display of the
 page title as level-one heading and wrapping the main page content within `<section>` and `</section>` tags.
 
 ## Layout Inheritance
@@ -193,9 +194,9 @@ and so on.
 This is referred to as _layout inheritance_,
 and is refreshingly easy to use.
 
-For example, let's say we want to create a slightly different 
-layout for our home page and include a banner image just below navigation links to make it pretty. 
-To do so, we first need to upload a banner image to our repository and create a HTML snippet 
+For example, let's say we want to create a slightly different
+layout for our home page and include a banner image just below navigation links to make it pretty.
+To do so, we first need to upload a banner image to our repository and create a HTML snippet
 `_includes/banner.html` to include the banner image:
 
 1. To add a pre-made banner image, click "Create new file" under the "Add file"
@@ -205,7 +206,7 @@ dropdown on your repository homepage,
    next to this box for naming the file. It is good practice to store all image files in a common folder.
 3. You can then leave the file blank and name it `.gitkeep`.
    When you commit the changes, the `images` folder will have been
-   added to your repository. We will be uploading our banner image to this folder in a moment. 
+   added to your repository. We will be uploading our banner image to this folder in a moment.
    Unfortunately GitHub does not provide a way to create a new folder
 while uploading existing files, only while creating new ones.
 When making these blank files,
@@ -224,14 +225,14 @@ add the HTML file `_includes/banner.html` with the following content:
 <img src="./images/site_banner.png" alt="Group Website banner">
 ~~~
 {: .language-html }
- 
-Next, we need to create a new layout file `_layouts/home.html` and then 
-set it to inherit from the default layout by adding YAML front matter to it specifying the `layout` (of the layout file) 
-to be `default`. 
 
-We can then 
-add any extentions to the new layout `home.html` that will be applied on top of the default layout. This is what 
-`_layouts/home.html` file should look like: 
+Next, we need to create a new layout file `_layouts/home.html` and then
+set it to inherit from the default layout by adding YAML front matter to it specifying the `layout` (of the layout file)
+to be `default`.
+
+We can then
+add any extentions to the new layout `home.html` that will be applied on top of the default layout. This is what
+`_layouts/home.html` file should look like:
 ~~~
 {% raw %}---
 layout: default
@@ -243,12 +244,12 @@ layout: default
 ~~~
 {: .language-html }
 
-> ## Defining a Layout for a Layout    
+> ## Defining a Layout for a Layout
 >Note how you can apply layouts not only to regular pages but also to other layouts, effectively making a layout
 >inherit from another layout.
 {: .callout }
 
-Finally, we can now update the layout of the home page to be `home` instead of `default` by modifying the YAML front matter. 
+Finally, we can now update the layout of the home page to be `home` instead of `default` by modifying the YAML front matter.
 If you reload the home page now,
 you should now see that it has all of the structure provided in `default` layout
 as well as the banner image included from the `home` layout.
@@ -301,15 +302,15 @@ as long as you follow the terms of the license
 (e.g. remember to give due credit to the original -
 check the full terms for details),
 can be adapted/customised to suit your purposes.
-**You can browse a list of Jekyll themes on [jekyllthemes.io][jekyllthemes]**. 
+**You can browse a list of Jekyll themes on [jekyllthemes.io][jekyllthemes]**.
 
 These themes can be elaborate and quite complicated.
 We hope that the knowledge of Jekyll that you have gained from
 following this lesson will help you understand how they work
 and determine what you need to change and where, to make the customisations
-you need for your site. 
+you need for your site.
 Reusing pre-existing themes designed by professional web designers helps you
-focus more on the **content** of your site, which you can write using 
-more user-friendly and human-readable Markdown. 
+focus more on the **content** of your site, which you can write using
+more user-friendly and human-readable Markdown.
 
 {% include links.md %}
