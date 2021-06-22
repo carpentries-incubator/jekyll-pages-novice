@@ -1,8 +1,7 @@
 # Contributing
 
-[The Carpentries][c-site] ([Software Carpentry][swc-site], [Data Carpentry][dc-site], and [Library Carpentry][lc-site]) are open source projects,
+This project, like all lessons from [The Carpentries][c-site] ([Software Carpentry][swc-site], [Data Carpentry][dc-site], and [Library Carpentry][lc-site]), is open source,
 and we welcome contributions of all kinds:
-new lessons,
 fixes to existing material,
 bug reports,
 and reviews of proposed changes are all welcome.
@@ -26,12 +25,7 @@ or a factual error.
 This is a good way to introduce yourself
 and to meet some of our community members.
 
-1.  If you do not have a [GitHub][github] account,
-    you can [send us comments by email][email].
-    However,
-    we will be able to respond more quickly if you use one of the other methods described below.
-
-2.  If you have a [GitHub][github] account,
+1.  If you have a [GitHub][github] account,
     or are willing to [create one][github-join],
     but do not know how to use Git,
     you can report problems or suggest improvements by [creating an issue][issues].
@@ -46,21 +40,9 @@ and to meet some of our community members.
 ## Where to Contribute
 
 1.  If you wish to change this lesson,
-    please work in [the lesson's GitHub repository][lesson-repo],
-    which can be viewed at [Building Websites with Jekyll and GitHub][lesson-jekyll].
+    please work in [the lesson's GitHub repository][lesson-repo].
 
-2.  If you wish to change the example lesson,
-    please work in <https://github.com/carpentries/lesson-example>,
-    which documents the format of our lessons
-    and can be viewed at <https://carpentries.github.io/lesson-example>.
-
-3.  If you wish to change the template used for workshop websites,
-    please work in <https://github.com/carpentries/workshop-template>.
-    The home page of that repository explains how to set up workshop websites,
-    while the extra pages in <https://carpentries.github.io/workshop-template>
-    provide more background on our design choices.
-
-4.  If you wish to change CSS style files, tools,
+2.  If you wish to change CSS style files, tools,
     or HTML boilerplate for lessons or workshops stored in `_includes` or `_layouts`,
     please work in <https://github.com/carpentries/styles>.
 
@@ -68,13 +50,11 @@ and to meet some of our community members.
 
 There are many ways to contribute,
 from writing new exercises and improving existing ones
-to updating or filling in the documentation
+to providing feedback after teaching or learning from this lesson,
 and submitting [bug reports][issues]
 about things that don't work, aren't clear, or are missing.
 If you are looking for ideas, please see the 'Issues' tab for
-a list of issues associated with this repository,
-or you may also look at the issues for [Data Carpentry][dc-issues], 
-[Software Carpentry][swc-issues], and [Library Carpentry][lc-issues] projects.
+a list of issues associated with this repository.
 
 Comments on issues and reviews of pull requests are just as welcome:
 we are smarter together than we are on our own.
@@ -85,11 +65,16 @@ so fresh eyes are always welcome.
 
 ## What *Not* to Contribute
 
-Our lessons already contain more material than we can cover in a typical workshop,
-so we are usually *not* looking for more concepts or tools to add to them.
-As a rule,
-if you want to introduce a new idea,
-you must (a) estimate how long it will take to teach
+The lesson is already quite long,
+and we need to think carefully before adding
+more concepts or tools to the material.
+If you would like to add a new block of content,
+i.e. more than 1-2 new sentences,
+please open an issue before writing this
+so you can discuss the potential addition with the lesson maintainers.
+
+If you want to introduce a new idea,
+you should (a) estimate how long it will take to teach
 and (b) explain what you would take out to make room for it.
 The first encourages contributors to be honest about requirements;
 the second, to think hard about priorities.
@@ -126,12 +111,36 @@ your clone of the originating `gh-pages` branch.
 Lastly, published copies of all the lessons are available in the `gh-pages` branch of the originating
 repository for reference while revising.
 
-## Other Resources
+## Style Guide
 
-General discussion of [Software Carpentry][swc-site] and [Data Carpentry][dc-site]
+### Title Case
+
+We use Title Case for all headings in the lesson, following
+[the rules described by the American Psychological Association](https://apastyle.apa.org/style-grammar-guidelines/capitalization/title-case).
+
+### Point of View
+
+Contributions to this lesson should use _we_ instead of _I_
+when writing in the first person. For example:
+
+> We recommend writing Markdown links ‘reference-style’.
+
+Alternatively, contributions can use _you_ when directing
+or "speaking" to the hypothetical learner. For example:
+
+> Remove the include tag for navigation links from all the pages of your site.
+
+## Get in Touch
+
+Conversations about the development of this lesson take place on
+[the `jekyll-pages-lesson` channel in The Carpentries Slack workspace][jekyll-channel].
+Before you can join that channel, you will need to
+[become a member of the Slack workspace][slack-invitation].
+
+General discussion of [The Carpentries][c-site]
 happens on the [discussion mailing list][discuss-list],
 which everyone is welcome to join.
-You can also [reach us by email][email].
+You can also [reach The Carpentries Core Team by email][email].
 
 [lesson-repo]: https://github.com/carpentries-incubator/jekyll-pages-novice
 [lesson-jekyll]: https://carpentries-incubator.github.io/jekyll-pages-novice/
@@ -145,6 +154,8 @@ You can also [reach us by email][email].
 [github-join]: https://github.com/join
 [how-contribute]: https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github
 [issues]: https://guides.github.com/features/issues/
+[jekyll-channel]: https://swcarpentry.slack.com/archives/C0186GK56UC 
+[slack-invitation]: https://swc-slack-invite.herokuapp.com/
 [swc-issues]: https://github.com/issues?q=user%3Aswcarpentry
 [swc-lessons]: https://software-carpentry.org/lessons/
 [swc-site]: https://software-carpentry.org/
