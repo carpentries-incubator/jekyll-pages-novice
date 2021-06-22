@@ -21,7 +21,9 @@ If you are a learner or an instructor that has some time left in their workshop 
 we strongly recommend visiting the [Jekyll Themes episode in Extras section]({{ relative_root_path }}/jekyll_themes/) of the
 lesson. It builds on the knowledge we
 gained so far and expands on how to build more complex and
-professional-looking websites by reusing existing website themes. Here, we are going to recap what we have learned
+professional-looking websites by reusing existing website themes.
+
+Here, we are going to recap what we have learned
 so far and look at the anatomy of a GitHub Pages website and its common building blocks, which will also help you
 better understand Jekyll themes once you get to learning about them.
 
@@ -32,7 +34,7 @@ better understand Jekyll themes once you get to learning about them.
 > [configure a GitHub repository to use the Jekyll static site generator]({{ relative_root_path }}/github-pages/),
 > and [how to use Jekyll to build our Markdown pages and various other files]({{ relative_root_path }}/starting-jekyll/)
 > (HTML snippets, CSS, images, etc.) into a set of HTML documents that are then served via the GitHub Pages framework.
-> ![Static websites in GitHub Pages technology overview diagram](../fig/jekyll-gh-pages-website-overview.svg){: width="700px" } 
+> ![Static websites in GitHub Pages technology overview diagram](../fig/jekyll-gh-pages-website-overview.svg){: width="700px" }
 > **HTML** is the basic building block of webpages served on the Internet. It describes the structural elements of the
 > page and their raw content and is often aided by **CSS** - an ordered set of styling instructions telling the browser
 > how the content described in the HTML document should be organised and formatted. HTML is very verbose and difficult
@@ -63,10 +65,14 @@ It uses [The Carpentries Jekyll theme](https://github.com/carpentries/styles), w
 page layouts for various Carpentry websites - lesson materials, workshop websites, etc. We have created a new repository
 for this lesson by copying the Carpentries theme repository and customised it by adding our episodes and other content.
 
-Note that if you look at other Jekyll websites, they will have slightly different directory structures as
-they may use different themes. However, there are some common elements, such as `index.md` (the home page),
+Note that if you look at other Jekyll websites,
+they will have slightly different directory structures as
+they may use different themes.
+However, there are some common elements, such as
+`index.md` (the home page),
 `_config.yml` (website's global configuration),
-and folders starting with `_` which have special meaning to Jekyll by convention, such as:
+and folders starting with `_`,
+which have special meaning to Jekyll by convention, such as:
 - `_includes` - containing reusable page snippets,
 - `_layouts` - for storing theme's page templates,
 - `_sass` or `assets` (without the leading `_`) where Jekyll looks for 'assets' such as CSS and
@@ -78,13 +84,18 @@ that Jekyll autoloads and makes accessible accessible via the `site.data` global
 Other 'special' folders, particular to this example only, are `_episodes` and `_extras` - they are collections defined by the theme
 designer and have a special role in this website/theme for storing lesson and extra episodes.
 Unless these collections are configured as described in the previous episode,
-they will not be automatically processed by Jekyll despite starting with the `_`. The theme designer has made sure they are embedded in the website as intended,
+they will not be automatically processed by Jekyll
+despite starting with the `_`.
+The theme designer has made sure they are embedded in the website as intended,
 by defining them in `_config.yml` and referring to them in Liquid code snippets
 throughout the site.
 In the website example we have been building throughout this lesson,
 we have seen a similar folder `_posts` where we stored content of blog posts.
 
-Other commonly seen folders in Jekyll websites are `fig`, sometimes also named `images` or `figures`, for storing website images and figures. There is no firm naming convention in this case - Jekyll will not process
+Other commonly seen folders in Jekyll websites are `fig`,
+sometimes also named `images` or `figures`,
+for storing website images and figures.
+There is no firm naming convention in this case - Jekyll will not process
 these folders automatically and the website designer will have to make sure to access/link to the content
 of these folders appropriately.
 
