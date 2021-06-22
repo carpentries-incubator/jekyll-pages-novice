@@ -38,17 +38,17 @@ The picture below shows the projects default view.
 This view includes a rendered view of the content inside the file `README.md`.
 Your project should look quite similar except for the red circle around the pencil symbol.
 
-<img src="../fig/group_website_repo_edit.png" alt="On the homepage of a GitHub repository, the edit button is positioned to the top right of the README preview" width="600">
+![On the homepage of a GitHub repository, the edit button is positioned to the top right of the README preview](../fig/group_website_repo_edit.png){: .image-with-shadow width="900px" }
 
 
 You can click on that pencil symbol to open an editing interface of your projects `README.md` file.
 Once you've clicked the pencil symbol, GitHub will open that file in the editing interface.
 
-<img src="../fig/group_website_readme_edit.png" alt="Editing interface of the group websites README file" width="600">
+![Editing interface of the group websites README file](../fig/group_website_readme_edit.png){: .image-with-shadow width="900px" }
 
 You can change the content and have a look at the rendered view by clicking the _Preview changes_ tab.
 
-<img src="../fig/group_website_readme_render.png" alt="Preview of the rendered content of the group websites README file" width="600">
+![Preview of the rendered content of the group websites README file](../fig/group_website_readme_render.png){: .image-with-shadow width="900px" }
 
 Let's add `Some **bold** font` and see what happens when we preview it using the preview tab.
 If new sections were added you will also find green vertical bars visually highlighting the new content.
@@ -56,7 +56,7 @@ To save the content to the file `README.md`, scroll down a bit and you'll see a 
 where you can commit your changes.
 After having changed something, the commit menu looks like this:
 
-<img src="../fig/group_website_readme_commit.png" alt="Commit menu for changes done in the GitHub web interface is located at the bottom of the website" width="600">
+![Commit menu for changes done in the GitHub web interface is located at the bottom of the website](../fig/group_website_readme_commit.png){: .image-with-shadow width="900px" }
 
 > ## Writing a Commit Message
 >
@@ -102,7 +102,10 @@ are caused by two trailing spaces at the end of a line.
 
 You can then click the preview tab again to see how the formatting renders.
 
-<img src="../fig/markdown_preview_formatting.png" alt="Preview of the formatting added to the Readme" width="600">
+![Preview of the formatting added to the README](../fig/markdown_preview_formatting.png){: .image-with-shadow width="900px" }
+
+If you click the `Show diff` checkbox in the right corner, GitHub will include a preview of differences too - 
+the green bar indicates added lines, the red bar indicates deleted lines, and yellow - lines that have been modified.
 
 > ## Markdown trailing spaces are meaningful
 >
@@ -129,14 +132,14 @@ You can then click the preview tab again to see how the formatting renders.
 >
 > That produces:
 >
-> ![Difference between soft and hard breaks](../fig/soft_hard_markdown_line_break.png)
+> ![Difference between soft and hard breaks](../fig/soft_hard_markdown_line_break.png){: .image-with-shadow width="200px" }
 >
 {: .callout}
 
 To keep this addition to our `README.md` we need to commit these changes to save them.
 Scroll down to the bottom of the page, add a commit message if you wish, and then commit to the `main` branch.
 
-<img src="../fig/committing_formatting_addition_to_readme.png" alt="Committing the formatting added to the Readme" width="800">
+![Committing the formatting added to the README](../fig/committing_formatting_addition_to_readme.png){: .image-with-shadow width="800px" }
 
 Let's do an exercise to try out writing more markdown.
 
@@ -165,7 +168,7 @@ Let's do an exercise to try out writing more markdown.
 > > ![Carpentries Logo](https://github.com/carpentries/carpentries.org/raw/main/images/TheCarpentries-opengraph.png)
 > > ~~~
 > > {: .language-markdown }
-> > <img src="../fig/markdown_exercise.png" alt="Rendered solution to the markdown exercise" width="width=800">
+> > ![Rendered solution to the Markdown exercise](../fig/markdown_exercise.png){: .image-with-shadow width="800px" }
 > >
 > {: .solution }
 {: .challenge }
