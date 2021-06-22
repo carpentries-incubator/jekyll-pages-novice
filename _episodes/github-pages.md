@@ -135,7 +135,7 @@ We are now ready to start adding more content to our website. Let's do some exer
 > > 1. Edit `index.md` file to look something like:
 > >
 > >    ~~~
-> >    # My Research Project
+> >    # Building Websites in GitHub
 > >
 > >    ## Description
 > >    This is an example website built while learning how to use Jekyll and GitHub Pages.
@@ -223,7 +223,7 @@ are both valid link targets
 > > 2. Edit `index.md` to add a link to `about.md`.
 > >
 > >    ~~~
-> >    # My Research Project
+> >    # Building Websites in GitHub
 > >
 > >    ## Description
 > >    This is an example website built while learning how to use Jekyll and GitHub Pages.
