@@ -66,12 +66,13 @@ team_members:
 ~~~
 {: .language-yaml}
 
-This defines 'team_members' as a list of 3 elements; each element is a dictionary with key-value pairs for name, role and date.
+This defines `team_members` as a list of 3 elements;
+each element is a dictionary with key-value pairs for name, role and date.
 The syntax for lists in YAML can be a little hard to grasp at first glance.
 Each entry in the list is marked by a `-`, indented once to the right.
-After this, the contents of the list item is described on lines
+After this, the content of the list item is described on lines
 indented twice to the right,
-with pairs on keys and values.
+with pairs of keys and values.
 The keys - `name`, `role`, and `start_date` -
 are identical for all entries in the list
 but the values differ from one team member to the next.
@@ -151,7 +152,7 @@ display it in `about.md`.
    ~~~
    {: .language-yaml}
 
-2. In file `about.md`, we add a new section for the team and
+2. In file `about.md`, add a new section for the team and
    iterate over the values defined in parameter `site.team_members` in a loop to
    display a table of the team members' names and roles.
    The file now should look like:
@@ -231,10 +232,10 @@ For this, we use the `assign` tag, e.g.
 
 Use this `assign` tag whenever you need to create variables for use "on the fly"
 as you work with lists in your site.
-We will see another examples of this when we investigate collections in the
+We will see another example of this when we investigate collections in the
 next section.
 
-3. In file `index.md` add the team lead's name so that it looks like:
+3. In file `index.md` add the team lead's name:
 
    ~~~
    # {% raw %}Building Websites in GitHub
@@ -249,8 +250,8 @@ next section.
    ~~~
    {: .language-markdown}
 
-Now, if you need to add, remove or modify a team member,
-you only need to update the list in `_config.yml` without modifying your pages.
+Now, if we need to add, remove, or modify a team member,
+we only need to update the list in `_config.yml` without editing the individual pages of our site.
 
 > ## Exercise: Personnel Changes
 > Your project team has changed. The team lead has left and in her place is a new person: 'Tom Cat', who started on
@@ -414,7 +415,7 @@ if it is present in the YAML header of pages in a collection it will automatical
 be used to define the order in which the collection is delivered in the site.
 If you would like to order a collection by a different field in the YAML header,
 you can pass the collection through the [`sort`][liquid-sort] filter
-when initialising the for loop:
+when initialising the for loop.
 
 You might be tempted to write:
 ~~~
@@ -426,7 +427,7 @@ which seems to work but may not produce the result we expect.
 
 In fact, Jekyll will generate a **silent warning** that isn't visible in GitHub
 but can be seen if building the site locally.
-This a limitation of liquid in that it doesn't allow combining `for` instructions directly
+This a limitation of Liquid in that it doesn't allow combining `for` instructions directly
 with filters.
 Instead, we need to reuse the `assign` instruction we used above:
 ~~~
