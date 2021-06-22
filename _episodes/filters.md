@@ -3,14 +3,13 @@ title: "Working With Filters"
 teaching: 20
 exercises: 5
 questions:
-- "How can I control the format of variable values such as dates I insert them into a page?"
+- "How can I control the format of variable values such as dates when I insert them into a page?"
 objectives:
-- "Use simple filters to control the format and content of substituted values."
+- "Use filters to control the format and content of substituted values."
 keypoints:
 - "Liquid filters can be used to adapt the values of variables when adding them into your pages."
 - "Datetime filters such as `date_to_string` can provide more readable timestamps on your pages and posts."
 - "GitHub Pages doesn't use the most recent version of Jekyll, so you should avoid the features added most recently."
-testdate: 2019-09-04
 ---
 
 ## Writing Blog Posts
