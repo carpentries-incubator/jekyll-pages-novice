@@ -32,7 +32,7 @@ better understand Jekyll themes once you get to learning about them.
 > [configure a GitHub repository to use the Jekyll static site generator]({{ relative_root_path }}/github-pages/),
 > and [how to use Jekyll to build our Markdown pages and various other files]({{ relative_root_path }}/starting-jekyll/)
 > (HTML snippets, CSS, images, etc.) into a set of HTML documents that are then served via the GitHub Pages framework.
-> <img src="../fig/jekyll-gh-pages-website-overview.svg" alt="Static websites in GitHub Pages technology overview diagram" width="700">
+> ![Static websites in GitHub Pages technology overview diagram](../fig/jekyll-gh-pages-website-overview.svg){: width="700px" } 
 > **HTML** is the basic building block of webpages served on the Internet. It describes the structural elements of the
 > page and their raw content and is often aided by **CSS** - an ordered set of styling instructions telling the browser
 > how the content described in the HTML document should be organised and formatted. HTML is very verbose and difficult
@@ -88,7 +88,7 @@ Other commonly seen folders in Jekyll websites are `fig`, sometimes also named `
 these folders automatically and the website designer will have to make sure to access/link to the content
 of these folders appropriately.
 
-![directory-structure-home-page](../fig/directory-structure-rendered-website-with-annotations.png){: height="1200px"}
+![Directory structure of a jekyll website containing this lesson](../fig/directory-structure-rendered-website-with-annotations.png){: .image-with-shadow height="1200px" }
 
 > ## Reusing The Carpentries Jekyll Lesson Theme
 > Reusing [the lesson template](https://github.com/carpentries/styles) to create a new lesson can be achieved by copying the theme repository and customising it by adding your episodes in the appropriate place.

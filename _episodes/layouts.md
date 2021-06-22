@@ -57,9 +57,15 @@ we will start with a layout file that only includes these links:
 You have just defined the first layout for pages on your site.
 Congratulations!
 
+<<<<<<< HEAD
 Add `layout: default` to the YAML front matter of `index.md`
 to apply this layout to your site's home page,
 then do the same in the front matter of `about.md`.
+=======
+To apply this layout to your site's home page,
+add `layout: default` to the YAML front matter of `index.md`. Similarly, to apply this layout to the site's About
+page, add `layout: default` to the YAML front matter of `about.md`.
+>>>>>>> gh-pages
 When you reload your site's homepage (or any page you applied the layout to), you will see
 that there is good news and bad news:
 The good news: the navigation links are there again;
@@ -83,7 +89,7 @@ we now see the page content has returned but we have two more problems:
 the styling of our pages has changed (for the worse) and
 the navigational links appear twice!
 
-![A page displaying the navigation section twice.](../fig/layouts_double_navigation.png){: width="800px"}
+![A page displaying the navigation section twice.](../fig/layouts_double_navigation.png){: .image-with-shadow width="800px" }
 
 The duplication is happening because the
 `{% raw %}{% include navigation.html %}{% endraw %}`
@@ -117,7 +123,11 @@ to the navigation links appearing on every page, we may want a common footer to 
 > > {: .language-html }
 > >
 > > Remove all references to `footer.html` from pages as they will now be included via the layout.
+<<<<<<< HEAD
 > > Check that this works by reloading any of the pages that use the `default` layout. You should see a footer at
+=======
+> > Check that this works by reloading any of the pages that uses the `default` layout. You should see a footer at
+>>>>>>> gh-pages
 > > the bottom of the page.
 > {: .solution }
 {: .challenge }
@@ -179,10 +189,53 @@ This file defines the bare minimum layout your pages should have.
 > </html>{% endraw %}
 > ~~~
 > {: .language-html }
+>
+> What do you notice has changed about the pages that use this layout?
+>
+> > ## Solution
+> >
+> > After updating the layout,
+> > each page includes the page title displayed twice.
+> >
+> {: .solution }
 {: .challenge }
 
 Note that we have also included some additional HTML elements in out default layout- the display of the
 page title as level-one heading and wrapping the main page content within `<section>` and `</section>` tags.
+
+We have not been defining the title in the front matter of each of our
+pages, and Jekyll is guessing the page title based on the first
+heading it finds.
+The layout displays the page title at the top of the page,
+above the page content, which also contains the page title.
+As a result, the title ends up being displayed twice.
+To fix this problem,
+we must remove the first-level headings from
+the Markdown content of our pages and instead define the title
+in the page front matter.
+For example, `about.md` should look like this after the change:
+
+~~~
+---
+layout: default
+title: About
+---
+
+## Project
+
+{{ site.description }}
+
+## Funders
+
+We gratefully acknowledge funding from the XYZ Founding Council, under grant number 'abc'.
+
+## Cite us
+
+You can cite the project as:
+
+>    *The Carpentries 2019 Annual Report. Zenodo. https://doi.org/10.5281/zenodo.3840372*
+~~~
+{: .language-markdown }
 
 ## Layout Inheritance
 
@@ -254,7 +307,7 @@ If you reload the home page now,
 you should now see that it has all of the structure provided in `default` layout
 as well as the banner image included from the `home` layout.
 
-![Home page with inherited layout](../fig/layouts_homepage_layout.png){: width="800px"}
+![Home page with inherited layout](../fig/layouts_homepage_layout.png){: .image-with-shadow width="800px" }
 
 The purpose of this approach, defining the core structure that will be common
 to every page across your site in a default layout,
@@ -286,7 +339,7 @@ to all the relevant pages.
 >
 {: .callout}
 
-## Using Pre-Existing Layouts from a Theme
+## Using Pre-Existing Layouts From a Theme
 
 We have now seen how to create pages,
 re-use content across them,

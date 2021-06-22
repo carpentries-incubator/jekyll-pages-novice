@@ -1,5 +1,5 @@
 ---
-title: "Starting with Jekyll"
+title: "Starting With Jekyll"
 teaching: 20
 exercises: 10
 questions:
@@ -165,7 +165,7 @@ Let's make use of global parameters in our pages.
 > a single place (even if you only use them once). In combination with Jekyll layouts/templates (to be covered in the next episode) they are a great way of creating reusable markup snippets that can be repeated on multiple or even on every page of your website. Reuse helps you reduce the amount of code you have to write.
 {: .callout}
 
-## When things go wrong
+## When Things Go Wrong
 
 So far we have seen how to successfully use Jekyll to produce a website.
 There are however some situations where Jekyll may fail to do so
@@ -197,29 +197,28 @@ either due to a typo or missing information.
 > {: .solution }
 {: .challenge }
 
-If you were keeping an eye on the GitHub repository page until now, you may have noticed 
+If you were keeping an eye on the GitHub repository page until now, you may have noticed
 a yellow circle visible when the website is still being processed and a green check mark (✓) when successful.
-You may have also noticed that in the same location there is now a red cross/X next to the commit message (❌).
+You may have also noticed that in the same location there is now a red cross/X next to the commit message (❌). 
+This indicates that something went wrong with the Jekyll build process after that commit.
 
-This indicates that something went wrong with our Jekyll build process.
-
-![Jekyll pending/successful build](../fig/includes_fail_pending_successful.png)
+![Jekyll pending/successful/failed builds after different commits](../fig/jekyll_fail_pending_successful.png){: .image-with-shadow width="800px" }
 
 You may also find an email from GitHub in your inbox with details about the error.
 But let's look at our repository again.
 If we click the red cross/X next to the commit message (❌) a little pop-up will appear with additional information.
 
-![Jekyll failed to build](../fig/includes_build_error.png)
+![Jekyll - a failed build](../fig/jekyll_build_error.png){: .image-with-shadow width="800px" }
 
 Visiting the page behind the **Details** link will give us the information we were missing.
 
-![Jekyll failed to build detail](../fig/includes_build_error_detail.png)
+![Jekyll - error details of a failed build](../fig/jekyll_build_error_detail.png){: .image-with-shadow width="800px" }
 
 From this page we can see that what caused the failure affected line 5 of the `_config.yml` file.
 This matches the line where we deleted the `"`.
 Since this typo prevents Jekyll from building the page, the process cannot continue.
 
-> ## Failure will not remove your website
+> ## Failure Will Not Remove Your Website
 >
 > Given the failure you may be wondering what happened to the website?
 > If you visit the address you will find that the website is still be available.
@@ -255,7 +254,7 @@ used to set variables and metadata on individual pages in your Jekyll site.
 >   >   Any file that contains a YAML front matter block will be processed by Jekyll as a special file. The front matter must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines.
 {: .callout}
 
-> ## Global and Local Parameters are Case Sensitive
+> ## Global and Local Parameters Are Case Sensitive
 > It is important to note that the parameters used in the sites are case sensitive.
 > By convention, usually they are all lowercase characters.
 {: .callout}
@@ -273,7 +272,7 @@ author: "Danger Mouse"
 
 Between these triple-dashed lines, you can overwrite predefined variables (like `page.layout` or `page.title`) or create custom ones you need locally on the page (like `page.author`). These variables will then be available for you to access using Liquid's tags (e.g. `{% raw %}{{{% endraw %} page.title {% raw %}}}{% endraw %}` ) further down in the file and also in any files that include this one.  Note that these variables are only accessible on that page.  You will get an error if you try to reference a `page.variable` that was defined on a different page.
 
-> ## Exercise: Practice with Local Variables
+> ## Exercise: Practice With Local Variables
 >
 > Let's practice making and using local variables. Think of a local variable you may want to use only in your `about.md` or `index.md` page.
 > If you cannot think of any, create a local variable called 'lesson-example' with the value
@@ -312,7 +311,7 @@ Between these triple-dashed lines, you can overwrite predefined variables (like 
 {: .challenge}
 
 
-> ## Exercise: Practice with Troubleshooting
+> ## Exercise: Practice With Troubleshooting
 >
 > Sometimes typos happen and can make your website change in surprising ways.
 > Let's experiment with some possible issues that might come up and see what happens.
@@ -340,7 +339,7 @@ Between these triple-dashed lines, you can overwrite predefined variables (like 
 > >    ~~~
 > >    ---
 > >    lesson-example: "https://carpentries.github.io/lesson-example/"
-> >    
+> >
 > >    Examples of our work can be found at: {% raw %}{{ page.lesson-example }}{% endraw %}
 > >    ~~~
 > >    {: .language-markdown }

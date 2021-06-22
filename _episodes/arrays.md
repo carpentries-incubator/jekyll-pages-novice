@@ -76,7 +76,7 @@ The keys - `name`, `role`, and `start_date` -
 are identical for all entries in the list
 but the values differ from one team member to the next.
 
-> ## YAML Syntax is Flexible
+> ## YAML Syntax Is Flexible
 > When browsing documentation and examples of YAML
 > you will sometimes see lists represented slightly differently,
 > with the first part of the entry value written on the same line
@@ -132,10 +132,9 @@ display it in `about.md`.
 1. Modify `_config.yml` file and add the `team_members` parameter as defined above. The file should now look like:
 
    ~~~
-   description: "This research project develops training materials for reseachers wanting to learn to build project
-   websites in GitHub with GitHub Pages."
-   email: "team@my.research.org"
-   twitter: "https://twitter.com/my_research_project"
+   description: "This is an example website built while learning how to use Jekyll and GitHub Pages."
+   email: "team@carpentries.org"
+   twitter: "https://twitter.com/thecarpentries"
    team_members:
      -
        name: "Sarah Becker"
@@ -160,8 +159,8 @@ display it in `about.md`.
     ~~~
     {% raw %}---
     layout: page
+    title: About
     ---
-    # About
 
     ## Project
 
@@ -186,7 +185,7 @@ display it in `about.md`.
     ~~~
     {: .language-markdown}
 
-FIXME: add screenshot of rendered team member listing
+![Rendered team members list in the 'about.md' page](../fig/team_members_list.png){: .image-with-shadow width="800px" }
 
 ## Filtering a List
 
@@ -263,10 +262,9 @@ you only need to update the list in `_config.yml` without modifying your pages.
 > > For the new developer joining the team, we also only need to her information to `team_members` in `_config.yml` and our `for loop` from `about.md` will simply pick up the changes automatically. Magic! Our `_config.yml` file should now look like:
 > >
 > > ~~~
-> > description: "This research project develops training materials for reseachers wanting to learn to build project
-> > websites in GitHub with GitHub Pages."
-> > email: team@my.research.org
-> > twitter: "https://twitter.com/my_research_project"
+> > description: "This is an example website built while learning how to use Jekyll and GitHub Pages."
+> > email: "team@carpentries.org"
+> > twitter: "https://twitter.com/thecarpentries"
 > > team_members:
 > >   -
 > >     name: "Tom Cat"
@@ -384,7 +382,7 @@ add a new for loop to iterate over the titles and dates of the `blogposts` colle
 ~~~
 {: .language-markdown }
 
-FIXME: add screenshot of blog post list
+![Rendered blog post list in the index page](../fig/blog_posts_list.png){: .image-with-shadow width="800px" }
 
 There is a lot happening in those few lines above!
 Let's break it down into smaller chunks and explore them one-by-one:
@@ -541,7 +539,7 @@ and is enabled in Jekyll via a plugin called `jekyll-paginate`.
 The Jekyll documentation describes
 [the steps for setting up pagination for a list of blog posts](https://jekyllrb.com/docs/pagination/).
 
-## Linking to Other Pages on your Site
+## Linking to Other Pages on Your Site
 
 Creating internal links that are robust to changes in your site
 base URL, and that work both online and in locally-built preview versions
@@ -579,7 +577,7 @@ at the start of these internal links:
 This will ensure that the links within your site work correctly in the local
 version of the site as well as on GitHub Pages.
 
-> ## Comments on a static blog
+> ## Comments on a Static Blog
 >
 > When setting up a blog on a website, it is common to want to include a comment feed
 > as a way for readers to respond to the content of a post, direct questions to the author, etc.
