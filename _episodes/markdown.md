@@ -34,26 +34,26 @@ As we are working towards authoring websites using Jekyll and GitHub pages,
 we will use GitHub straight away for learning the basics of Markdown.
 The GitHub project you created in the last episode contains a file `README.md`.
 
-The picture below shows the projects default view.
+The image below shows the projects default view.
 This view includes a rendered view of the content inside the file `README.md`.
 Your project should look quite similar except for the red circle around the pencil symbol.
 
 ![On the homepage of a GitHub repository, the edit button is positioned to the top right of the README preview](../fig/group_website_repo_edit.png){: .image-with-shadow width="900px" }
 
 
-You can click on that pencil symbol to open an editing interface of your projects `README.md` file.
-Once you've clicked the pencil symbol, GitHub will open that file in the editing interface.
+Click on that pencil symbol to open an editing interface of your project's `README.md` file.
+Once we've clicked the pencil symbol, GitHub will open that file in the editing interface.
 
 ![Editing interface of the group websites README file](../fig/group_website_readme_edit.png){: .image-with-shadow width="900px" }
 
-You can change the content and have a look at the rendered view by clicking the _Preview changes_ tab.
+We can change the content and have a look at the rendered view by clicking the _Preview changes_ tab.
 
 ![Preview of the rendered content of the group websites README file](../fig/group_website_readme_render.png){: .image-with-shadow width="900px" }
 
 Let's add `Some **bold** font` and see what happens when we preview it using the preview tab.
-If new sections were added you will also find green vertical bars visually highlighting the new content.
-To save the content to the file `README.md`, scroll down a bit and you'll see a _Commit changes_ menu
-where you can commit your changes.
+If you check the "Show diff" box on the upper-right hand side, GitHub will show green vertical bars visually highlighting the new content.
+To save the content to the file `README.md`, scroll down a bit and search for a _Commit changes_ menu
+at the bottom of the page.
 After having changed something, the commit menu looks like this:
 
 ![Commit menu for changes done in the GitHub web interface is located at the bottom of the website](../fig/group_website_readme_commit.png){: .image-with-shadow width="900px" }
@@ -65,6 +65,7 @@ After having changed something, the commit menu looks like this:
 >
 {: .callout}
 
+Commit this change to the `main` branch.
 
 # Writing Markdown
 
@@ -88,7 +89,7 @@ Repo for learning how to make websites with Jekyll pages
 Vanilla text may contain *italics* and **bold words**.
 
 This paragraph is separated from the previous one by a blank line.
-Line breaks  
+Line breaks
 are caused by two trailing spaces at the end of a line.
 
 [Carpentries Webpage](https://carpentries.org/)
@@ -111,7 +112,7 @@ the green bar indicates added lines, the red bar indicates deleted lines, and ye
 >
 > In the example above there are two spaces at the end of `Line breaks  `.
 > These introduce what is called a **hard line break**, causing that paragraph to
-> continue in the next line by adding a `<br/>` to the generated HTML.  
+> continue in the next line by adding a `<br/>` to the generated HTML.
 >
 > If you break the line in a markdown file but don't include the two trailing spaces
 > the generated HTML will continue in the same line **without** introducing a `<br/>`.
@@ -125,7 +126,7 @@ the green bar indicates added lines, the red bar indicates deleted lines, and ye
 > Soft line
 > break
 >
-> Hard line  
+> Hard line
 > break
 > ~~~
 > {: .language-markdown }
@@ -175,15 +176,15 @@ Let's do an exercise to try out writing more markdown.
 
 
 > ## Reference-Style Links
-> 
-> Up to now, we have used `inline style links` which have the URL inline with the description text, for example:
+>
+> Up to now, we have used _inline-style_ links which have the URL inline with the description text, for example:
 >
 > ~~~
 > [Carpentries Webpage](https://carpentries.org/)
 > ~~~
 > {: .language-markdown }
 >
-> If you use a link more than once, consider using so called `reference-style links` instead.
+> If you use a link more than once, consider using so called _reference-style_ links instead.
 > Reference-style links reference the URL via a label.
 > The label goes into square brackets `[ ]` right after the description text of the link and
 > then later, usually at the bottom of the page, you can connect that label to the url it references to complete the link.
@@ -200,6 +201,7 @@ Let's do an exercise to try out writing more markdown.
 {: .callout}
 
 We will continue to use Markdown and learn more throughout the rest of the lesson.
+Though later we will find we need HTML again for some features.
 
 > ## Markdown Cheatsheet
 >
@@ -208,13 +210,13 @@ We will continue to use Markdown and learn more throughout the rest of the lesso
 {: .callout}
 
 > ## Markdown Flavours
->The initial description of Markdown was informal and contained certain ambiguities so over the years [different Markdown 
+>The initial description of Markdown was informal and contained certain ambiguities so over the years [different Markdown
 >implementations and syntax variations](https://github.com/commonmark/commonmark-spec/wiki/markdown-flavors) (often referred to as "flavours")
->appeared to support various syntax features and extensions. As a consequence, the syntax from one variant may not 
->be interpreted as expected in another - you have to be aware which one is being used by a particular platform. Here are 
+>appeared to support various syntax features and extensions. As a consequence, the syntax from one variant may not
+>be interpreted as expected in another - you have to be aware which one is being used by a particular platform. Here are
 >a few well-known variants:
 >   - [GitHub-flavored Markdown][github-flavored-markdown] (used on this lesson and by GitHub)
->   - [GitLab-flavored Markdown][gitlab-flavored-markdown] (used by GitLab)      
+>   - [GitLab-flavored Markdown][gitlab-flavored-markdown] (used by GitLab)
 >   - [Kramdown][kramdown] (a fast, Ruby, open source implementation released under the MIT licence)
 {: .callout}
 
@@ -231,8 +233,8 @@ We will continue to use Markdown and learn more throughout the rest of the lesso
 {: .challenge }
 
 >## More Markdown Features
-> Check out our [Extras page on Markdown](../more_markdown/index.html) for a more comprehensive overview of 
-> Markdown, including how to create fenced code blocks 
+> Check out our [Extras page on Markdown](../more_markdown/index.html) for a more comprehensive overview of
+> Markdown, including how to create fenced code blocks
 > and do syntax highlighting for various languages.
 {: .callout}
 

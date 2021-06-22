@@ -197,16 +197,16 @@ either due to a typo or missing information.
 > {: .solution }
 {: .challenge }
 
-If you were keeping an eye on the GitHub repository page until now, you may have noticed 
+If you were keeping an eye on the GitHub repository page until now, you may have noticed
 a yellow circle visible when the website is still being processed and a green check mark (✓) when successful.
-You may have also noticed that in the same location there is now a red cross next to the commit message (❌). 
+You may have also noticed that in the same location there is now a red cross/X next to the commit message (❌). 
 This indicates that something went wrong with the Jekyll build process after that commit.
 
 ![Jekyll pending/successful/failed builds after different commits](../fig/jekyll_fail_pending_successful.png){: .image-with-shadow width="800px" }
 
 You may also find an email from GitHub in your inbox with details about the error.
 But let's look at our repository again.
-If we click the red cross next to the commit message (❌) a little pop-up will appear with additional information.
+If we click the red cross/X next to the commit message (❌) a little pop-up will appear with additional information.
 
 ![Jekyll - a failed build](../fig/jekyll_build_error.png){: .image-with-shadow width="800px" }
 
@@ -256,7 +256,7 @@ used to set variables and metadata on individual pages in your Jekyll site.
 
 > ## Global and Local Parameters Are Case Sensitive
 > It is important to note that the parameters used in the sites are case sensitive.
-> By convention, usually they are all lowercase parameters.
+> By convention, usually they are all lowercase characters.
 {: .callout}
 
 Here is an example:
@@ -270,7 +270,7 @@ author: "Danger Mouse"
 ~~~
 {: .language-yaml }
 
-Between these triple-dashed lines, you can overwrite predefined variables (like `page.layout` or `page.title`) or create custom ones you need locally on the page (like `page.author`). These variables will then be available for you to access using Liquid's tags {% raw %}{{{% endraw %} and {% raw %}}}{% endraw %} further down in the file and also in any files that include this one.  Note that these variables are only accessible on that page.  You will get an error if you try to reference a `page.variable` that was defined on a different page.
+Between these triple-dashed lines, you can overwrite predefined variables (like `page.layout` or `page.title`) or create custom ones you need locally on the page (like `page.author`). These variables will then be available for you to access using Liquid's tags (e.g. `{% raw %}{{{% endraw %} page.title {% raw %}}}{% endraw %}` ) further down in the file and also in any files that include this one.  Note that these variables are only accessible on that page.  You will get an error if you try to reference a `page.variable` that was defined on a different page.
 
 > ## Exercise: Practice With Local Variables
 >
@@ -339,7 +339,7 @@ Between these triple-dashed lines, you can overwrite predefined variables (like 
 > >    ~~~
 > >    ---
 > >    lesson-example: "https://carpentries.github.io/lesson-example/"
-> >    
+> >
 > >    Examples of our work can be found at: {% raw %}{{ page.lesson-example }}{% endraw %}
 > >    ~~~
 > >    {: .language-markdown }

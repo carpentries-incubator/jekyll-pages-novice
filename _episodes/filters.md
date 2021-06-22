@@ -7,7 +7,7 @@ questions:
 objectives:
 - "Use simple filters to control the format and content of substituted values."
 keypoints:
-- "You can use Liquid filters to adapt the values of variables when adding them into your pages."
+- "Liquid filters can be used to adapt the values of variables when adding them into your pages."
 - "Datetime filters such as `date_to_string` can provide more readable timestamps on your pages and posts."
 - "GitHub Pages doesn't use the most recent version of Jekyll, so you should avoid the features added most recently."
 testdate: 2019-09-04
@@ -18,12 +18,12 @@ testdate: 2019-09-04
 So far we have been building our site one page at a time,
 but these individual pages are quite self-contained and their content
 is likely to be fairly constant:
-the information on your home page, your contact details etc
+the information on our home page, our contact details etc
 are unlikely to change very often and,
 after the site has been built,
 new pages like this probably won't be created often.
 This is good because,
-if you would like to construct a list or a navigational menu
+if we would like to construct a list or a navigational menu
 to browse through these pages,
 it would be annoying to have to expand/reorganise this all the time
 when a new page is added to the site.
@@ -95,7 +95,7 @@ our post layout.
 > >
 > > Good news: I have been promoted to Deputy Inspector-General of Hospitals.
 > > ~~~
-> > {: .language-markdown }  
+> > {: .language-markdown }
 > > You can view the post at https://GITHUB_USERNAME.github.io/REPOSITORY_NAME/1851-05-06-DIG.html.
 > {: .solution }
 {: .challenge }
@@ -142,7 +142,7 @@ We will explore the `"ordinal"` part in the exercise below.
 > > Without the `ordinal` argument, `date_to_long_string` produces the output
 > > `06 May 1851` (i.e. using the two digits to represent day).
 > > Whether you prefer this format is entirely subjective,
-> > and we encourage you to use which ever you prefer in your post layout.   
+> > and we encourage you to use which ever you prefer in your post layout.
 > > ![Blog post '1851-05-06' with human readable date without ordinal parameter](../fig/filters_post_1851-05-06_DIG_without_ordinal.png){: .image-with-shadow width="700px" }
 > >
 > {: .solution }

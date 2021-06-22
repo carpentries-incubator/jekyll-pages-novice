@@ -122,7 +122,7 @@ The HTML to produce such a table looks like this (you can copy+paste the snippet
 ~~~ 
 {: .language-html }
 
-Each row in enclosed between **t**able **r**ow `<tr>` and `</tr>` tags. Within a row, `<th>` and `</th>` tags are used to contain **t**able **h**eadings 
+Each row is enclosed between **t**able **r**ow `<tr>` and `</tr>` tags. Within a row, `<th>` and `</th>` tags are used to contain **t**able **h**eadings 
 (special table cells displayed in bold font), while regular **t**able **d**ata cells are contained within `<td>` and `</td>` tags.
 
 A similar example written using HTML lists would look as follows:
@@ -299,7 +299,7 @@ finish creating the repo.
 
 ![Filled in form with a create repository button](../fig/create_repository.png){: .image-with-shadow width="600px" }
 
-GitHub will then setup the repo and it should look like the following screenshot.
+GitHub will then setup the repo and it should create the repo called `group-website` with a `README.md` file and a `LICENSE` file.
 
 ![Github repository for the group website](../fig/group_website_repo.png){: .image-with-shadow width="800px" }
 
