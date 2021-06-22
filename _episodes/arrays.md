@@ -76,7 +76,7 @@ The keys - `name`, `role`, and `start_date` -
 are identical for all entries in the list
 but the values differ from one team member to the next.
 
-> ## YAML Syntax is Flexible
+> ## YAML Syntax Is Flexible
 > When browsing documentation and examples of YAML
 > you will sometimes see lists represented slightly differently,
 > with the first part of the entry value written on the same line
@@ -539,7 +539,7 @@ and is enabled in Jekyll via a plugin called `jekyll-paginate`.
 The Jekyll documentation describes
 [the steps for setting up pagination for a list of blog posts](https://jekyllrb.com/docs/pagination/).
 
-## Linking to Other Pages on your Site
+## Linking to Other Pages on Your Site
 
 Creating internal links that are robust to changes in your site
 base URL, and that work both online and in locally-built preview versions
@@ -577,7 +577,7 @@ at the start of these internal links:
 This will ensure that the links within your site work correctly in the local
 version of the site as well as on GitHub Pages.
 
-> ## Comments on a static blog
+> ## Comments on a Static Blog
 >
 > When setting up a blog on a website, it is common to want to include a comment feed
 > as a way for readers to respond to the content of a post, direct questions to the author, etc.

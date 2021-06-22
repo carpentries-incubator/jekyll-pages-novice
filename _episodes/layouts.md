@@ -328,7 +328,7 @@ to all the relevant pages.
 >
 {: .callout}
 
-## Using Pre-Existing Layouts from a Theme
+## Using Pre-Existing Layouts From a Theme
 
 We have now seen how to create pages,
 re-use content across them,

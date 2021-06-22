@@ -1,5 +1,5 @@
 ---
-title: "Authoring with Markdown"
+title: "Authoring With Markdown"
 teaching: 20
 exercises: 15
 questions:
@@ -107,7 +107,7 @@ You can then click the preview tab again to see how the formatting renders.
 If you click the `Show diff` checkbox in the right corner, GitHub will include a preview of differences too - 
 the green bar indicates added lines, the red bar indicates deleted lines, and yellow - lines that have been modified.
 
-> ## Markdown trailing spaces are meaningful
+> ## Markdown Trailing Spaces Are Meaningful
 >
 > In the example above there are two spaces at the end of `Line breaks  `.
 > These introduce what is called a **hard line break**, causing that paragraph to
