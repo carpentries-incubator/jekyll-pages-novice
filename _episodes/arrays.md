@@ -320,25 +320,28 @@ In `_config.yml`, we add the following lines:
 
 ~~~
 collections:
-  -
-    blogposts:
-      -
-        output: true
+  blogposts:
+    output: true
 ~~~
 {: .language-yaml }
 
-The `collections` field is a list of lists!
-This list contains only one entry, which is also a list that contains only one entry.
+Unlike the list of values we created for `team_members`,
+the `collections` configuration is a [_nested mapping_][yaml-lists]:
+a set of key-value pairs where some of the values are themselves
+a set of key-value pairs.
+
+This mapping contains only one entry, with the key `blogposts`,
+which is also a mapping that contains only one entry, `output`.
 It is reasonable to find this confusing.
 You might find that it makes (a little) more sense
 if you consider that we may wish to define multiple collections for our site
 and configure them each differently.
 
-The entry in the `collections` list, `blogposts`,
+The key in the `collections` mapping, `blogposts`,
 says that our site includes this collection of files,
-and the entry in that `blogposts` list, `output: true`,
-is a configures an option for that collection.
-It tells Jekyll to create a rendered HTML page from the content
+and the mapping associated with `blogposts`, `output: true`,
+configures an option for that collection,
+telling Jekyll to create a rendered HTML page from the content
 of each of these files.
 
 Now that we have configured our site to build this collection,
