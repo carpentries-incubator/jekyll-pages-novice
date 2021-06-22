@@ -57,15 +57,9 @@ we will start with a layout file that only includes these links:
 You have just defined the first layout for pages on your site.
 Congratulations!
 
-<<<<<<< HEAD
 Add `layout: default` to the YAML front matter of `index.md`
 to apply this layout to your site's home page,
 then do the same in the front matter of `about.md`.
-=======
-To apply this layout to your site's home page,
-add `layout: default` to the YAML front matter of `index.md`. Similarly, to apply this layout to the site's About
-page, add `layout: default` to the YAML front matter of `about.md`.
->>>>>>> gh-pages
 When you reload your site's homepage (or any page you applied the layout to), you will see
 that there is good news and bad news:
 The good news: the navigation links are there again;
@@ -123,11 +117,7 @@ to the navigation links appearing on every page, we may want a common footer to 
 > > {: .language-html }
 > >
 > > Remove all references to `footer.html` from pages as they will now be included via the layout.
-<<<<<<< HEAD
 > > Check that this works by reloading any of the pages that use the `default` layout. You should see a footer at
-=======
-> > Check that this works by reloading any of the pages that uses the `default` layout. You should see a footer at
->>>>>>> gh-pages
 > > the bottom of the page.
 > {: .solution }
 {: .challenge }
@@ -200,7 +190,7 @@ This file defines the bare minimum layout your pages should have.
 > {: .solution }
 {: .challenge }
 
-Note that we have also included some additional HTML elements in out default layout- the display of the
+Note that we have also included some additional HTML elements in our default layout - the display of the
 page title as level-one heading and wrapping the main page content within `<section>` and `</section>` tags.
 
 We have not been defining the title in the front matter of each of our
@@ -261,15 +251,15 @@ dropdown on your repository homepage,
    When you commit the changes, the `images` folder will have been
    added to your repository. We will be uploading our banner image to this folder in a moment.
    Unfortunately GitHub does not provide a way to create a new folder
-while uploading existing files, only while creating new ones.
-When making these blank files,
-which exist only to allow the existence of their parent repository,
-it is traditional to call them `.gitkeep`.
+   while uploading existing files, only while creating new ones.
+   When making these blank files,
+   which exist only to allow the existence of their parent repository,
+   it is traditional to call them `.gitkeep`.
 4. Now [download this banner image that we will add to our pages][banner-image]
-save it with the name `site_banner.png` and
-upload the file to your newly-created `images` folder on GitHub:
-you can do this by navigating into the folder and choosing
-"Upload files" from the "Add file" dropdown you used before.
+   save it with the name `site_banner.png` and
+   upload the file to your newly-created `images` folder on GitHub:
+   you can do this by navigating into the folder and choosing
+   "Upload files" from the "Add file" dropdown you used before.
 
 Now that the banner image is available in our site repository,
 add the HTML file `_includes/banner.html` with the following content:
@@ -280,12 +270,19 @@ add the HTML file `_includes/banner.html` with the following content:
 {: .language-html }
 
 Next, we need to create a new layout file `_layouts/home.html` and then
-set it to inherit from the default layout by adding YAML front matter to it specifying the `layout` (of the layout file)
-to be `default`.
+set it to inherit from the default layout by adding YAML front matter
+specifying the `layout` (of the layout file) to be `default`.
 
-We can then
-add any extentions to the new layout `home.html` that will be applied on top of the default layout. This is what
-`_layouts/home.html` file should look like:
+{% raw %}---
+layout: default
+---
+~~~
+{: .language-html }
+
+We can then add any extentions to the new layout `home.html`
+that will be applied on top of the default layout.
+This is what `_layouts/home.html` file should look like:
+
 ~~~
 {% raw %}---
 layout: default
@@ -298,8 +295,9 @@ layout: default
 {: .language-html }
 
 > ## Defining a Layout for a Layout
->Note how you can apply layouts not only to regular pages but also to other layouts, effectively making a layout
->inherit from another layout.
+> Note how layouts can be applied not only to regular pages but
+> also to other layouts, effectively making a layout
+> inherit from another layout.
 {: .callout }
 
 Finally, we can now update the layout of the home page to be `home` instead of `default` by modifying the YAML front matter.
@@ -310,14 +308,14 @@ as well as the banner image included from the `home` layout.
 ![Home page with inherited layout](../fig/layouts_homepage_layout.png){: .image-with-shadow width="800px" }
 
 The purpose of this approach, defining the core structure that will be common
-to every page across your site in a default layout,
+to every page across the site in a default layout,
 then basing more specific layouts on this foundation,
 is to keep duplication to a minimum within our repository.
-Whenever you want to update something about the styling or structure of your site,
-you should only need to make that change in a single file and let it propagate
+Whenever we want to update something about the styling or structure of our site,
+we should only need to make that change in a single file and let it propagate
 to all the relevant pages.
 
-> ## You Can't Include Link References in the Layout
+> ## We Can't Include Link References in the Layout
 >
 > In the previous section,
 > [we recommended that you `include` a file of references](/includes/indx.html#including-link-references)
