@@ -111,6 +111,16 @@ your clone of the originating `gh-pages` branch.
 Lastly, published copies of all the lessons are available in the `gh-pages` branch of the originating
 repository for reference while revising.
 
+### Authorship
+
+We would like to credit everyone who has contributed to the lesson,
+by including their name in the list of authors for the lesson.
+To help us do this, please modify the `AUTHORS` file to add your details
+when submitting your first pull request to the lesson repository.
+It is not compulsory to include your email address when doing so,
+but it may be helpful for us to contact you in future e.g.
+to discuss the publication of the lesson.
+
 ## Style Guide
 
 ### Title Case
@@ -154,7 +164,7 @@ You can also [reach The Carpentries Core Team by email][email].
 [github-join]: https://github.com/join
 [how-contribute]: https://egghead.io/series/how-to-contribute-to-an-open-source-project-on-github
 [issues]: https://guides.github.com/features/issues/
-[jekyll-channel]: https://swcarpentry.slack.com/archives/C0186GK56UC 
+[jekyll-channel]: https://swcarpentry.slack.com/archives/C0186GK56UC
 [slack-invitation]: https://swc-slack-invite.herokuapp.com/
 [swc-issues]: https://github.com/issues?q=user%3Aswcarpentry
 [swc-lessons]: https://software-carpentry.org/lessons/
