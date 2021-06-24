@@ -147,7 +147,9 @@ _Static_ pages are those whose contents are stored on a server in a state ready
 to be sent to any user who makes a request for that web page. When a request is
 made, the server only needs to send the information comprising that web page
 (such as HTML and CSS). Sites that do not change often, such as a website
-containing one’s CV, are often stored as static sites. Conversely, _dynamic_
+containing one’s CV, are often stored as static sites. 
+
+Conversely, _dynamic_
 sites are those that have their pages generated when a user makes a request for
 a web page. Depending on when the request is made, the content might change; for
 example, clicking refresh when viewing a discussion in a web forum might result
