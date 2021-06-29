@@ -10,13 +10,19 @@ The lesson is aimed at researchers and research software engineers who understan
 
 ## Development Status & Contributing
 
-The lesson is currently **under active development**, with [collaborative sprints taking place frequently]((https://hackmd.io/8IuM80wURA2uolBgzy_HZg?view)). 
-The authors hope it will be ready for beta testing (i.e. ready to be taught by other Carpentries Instructors) in summer 2021.
-We would be delighted if you contributed to making that happen! To find out more about what needs to be done and what's happened so far, please take a look at:
+The lesson is currently **open for beta testing**.
+If you would like to teach this lesson to your local audience,
+please get in touch with the lesson developers by
+[opening a new issue on the lesson repository](https://github.com/carpentries-incubator/jekyll-pages-novice/issues/new)
+or posting to the [`#jekyll-pages-lesson` Slack channel](https://swcarpentry.slack.com/archives/C0186GK56UC)
+on [The Carpentries Slack](https://swc-slack-invite.herokuapp.com/).
+We would love to help you prepare to teach the lesson and
+receive feedback on how it could be further improved,
+based on your experience in the workshop.
 
-* the open [Issues](https://github.com/carpentries-incubator/jekyll-pages-novice/issues) and [Pull Requests](https://github.com/carpentries-incubator/jekyll-pages-novice/pulls)
-* the notes from previous lesson sprints in our [HackMD](https://hackmd.io/8IuM80wURA2uolBgzy_HZg)
-* the [`#jekyll-pages-lesson` Slack channel](https://swcarpentry.slack.com/archives/C0186GK56UC) we're using for discussion on [The Carpentries Slack](https://swc-slack-invite.herokuapp.com/)
+If you want to find out more about how this lesson was developed,
+check out
+[the notes from previous lesson sprints in our HackMD](https://hackmd.io/8IuM80wURA2uolBgzy_HZg)
 
 If you'd like to ask the maintainers anything, we'd love to hear from you! You can open an issue here or post on the Slack channel linked above.
 
@@ -25,7 +31,6 @@ If you'd like to ask the maintainers anything, we'd love to hear from you! You c
 Current maintainers of this lesson are
 
 * [Renato Alves](https://github.com/unode)
-* [Julian Bauer](https://github.com/juliankarlbauer)
 * [Anne Fouilloux](https://github.com/annefou)
 * [Toby Hodges](https://github.com/tobyhodges)
 * [Aleksandra Nenadic](https://github.com/anenadic)
