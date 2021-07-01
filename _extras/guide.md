@@ -55,7 +55,9 @@ layout vs. home page (`index.html`), `page` layout vs. page used as a term for '
 either. While it is not a must, recommendation here is to stick with this conventional terminology as it is 
 reused across different Jekyll websites that learners may come across in future and to spend some time clarifying this. 
 
-## Episode: [Loops and Collections](../filters/index.html)
+## Episode: [Working With Filters](../filters/index.html)
+
+## Episode: [Loops and Collections](../arrays/index.html)
 
 ## Episode: [Wrap-up](../wrap-up/index.html)
 
