@@ -36,7 +36,7 @@ We recommend doing the ["Optional Exercise: Add Your Repository Details to CodiM
 very useful for helpers to have links to all the learner repos **and** rendered websites for troubleshooting. 
 Then when a learner messages in chat, the helper can find their repo and look at the commit history to find the error.
 
-## Episode: [Hosting Websites on GitHub](../github-pages/index.html
+## Episode: [Hosting Websites on GitHub](../github-pages/index.html)
 
 ## Episode: [Starting With Jekyll](../starting-jekyll/index.html)
 
