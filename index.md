@@ -6,8 +6,7 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 
 > ## Looking for Beta Testers!
 > **We are currently looking for volunteers to test this lesson!**
-> If you are a certified Carpentries Instructor and you would like to
-> teach this lesson in a pilot workshop,
+> If you would like to teach this lesson in a pilot workshop,
 > please let the lesson developers know by
 > [opening a new issue on the lesson repository](https://github.com/carpentries-incubator/jekyll-pages-novice/issues/new)
 > or posting to the [`#jekyll-pages-lesson` Slack channel](https://swcarpentry.slack.com/archives/C0186GK56UC)
