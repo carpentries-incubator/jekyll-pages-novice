@@ -273,9 +273,10 @@ Next, we need to create a new layout file `_layouts/home.html` and then
 set it to inherit from the default layout by adding YAML front matter
 specifying the `layout` (of the layout file) to be `default`.
 
+~~~
 {% raw %}---
 layout: default
----
+---{% endraw %}
 ~~~
 {: .language-html }
 
