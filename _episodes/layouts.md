@@ -133,7 +133,7 @@ There is still more to learn about page layouts,
 so we will come back to this issue of styling at the end of the episode.
 
 You might recall from
-[the introduction](/introduction/index.html#hello-world-in-html)
+[the introduction]({{ relative_root_path }}/introduction/index.html#hello-world-in-html)
 to this tutorial, that a _valid_ HTML page consists of more than
 only the content we want to display.
 We haven't written these extra elements (`<html>`, `<head>`, `<meta>`, etc)
@@ -319,7 +319,7 @@ to all the relevant pages.
 > ## We Can't Include Link References in the Layout
 >
 > In the previous section,
-> [we recommended that you `include` a file of references](/includes/indx.html#including-link-references)
+> [we recommended that you `include` a file of references]({{ relative_root_path }}/includes/indx.html#including-link-references)
 > for the links on your site.
 > Unfortunately, you cannot add this `{% raw %}{% include links.md %}{% endraw %}`
 > tag to the default layout of your site to prevent you from needing to
