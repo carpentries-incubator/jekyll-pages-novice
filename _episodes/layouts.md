@@ -17,6 +17,8 @@ keypoints:
 - "You can avoid duplicated effort by basing new layouts on previous ones"
 ---
 
+{% include base_path.html %}
+
 Elements that will appear on every page across our website,
 like the banner image we included in our pages in the previous section,
 form part of the structure of the page:
