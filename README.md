@@ -28,7 +28,7 @@ If you'd like to ask the maintainers anything, we'd love to hear from you! You c
 
 ## Maintainer(s)
 
-Current maintainers of this lesson are
+Current maintainers of this lesson are:
 
 * [Renato Alves](https://github.com/unode)
 * [Anne Fouilloux](https://github.com/annefou)
@@ -38,10 +38,10 @@ Current maintainers of this lesson are
 
 ## Authors
 
-A list of contributors to the lesson can be found in [AUTHORS](AUTHORS)
+A list of contributors to the lesson can be found in [AUTHORS](AUTHORS).
 
 ## Citation
 
-To cite this lesson, please consult with [CITATION](CITATION)
+To cite this lesson, please consult with [CITATION](CITATION).
 
 [lesson-example]: https://carpentries.github.io/lesson-example
