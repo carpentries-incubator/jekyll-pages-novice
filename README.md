@@ -40,6 +40,8 @@ Current maintainers of this lesson are:
 
 A list of contributors to the lesson can be found in [AUTHORS](AUTHORS).
 
+Please check the [contributing guidelines](CONTRIBUTING) if you would like to contribute to this lesson.
+
 ## Citation
 
 To cite this lesson, please consult with [CITATION](CITATION).
