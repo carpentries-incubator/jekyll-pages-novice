@@ -607,7 +607,6 @@ version of the site as well as on GitHub Pages.
 > It is a blog template that uses Jekyll as a base, improves on Jekyll experience and offers additional features.
 > For researchers this may be the option to go.
 >
-> {: .source}
 {: .callout}
 
 {% include links.md %}
