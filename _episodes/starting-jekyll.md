@@ -252,6 +252,7 @@ used to set variables and metadata on individual pages in your Jekyll site.
 > From [Jekyll's website](https://jekyllrb.com/docs/front-matter/):
 >
 >   >   Any file that contains a YAML front matter block will be processed by Jekyll as a special file. The front matter must be the first thing in the file and must take the form of valid YAML set between triple-dashed lines.
+> 
 {: .callout}
 
 > ## Global and Local Parameters Are Case Sensitive
