@@ -305,8 +305,8 @@ learned in this lesson to modify this template.**
 >
 > > ## Solution
 > > 
-> > In the `_layouts/posts.html` file change {% raw %} {{ page.date | date: '%b %d, %Y' }} {% endraw %}
-> > to {% raw %} {{ page.date | date_to_string }} {% endraw %}.
+> > In the `_layouts/posts.html` file change `'%b %d, %Y'`
+> > to date_to_string where the `page.date` variable is used.
 > > 
 > {: .solution}
 {: .challenge}
