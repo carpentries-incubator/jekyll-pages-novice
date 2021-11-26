@@ -181,8 +181,8 @@ Confirm your choice by clicking `I understand, update the default branch.`.
 Now when you return to the `Code` tab or the main page of your repo, you will see
 `gh-pages` in the branch drop down by default.
 
-The following series of challenges will have you practice the skills you
-learned in this lesson to modify this template.
+**The following series of challenges will have you practice the skills you
+learned in this lesson to modify this template.**
 
 > ## Update GitHub About Section Link to Site
 > As we did before in the [Hosting Websites on GitHub episode](github-pages.md), update
@@ -192,11 +192,19 @@ learned in this lesson to modify this template.
 {: .challenge}
 
 > ## Customize the Configuration
+> 
 > Update the name and the description variables for the site.
 > Reload the rendered page to see the changes to the actual site.
 > 
 > Hint: See the [Starting with Jekyll episode](starting-jekyll.md) for review
 > 
+> > ## Solution
+> > 
+> > The description and name variables are site-wide variables so they are found in the `_config.yml` file
+> > and can be updated there.  Changes are then committed and the site can be reloaded after
+> > Github re-renders the latest version of the site with Jekyll.
+> > 
+> {: .solution}
 {: .challenge}
 
 > ## Customize the Header Menu
@@ -209,37 +217,66 @@ learned in this lesson to modify this template.
 > 
 > > ## Solution
 > > 
-> > Remove lines 12-20 in the `_includes/menu-header.html` file.
+> > Lines 12-20 need to be removed from the `_includes/menu-header.html` file.
 > > 
 > {: .solution}
 {: .challenge}
 
 > ## Update a Layout
 > 
-> NEED SUGGESTION FOR LAYOUT CHANGE 
->
+> 1. Update the `post` layout to remove the newsletter.
+> 1. Also remove the "Share this" block to the bottom of the post where the newsletter block used to be (above "Author Box").
 > 
+> Hint: Review the [Page Layouts](layouts.md) episode from this lesson for more information on layouts.
+>
+> > ## Solution
+> > 
+> > 1. Lines 81-105 need to be removed to remove the newsletter.
+> > 1. To move the "Share this" box, lines 45-65 should be cut (copied then deleted) and then pasted between the Article and the Author Box section.
+> > 
+> {: .solution}
 {: .challenge}
 
 > ## Customize the About Page
 >
-> 1. Find the `About` page, update the layout to the `page` layout,
+> Oftentimes you might want to edit some existing pages and layouts. In this exercise, we will make the
+> `About` page for this site more useful by changing the layout, editing the text, and including
+> it as a link in the header menu for this site.
+> 
+> 1. Find the `About` page and update the layout to the `page` layout,
 >  turn off the comments option, remove the image and the "made with" text.
-> 1. Make the page content a reference to the site description you updated
->  and any other text you'd like to include.
-> 1. Add a link for the `About` page into the header menu.
+> 1. Make the `About` page content include the site description you updated
+>  and any other text you'd like to add.
+> 1. Update the header menu to include a link for the `About` page.
 >
 >
+> > ## Solution
+> > 
+> > 1. The `About` page is called `about.md` and is in the `_pages` folder. Once found in the yaml header the variables can be changed to "page" for layout and "false" for comments.  In the body of the page the line that starts with "Made with" is removed.
+> > 1. In the body of the `_pages/about.md` description variable is added using liquid syntax, {% raw %} {{ site.description }} {% endraw %}, and add any other text that might be helpful for an about page.
+> > 1. The header is updated in the `_includes/menu-header.html` (this may take some searching to track down).  The same html from the other items in the header can be copied and modified.
+> >
+> {: .solution}
 {: .challenge}
-<!--- Should I add directions in the solution? -->
 
-<!--- Challenge:  collection changes - Authors? -->
-> ## Add Yourself as an Author
+
+> ## Add Yourself as a Potential Author
 >
-> 1. Find where the authors collection is defined and add yourself.
+> Find where the authors collection is defined and add yourself. 
+> 
+> Hint 1: the author for an individual post is defined in the frontmatter of the post but the
+> collection of possible authors is defined in a location that allows use across the site.
 >
+> Hint 2: Review the [Loops and Collections](arrays.md) episode of this episode for a reminder 
+> on how collections work and reminder on where you might find the authors collection.
+>
+> > ## Solution
+> >
+> > The authors collection is found in the `_config.yml`. A new entry can be made by copying
+> > lines 22-28, pasting them on line 38, and then customizing them.
+> >
+> {: .solution}
 {: .challenge}
-<!--- Should I add directions in the solution? -->
 
 > ## Add a New Blogpost
 > Add a new blog post for today's date with the announcment of your new website.
@@ -248,17 +285,31 @@ learned in this lesson to modify this template.
 > Pay close attention to the Blogging in the Wild section as it tells you more about
 > how to use the built-in `_posts` functionality.
 > 
+> > ## Solution
+> >
+> > - Add a new file to the `_posts` folder with the filename `YYYY-MM-DD-some-key-info.md`.
+> > - In another window, open another post in the `_posts` folder and copy the frontmatter (yaml header).
+> > - Paste the front matter into your new file and change the author and title.
+> > - Add some text, headers, images or other content if you wish.
+> > 
+> {: .solution}
 {: .challenge}
-
 
 > ## Use A Filter
 > 
-> NEED SUGGESTION FOR USING A FILTER
-> POSSIBLY COULD COMBINE THIS WITH THE ABOUT PAGE CUSTOMIZATIONS.
->
+> Using this [list of Jekyll filters](https://jekyllrb.com/docs/liquid/filters/), 
+> find a filter that will let you change to DD Mon YYYY for each blog post.  Edit
+> the appropriate layout to change the date format.
 > 
+> Hint: See the [Working with Filters](filters.md) episode to review how filters work.
+>
+> > ## Solution
+> > 
+> > In the `_layouts/posts.html` file change {% raw %} {{ page.date | date: '%b %d, %Y' }} {% endraw %}
+> > to {% raw %} {{ page.date | date_to_string }} {% endraw %}.
+> > 
+> {: .solution}
 {: .challenge}
-
 
 > ## Detective Work: Find Comments
 > Look through the site and see if you can find how it allows for comments.
