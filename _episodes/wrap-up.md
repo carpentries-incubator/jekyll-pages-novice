@@ -297,16 +297,24 @@ learned in this lesson to modify this template.**
 
 > ## Use A Filter
 > 
-> Using this [list of Jekyll filters](https://jekyllrb.com/docs/liquid/filters/), 
-> find a filter that will let you change to DD Mon YYYY for each blog post.  Edit
-> the appropriate layout to change the date format.
+> Currently the Authors page sorts based on the order of the collection but we would 
+> prefer it sort alphabetically.
+> Use this [list of Jekyll filters](https://jekyllrb.com/docs/liquid/filters/) to 
+> find a filter and edit the `author-list.html` page to display the authors alphabetically.
 > 
-> Hint: See the [Working with Filters](filters.md) episode to review how filters work.
+> Hint: Refer to this section on [looping over a collection](https://carpentries-incubator.github.io/jekyll-pages-novice/arrays/index.html#looping-over-a-collection)
+> if you get a (silent) build error with your first solution.
+> 
 >
 > > ## Solution
 > > 
-> > In the `_layouts/posts.html` file change `'%b %d, %Y'`
-> > to date_to_string where the `page.date` variable is used.
+> > For this change we need to first sort the collection and assign the sorted collection to a variable.
+> > Then use that sorted collection variable in the for loop when we display the authors.
+> > 
+> > In the `_pages/author-list.html` file add the line 
+> > {% raw %}{% assign sorted_authors = site.authors | sort "name" %}{% endraw %} 
+> > right before the {% raw %}{% for author in sorted_authors %}{% endraw %} line.
+> > Then change that line to {% raw %}{% for author in sorted_authors %}{% endraw %}.
 > > 
 > {: .solution}
 {: .challenge}
