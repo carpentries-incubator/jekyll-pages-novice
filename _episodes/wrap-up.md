@@ -263,7 +263,7 @@ learned in this lesson to modify this template.**
 > > ## Solution
 > > 
 > > 1. The `About` page is called `about.md` and is in the `_pages` folder. Once found in the yaml header the variables can be changed to "page" for layout and "false" for comments.  In the body of the page the line that starts with "Made with" is removed.
-> > 1. In the body of the `_pages/about.md` description variable is added using liquid syntax, {% raw %} {{ site.description }} {% endraw %}, and add any other text that might be helpful for an about page.
+> > 1. In the body of the `_pages/about.md` description variable is added using liquid syntax, `{% raw %} {{ site.description }} {% endraw %}`, and add any other text that might be helpful for an about page.
 > > 1. The header is updated in the `_includes/menu-header.html` (this may take some searching to track down).  The same html from the other items in the header can be copied and modified.
 > >
 > {: .solution}
@@ -322,9 +322,9 @@ learned in this lesson to modify this template.**
 > > Then use that sorted collection variable in the for loop when we display the authors.
 > > 
 > > In the `_pages/author-list.html` file add the line 
-> > {% raw %}{% assign sorted_authors = site.authors | sort "name" %}{% endraw %} 
-> > right before the {% raw %}{% for author in sorted_authors %}{% endraw %} line.
-> > Then change that line to {% raw %}{% for author in sorted_authors %}{% endraw %}.
+> > `{% raw %}{% assign sorted_authors = site.authors | sort "name" %}{% endraw %}`
+> > right before the `{% raw %}{% for author in site.authors %}{% endraw %}` line.
+> > Then change that line to `{% raw %}{% for author in sorted_authors %}{% endraw %}`.
 > > 
 > {: .solution}
 {: .challenge}
