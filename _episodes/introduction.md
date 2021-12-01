@@ -43,9 +43,9 @@ in response to various triggers.
 ## Hello World in HTML
 
 When learning a new programming language,
-you may often find a reference to the popular `Hello world`.
+you may often find a reference to the popular `Hello world` example.
 These examples typically capture the simplest code that
-can produce and display the `Hello world` on screen.
+can produce and display the text "Hello, World!" on screen.
 
 As HTML requires certain tags to be present and almost always in matching pairs (open `<tag>` and closing `</tag>`),
 HTML documents tend to get verbose rather quickly.
@@ -59,7 +59,7 @@ The simplest, valid HTML `Hello world` is:
     <title>Page title</title>
   </head>
   <body>
-    <p>Hello World</p>
+    <p>Hello, World!</p>
   </body>
 </html>
 ~~~
@@ -77,11 +77,13 @@ a web browser will make a best guess regarding the layout of HTML elements on th
 > In the `Hello world` example above 5 different tags are used (`html`, `head`, `title`, `body` and `p`) in their open `<>` and closed `</>` form.
 > We see also the special `doctype` tag that indicates the format and version of the document, in this case, [HTML(5)][html5-wikipedia].
 >
-> Other examples include frequently used tags for structural elements such as `div`, `span`, `nav`, `section`;
-> stylized tags `i`/`em`, `b`/`strong` and `u` for *italics/emphasis*, **bold** and <u>underlined text</u>;
-> headings numbered from `h1` to `h6` for titles and progressively smaller sub-titles;
-> `img`, `video`, `audio` to embed rich media;
-> and the important `a` tag (anchor) used to [link](#) to sections in the same or other documents.
+> Many other tags exist to define: 
+> - *structural elements*, such as `table`, `div`, `span`, `nav`, `section`;            
+> - *lists*, such as `ul` (for unordered lists) and `or` (for ordered lists);
+> - *stylized elements*, such as `i`/`em` (for *italics/emphasis*), `b`/`strong` (for **bold**) and `u` (for <u>underlined text</u>);
+> - *headings*, numbered from `h1` to `h6` for titles and progressively smaller sub-titles;
+> - *media elements*, such as `img`, `video`, `audio` to embed rich media content; and
+> - *links*, using the important `a` (anchor) tag to [link](#) to sections in the same page or other pages within the same or external websites.
 >
 > The [list of valid HTML tags][html5-tags] is rather extensive,
 > covering a rich range of features powering today's [world wide web][www-wikipedia].
@@ -91,7 +93,7 @@ a web browser will make a best guess regarding the layout of HTML elements on th
 >
 > Given the stylized text:
 >
-> <h1><em>Hello</em> World</h1>
+> <h1><em>Hello</em>, World!</h1>
 >
 > write the HTML that will produce the same result.
 > **Hint** the big font is achieved by use of a heading.
@@ -99,23 +101,63 @@ a web browser will make a best guess regarding the layout of HTML elements on th
 > > ## Solution
 > >
 > > ~~~
-> > <h1><em>Hello</em> World</h1>
+> > <h1><em>Hello</em>, World!</h1>
 > > ~~~
 > > {: .language-html }
 > {: .solution }
-{: .challenge }
+{: .challenge }      
+
+Let's write a more complex HTML example using a table showing the "Hello, World!" text in different languages that renders like: 
+![HTML table example](../fig/html-table.png){: .image-with-shadow width="600px" }
+
+The HTML to produce such a table looks like this (you can copy+paste the snippet into the HTML file you created in the previous example):
+~~~
+<table>
+    <tr><th>Language</th><th>Text</th></tr>
+    <tr><td>English</td><td>Hello, World!</td></tr>  
+    <tr><td>French</td><td>Bonjour, le monde!</td></tr>
+    <tr><td>Portuguese</td><td>Olá, Mundo!</td></tr>
+    <tr><td>Serbian</td><td>Zdravo, svete!</td></tr>
+</table>
+~~~ 
+{: .language-html }
+
+Each row is enclosed between **t**able **r**ow `<tr>` and `</tr>` tags. Within a row, `<th>` and `</th>` tags are used to contain **t**able **h**eadings 
+(special table cells displayed in bold font), while regular **t**able **d**ata cells are contained within `<td>` and `</td>` tags.
+
+A similar example written using HTML lists would look as follows:
+![HTML list example](../fig/html-list.png){: .image-with-shadow width="600px" }
+
+~~~
+<ul>
+    <li>English: Hello, World!</li>  
+    <li>French: Bonjour, le monde!</li>
+    <li>Portuguese: Olá, Mundo!</li>
+    <li>Serbian: Zdravo, svete!</li>
+</ul>
+~~~ 
+{: .language-html }
+
+Here, we used **u**nordered **l**ist tags `<ul>` and `</ul>` to define a list with 4 items, each in turn wrapped in 
+individual **l**ist **i**tem (`<li>` and `</li>`) tags. 
 
 ## Static vs Dynamic Sites
 
-Sites consisting of pages whose content doesn't change
-after that initial information is received by the server
-are referred to as _static_ (for example, a website containing one's CV).
-Conversely, sites whose pages can be updated after loading,
-with information continuing to be passed between browser and server,
-are called _dynamic_ (for example, pages showing current date and time or shopping baskets, Twitter or Facebook pages,
-which might be updated between each two page refreshes).
-This lesson focuses on static sites and tools that can be used to create them,
-known as **Static Site Generators**.
+_Static_ pages are those whose contents are stored on a server in a state ready
+to be sent to any user who makes a request for that web page. When a request is
+made, the server only needs to send the information comprising that web page
+(such as HTML and CSS). Sites that do not change often, such as a website
+containing one’s CV, are often stored as static sites. 
+
+Conversely, _dynamic_
+sites are those that have their pages generated when a user makes a request for
+a web page. Depending on when the request is made, the content might change; for
+example, clicking refresh when viewing a discussion in a web forum might result
+in new comments showing up. The key difference is that static pages need only be
+generated once, after which they rest unchanged on the server, compared to
+dynamic pages which are regenerated by a server every time it receives a
+request. This lesson focuses on static sites and tools that can be used to
+create them, known as **Static Site Generators**.
 
 One of the advantages of using static site generators is that
 they remove the need for us to manually produce a lot of HTML,
@@ -124,7 +166,10 @@ However, we still need a way to tell the generator how we want our content
 to look when it's displayed in the browser.
 For that, we will use a tool called Markdown, which we'll learn about in the next episode.
 
-![Pages can be created by static server-side generation, where HTML is generated once on the server and doesn't change thereafter, by dynamic server-side generation, where the server can update and send new HTML based on requests from the browser, and client-side generation, where HTML is generated by the browser itself by processing source data from the server(s) with previously-loaded Javascript code.]({{page.root}}/fig/page-generation-js4ds.svg)
+![Pages can be created in several ways: static server-side generation (where HTML is generated once on the server and doesn't 
+change thereafter), dynamic server-side generation (where the server can update and send new HTML based on requests from 
+the user's browser), and client-side generation (where parts of HTML pages are generated by the browser using Javascript code)](../fig/page-generation-js4ds.svg)
+
 _Figure 1.1: Page Generation Alternatives. This figure is a modified version of the original published in [JavaScript for Data Science][js4ds], and is reproduced here with permission from the author._
 
 Static-generated sites are a great choice when the information you want to
@@ -181,9 +226,16 @@ then creating it with GitHub Pages is a good option.
 GitHub Pages is a system allowing users to create and serve websites directly from their GitHub repositories.
 The service is free for public repositories and simple pages can be created and served with very little configuration required.
 
-Behind the scenes GitHub Pages uses a static site generator called Jekyll, which we're going to learn about later in this lesson.
-First, we need to learn more about how to author and format the content of our pages,
-before configuring GitHub to display this content as a website.
+Behind the scenes GitHub Pages uses a static site generator called Jekyll, which we're going to learn about later
+in this lesson. There are many different technologies that come together when creating a website with GitHub Pages
+that you have to be familiar with (as shown in the diagram below). It may sound overwhelming at first
+but we will explain most of these technologies in this lesson - we only don't cover CSS/Sass (styling language that gets compiled into CSS) and
+JavaScript/CoffeeScript (scripting language that gets compiled into JavaScript) in detail.
+
+![Static websites in GitHub Pages technology overview diagram](../fig/jekyll-gh-pages-website-overview.svg){: width="700px" }
+
+First, we are going to set up a repository to store our files and learn more about how to author and format the content
+of our pages using HTML and Markdown, before configuring GitHub to display this content as a website using GitHub Pages.
 
 ## Setting Up a Repository
 
@@ -207,34 +259,33 @@ the website we will be creating.
 Make sure to login with your GitHub account and visit https://github.com.
 Click the green "New" repo button on the left hand side of GitHub:
 
-<img src="../fig/new_repo_button.png" alt="Green New Repo Button" width="100">
+![New repository button](../fig/new_repo_button.png){: .image-with-shadow width="100px" }
 
 **or** click the "+" menu in the upper righthand corner and
 choose "New Repository".
 
-<img src="../fig/plus_new_repo.png" alt="Dropdown plus menu with new repository option highlighted" width="200">
+![Dropdown plus menu with new repository option highlighted](../fig/plus_new_repo.png){: .image-with-shadow width="200px" }
 
 Next you will need to fill in some info about your repository.
 
-<img src="../fig/blank_new_repo.png" alt="Blank new repository page" width="600">
+![Blank new repository page](../fig/blank_new_repo.png){: .image-with-shadow width="600px" }
 
 In this lesson, we will be working on a general group website.
 You can imagine this website may be for your lab group, a specific project group,
 or another group you work with.
 Under the "Repository name" field type `group-website`.
 
-<img src="../fig/set_repo_name.png" alt="Repository name set to group-website" width="600">
-
+![New repository - set name to group-website](../fig/set_repo_name.png){: .image-with-shadow width="600px" }
 
 We can also add a description (for instance **Repo for learning how to make websites with jekyll pages**) so we know what this repo is when we find it again after the workshop.
 
-<img src="../fig/set_repo_description.png" alt="Repository name set to group-website" width="600">
+![New repository - set description](../fig/set_repo_description.png){: .image-with-shadow width="600px" }
 
 Under the "Initialize this repository with:" section we will check `Add a README file`
 and `Choose a license`.  It is good practice to have a README file that gives more information
 about your repo and to set a license for your work.
 
-<img src="../fig/initialize_readme_license.png" alt="Repository name set to group-website" width="600">
+![Initialise a new repository with a README and a licence file](../fig/initialize_readme_license.png){: .image-with-shadow width="600px" }
 
 for this example repository we’ll use the `Creative Commons Zero v1.0 Universal` (CC0) license,
 which allows anyone to re-use and adapt the content of the repository without restriction,
@@ -247,16 +298,16 @@ your own website.
 > for more information about possible licenses.
 {: .callout}
 
-<img src="../fig/set_CC0_license.png" alt="Repository name set to group-website" width="400">
+![Set licence to CC0](../fig/set_CC0_license.png){: .image-with-shadow width="600px" }
 
 Once you've finished these steps you can click the "Create Repository" button to
 finish creating the repo.
 
-<img src="../fig/create_repository.png" alt="Filled in form with a create repository button" width="600">
+![Filled in form with a create repository button](../fig/create_repository.png){: .image-with-shadow width="600px" }
 
-GitHub will then setup the repo and it should look like the following screenshot.
+GitHub will then setup the repo and it should create the repo called `group-website` with a `README.md` file and a `LICENSE` file.
 
-<img src="../fig/group_website_repo.png" alt="Github repository for the group website" width="800">
+![Github repository for the group website](../fig/group_website_repo.png){: .image-with-shadow width="800px" }
 
 [qwantz-easter-egg-ext]: https://chrome.google.com/webstore/detail/dinosaur-comics-easter-eg/bojkkeeefjmeogpgnlomodfkkfkfhabj
 

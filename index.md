@@ -4,13 +4,26 @@ root: .  # Is the only page that doesn't follow the pattern /:path/index.html
 permalink: index.html  # Is the only page that doesn't follow the pattern /:path/index.html
 ---
 
+> ## Looking for Beta Testers!
+> **We are currently looking for volunteers to test this lesson!**
+> If you would like to teach this lesson in a pilot workshop,
+> please let the lesson developers know by
+> [opening a new issue on the lesson repository](https://github.com/carpentries-incubator/jekyll-pages-novice/issues/new)
+> or posting to the [`#jekyll-pages-lesson` Slack channel](https://swcarpentry.slack.com/archives/C0186GK56UC)
+> on [The Carpentries Slack](https://swc-slack-invite.herokuapp.com/).
+> We would love to help you prepare to teach the lesson and
+> receive feedback on how it could be further improved,
+> based on your experience in the workshop.
+{: .testimonial }
+
 > ## Prerequisites
 >
-> This lesson guides you through making webpages using Jekyll in a web hosting service.
-> If you are comfortable interacting with websites in a web browser, this lesson is for you.
-> 
+> This lesson guides you through making websites using Jekyll in a web hosting service GitHub Pages.
+> If you are comfortable interacting with websites in a web browser, this lesson is for you. Basic understanding
+> of HTML and/or Markdown as webpage authoring languages is welcome but not a must.
+>
 > There may be additional prerequisites for individual lessons in the extras section.
-> 
+>
 {: .prereq }
 
 For those already familiar with the ways that Git

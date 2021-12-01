@@ -19,6 +19,7 @@
 [filters]: https://jekyllrb.com/docs/liquid/filters/
 [ghp-dependencies]: https://pages.github.com/versions/
 [github]: https://github.com/
+[github-importer]: https://import2.github.com/
 [git]: https://git-scm.com/
 [github-flavored-markdown]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 [gitlab-flavored-markdown]: https://docs.gitlab.com/ee/user/markdown.html
@@ -47,7 +48,6 @@
 [lesson-mainpage]: {{ relative_root_path }}{% link index.md %}
 [lesson-reference]: {{ relative_root_path }}{% link reference.md %}
 [lesson-setup]: {{ relative_root_path }}{% link setup.md %}
-[lesson-webpage]: {{ relative_root_path }}
 [liquid]: https://shopify.dev/docs/themes/liquid/
 [liquid-group-by]: https://jekyllrb.com/docs/liquid/filters/#group-by
 [liquid-sample]: https://jekyllrb.com/docs/liquid/filters/#sample
@@ -83,3 +83,4 @@
 [w3-viewport]: https://www.w3schools.com/css/css_rwd_viewport.asp
 [www-wikipedia]: https://en.wikipedia.org/wiki/World_Wide_Web
 [yaml]: http://yaml.org/
+[yaml-lists]: https://yaml.org/spec/1.2/spec.html#id2759963

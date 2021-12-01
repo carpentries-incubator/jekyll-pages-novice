@@ -1,7 +1,7 @@
 ---
 title: "Loops and Collections"
-teaching: 0
-exercises: 0
+teaching: 60
+exercises: 20
 questions:
 - "How do I work with variables containing multiple values in Jekyll?"
 - "How do I add a list of blog posts to my site?"
@@ -47,18 +47,61 @@ For example, we may want to list the names of all the team members for a project
 together with their roles and start dates, inside `_config.yml`
 and make use of this information throughout the website.
 
-To do so in YAML notation would look something like:
+To do so in YAML notation would look like this:
 
 ~~~
-team_members: [
-    {name: "Sarah Becker", role: "project lead", start_date: "2016-02-01"},
-    {name: "Jane Smith", role: "maintainer", start_date: "2018-03-15"},
-    {name: "Albert Hamilton", role: "editor", start_date: "2017-12-01"},
-]
+team_members:
+  -
+    name: "Sarah Becker"
+    role: "project lead"
+    start_date: "2016-02-01"
+  -
+    name: "Jane Smith"
+    role: maintainer
+    start_date: "2018-03-15"
+  -
+    name: "Albert Hamilton"
+    role: editor
+    start_date: "2017-12-01"
 ~~~
 {: .language-yaml}
 
-This defines 'team_members' as a list of 3 elements; each element is a dictionary with key-value pairs for name, role and date.
+This defines `team_members` as a list of 3 elements;
+each element is a dictionary with key-value pairs for name, role and date.
+The syntax for lists in YAML can be a little hard to grasp at first glance.
+Each entry in the list is marked by a `-`, indented once to the right.
+After this, the content of the list item is described on lines
+indented twice to the right,
+with pairs of keys and values.
+The keys - `name`, `role`, and `start_date` -
+are identical for all entries in the list
+but the values differ from one team member to the next.
+
+> ## YAML Syntax Is Flexible
+> When browsing documentation and examples of YAML
+> you will sometimes see lists represented slightly differently,
+> with the first part of the entry value written on the same line
+> as the `-`, e.g.
+>
+> ~~~
+> team_members:
+>   - name: "Sarah Becker"
+>     role: "project lead"
+>     start_date: "2016-02-01"
+>   - name: "Jane Smith"
+>     role: maintainer
+>     start_date: "2018-03-15"
+>   - name: "Albert Hamilton"
+>     role: editor
+>     start_date: "2017-12-01"
+> ~~~
+> {: .language-yaml}
+>
+> This is also valid syntax and a little more compact,
+> but we will place `-` on its own line in this lesson as
+> [that syntax is described in the official YAML specification][yaml-lists].
+>
+{: .callout }
 
 > ## Indentation in YAML
 > Note that indentation level in YAML is important -
@@ -90,20 +133,26 @@ display it in `about.md`.
 1. Modify `_config.yml` file and add the `team_members` parameter as defined above. The file should now look like:
 
    ~~~
-   title: "Building Websites in GitHub"
-   description: "This research project develops training materials for reseachers wanting to learn to build project
-   websites in GitHub with GitHub Pages."
-   email: "team@my.research.org"
-   twitter: "https://twitter.com/my_research_project"
-   team_members: [
-       {name: "Sarah Becker", role: "project lead", start_date: "2016-02-01"},
-       {name: "Jane Smith", role: "maintainer", start_date: "2018-03-15"},
-       {name: "Albert Hamilton", role: "editor", start_date: "2017-12-01"}
-   ]
+   description: "This is an example website built while learning how to use Jekyll and GitHub Pages."
+   email: "team@carpentries.org"
+   twitter: "https://twitter.com/thecarpentries"
+   team_members:
+     -
+       name: "Sarah Becker"
+       role: "project lead"
+       start_date: "2016-02-01"
+     -
+       name: "Jane Smith"
+       role: maintainer
+       start_date: "2018-03-15"
+     -
+       name: "Albert Hamilton"
+       role: editor
+       start_date: "2017-12-01"
    ~~~
    {: .language-yaml}
 
-2. In file `about.md`, we add a new section for the team and
+2. In file `about.md`, add a new section for the team and
    iterate over the values defined in parameter `site.team_members` in a loop to
    display a table of the team members' names and roles.
    The file now should look like:
@@ -111,8 +160,8 @@ display it in `about.md`.
     ~~~
     {% raw %}---
     layout: page
+    title: About
     ---
-    # About
 
     ## Project
 
@@ -124,12 +173,9 @@ display it in `about.md`.
     ## Team
 
     The following people are members of our research team:
-    <table>
-    <tr><th>Name</th><th>Role</th></tr>
     {% for team_member in site.team_members %}
-    <tr><td>{{ team_member.name }}</td><td>{{ team_member.role }}</td></tr>
+    - {{ team_member.name }}, role: {{ team_member.role }}
     {% endfor %}
-    </table>
 
     ## Cite us
 
@@ -140,8 +186,7 @@ display it in `about.md`.
     ~~~
     {: .language-markdown}
 
-FIXME: add screenshot of rendered team member listing
-
+![Rendered team members list in the 'about.md' page](../fig/team_members_list.png){: .image-with-shadow width="800px" }
 
 ## Filtering a List
 
@@ -187,13 +232,13 @@ For this, we use the `assign` tag, e.g.
 
 Use this `assign` tag whenever you need to create variables for use "on the fly"
 as you work with lists in your site.
-We will see another examples of this when we investigate collections in the
+We will see another example of this when we investigate collections in the
 next section.
 
-3. In file `index.md` add the team lead's name so that it looks like:
+3. In file `index.md` add the team lead's name:
 
    ~~~
-   # {% raw %}{{ site.title }}
+   # {% raw %}Building Websites in GitHub
 
    ## Description
    {{ site.description }}
@@ -205,8 +250,8 @@ next section.
    ~~~
    {: .language-markdown}
 
-Now, if you need to add, remove or modify a team member,
-you only need to update the list in `_config.yml` without modifying your pages.
+Now, if we need to add, remove, or modify a team member,
+we only need to update the list in `_config.yml` without editing the individual pages of our site.
 
 > ## Exercise: Personnel Changes
 > Your project team has changed. The team lead has left and in her place is a new person: 'Tom Cat', who started on
@@ -218,17 +263,26 @@ you only need to update the list in `_config.yml` without modifying your pages.
 > > For the new developer joining the team, we also only need to her information to `team_members` in `_config.yml` and our `for loop` from `about.md` will simply pick up the changes automatically. Magic! Our `_config.yml` file should now look like:
 > >
 > > ~~~
-> > title: "Building Websites in GitHub"
-> > description: "This research project develops training materials for reseachers wanting to learn to build project
-> > websites in GitHub with GitHub Pages."
-> > email: team@my.research.org
-> > twitter: "https://twitter.com/my_research_project"
-> > team_members: [
-> >    {name: "Tom Cat", role: "project lead", start_date: "2020-10-01"},
-> >    {name: "Jane Smith", role: "maintainer", start_date: "2018-03-15"},
-> >    {name: "Albert Hamilton", role: "editor", start_date: "2017-12-01"},
-> >    {name: "Alice Dauncey", role: "developer", start_date: "2020-09-15"}
-> > ]
+> > description: "This is an example website built while learning how to use Jekyll and GitHub Pages."
+> > email: "team@carpentries.org"
+> > twitter: "https://twitter.com/thecarpentries"
+> > team_members:
+> >   -
+> >     name: "Tom Cat"
+> >     role: "project lead"
+> >     start_date: "2020-10-01"
+> >   -
+> >     name: "Jane Smith"
+> >     role: maintainer
+> >     start_date: "2018-03-15"
+> >   -
+> >     name: "Albert Hamilton"
+> >     role: editor
+> >     start_date: "2017-12-01"
+> >   -
+> >     name: "Alice Dauncey"
+> >     role: "developer"
+> >     start_date: "2020-09-15"
 > > ~~~
 > > {: .language-yaml}
 > > Check the changes in your website.
@@ -266,13 +320,28 @@ In `_config.yml`, we add the following lines:
 
 ~~~
 collections:
-    posts:
-        output: true
+  blogposts:
+    output: true
 ~~~
 {: .language-yaml }
 
-The `posts:` line says that our site includes this collection of files,
-and `output: true` tells Jekyll to create a rendered HTML page from the content
+Unlike the list of values we created for `team_members`,
+the `collections` configuration is a [_nested mapping_][yaml-lists]:
+a set of key-value pairs where some of the values are themselves
+a set of key-value pairs.
+
+This mapping contains only one entry, with the key `blogposts`,
+which is also a mapping that contains only one entry, `output`.
+It is reasonable to find this confusing.
+You might find that it makes (a little) more sense
+if you consider that we may wish to define multiple collections for our site
+and configure them each differently.
+
+The key in the `collections` mapping, `blogposts`,
+says that our site includes this collection of files,
+and the mapping associated with `blogposts`, `output: true`,
+configures an option for that collection,
+telling Jekyll to create a rendered HTML page from the content
 of each of these files.
 
 Now that we have configured our site to build this collection,
@@ -280,7 +349,7 @@ we need to populate it.
 Jekyll will look for a folder in our site repository that shares its name with
 the collection we defined, but with a preceding underscore in the folder name,
 and build the collection from its contents.
-In this case, we need to move all our blog post files into a `_posts` folder.
+In this case, we need to move all our blog post files into a `_blogposts` folder.
 
 Once we have done that,
 we can check that the collection has been created correctly by
@@ -288,7 +357,7 @@ trying to use it in a page.
 
 > ## Why `output: true`?
 >
-> When creating our `posts` collection in `_config.yml` above,
+> When creating our `blogposts` collection in `_config.yml` above,
 > we configured it with the parameter `output: true`,
 > to ensure the pages of the collection were rendered to HTML by Jekyll.
 >
@@ -299,41 +368,46 @@ trying to use it in a page.
 > we could have created an individual file for
 > each of the members of our team, defined a collection, and looped through
 > those members that way.
-> To use the collection of files that way,
+> To use the collection of files like this,
 > we would keep the default value of `output`, `false`.
 {: .callout }
 
 ## Looping Over a Collection
 
 At the end of your `index.md`,
-add a new for loop to iterate over the titles and dates of the `posts` collection:
+add a new for loop to iterate over the titles and dates of the `blogposts` collection:
 
 ~~~
 ## Blog Posts
 
-{% raw %}{% for post in site.posts %}
-- {{ post.date | date_to_string }}: [{{ post.title }}]({{ post.url }})
+{% raw %}{% for post in site.blogposts %}
+- {{ post.date | date_to_string }}: [{{ post.title }}]({{ post.url | relative_url }})
 {% endfor %}{% endraw %}
 ~~~
 {: .language-markdown }
 
-FIXME: add screenshot of blog post list
+![Rendered blog post list in the index page](../fig/blog_posts_list.png){: .image-with-shadow width="800px" }
 
 There is a lot happening in those few lines above!
 Let's break it down into smaller chunks and explore them one-by-one:
 
-1. `{% raw %}{% for post in site.posts %}{% endraw %}`
+1. `{% raw %}{% for post in site.blogposts %}{% endraw %}`
    initialises a loop through the collection.
    The collection itself is made available to us as a `site` variable,
    with the name we gave it in `_config.yml`.
 2. `- ` will create a bullet point for each post.
 3. `{% raw %}{{ post.date | date_to_string }}{% endraw %}` accesses the `date`
    defined in the post's YAML header and displays it in the list as a string.
-4. `{% raw %}[{{ post.title }}]({{ post.url }}){% endraw %}` creates a link with the post's title
+4. `{% raw %}[{{ post.title }}]({{ post.url | relative_url }}){% endraw %}` creates a link with the post's title
    (again extracted from the YAML header of the post file) as the link text,
-   and the url of the rendered post page as the link target.
+   and the URL of the rendered post page as the link target.
+   Unlike the page title,
+   the URL is not defined in the page front matter but instead provided by Jekyll.
+   This page URL is passed to the `relative_url` filter,
+   which ensures the base URL of the GitHub Pages site is prepended and
+   the link resolves correctly.
 5. `{% raw %}{% endfor %}{% endraw %}` ends the for loop after every post in the
-   collection (i.e. every file in the `_posts` folder) has been iterated over.
+   collection (i.e. every file in the `_blogposts` folder) has been iterated over.
 
 Clicking on one of these links takes us to the rendered version of the blog post page.
 
@@ -344,11 +418,11 @@ if it is present in the YAML header of pages in a collection it will automatical
 be used to define the order in which the collection is delivered in the site.
 If you would like to order a collection by a different field in the YAML header,
 you can pass the collection through the [`sort`][liquid-sort] filter
-when initialising the for loop:
+when initialising the for loop.
 
 You might be tempted to write:
 ~~~
-{% raw %}{% for post in site.posts | sort: "author" %}{% endraw %}
+{% raw %}{% for post in site.blogposts | sort: "author" %}{% endraw %}
 ~~~
 {: .warning }
 
@@ -356,11 +430,11 @@ which seems to work but may not produce the result we expect.
 
 In fact, Jekyll will generate a **silent warning** that isn't visible in GitHub
 but can be seen if building the site locally.
-This a limitation of liquid in that it doesn't allow combining `for` instructions directly
+This a limitation of Liquid in that it doesn't allow combining `for` instructions directly
 with filters.
 Instead, we need to reuse the `assign` instruction we used above:
 ~~~
-{% raw %}{% assign sorted_posts = site.posts | sort: "author" %}
+{% raw %}{% assign sorted_posts = site.blogposts | sort: "author" %}
 {% for post in sorted_posts %}{% endraw %}
 ~~~
 {: .source }
@@ -379,7 +453,7 @@ which returns a random sample of the values in the list.
 > > ## Solution
 > >
 > > ~~~
-> > {% raw %}{% for post in site.posts %}
+> > {% raw %}{% for post in site.blogposts %}
 > > - {{ post.date | date_to_string }}: [{{ post.title }}]({{ post.url }}) by {{ post.author }}
 > > {% endfor %}{% endraw %}
 > > ~~~
@@ -403,7 +477,7 @@ which returns a random sample of the values in the list.
 > > <h2>Blog Posts</h2>
 > > <ul>
 > > {% raw %}{% for post in site.posts %}
-> > <li>{{ post.date | date_to_string }}: <a href="{{ post.url }}">{{ post.title }}</a></li>
+> > <li>{{ post.date | date_to_string }}: <a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
 > > {% endfor %}{% endraw %}
 > > </ul>
 > > ~~~
@@ -420,12 +494,12 @@ which returns a random sample of the values in the list.
 
 > ## Exercise: Extend the Collection
 >
-> Create another blog post and add it to the `posts` collection.
+> Create another blog post and add it to the `blogposts` collection.
 > Check that your new post appears in the list.
 >
 > > ## Solution
 > >
-> > Write another post Markdown file and save it into the `_posts` folder,
+> > Write another post Markdown file and save it into the `_blogposts` folder,
 > > making sure you remember to add (at least) the `date` and
 > > `title` fields in the YAML header.
 > >
@@ -435,7 +509,79 @@ which returns a random sample of the values in the list.
 > {: .solution }
 {: .challenge }
 
-> ## Comments on a static blog
+## Blogging in the Wild: the `_posts` Collection
+
+We named our collection `blogposts` above but it is much more common to find
+Jekyll sites using a collection called `posts`
+(and associated `_posts` folder for blog post files).
+The `posts` collection has a special meaning to Jekyll:
+the platform is so often used for blogging that it has some
+"magic" built in to work with the files in `_posts`.
+
+One of the key differences is the way that URLs are created for pages built from
+the `posts` collection:
+the `YYYY-MM-DD` date string defining the date of the post is used
+to create a nested URL structure of `/YYYY/MM/DD/`.
+For this reason, _Jekyll requires that files in the `posts` collection
+follow the naming structure `YYYY-MM-DD-post-slug.md` in order to be built for
+the site.
+For example, a file in `posts` called `2019-09-04-rise-and-shine.md`
+will be published at the URL `<site-url>/2019/09/04/rise-and-shine.html`.
+
+Jekyll also provides some other special features for working with a collection
+called `posts`, such as tags and categories to help organise the pages of your
+site.
+You can read more about the
+[features of the `posts` collection in the associated page of the Jekyll documentation](https://jekyllrb.com/docs/posts/).
+
+Finally, it is common to need to create a listing of posts
+(or some other collection)
+that is displayed in smaller chunks e.g. ten posts at a time.
+This is called _pagination_,
+and is enabled in Jekyll via a plugin called `jekyll-paginate`.
+(This plugin is included by default in GitHub Pages.)
+The Jekyll documentation describes
+[the steps for setting up pagination for a list of blog posts](https://jekyllrb.com/docs/pagination/).
+
+## Linking to Other Pages on Your Site
+
+Creating internal links that are robust to changes in your site
+base URL, and that work both online and in locally-built preview versions
+of your site, requires a bit of extra work.
+
+You can access the URL of a built page via the `page.url` variable
+(as we did when listing the entries in our `blogposts` collection above)
+or, if referring to that page from the body of another page,
+with the `{% raw %}{% link <path_to_post_file> %}{% endraw %}` tag.
+The path provided here should be relative to the root of your site -
+the directory where your `config.yml` is located.
+Taking the example from the `posts` collection above:
+
+```
+{% raw %}{% link _posts/2019-09-04-rise-and-shine.md %}{% endraw %}
+```
+{: .source }
+
+```
+/2019/09/04/rise-and-shine.html
+```
+{: .output }
+
+If you would like to
+[set up your computer to build your site locally][jekyll-install]
+e.g. to preview changes to your site before they "go live" on GitHub Pages,
+you should get into the habit of substituting in the `site.baseurl` variable
+at the start of these internal links:
+
+```
+{% raw %}{{ site.baseurl }}{% link _posts/2019-09-04-rise-and-shine.md %}{% endraw %}
+```
+{: .source}
+
+This will ensure that the links within your site work correctly in the local
+version of the site as well as on GitHub Pages.
+
+> ## Comments on a Static Blog
 >
 > When setting up a blog on a website, it is common to want to include a comment feed
 > as a way for readers to respond to the content of a post, direct questions to the author, etc.
@@ -461,7 +607,6 @@ which returns a random sample of the values in the list.
 > It is a blog template that uses Jekyll as a base, improves on Jekyll experience and offers additional features.
 > For researchers this may be the option to go.
 >
-> {: .source}
 {: .callout}
 
 {% include links.md %}
