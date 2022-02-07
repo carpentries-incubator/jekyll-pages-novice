@@ -12,11 +12,21 @@ keypoints:
 ---
 
 # Markdown
-Markdown is a language used to simplify writing HTML. Plain text characters like # and * are used in place of HTML tags. These characters are then processed by Jekyll (or another script or application) and transformed into HTML tags.
-
-As the name Markdown suggests, the language has been trimmed *down* to a minimum. The most frequently used elements, like headings, paragraphs, lists, tables and basic text formatting (i.e. bold, italic) are part of Markdown.
-
-Markdown's simplified syntax keeps content human-readable.  This is one reason it is a preferred language for formatted user input on web sites like:
+Markdown is a language used to simplify writing HTML. 
+Plain text characters like # and * are used in place of HTML tags. 
+These characters are then processed by Jekyll (or another script or application)
+and transformed into HTML tags.
+As the name Markdown suggests, 
+the language has been trimmed *down* to a minimum.
+The most frequently used elements, like 
+headings, 
+paragraphs, 
+lists, 
+tables 
+and basic text formatting (i.e. bold, italic) 
+are part of Markdown.
+Markdown's simplified syntax keeps content human-readable.  
+This is one reason it is a preferred language for formatted user input on web sites like:
 
 - [Stack Exchange](https://stackexchange.com/)
 - [GitHub](https://github.com/)
@@ -75,7 +85,8 @@ two formatting features:
 - Heading `# group-website`
 - Emphasis using `**bold**`.
 
-Let's learn some more Markdown by adding some formatting and see what happens when we preview it using the preview tab.
+Let's learn some more Markdown by adding some formatting and 
+see what happens when we preview it using the preview tab.
 Add the following to your `README.md` file.
 
 ~~~
