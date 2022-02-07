@@ -6,7 +6,7 @@
 
 This lesson teaches the basics of creating, configuring, and updating a static website with GitHub Pages and Jekyll.
 The lesson is aimed at researchers and research software engineers who understand what a variable is and are familiar with the GitHub web interface.
-[Read more about the target audience and learning objectives on the lesson homepage](https://carpentries-incubator.github.io/jekyll-pages-novice/index.html)
+[Read more about the target audience and learning objectives on the lesson homepage](https://carpentries-incubator.github.io/jekyll-pages-novice/index.html).
 
 ## Development Status & Contributing
 
@@ -22,7 +22,7 @@ based on your experience in the workshop.
 
 If you want to find out more about how this lesson was developed,
 check out
-[the notes from previous lesson sprints in our HackMD](https://hackmd.io/8IuM80wURA2uolBgzy_HZg)
+[the notes from previous lesson sprints in our HackMD](https://hackmd.io/8IuM80wURA2uolBgzy_HZg).
 
 If you'd like to ask the maintainers anything, we'd love to hear from you! You can open an issue here or post on the Slack channel linked above.
 
