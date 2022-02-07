@@ -12,17 +12,15 @@ keypoints:
 ---
 
 # Markdown
-Markdown is a lightweight markup language, i.e. a convention for adding
-style information to textual content.
-As the name Markdown indicates, the syntax elements of this language
-are shut *down* to a minimum.
-Having a rather minimalistic syntax, text formatted in Markdown is comparably
-readable.
-This might be one reason for Markdown having become the language of choice
-for formatted user input on websites like, for example:
+Markdown is a language used to simplify writing HTML. Plain text characters like # and * are used in place of HTML tags. These characters are then processed by Jekyll (or another script or application) and transformed into HTML tags.
+
+As the name Markdown suggests, the language has been trimmed *down* to a minimum. The most frequently used elements, like headings, paragraphs, lists, tables and basic text formatting (i.e. bold, italic) are part of Markdown.
+
+Markdown's simplified syntax keeps content human-readable.  This is one reason it is a preferred language for formatted user input on web sites like:
+
 - [Stack Exchange](https://stackexchange.com/)
 - [GitHub](https://github.com/)
-- [GitLab](https://about.gitlab.com/).
+- [GitLab](https://about.gitlab.com/)
 
 
 # Where to Start Writing Markdown?
@@ -105,7 +103,7 @@ You can then click the preview tab again to see how the formatting renders.
 
 ![Preview of the formatting added to the README](../fig/markdown_preview_formatting.png){: .image-with-shadow width="900px" }
 
-If you click the `Show diff` checkbox in the right corner, GitHub will include a preview of differences too - 
+If you click the `Show diff` checkbox in the right corner, GitHub will include a preview of differences too -
 the green bar indicates added lines, the red bar indicates deleted lines, and yellow - lines that have been modified.
 
 > ## Markdown Trailing Spaces Are Meaningful
