@@ -13,9 +13,10 @@ The lesson is aimed at researchers and research software engineers who understan
 The lesson is currently **open for beta testing**.
 If you would like to teach this lesson to your local audience,
 please get in touch with the lesson developers by
-[opening a new issue on the lesson repository](https://github.com/carpentries-incubator/jekyll-pages-novice/issues/new)
+[opening a new issue on the lesson repository](https://github.com/carpentries-incubator/jekyll-pages-novice/issues/new) and adding a label 'pilot` 
 or posting to the [`#jekyll-pages-lesson` Slack channel](https://swcarpentry.slack.com/archives/C0186GK56UC)
-on [The Carpentries Slack](https://swc-slack-invite.herokuapp.com/).
+on [The Carpentries Slack](https://swc-slack-invite.herokuapp.com/). You can also let 
+The Carpentries know by submitting your workshop via the [The Carpentries Incubator website](https://carpentries-incubator.org/#workshops).
 We would love to help you prepare to teach the lesson and
 receive feedback on how it could be further improved,
 based on your experience in the workshop.
