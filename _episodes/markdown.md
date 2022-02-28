@@ -69,7 +69,12 @@ After having changed something, the commit menu looks like this:
 > ## Writing a Commit Message
 >
 > A commit message is a short, descriptive, and specific comment that will help us remember later on what we did and why.
-> You find more about writing commit message in [this section][swc-git-novice-episode-track-changes] of the Git-novice lesson.
+> When editing in the Github interface, it will suggest a vague message about which file you've updated or added.
+> It is best practice to change this message to a short but more informative message about what in the file has changed.
+> This more descriptive message will make it much easier if future you needs to go looking through the history
+> for which commit made a specific change.
+> You find more about writing commit message in [this section](https://swcarpentry.github.io/git-novice/04-changes/index.html) 
+> of the Git-novice lesson.
 >
 {: .callout}
 
