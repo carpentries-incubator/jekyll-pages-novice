@@ -277,7 +277,7 @@ Under the "Repository name" field type `group-website`.
 
 ![New repository - set name to group-website](../fig/set_repo_name.png){: .image-with-shadow width="600px" }
 
-We can also add a description (for instance **Repo for learning how to make websites with jekyll pages**) so we know what this repo is when we find it again after the workshop.
+We can also add a description (for instance **Repo for learning how to make websites with Jekyll and GitHub pages**) so we know what this repo is when we find it again after the workshop.
 
 ![New repository - set description](../fig/set_repo_description.png){: .image-with-shadow width="600px" }
 
