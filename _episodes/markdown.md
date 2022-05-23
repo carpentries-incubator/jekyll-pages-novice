@@ -91,7 +91,7 @@ Add the following to your `README.md` file.
 
 ~~~
 # group-website
-Repo for learning how to make websites with Jekyll pages
+Repo for learning how to make websites with Jekyll and GitHub pages
 
 ## Learning Markdown
 
