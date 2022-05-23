@@ -160,7 +160,7 @@ Let's do an exercise to try out writing more markdown.
 > - Some text under that second level heading that includes an link and ~~strikethrough~~ text.
 > - A third level heading
 > - A numbered list
-> - Bonus: Add this image <https://github.com/carpentries/carpentries.org/blob/main/images/TheCarpentries-opengraph.png>
+> - Bonus: Add this image <https://raw.githubusercontent.com/carpentries/carpentries.org/main/images/TheCarpentries-opengraph.png>
 >
 > > ## Example Solution
 > > For example your markdown might look like the following:
