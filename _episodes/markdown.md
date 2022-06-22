@@ -213,6 +213,13 @@ Let's do an exercise to try out writing more markdown.
 >
 {: .callout}
 
+> ## Note about image use and attribution
+> When using images on your website that you don't own, it's important to reuse the 
+content responsibly.
+> This means ensuring that the image owner has given permission for the image to be reused and that the image includes appropriate attribution to the owner.
+> If you're unsure about the availability of an image you can always contact the owner or check if a license is provided alongside the image which may include conditions for reuse.
+{: .callout }
+
 We will continue to use Markdown and learn more throughout the rest of the lesson.
 Though later we will find we need HTML again for some features.
 
