@@ -41,6 +41,7 @@ Then when a learner messages in chat, the helper can find their repo and look at
 ### Adding a theme through the GitHub Pages Settings tab
 If you're pushed for time and want to quickly introduce adding themes to your website without lots of additional context around Jekyll there is now a `Theme Chooser` section in the GitHub Pages Settings tab. This allows users to briefly browse supported Jekyll themes for GitHub Pages and select one for their site.
 It will add a `_config.yml` file to the repository containing a single line that sets the theme i.e. `theme: jekyll-theme-cayman`. This will be committed automatically to your default branch and rebuild your site with the new theme.
+Please note that using the `Theme Chooser` is incompatible with subsequent episodes in this lesson and is only recommended if you don't expect to progress onto further episodes (in particular _Page Layouts_).
 
 ## Episode: [Starting With Jekyll](../starting-jekyll/index.html)
 
