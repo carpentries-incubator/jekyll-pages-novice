@@ -215,9 +215,11 @@ Let's do an exercise to try out writing more markdown.
 
 > ## Note about image use and attribution
 > When using images on your website that you don't own, it's important to reuse the 
-content responsibly.
+content responsibly. 
 > This means ensuring that the image owner has given permission for the image to be reused and that the image includes appropriate attribution to the owner.
 > If you're unsure about the availability of an image you can always contact the owner or check if a license is provided alongside the image which may include conditions for reuse.
+> Anyone can re-use and edit Public Domain images so searching for images in the public domain can be a good way to find images for your website.
+> However, it is still good practice to give credit when possible, even for public domain images.
 {: .callout }
 
 We will continue to use Markdown and learn more throughout the rest of the lesson.
