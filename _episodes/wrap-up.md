@@ -349,6 +349,7 @@ Below are some recommended resources to help you continue learning about Jekyll 
 
 - [W3C Schools HTML tutorial](https://www.w3schools.com/html/)
 - [W3C Schools CSS tutorial](https://www.w3schools.com/css/)
+- [Learn HTML in Detail](https://www.scaler.com/topics/html/)
 - [Github-flavored Markdown info page](https://docs.github.com/en/free-pro-team@latest/github/writing-on-github)
 - [Getting started with GitHub Pages](https://docs.github.com/en/free-pro-team@latest/github/working-with-github-pages/getting-started-with-github-pages) from GitHub Docs
 - [JekyllRB - the ultimate source of Jekyll resources](https://jekyllrb.com/)
