@@ -52,7 +52,7 @@ Published on {{ page.date }}
 {: .language-html }
 
 Save this layout to `_layouts/post.html`.
-Now we can create our first blog post (**in the root of our website repository for now**), `1827-11-22-surgeon.md`,
+Now we can create our first blog post about [James Barry](https://en.wikipedia.org/wiki/James_Barry_(surgeon)) (**in the root of our website repository for now**), `1827-11-22-surgeon.md`,
 remembering to add the `author` and `date` fields
 to the YAML front matter:
 
