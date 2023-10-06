@@ -4,16 +4,9 @@ root: .  # Is the only page that doesn't follow the pattern /:path/index.html
 permalink: index.html  # Is the only page that doesn't follow the pattern /:path/index.html
 ---
 
-> ## Looking for Beta Testers!
-> **We are currently looking for volunteers to test this lesson!**
-> If you would like to teach this lesson in a pilot workshop,
-> please let the lesson developers know by
-> [opening a new issue on the lesson repository](https://github.com/carpentries-incubator/jekyll-pages-novice/issues/new)
-> or posting to the [`#jekyll-pages-lesson` Slack channel](https://swcarpentry.slack.com/archives/C0186GK56UC)
-> on [The Carpentries Slack](https://swc-slack-invite.herokuapp.com/).
-> We would love to help you prepare to teach the lesson and
-> receive feedback on how it could be further improved,
-> based on your experience in the workshop.
+> ## Beta Version of the Lesson
+> This lesson is in a **beta** state and has been tested extensively in pilot workshops and is ready to be taught by others.
+> Note that the lesson is not actively developed any more.
 {: .testimonial }
 
 > ## Prerequisites

@@ -1,4 +1,4 @@
-# Building Websites with Jekyll and GitHub/GitLab
+# Building Websites with Jekyll and GitHub Pages
 
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/carpentries-incubator/jekyll-pages-novice)
 [![DOI](https://zenodo.org/badge/268807168.svg)](https://zenodo.org/badge/latestdoi/268807168)
@@ -8,28 +8,14 @@ This lesson teaches the basics of creating, configuring, and updating a static w
 The lesson is aimed at researchers and research software engineers who understand what a variable is and are familiar with the GitHub web interface.
 [Read more about the target audience and learning objectives on the lesson homepage](https://carpentries-incubator.github.io/jekyll-pages-novice/index.html).
 
-## Development Status & Contributing
+## Development Status
 
-The lesson is currently **open for beta testing**.
-If you would like to teach this lesson to your local audience,
-please get in touch with the lesson developers by
-[opening a new issue on the lesson repository](https://github.com/carpentries-incubator/jekyll-pages-novice/issues/new) and adding a label `pilot` 
-or posting to the [`#jekyll-pages-lesson` Slack channel](https://swcarpentry.slack.com/archives/C0186GK56UC)
-on [The Carpentries Slack](https://swc-slack-invite.herokuapp.com/). You can also let 
-The Carpentries know by submitting your workshop via the [The Carpentries Incubator website](https://carpentries-incubator.org/#workshops).
-We would love to help you prepare to teach the lesson and
-receive feedback on how it could be further improved,
-based on your experience in the workshop.
-
-If you want to find out more about how this lesson was developed,
-check out
-[the notes from previous lesson sprints in our HackMD](https://hackmd.io/8IuM80wURA2uolBgzy_HZg).
-
-If you'd like to ask the maintainers anything, we'd love to hear from you! You can open an issue here or post on the Slack channel linked above.
+The lesson is currently in a **beta** state, meaning that it has been tested a few times at workshops and is ready to be taught by others. 
+However, the lesson is not currently being developed nor is actively maintained.  
 
 ## Maintainer(s)
 
-Current maintainers of this lesson are:
+Past maintainers of this lesson are:
 
 * [Renato Alves](https://github.com/unode)
 * [Anne Fouilloux](https://github.com/annefou)
@@ -37,14 +23,11 @@ Current maintainers of this lesson are:
 * [Aleksandra Nenadic](https://github.com/anenadic) (Lead Maintainer)
 * [Sarah Stevens](https://github.com/sstevens2)
 
-## Authors
-
-A list of contributors to the lesson can be found in [AUTHORS](AUTHORS).
-
-Please check the [contributing guidelines](CONTRIBUTING) if you would like to contribute to this lesson.
-
 ## Citation
+See [CITATION.cff](CITATION.cff) for citation information, including a list of authors.
+([Read more about the Citation File Format and how to use it](https://citation-file-format.github.io/).)
 
-To cite this lesson, please consult with [CITATION](CITATION).
+## Contact
+Please get in touch with [Aleksandra Nenadic](a.nenadic@software.ac.uk) with any questions about this lesson.
 
 [lesson-example]: https://carpentries.github.io/lesson-example
