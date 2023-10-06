@@ -34,7 +34,7 @@ Current maintainers of this lesson are:
 * [Renato Alves](https://github.com/unode)
 * [Anne Fouilloux](https://github.com/annefou)
 * [Toby Hodges](https://github.com/tobyhodges)
-* [Aleksandra Nenadic](https://github.com/anenadic)
+* [Aleksandra Nenadic](https://github.com/anenadic) (Lead Maintainer)
 * [Sarah Stevens](https://github.com/sstevens2)
 
 ## Authors
