@@ -8,7 +8,7 @@ This lesson teaches the basics of creating, configuring, and updating a static w
 The lesson is aimed at researchers and research software engineers who understand what a variable is and are familiar with the GitHub web interface.
 [Read more about the target audience and learning objectives on the lesson homepage](https://carpentries-incubator.github.io/jekyll-pages-novice/index.html).
 
-## Development Status & Contributing
+## Development Status
 
 The lesson is currently in a **beta** state, meaning that it has been tested a few times at workshops and is ready to be taught by others. 
 However, the lesson is not currently being developed nor is actively maintained.  
