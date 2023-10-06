@@ -4,9 +4,10 @@
 cff-version: 1.2.0
 title: A lesson on building websites with Jekyll & GitHub Pages
 message: >-
-  If you use this software, please cite it using the
-  metadata from this file.
-type: software
+  Please cite this lesson using the information in this
+  file if you publish a lesson/curriculum after using this
+  lesson or attend a training where it was taught.
+type: dataset
 authors:
   - given-names: Toby
     family-names: Hodges
