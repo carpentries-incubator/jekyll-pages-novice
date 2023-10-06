@@ -1,0 +1,74 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: A lesson on building websites with Jekyll & GitHub Pages
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Toby
+    family-names: Hodges
+    email: tbyhdgs@gmail.com
+    affiliation: The Carpentries
+    orcid: 'https://orcid.org/0000-0003-1766-456X'
+  - given-names: Aleksandra
+    family-names: Nenadic
+    email: a.nenadic@manchester.ac.uk
+    affiliation: Software Sustainability Institute
+    orcid: 'https://orcid.org/0000-0002-2269-3894'
+  - given-names: Sarah
+    family-names: Stevens
+    email: sarah.stevens@wisc.edu
+    affiliation: University of Wisconsin-Madison
+  - given-names: Elsha E.
+    family-names: Kwee
+    email: elsha.e.k@gmail.com
+  - given-names: Julian
+    family-names: Bauer
+    email: juliankarlbauer@gmx.de
+    affiliation: Karlsruhe Institute of Technology
+    orcid: 'https://orcid.org/0000-0002-4931-5869'
+  - given-names: 'Anne '
+    family-names: Fouilloux
+    orcid: 'https://orcid.org/0000-0002-1784-2920'
+    affiliation: Simula Research Laboratory
+    email: annef@simula.no
+  - given-names: Renato
+    family-names: Alves
+    email: renato.alves@embl.de
+    affiliation: European Molecular Biology Laboratory
+    orcid: 'https://orcid.org/0000-0002-7212-0234'
+  - given-names: Bhanu Kishore
+    family-names: Kamapantula
+    email: talk2kish@gmail.com
+  - given-names: 'Andrew '
+    email: leathwick@gmail.com
+    family-names: Leathwick
+  - given-names: Seo-young Silvia
+    family-names: Kim
+    affiliation: 'Department of Government, American University'
+    email: sskim.research@gmail.com
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.4013386
+    description: >-
+      Zenodo Concept DOI (resolves to the latest released
+      version)
+repository-code: >-
+  https://github.com/carpentries-incubator/jekyll-pages-novice
+url: >-
+  https://github.com/carpentries-incubator/jekyll-pages-novice
+abstract: >-
+  A lesson that teaches the basics of creating, configuring,
+  and updating a static website with GitHub Pages and
+  Jekyll. 
+keywords:
+  - carpentries
+  - jekyll
+  - github pages
+  - static websites
+license: CC-BY-4.0
+version: october-2023-beta
+date-released: '2023-10-06'
