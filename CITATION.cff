@@ -53,7 +53,7 @@ authors:
     email: sskim.research@gmail.com
 identifiers:
   - type: doi
-    value: 10.5281/zenodo.4013386
+    value: 10.5281/zenodo.4013385
     description: >-
       Zenodo Concept DOI (resolves to the latest released
       version)
