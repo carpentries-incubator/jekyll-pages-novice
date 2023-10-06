@@ -28,6 +28,6 @@ See [CITATION.cff](CITATION.cff) for citation information, including a list of a
 ([Read more about the Citation File Format and how to use it](https://citation-file-format.github.io/).)
 
 ## Contact
-Please get in touch with [Aleksandra Nenadic](a.nenadic@software.ac.uk) with any questions about this lesson.
+Please get in touch with the [original maintainers of the lesson](jekyll-pages-novice@lists.carpentries.org) with any questions.
 
 [lesson-example]: https://carpentries.github.io/lesson-example
